@@ -27,10 +27,10 @@ export default function Home() {
                   Colourful, nourishing food, made from scratch with love, every day.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                  <Button asChild size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
+                  <Button asChild size="lg" variant="outline" className="border-kale text-kale hover:bg-kale hover:text-white">
                     <Link href="/cafes">Explore Our Cafes</Link>
                   </Button>
-                  <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Button asChild size="lg" className="bg-sage text-white hover:bg-sage/90">
                     <Link href="/subscription">Start Meal Subscription</Link>
                   </Button>
                 </div>
@@ -48,64 +48,60 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section-padding bg-background">
+        <section className="section-padding bg-white">
           <div className="container">
-            <div className="text-center space-y-3 mb-16">
-              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl lg:text-5xl">
-                The C+C Philosophy
-              </h2>
-              <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-                Three pillars of intentional wellness, woven into every experience.
-              </p>
-            </div>
-            <div className="grid gap-0 md:grid-cols-3 divide-x divide-border">
-              <div className="p-8 md:p-10 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Leaf className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="font-display text-2xl font-light">Move & Refuel</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Designed for post-workout recovery using clean, whole-food nutrition. The perfect pit-stop to nourish your body after movement.
-                </p>
-              </div>
+            <h2 className="font-display text-3xl sm:text-4xl font-light text-center mb-16">
+              The Copper + Cloves Philosophy
+            </h2>
+            <div className="grid gap-8 md:grid-cols-3">
+              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-sage/10">
+                    <Sparkles className="h-6 w-6 text-sage" />
+                  </div>
+                  <h3 className="font-display text-xl font-light">Move & Refuel</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    The perfect pit-stop post-workout to nourish your body with clean, whole foods designed for optimal recovery and sustained energy.
+                  </p>
+                </CardContent>
+              </Card>
 
-              <div className="p-8 md:p-10 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
-                  <Users className="h-6 w-6 text-secondary" />
-                </div>
-                <h3 className="font-display text-2xl font-light">Meet & Connect</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Sunlit gathering sanctuaries to find community or work mindfully. Where conversation flows as easily as your morning brew.
-                </p>
-              </div>
+              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-sage/10">
+                    <Users className="h-6 w-6 text-sage" />
+                  </div>
+                  <h3 className="font-display text-xl font-light">Meet & Connect</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    A sun-drenched sanctuary to gather with your community or work productively in a space designed for mindful living and genuine connection.
+                  </p>
+                </CardContent>
+              </Card>
 
-              <div className="p-8 md:p-10 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Truck className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="font-display text-2xl font-light">Complete Care</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Seamlessly bridging in-cafe dining with hyper-local lifestyle solutions. When a C+C opens near you, your daily nutrition is handled.
-                </p>
-              </div>
+              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-sage/10">
+                    <Truck className="h-6 w-6 text-sage" />
+                  </div>
+                  <h3 className="font-display text-xl font-light">Hyper-Local Convenience</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    A seamless ecosystem of grab-and-go nourishment, retail products, and doorstep wellness — all within your neighborhood radius.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
 
         <section className="section-padding">
           <div className="container">
-            <div className="flex items-end justify-between mb-12">
-              <div className="space-y-2">
-                <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl lg:text-5xl">
-                  Our Bestsellers
-                </h2>
-                <p className="text-lg text-foreground/60">
-                  Artisanal products crafted in-house, available at all cafes.
-                </p>
-              </div>
-              <Button variant="link" className="hidden sm:inline-flex text-primary hover:text-primary/80" asChild>
+            <div className="flex items-center justify-between mb-12">
+              <h2 className="font-display text-3xl sm:text-4xl font-light">
+                Our Bestsellers
+              </h2>
+              <Button asChild variant="ghost" className="hidden sm:inline-flex text-sage hover:text-sage/80">
                 <Link href="/products">
-                  View All
+                  View All Products
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -113,31 +109,31 @@ export default function Home() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  name: "High-Protein Granola Blend",
-                  price: "₹425",
+                  name: "High-Protein Granola",
                   image: "/generated/product-granola.png",
-                  badge: "Pick Up In-Store",
+                  price: "₹450",
+                  badge: "Pick up In-Store",
                 },
                 {
                   name: "Superfood Seed Mix",
-                  price: "₹550",
                   image: "/generated/product-granola.png",
-                  badge: "Pick Up In-Store",
-                },
-                {
-                  name: "House-Made Roasted Dip",
-                  price: "₹320",
-                  image: "/generated/product-granola.png",
+                  price: "₹350",
                   badge: "Add to Subscription",
                 },
                 {
-                  name: "Daily Harvest Salad",
-                  price: "₹380",
+                  name: "House-Made Hummus",
                   image: "/generated/product-granola.png",
+                  price: "₹280",
+                  badge: "Pick up In-Store",
+                },
+                {
+                  name: "Ready-to-Eat Salad Bowl",
+                  image: "/generated/product-granola.png",
+                  price: "₹420",
                   badge: "Add to Subscription",
                 },
-              ].map((product) => (
-                <Card key={product.name} className="group cursor-pointer border-0 bg-card shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden rounded-lg">
+              ].map((product, i) => (
+                <Card key={i} className="group overflow-hidden border-mushroom/30 bg-white hover:shadow-xl transition-all">
                   <div className="aspect-square overflow-hidden">
                     <img
                       src={product.image}
@@ -146,27 +142,28 @@ export default function Home() {
                     />
                   </div>
                   <CardContent className="p-5 space-y-3">
-                    <Badge variant="secondary" className="text-xs font-normal bg-secondary/10 text-secondary border-0">
+                    <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
                       {product.badge}
                     </Badge>
-                    <h3 className="font-sans font-medium text-base text-foreground">
-                      {product.name}
-                    </h3>
-                    <p className="text-sm text-primary font-semibold">
-                      {product.price}
-                    </p>
+                    <h3 className="font-sans font-medium text-base">{product.name}</h3>
+                    <p className="text-lg font-display font-light text-copper">{product.price}</p>
                   </CardContent>
                 </Card>
               ))}
             </div>
+            <div className="mt-8 text-center sm:hidden">
+              <Button asChild variant="outline" className="border-sage text-sage hover:bg-sage hover:text-white">
+                <Link href="/products">View All Products</Link>
+              </Button>
+            </div>
           </div>
         </section>
 
-        <section className="section-padding bg-card/50">
+        <section className="section-padding bg-white">
           <div className="container">
-            <div className="grid gap-16 lg:grid-cols-2 items-center">
+            <div className="grid gap-12 lg:grid-cols-2 items-center">
               <div className="relative">
-                <div className="aspect-[3/2] overflow-hidden rounded-lg shadow-xl">
+                <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
                   <img
                     src="/generated/community-gathering.png"
                     alt="Community gathering at Copper + Cloves"
@@ -174,38 +171,18 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="space-y-6">
-                <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium uppercase tracking-wide">
-                  <Heart className="h-4 w-4" />
-                  <span>Community Events</span>
+              <div className="space-y-6 lg:pl-8">
+                <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-sage/10 border border-sage/20">
+                  <Heart className="h-4 w-4 text-sage" />
+                  <span className="text-sm font-medium text-sage uppercase tracking-wide">Community Events</span>
                 </div>
-                <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl lg:text-5xl">
-                  Your Home Away From Home
+                <h2 className="font-display text-3xl sm:text-4xl font-light">
+                  More Than Just a Cafe
                 </h2>
-                <p className="text-lg text-foreground/70 leading-relaxed">
-                  Join us for cooking workshops, nutrition discussions, and community meetups. Our sun-drenched spaces are designed for connection, learning, and shared wellness.
+                <p className="text-foreground/70 leading-relaxed">
+                  Join us for cooking workshops, nutrition talks, community meetups, and wellness discussions. We're building a movement around intentional nourishment and mindful living.
                 </p>
-                <ul className="space-y-4">
-                  <li className="flex items-start space-x-3">
-                    <div className="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-primary" />
-                    </div>
-                    <span className="text-foreground/70">Monthly plant-based cooking masterclasses</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-primary" />
-                    </div>
-                    <span className="text-foreground/70">Nutrition science talks with wellness experts</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-primary" />
-                    </div>
-                    <span className="text-foreground/70">Weekend community brunches and gatherings</span>
-                  </li>
-                </ul>
-                <Button asChild size="lg" variant="outline" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
+                <Button asChild className="bg-sage text-white hover:bg-sage/90">
                   <Link href="/blog">
                     View Upcoming Events
                     <ArrowRight className="ml-2 h-4 w-4" />

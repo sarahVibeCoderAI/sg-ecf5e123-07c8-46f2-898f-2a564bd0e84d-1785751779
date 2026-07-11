@@ -44,7 +44,11 @@ const config: Config = {
           DEFAULT: "var(--accent)",
           foreground: "var(--accent-foreground)",
         },
-        "warm-accent": "var(--warm-accent)",
+        kale: "var(--kale)",
+        sage: "var(--sage)",
+        oat: "var(--oat)",
+        copper: "var(--copper)",
+        mushroom: "var(--mushroom)",
         destructive: {
           DEFAULT: "var(--destructive)",
           foreground: "var(--destructive-foreground)",
