@@ -5,60 +5,64 @@ import { Button } from "@/components/ui/button";
 export function Navigation() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/logo-horizontal.png"
-            alt="Copper + Cloves"
-            width={180}
-            height={40}
-            className="h-8 w-auto"
-            priority
-          />
-        </Link>
+      <div className="container">
+        <div className="flex h-20 items-center justify-between gap-8">
+          <Link href="/" className="flex-shrink-0">
+            <Image
+              src="/logo-horizontal.png"
+              alt="Copper + Cloves"
+              width={160}
+              height={36}
+              className="h-9 w-auto"
+              priority
+            />
+          </Link>
 
-        <div className="hidden md:flex items-center space-x-8">
-          <Link
-            href="/cafes"
-            className="text-xs font-medium text-foreground/80 hover:text-primary transition-colors uppercase tracking-wide"
-          >
-            Our Cafes
-          </Link>
-          <Link
-            href="/subscription"
-            className="text-xs font-medium text-foreground/80 hover:text-primary transition-colors uppercase tracking-wide"
-          >
-            Meal Subscription
-          </Link>
-          <Link
-            href="/products"
-            className="text-xs font-medium text-foreground/80 hover:text-primary transition-colors uppercase tracking-wide"
-          >
-            Shop Products
-          </Link>
-          <Link
-            href="/blog"
-            className="text-xs font-medium text-foreground/80 hover:text-primary transition-colors uppercase tracking-wide"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/careers"
-            className="text-xs font-medium text-foreground/80 hover:text-primary transition-colors uppercase tracking-wide"
-          >
-            Careers
-          </Link>
-          <Link
-            href="/contact"
-            className="text-xs font-medium text-foreground/80 hover:text-primary transition-colors uppercase tracking-wide"
-          >
-            Contact
-          </Link>
+          <div className="hidden lg:flex items-center justify-center flex-1 gap-10">
+            <Link
+              href="/cafes"
+              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+            >
+              Our Cafes
+            </Link>
+            <Link
+              href="/subscription"
+              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+            >
+              Meal Subscription
+            </Link>
+            <Link
+              href="/products"
+              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+            >
+              Shop Products
+            </Link>
+            <Link
+              href="/blog"
+              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/careers"
+              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+            >
+              Careers
+            </Link>
+            <Link
+              href="/contact"
+              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+            >
+              Contact
+            </Link>
+          </div>
+
+          <div className="flex-shrink-0">
+            <Button asChild size="default" className="text-[11px] uppercase tracking-wider px-6">
+              <Link href="/subscription">Subscribe Now</Link>
+            </Button>
+          </div>
         </div>
-
-        <Button asChild className="text-xs uppercase tracking-wide">
-          <Link href="/subscription">Subscribe Now</Link>
-        </Button>
       </div>
     </nav>
   );
