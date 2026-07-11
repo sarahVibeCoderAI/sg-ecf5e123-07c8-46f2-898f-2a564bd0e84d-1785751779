@@ -12,22 +12,22 @@ export default function Home() {
     <>
       <SEO
         title="Copper + Cloves | Premium Plant-Based Wellness Cafes in Bangalore"
-        description="A premium chain of high-end, plant-based cafes designed with your wellness in mind. Hyper-local meal subscriptions and artisanal products."
+        description="Premium plant-based cafes designed with your wellness in mind. Hyper-local meal subscriptions and artisanal products across Bangalore."
       />
       <Navigation />
       <main>
-        <section className="section-padding">
+        <section className="section-padding pt-12 md:pt-16">
           <div className="container">
-            <div className="grid gap-16 lg:grid-cols-2 items-center">
-              <div className="space-y-8">
-                <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl leading-tight">
-                  A premium chain of high-end, plant-based cafes designed with your wellness in mind.
+            <div className="grid gap-12 lg:gap-16 lg:grid-cols-2 items-center">
+              <div className="space-y-8 lg:pr-8">
+                <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1]">
+                  Cafes designed with your wellness in mind.
                 </h1>
-                <p className="text-lg text-foreground/70 leading-relaxed max-w-xl">
+                <p className="text-lg sm:text-xl text-foreground/70 leading-relaxed max-w-xl">
                   Highly nourishing, intentionally sourced, deeply trusted. Your sanctuary for movement, connection, and hyper-local convenience.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button asChild size="lg" variant="outline" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
+                <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                  <Button asChild size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
                     <Link href="/cafes">Explore Our Cafes</Link>
                   </Button>
                   <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -35,11 +35,11 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-              <div className="relative">
-                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
+              <div className="relative lg:order-first lg:order-last">
+                <div className="aspect-[4/3] overflow-hidden rounded-xl shadow-2xl">
                   <img
-                    src="/generated/hero-cafe-interior.png"
-                    alt="Sun-drenched Copper + Cloves cafe interior"
+                    src="/hero-main.jpg"
+                    alt="Copper + Cloves cafe - premium plant-based wellness"
                     className="object-cover w-full h-full"
                   />
                 </div>
