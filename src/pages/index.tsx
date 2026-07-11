@@ -165,7 +165,7 @@ export default function Home() {
               <div className="relative">
                 <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
                   <img
-                    src="/generated/community-gathering.png"
+                    src="/community-outdoor.jpg"
                     alt="Community gathering at Copper + Cloves"
                     className="object-cover w-full h-full"
                   />
@@ -177,10 +177,10 @@ export default function Home() {
                   <span className="text-sm font-medium text-sage uppercase tracking-wide">Community Events</span>
                 </div>
                 <h2 className="font-display text-3xl sm:text-4xl font-light">
-                  More Than Just a Cafe
+                  More than just a cafe.
                 </h2>
                 <p className="text-foreground/70 leading-relaxed">
-                  Join us for cooking workshops, nutrition talks, community meetups, and wellness discussions. We're building a movement around intentional nourishment and mindful living.
+                  Join us for cooking workshops, nutrition talks, community meetups and reading socials. Community is the missing pillar of wellness and we want to create that friendly-neighbourhood cafe where there's always something going on.
                 </p>
                 <Button asChild className="bg-sage text-white hover:bg-sage/90">
                   <Link href="/blog">
