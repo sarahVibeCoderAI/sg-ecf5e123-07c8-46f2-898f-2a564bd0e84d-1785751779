@@ -73,7 +73,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-display text-xl font-light">Meet & Connect</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    A sun-drenched sanctuary to gather with your community or work productively in a space designed for mindful living and genuine connection.
+                    Each outlet is a sun-drenched sanctuary to meet new people or connect with loved ones.
                   </p>
                 </CardContent>
               </Card>
@@ -81,11 +81,11 @@ export default function Home() {
               <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
                 <CardContent className="p-8 space-y-4">
                   <div className="flex items-center justify-center w-12 h-12 rounded-full bg-sage/10">
-                    <Truck className="h-6 w-6 text-sage" />
+                    <Heart className="h-6 w-6 text-sage" />
                   </div>
-                  <h3 className="font-display text-xl font-light">Hyper-Local Convenience</h3>
+                  <h3 className="font-display text-xl font-light">Holistic Wellness</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    A seamless ecosystem of grab-and-go nourishment, retail products, and doorstep wellness — all within your neighborhood radius.
+                    Nourish in the cafe, nourish on-the-go with our ready-to-eat salads or let us take care of everything with our meal subscription service.
                   </p>
                 </CardContent>
               </Card>
