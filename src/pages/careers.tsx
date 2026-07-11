@@ -1,0 +1,234 @@
+import { SEO } from "@/components/SEO";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Link from "next/link";
+import { Heart, Sparkles, UtensilsCrossed, TrendingUp, ArrowRight } from "lucide-react";
+
+export default function Careers() {
+  const benefits = [
+    {
+      icon: Heart,
+      title: "Holistic Work Culture",
+      description: "Work-life balance, mental wellness support, and a team that genuinely cares about your growth.",
+    },
+    {
+      icon: UtensilsCrossed,
+      title: "Culinary Skill Training",
+      description: "Learn from award-winning chefs and nutritionists. Expand your plant-based culinary expertise.",
+    },
+    {
+      icon: Sparkles,
+      title: "Healthy Shift Meals",
+      description: "Complimentary meals during shifts. Fuel your day with the same premium nutrition we serve.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Clear Career Scaling",
+      description: "Structured growth paths from team member to leadership. We promote from within.",
+    },
+  ];
+
+  const openings = [
+    {
+      department: "Cafe Operations",
+      roles: [
+        {
+          title: "Cafe Manager - Indiranagar",
+          type: "Full-time",
+          location: "Indiranagar, Bangalore",
+          description: "Lead daily operations, team management, and customer experience for our flagship location. 3+ years F&B management experience required.",
+        },
+        {
+          title: "Barista & Front-of-House Associate",
+          type: "Full-time",
+          location: "All Locations",
+          description: "Create exceptional customer experiences while crafting specialty beverages. Prior barista experience preferred but not required.",
+        },
+      ],
+    },
+    {
+      department: "Culinary & Kitchen",
+      roles: [
+        {
+          title: "Head Chef - Plant-Based Cuisine",
+          type: "Full-time",
+          location: "Koramangala, Bangalore",
+          description: "Lead kitchen operations and menu innovation for our meal subscription program. 5+ years culinary experience, plant-based expertise required.",
+        },
+        {
+          title: "Prep Cook / Kitchen Assistant",
+          type: "Full-time",
+          location: "Jayanagar, Bangalore",
+          description: "Support daily meal prep, ingredient handling, and kitchen cleanliness. Entry-level position with growth opportunities.",
+        },
+      ],
+    },
+    {
+      department: "Growth & Marketing",
+      roles: [
+        {
+          title: "Digital Marketing Manager",
+          type: "Full-time",
+          location: "Bangalore (Hybrid)",
+          description: "Drive brand awareness and subscription growth through social media, content, and partnerships. 3+ years digital marketing experience in wellness/F&B.",
+        },
+      ],
+    },
+    {
+      department: "Retail & Supply Chain",
+      roles: [
+        {
+          title: "Procurement & Vendor Relations Specialist",
+          type: "Full-time",
+          location: "Bangalore",
+          description: "Manage hyper-local supplier relationships, quality control, and inventory optimization. 2+ years procurement experience preferred.",
+        },
+      ],
+    },
+  ];
+
+  return (
+    <>
+      <SEO
+        title="Careers | Join the Copper + Cloves Team"
+        description="Help us craft the future of plant-based hospitality in Bangalore. Explore open positions in cafe operations, culinary, marketing, and more."
+      />
+      <Navigation />
+      <main>
+        <section className="bg-gradient-to-b from-background to-muted/30 py-20 lg:py-28">
+          <div className="container">
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <Badge variant="secondary" className="text-sm px-4 py-1">
+                We're Hiring
+              </Badge>
+              <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                Grow With Us
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Crafting the future of plant-based hospitality. We've grown from a single kitchen to a premium, scaling wellness chain with a team of passionate creators, chefs, and community builders. Join us.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 lg:py-28">
+          <div className="container">
+            <div className="text-center space-y-4 mb-16">
+              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+                Why Join Copper + Cloves?
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                More than a job — it's a community dedicated to wellness, intentional growth, and making plant-based nourishment accessible.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+              {benefits.map((benefit) => (
+                <Card
+                  key={benefit.title}
+                  className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
+                >
+                  <CardContent className="p-6 space-y-4 text-center">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+                      <benefit.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="font-display text-lg font-semibold">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {benefit.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 lg:py-28 bg-muted/30">
+          <div className="container">
+            <div className="text-center space-y-4 mb-16">
+              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+                Current Openings
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Explore open positions across our cafes and central operations. We're actively expanding and looking for exceptional talent.
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-8">
+              {openings.map((department) => (
+                <div key={department.department} className="space-y-4">
+                  <h3 className="font-display text-2xl font-bold text-primary">
+                    {department.department}
+                  </h3>
+                  <Accordion type="single" collapsible className="w-full">
+                    {department.roles.map((role, index) => (
+                      <AccordionItem
+                        key={`${department.department}-${index}`}
+                        value={`${department.department}-${index}`}
+                        className="border-border/50"
+                      >
+                        <AccordionTrigger className="hover:no-underline hover:text-primary transition-colors">
+                          <div className="flex items-center justify-between w-full pr-4">
+                            <div className="text-left">
+                              <div className="font-display font-semibold text-lg">
+                                {role.title}
+                              </div>
+                              <div className="text-sm text-muted-foreground mt-1">
+                                {role.location} · {role.type}
+                              </div>
+                            </div>
+                          </div>
+                        </AccordionTrigger>
+                        <AccordionContent>
+                          <div className="pt-4 space-y-4">
+                            <p className="text-muted-foreground leading-relaxed">
+                              {role.description}
+                            </p>
+                            <Button size="sm">
+                              Apply Now
+                              <ArrowRight className="ml-2 h-4 w-4" />
+                            </Button>
+                          </div>
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 lg:py-28">
+          <div className="container">
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+                Don't See Your Role?
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We're always open to connecting with talented individuals who share our vision. Send us your resume and tell us how you'd like to contribute to the C+C community.
+              </p>
+              <Button asChild size="lg">
+                <Link href="/contact">
+                  Send General Inquiry
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}

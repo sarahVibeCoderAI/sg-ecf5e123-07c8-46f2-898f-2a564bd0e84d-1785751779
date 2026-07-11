@@ -1,6 +1,6 @@
 ---
 title: Blog Page (The Notebook)
-status: in_progress
+status: done
 priority: medium
 type: feature
 tags: [blog, content]
@@ -13,11 +13,11 @@ position: 4
 Content hub for nutrition insights, recipes, lifestyle articles. Featured article hero + filterable grid layout with category tabs.
 
 ## Checklist
-- [ ] Create /blog page (src/pages/blog.tsx)
-- [ ] Page header: "The Notebook: Insights on Plant-Based Nutrition, Movement, and Mindful Living"
-- [ ] Featured article hero: Large horizontal layout with culinary photo, category tag, title, read time, excerpt
-- [ ] Article grid: 3-column layout with category filter tabs (All, Recipes, Nutrition, Lifestyle, Community)
-- [ ] Article cards with hover scale effect, clean headlines, "Read Article" arrow links
+- [x] Create /blog page (src/pages/blog.tsx)
+- [x] Page header: "The Notebook: Insights on Plant-Based Nutrition, Movement, and Mindful Living"
+- [x] Featured article hero: Large horizontal layout with culinary photo, category tag, title, read time, excerpt
+- [x] Article grid: 3-column layout with category filter tabs (All, Recipes, Nutrition, Lifestyle, Community)
+- [x] Article cards with hover scale effect, clean headlines, "Read Article" arrow links
 
 ## Acceptance
 - /blog page accessible via navigation
