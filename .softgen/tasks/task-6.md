@@ -1,6 +1,6 @@
 ---
 title: Contact & Enquiries Page
-status: todo
+status: done
 priority: medium
 type: feature
 tags: [contact, form]
@@ -13,10 +13,11 @@ position: 6
 Split-screen contact page with information panel and inquiry form. Warm, minimal form styling.
 
 ## Checklist
-- [ ] Create /contact page (src/pages/contact.tsx)
-- [ ] Split layout:
+- [x] Create /contact page (src/pages/contact.tsx)
+- [x] Split layout:
   - Left: Contact info (phone, hello@copperandcloves.com, Bangalore office address, catering/events callouts)
   - Right: Inquiry form (Name, Email, Phone, Inquiry Type dropdown, Message) with copper submission button
+- [x] Visit Our Cafes section: 3-card grid with Bangalore locations
 
 ## Acceptance
 - /contact page accessible via navigation and footer
