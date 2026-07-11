@@ -131,19 +131,19 @@ export default function Blog() {
       />
       <Navigation />
       <main>
-        <section className="bg-gradient-to-b from-background to-muted/30 py-20 lg:py-28">
+        <section className="section-padding">
           <div className="container">
             <div className="text-center space-y-4 mb-16">
-              <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl">
                 The Notebook
               </h1>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto">
                 Insights on plant-based nutrition, movement, and mindful living from our community of wellness practitioners, chefs, and thoughtful eaters.
               </p>
             </div>
 
             {featuredArticle && (
-              <Card className="border-border/50 overflow-hidden hover:border-primary/30 transition-all duration-300 group cursor-pointer">
+              <Card className="border-0 shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer rounded-lg">
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="aspect-video lg:aspect-auto overflow-hidden">
                     <img
@@ -153,19 +153,19 @@ export default function Blog() {
                     />
                   </div>
                   <CardContent className="p-8 lg:p-12 flex flex-col justify-center space-y-6">
-                    <Badge variant="default" className="w-fit">
+                    <Badge className="w-fit bg-primary/10 text-primary border-0 text-xs uppercase tracking-wide">
                       {featuredArticle.category}
                     </Badge>
-                    <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight">
+                    <h2 className="font-display text-2xl font-light sm:text-3xl lg:text-4xl tracking-tight leading-tight">
                       {featuredArticle.title}
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed text-lg">
+                    <p className="text-foreground/70 leading-relaxed">
                       {featuredArticle.excerpt}
                     </p>
-                    <div className="flex items-center justify-between pt-4 border-t border-border/40">
+                    <div className="flex items-center justify-between pt-4 border-t border-border">
                       <div className="space-y-1">
                         <p className="text-sm font-medium">{featuredArticle.author}</p>
-                        <div className="flex items-center space-x-4 text-xs text-muted-foreground">
+                        <div className="flex items-center space-x-4 text-xs text-foreground/60">
                           <span>{featuredArticle.date}</span>
                           <span>•</span>
                           <div className="flex items-center space-x-1">
@@ -174,7 +174,7 @@ export default function Blog() {
                           </div>
                         </div>
                       </div>
-                      <Button variant="ghost" size="sm">
+                      <Button variant="link" className="text-primary hover:text-primary/80">
                         Read Article
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -186,15 +186,19 @@ export default function Blog() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-28">
+        <section className="pb-20 lg:pb-28">
           <div className="container">
-            <div className="flex flex-wrap gap-2 justify-center mb-12">
+            <div className="flex flex-wrap gap-3 justify-center mb-12">
               {categories.map((category) => (
                 <Button
                   key={category}
                   variant={activeCategory === category ? "default" : "outline"}
                   onClick={() => setActiveCategory(category)}
-                  className="rounded-full"
+                  className={`rounded-full text-xs uppercase tracking-wide ${
+                    activeCategory === category
+                      ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                      : "border-border text-foreground hover:bg-foreground hover:text-background"
+                  }`}
                 >
                   {category}
                 </Button>
@@ -205,7 +209,7 @@ export default function Blog() {
               {filteredArticles.map((article) => (
                 <Card
                   key={article.id}
-                  className="border-border/50 overflow-hidden hover:border-primary/30 transition-all duration-300 group cursor-pointer"
+                  className="border-0 shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer rounded-lg"
                 >
                   <div className="aspect-video overflow-hidden">
                     <img
@@ -215,18 +219,18 @@ export default function Blog() {
                     />
                   </div>
                   <CardContent className="p-6 space-y-4">
-                    <Badge variant="secondary" className="text-xs">
+                    <Badge className="text-xs bg-secondary/10 text-secondary border-0 uppercase tracking-wide">
                       {article.category}
                     </Badge>
-                    <h3 className="font-display text-xl font-semibold line-clamp-2">
+                    <h3 className="font-display text-xl font-light line-clamp-2">
                       {article.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground line-clamp-3">
+                    <p className="text-sm text-foreground/70 line-clamp-3 leading-relaxed">
                       {article.excerpt}
                     </p>
-                    <div className="pt-4 border-t border-border/40 space-y-2">
+                    <div className="pt-4 border-t border-border space-y-2">
                       <p className="text-sm font-medium">{article.author}</p>
-                      <div className="flex items-center space-x-4 text-xs text-muted-foreground">
+                      <div className="flex items-center space-x-4 text-xs text-foreground/60">
                         <span>{article.date}</span>
                         <span>•</span>
                         <div className="flex items-center space-x-1">
@@ -242,16 +246,16 @@ export default function Blog() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-28 bg-gradient-to-b from-background to-muted/30">
+        <section className="section-padding bg-card/50">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
                 Want to Contribute?
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 We welcome guest articles from wellness practitioners, nutritionists, and community members. Share your insights on plant-based living with our community.
               </p>
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link href="/contact">
                   Submit Your Story
                   <ArrowRight className="ml-2 h-4 w-4" />

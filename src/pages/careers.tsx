@@ -104,29 +104,29 @@ export default function Careers() {
       />
       <Navigation />
       <main>
-        <section className="bg-gradient-to-b from-background to-muted/30 py-20 lg:py-28">
+        <section className="section-padding">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <Badge variant="secondary" className="text-sm px-4 py-1">
+              <Badge className="bg-secondary/10 text-secondary border-0 text-xs uppercase tracking-wide px-4 py-1">
                 We're Hiring
               </Badge>
-              <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl">
                 Grow With Us
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 Crafting the future of plant-based hospitality. We've grown from a single kitchen to a premium, scaling wellness chain with a team of passionate creators, chefs, and community builders. Join us.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="py-20 lg:py-28">
+        <section className="section-padding bg-card/50">
           <div className="container">
             <div className="text-center space-y-4 mb-16">
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
                 Why Join Copper + Cloves?
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-lg text-foreground/70 max-w-2xl mx-auto leading-relaxed">
                 More than a job — it's a community dedicated to wellness, intentional growth, and making plant-based nourishment accessible.
               </p>
             </div>
@@ -134,16 +134,16 @@ export default function Careers() {
               {benefits.map((benefit) => (
                 <Card
                   key={benefit.title}
-                  className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
+                  className="border-0 shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg"
                 >
-                  <CardContent className="p-6 space-y-4 text-center">
+                  <CardContent className="p-8 space-y-4 text-center">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
                       <benefit.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="font-display text-lg font-semibold">
+                    <h3 className="font-display text-lg font-light">
                       {benefit.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-foreground/70 leading-relaxed">
                       {benefit.description}
                     </p>
                   </CardContent>
@@ -153,48 +153,48 @@ export default function Careers() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-28 bg-muted/30">
+        <section className="section-padding">
           <div className="container">
             <div className="text-center space-y-4 mb-16">
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
                 Current Openings
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-lg text-foreground/70 max-w-2xl mx-auto leading-relaxed">
                 Explore open positions across our cafes and central operations. We're actively expanding and looking for exceptional talent.
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-8">
+            <div className="max-w-4xl mx-auto space-y-12">
               {openings.map((department) => (
                 <div key={department.department} className="space-y-4">
-                  <h3 className="font-display text-2xl font-bold text-primary">
+                  <h3 className="font-display text-2xl font-light text-primary border-b border-border pb-3">
                     {department.department}
                   </h3>
-                  <Accordion type="single" collapsible className="w-full">
+                  <Accordion type="single" collapsible className="w-full space-y-3">
                     {department.roles.map((role, index) => (
                       <AccordionItem
                         key={`${department.department}-${index}`}
                         value={`${department.department}-${index}`}
-                        className="border-border/50"
+                        className="border border-border rounded-lg px-6 shadow-sm"
                       >
-                        <AccordionTrigger className="hover:no-underline hover:text-primary transition-colors">
+                        <AccordionTrigger className="hover:no-underline hover:text-primary transition-colors py-6">
                           <div className="flex items-center justify-between w-full pr-4">
                             <div className="text-left">
-                              <div className="font-display font-semibold text-lg">
+                              <div className="font-display font-light text-lg">
                                 {role.title}
                               </div>
-                              <div className="text-sm text-muted-foreground mt-1">
+                              <div className="text-sm text-foreground/60 mt-1">
                                 {role.location} · {role.type}
                               </div>
                             </div>
                           </div>
                         </AccordionTrigger>
                         <AccordionContent>
-                          <div className="pt-4 space-y-4">
-                            <p className="text-muted-foreground leading-relaxed">
+                          <div className="pt-2 pb-4 space-y-4">
+                            <p className="text-foreground/70 leading-relaxed">
                               {role.description}
                             </p>
-                            <Button size="sm">
+                            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
                               Apply Now
                               <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>
@@ -209,16 +209,16 @@ export default function Careers() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-28">
+        <section className="section-padding bg-card/50">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
                 Don't See Your Role?
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 We're always open to connecting with talented individuals who share our vision. Send us your resume and tell us how you'd like to contribute to the C+C community.
               </p>
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90">
                 <Link href="/contact">
                   Send General Inquiry
                   <ArrowRight className="ml-2 h-4 w-4" />
