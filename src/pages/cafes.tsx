@@ -12,7 +12,7 @@ export default function Cafes() {
     {
       name: "Indiranagar Sanctuary",
       address: "100 Feet Road, Near Metro Station, Indiranagar, Bangalore 560038",
-      deliveryRadius: "Hyper-Local Delivery Active within 5km",
+      deliveryRadius: "Hyper-local delivery within 5km radius",
       amenities: [
         { icon: Wifi, label: "Co-working Friendly" },
         { icon: Leaf, label: "Outdoor Seating" },
@@ -25,7 +25,7 @@ export default function Cafes() {
     {
       name: "Jayanagar Wellness Hub",
       address: "4th Block, 9th Main Road, Near RTO Circle, Jayanagar, Bangalore 560011",
-      deliveryRadius: "Hyper-Local Delivery Active within 5km",
+      deliveryRadius: "Hyper-local delivery within 5km radius",
       amenities: [
         { icon: Wifi, label: "Co-working Friendly" },
         { icon: Leaf, label: "Outdoor Seating" },
@@ -38,7 +38,7 @@ export default function Cafes() {
     {
       name: "Koramangala Nourish Point",
       address: "5th Block, 80 Feet Road, Near Sony Signal, Koramangala, Bangalore 560095",
-      deliveryRadius: "Hyper-Local Delivery Active within 5km",
+      deliveryRadius: "Hyper-local delivery within 5km radius",
       amenities: [
         { icon: Wifi, label: "Co-working Friendly" },
         { icon: Leaf, label: "Outdoor Seating" },
@@ -58,27 +58,24 @@ export default function Cafes() {
       />
       <Navigation />
       <main>
-        <section className="bg-gradient-to-b from-background to-muted/30 py-20 lg:py-28">
+        <section className="section-padding">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-4">
-              <Badge variant="secondary" className="mb-4">
-                3 Locations Across Bangalore
-              </Badge>
-              <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-balance">
-                Your Neighborhood Sanctuaries
+              <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl">
+                Your Neighborhood Sanctuaries in Bangalore
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto">
                 Sun-drenched spaces designed for wellness, community, and nourishment. Each location offers grab-and-go meals, retail products, and hyper-local delivery within 5km.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="py-20 lg:py-28">
+        <section className="pb-20 lg:pb-28">
           <div className="container">
             <div className="grid gap-12 lg:gap-16">
-              {outlets.map((outlet, index) => (
-                <Card key={outlet.name} className="border-border/50 overflow-hidden">
+              {outlets.map((outlet) => (
+                <Card key={outlet.name} className="border-0 shadow-sm overflow-hidden rounded-lg">
                   <div className="grid md:grid-cols-2 gap-0">
                     <div className="relative aspect-[4/3] md:aspect-auto">
                       <img
@@ -89,27 +86,26 @@ export default function Cafes() {
                     </div>
                     <CardContent className="p-8 lg:p-12 space-y-6">
                       <div className="space-y-3">
-                        <h2 className="font-display text-2xl font-bold tracking-tight lg:text-3xl">
+                        <h2 className="font-display text-2xl font-light tracking-tight lg:text-3xl">
                           {outlet.name}
                         </h2>
-                        <div className="flex items-start space-x-2 text-muted-foreground">
+                        <div className="flex items-start space-x-2 text-foreground/60">
                           <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                           <p className="text-sm leading-relaxed">{outlet.address}</p>
                         </div>
                       </div>
 
-                      <Badge variant="secondary" className="inline-flex items-center space-x-1.5">
-                        <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+                      <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm">
+                        <div className="w-2 h-2 rounded-full bg-secondary" />
                         <span>{outlet.deliveryRadius}</span>
-                      </Badge>
+                      </div>
 
                       <div className="space-y-3">
-                        <h3 className="font-display font-semibold text-sm">Amenities</h3>
                         <div className="flex flex-wrap gap-3">
                           {outlet.amenities.map((amenity) => (
                             <div
                               key={amenity.label}
-                              className="flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-muted/50 text-sm"
+                              className="flex items-center space-x-2 px-3 py-1.5 rounded-lg border border-border bg-background text-sm"
                             >
                               <amenity.icon className="h-4 w-4 text-primary" />
                               <span>{amenity.label}</span>
@@ -118,19 +114,19 @@ export default function Cafes() {
                         </div>
                       </div>
 
-                      <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                      <div className="flex items-center space-x-2 text-sm text-foreground/60">
                         <Clock className="h-4 w-4" />
                         <span>{outlet.hours}</span>
                       </div>
 
                       <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                        <Button asChild className="flex-1">
+                        <Button asChild size="lg" className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90">
                           <a href={outlet.mapLink} target="_blank" rel="noopener noreferrer">
                             <NavigationIcon className="mr-2 h-4 w-4" />
                             Get Directions
                           </a>
                         </Button>
-                        <Button asChild variant="outline" className="flex-1">
+                        <Button asChild size="lg" variant="outline" className="flex-1 border-foreground text-foreground hover:bg-foreground hover:text-background">
                           <Link href="/subscription">
                             Order Grab & Go
                             <ArrowRight className="ml-2 h-4 w-4" />
@@ -145,16 +141,16 @@ export default function Cafes() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-28 bg-muted/30">
+        <section className="section-padding bg-card/50">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl lg:text-5xl">
                 Coming to Your Neighborhood Soon
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 We're expanding across Bangalore. Join our newsletter to be the first to know when we open near you, and get exclusive launch offers.
               </p>
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link href="/contact">
                   Request a Location
                   <ArrowRight className="ml-2 h-4 w-4" />

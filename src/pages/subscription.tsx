@@ -1,94 +1,107 @@
 import { SEO } from "@/components/SEO";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { Check, ChefHat, Clock, MapPin, ArrowRight, Sparkles } from "lucide-react";
+import { Check, Target, ChefHat, Truck, Leaf, Heart, Clock, ArrowRight } from "lucide-react";
 
 export default function Subscription() {
   const plans = [
     {
-      name: "5-Day Trial",
+      name: "5-Day Reset",
+      description: "Perfect for trying our complete nutrition approach",
       price: "₹2,499",
       period: "5 days",
-      description: "Experience the C+C difference",
-      meals: "Breakfast + Lunch",
       features: [
-        "2 meals daily for 5 days",
-        "Nutritionist-designed menu",
-        "Hyper-local delivery",
-        "Pause or cancel anytime",
+        "Daily breakfast + lunch",
+        "Curated nutrition track",
+        "Fresh morning prep",
+        "Doorstep delivery",
       ],
-      badge: "Most Popular",
-      highlighted: true,
     },
     {
       name: "20-Day Lifestyle",
+      description: "Build sustainable wellness habits",
       price: "₹8,999",
       period: "20 days",
-      description: "Build your wellness routine",
-      meals: "Breakfast + Lunch + Snack",
       features: [
-        "3 meals daily for 20 days",
-        "Custom dietary adjustments",
+        "All meals (breakfast, lunch, dinner)",
+        "Personalized meal tracks",
+        "Nutritionist consultation",
         "Priority delivery slots",
-        "Nutrition consultation call",
+        "Weekly wellness check-ins",
       ],
-      badge: null,
-      highlighted: false,
+      recommended: true,
     },
     {
       name: "Monthly Ritual",
+      description: "Total nutritional lifestyle solution",
       price: "₹12,499",
       period: "30 days",
-      description: "Complete holistic nourishment",
-      meals: "All Meals + Snacks",
       features: [
-        "All meals + snacks for 30 days",
-        "Personalized meal tracking",
-        "Exclusive retail discounts",
-        "Monthly wellness workshop access",
+        "Complete meal coverage",
+        "Custom nutrition planning",
+        "Bi-weekly nutritionist calls",
+        "Flexible meal swaps",
+        "Complimentary retail items",
+        "VIP event access",
       ],
-      badge: "Best Value",
-      highlighted: false,
+    },
+  ];
+
+  const tracks = [
+    {
+      icon: Target,
+      name: "Performance",
+      description: "High-protein, nutrient-dense meals for athletic recovery and muscle building",
+    },
+    {
+      icon: Leaf,
+      name: "Plant-Based Vitality",
+      description: "Complete nutrition from whole plant foods, optimized for energy and longevity",
+    },
+    {
+      icon: Heart,
+      name: "Clean Balance",
+      description: "Balanced macros and micronutrients for sustainable wellness and weight management",
     },
   ];
 
   return (
     <>
       <SEO
-        title="Meal Subscription | Copper + Cloves - Daily Plant-Based Nutrition Delivered"
-        description="Chef-crafted, nutritionist-designed plant-based meals delivered daily. Hyper-local prep and seamless doorstep delivery across Bangalore."
+        title="Meal Subscription | Copper + Cloves - Daily Chef-Crafted Plant-Based Nutrition"
+        description="Complete, chef-crafted nutrition delivered daily. Hyper-local meal subscriptions designed by nutritionists, prepared fresh each morning in your nearest C+C outlet."
       />
       <Navigation />
       <main>
-        <section className="bg-gradient-to-b from-background to-muted/30 py-20 lg:py-28">
+        <section className="section-padding">
           <div className="container">
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+            <div className="grid gap-16 lg:grid-cols-2 items-center">
               <div className="space-y-6">
-                <Badge variant="secondary" className="mb-2">
-                  Hyper-Local Delivery
-                </Badge>
-                <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-balance">
+                <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl leading-tight">
                   Complete, Chef-Crafted Nutrition. Delivered Daily.
                 </h1>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  When a Copper + Cloves opens near you, your daily nutrition is handled seamlessly. Fresh meals crafted in your neighborhood kitchen, delivered to your doorstep during your preferred time window.
+                <p className="text-lg text-foreground/70 leading-relaxed">
+                  Hyper-local delivery radius ensures your meals arrive piping fresh. When a C+C opens near you, your daily nutrition is seamlessly handled.
                 </p>
-                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <span>Currently serving Indiranagar, Jayanagar & Koramangala (5km radius)</span>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    <a href="#plans">View Plans</a>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
+                    <Link href="/cafes">Our Locations</Link>
+                  </Button>
                 </div>
               </div>
               <div className="relative">
-                <div className="aspect-video overflow-hidden rounded-xl border border-border/50 shadow-2xl">
+                <div className="aspect-[16/9] overflow-hidden rounded-lg shadow-xl">
                   <img
                     src="/generated/meal-prep-bowls.png"
-                    alt="Fresh meal prep at Copper + Cloves"
+                    alt="Fresh plant-based meal prep bowls"
                     className="object-cover w-full h-full"
                   />
                 </div>
@@ -97,118 +110,144 @@ export default function Subscription() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-28">
+        <section className="section-padding bg-card/50">
           <div className="container">
-            <div className="text-center space-y-4 mb-16">
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+            <div className="text-center space-y-3 mb-16">
+              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl lg:text-5xl">
                 How It Works
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Three simple steps to transform your daily nutrition.
+              <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+                Three simple steps to total nutritional lifestyle solutions.
               </p>
             </div>
-            <div className="grid gap-8 md:grid-cols-3">
-              <Card className="border-border/50 relative overflow-hidden">
-                <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="font-display text-xl font-bold text-primary">1</span>
+            <div className="grid gap-12 md:grid-cols-3">
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <Target className="h-8 w-8 text-primary" />
                 </div>
-                <CardContent className="p-8 space-y-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Sparkles className="h-6 w-6 text-primary" />
+                <div className="space-y-2">
+                  <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-semibold">
+                    1
                   </div>
-                  <h3 className="font-display text-xl font-semibold">Select Your Goal</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Choose from customized meal tracks designed by nutritionists: Performance Fuel, Plant-Based Vitality, or Clean Balance. Each tailored to your wellness journey.
+                  <h3 className="font-display text-xl font-light">Choose Your Direction</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Select expert-curated meal tracks designed by nutritionists: Performance, Plant-Based Vitality, or Clean Balance.
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="border-border/50 relative overflow-hidden">
-                <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
-                  <span className="font-display text-xl font-bold text-secondary">2</span>
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto">
+                  <ChefHat className="h-8 w-8 text-secondary" />
                 </div>
-                <CardContent className="p-8 space-y-4">
-                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
-                    <ChefHat className="h-6 w-6 text-secondary" />
+                <div className="space-y-2">
+                  <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold">
+                    2
                   </div>
-                  <h3 className="font-display text-xl font-semibold">Hyper-Local Prep</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Your meals are crafted fresh each morning inside your nearest C+C outlet kitchen. Locally sourced ingredients, zero preservatives, maximum nutrition.
+                  <h3 className="font-display text-xl font-light">Hyper-Local Craft</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Your meals are prepared fresh each morning inside your nearest C+C outlet kitchen using intentionally sourced ingredients.
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="border-border/50 relative overflow-hidden">
-                <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="font-display text-xl font-bold text-primary">3</span>
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <Truck className="h-8 w-8 text-primary" />
                 </div>
-                <CardContent className="p-8 space-y-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Clock className="h-6 w-6 text-primary" />
+                <div className="space-y-2">
+                  <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-semibold">
+                    3
                   </div>
-                  <h3 className="font-display text-xl font-semibold">Seamless Delivery</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Arrives precisely during your preferred time window, piping fresh and ready to fuel your day. Track your delivery in real-time through our app.
+                  <h3 className="font-display text-xl font-light">Direct Delivery</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Arrives precisely during your preferred time window, piping fresh and ready to fuel your day.
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="py-20 lg:py-28 bg-muted/30">
+        <section className="section-padding">
           <div className="container">
-            <div className="text-center space-y-4 mb-16">
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Choose Your Plan
+            <div className="text-center space-y-3 mb-12">
+              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl lg:text-5xl">
+                Meal Tracks Designed for You
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Flexible subscriptions designed for your lifestyle. Pause, adjust, or cancel anytime.
+              <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+                Choose the nutrition track that aligns with your wellness goals.
               </p>
             </div>
-            <div className="grid gap-8 lg:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-3">
+              {tracks.map((track) => (
+                <Card key={track.name} className="border-0 shadow-sm rounded-lg p-8 space-y-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <track.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-display text-xl font-light">{track.name}</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    {track.description}
+                  </p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="plans" className="section-padding bg-background">
+          <div className="container">
+            <div className="text-center space-y-3 mb-12">
+              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl lg:text-5xl">
+                Choose Your Plan
+              </h2>
+              <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+                Flexible subscription duration models designed for every wellness journey.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
               {plans.map((plan) => (
                 <Card
                   key={plan.name}
-                  className={`border-border/50 ${
-                    plan.highlighted
-                      ? "ring-2 ring-primary shadow-xl scale-105"
-                      : "hover:border-primary/30"
-                  } transition-all duration-300`}
+                  className={`border-0 shadow-sm rounded-lg relative ${
+                    plan.recommended ? "ring-2 ring-primary shadow-lg" : ""
+                  }`}
                 >
-                  <CardHeader className="pb-4">
-                    {plan.badge && (
-                      <Badge variant={plan.highlighted ? "default" : "secondary"} className="mb-4 w-fit">
-                        {plan.badge}
+                  {plan.recommended && (
+                    <div className="absolute -top-4 left-0 right-0 flex justify-center">
+                      <Badge className="bg-primary text-primary-foreground px-4 py-1 text-xs uppercase tracking-wide">
+                        Recommended
                       </Badge>
-                    )}
-                    <CardTitle className="font-display text-2xl">{plan.name}</CardTitle>
-                    <p className="text-sm text-muted-foreground">{plan.description}</p>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="space-y-2">
-                      <div className="flex items-baseline space-x-2">
-                        <span className="font-display text-4xl font-bold text-primary">
-                          {plan.price}
-                        </span>
-                        <span className="text-muted-foreground">/ {plan.period}</span>
-                      </div>
-                      <p className="text-sm font-medium text-secondary">{plan.meals}</p>
                     </div>
-
+                  )}
+                  <CardContent className="p-8 space-y-6">
+                    <div className="space-y-2">
+                      <h3 className="font-display text-2xl font-light">{plan.name}</h3>
+                      <p className="text-sm text-foreground/60">{plan.description}</p>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="font-display text-4xl font-light text-primary">
+                        {plan.price}
+                      </div>
+                      <p className="text-sm text-foreground/60">for {plan.period}</p>
+                    </div>
                     <ul className="space-y-3">
                       {plan.features.map((feature) => (
                         <li key={feature} className="flex items-start space-x-3">
-                          <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-muted-foreground">{feature}</span>
+                          <div className="mt-0.5 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <Check className="h-3 w-3 text-primary" />
+                          </div>
+                          <span className="text-sm text-foreground/70">{feature}</span>
                         </li>
                       ))}
                     </ul>
-
                     <Button
-                      className="w-full"
-                      variant={plan.highlighted ? "default" : "outline"}
                       size="lg"
+                      className={`w-full ${
+                        plan.recommended
+                          ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                          : "bg-foreground text-background hover:bg-foreground/90"
+                      }`}
                     >
                       Select Plan
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -220,62 +259,33 @@ export default function Subscription() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-28">
+        <section className="section-padding bg-card/50">
           <div className="container">
             <div className="max-w-2xl mx-auto">
-              <Card className="border-border/50">
-                <CardHeader>
-                  <CardTitle className="font-display text-2xl text-center">
+              <Card className="border-0 shadow-lg rounded-lg p-8 md:p-12 space-y-6">
+                <div className="text-center space-y-3">
+                  <h2 className="font-display text-2xl font-light tracking-tight sm:text-3xl">
                     Check Delivery Eligibility
-                  </CardTitle>
-                  <p className="text-center text-muted-foreground">
-                    Enter your pincode to see if we deliver to your neighborhood
+                  </h2>
+                  <p className="text-foreground/70">
+                    Enter your Bangalore pincode to verify hyper-local delivery availability.
                   </p>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="pincode">Pincode</Label>
-                    <div className="flex gap-2">
-                      <Input
-                        id="pincode"
-                        type="text"
-                        placeholder="560038"
-                        className="flex-1"
-                      />
-                      <Button>Check</Button>
-                    </div>
-                  </div>
-                  <p className="text-xs text-muted-foreground text-center">
-                    Currently delivering within 5km radius of our Indiranagar, Jayanagar, and Koramangala outlets
-                  </p>
-                </CardContent>
+                </div>
+                <form className="flex flex-col sm:flex-row gap-3">
+                  <Input
+                    type="text"
+                    placeholder="Enter Pincode (e.g., 560038)"
+                    className="flex-1 bg-background border-border"
+                    maxLength={6}
+                  />
+                  <Button type="submit" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    Check Availability
+                  </Button>
+                </form>
+                <div className="text-center text-sm text-foreground/60">
+                  <p>Current delivery coverage: Indiranagar, Jayanagar, Koramangala (5km radius from each outlet)</p>
+                </div>
               </Card>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 lg:py-28 bg-gradient-to-b from-background to-muted/30">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Questions About Our Subscriptions?
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Our team is here to help you find the perfect meal plan for your wellness goals. Reach out for personalized recommendations.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg">
-                  <Link href="/contact">
-                    Contact Us
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline">
-                  <Link href="/cafes">
-                    Visit a Cafe
-                  </Link>
-                </Button>
-              </div>
             </div>
           </div>
         </section>
