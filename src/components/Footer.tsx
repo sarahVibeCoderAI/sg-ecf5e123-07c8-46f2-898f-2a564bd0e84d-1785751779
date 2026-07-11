@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Instagram, Facebook, Twitter } from "lucide-react";
@@ -9,9 +10,18 @@ export function Footer() {
       <div className="container py-16 md:py-20">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <h3 className="font-display text-lg font-light text-foreground">
-              Copper + Cloves
-            </h3>
+            <div className="flex items-center space-x-3">
+              <Image
+                src="/logo-icon.png"
+                alt="Copper + Cloves"
+                width={32}
+                height={32}
+                className="h-8 w-8"
+              />
+              <h3 className="font-display text-lg font-light text-foreground">
+                Copper + Cloves
+              </h3>
+            </div>
             <p className="text-sm text-foreground/60 leading-relaxed">
               Your home away from home. Nourishing Bangalore with premium plant-based wellness, one meal at a time.
             </p>

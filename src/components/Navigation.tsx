@@ -1,14 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export function Navigation() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="font-display text-xl font-medium tracking-tight text-primary">
-            Copper + Cloves
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo-horizontal.png"
+            alt="Copper + Cloves"
+            width={180}
+            height={40}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">
