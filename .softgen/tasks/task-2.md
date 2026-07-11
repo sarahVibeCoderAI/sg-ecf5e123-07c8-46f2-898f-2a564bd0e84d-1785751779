@@ -1,6 +1,6 @@
 ---
 title: Our Outlets Page
-status: in_progress
+status: done
 priority: high
 type: feature
 tags: [outlets, locations]
@@ -13,9 +13,9 @@ position: 2
 Build the cafes showcase page with a 3-card grid for Indiranagar, Jayanagar, Koramangala outlets. Each card shows rich interior photography, delivery radius status, amenities icons, hours, and action buttons.
 
 ## Checklist
-- [ ] Create /cafes page (src/pages/cafes.tsx)
-- [ ] Page header: "Your Neighborhood Sanctuaries in Bangalore"
-- [ ] 3-column outlet card grid:
+- [x] Create /cafes page (src/pages/cafes.tsx)
+- [x] Page header: "Your Neighborhood Sanctuaries in Bangalore"
+- [x] 3-column outlet card grid:
   - Outlet interior images (sunlit, warm tones)
   - Outlet name + delivery radius indicator ("Hyper-Local Delivery Active within 5km")
   - Amenities icons (Outdoor Seating, Wi-Fi, Pet Friendly)
