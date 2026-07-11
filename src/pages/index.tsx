@@ -24,7 +24,7 @@ export default function Home() {
                   Cafes designed with your wellness in mind.
                 </h1>
                 <p className="text-lg sm:text-xl text-foreground/70 leading-relaxed max-w-xl">
-                  Highly nourishing, intentionally sourced, deeply trusted. Your sanctuary for movement, connection, and hyper-local convenience.
+                  Colourful, nourishing food, made from scratch with love, every day.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
                   <Button asChild size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
