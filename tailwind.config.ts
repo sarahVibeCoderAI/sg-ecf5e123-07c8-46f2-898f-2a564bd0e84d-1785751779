@@ -10,6 +10,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['Newsreader', 'Georgia', 'serif'],
+        body: ['Lora', 'Georgia', 'serif'],
+        sans: ['Lora', 'Georgia', 'serif'],
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
