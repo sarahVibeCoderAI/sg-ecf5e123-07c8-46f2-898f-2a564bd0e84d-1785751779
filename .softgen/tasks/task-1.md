@@ -1,6 +1,6 @@
 ---
 title: Design System + Landing Page
-status: in_progress
+status: done
 priority: urgent
 type: feature
 tags: [design-system, landing, hero]
@@ -15,12 +15,12 @@ Set up the complete design system (colors, fonts, tokens) in globals.css and tai
 Design system uses warm sand canvas, terracotta/copper accents, forest green wellness signals, Newsreader display serif + Lora body serif.
 
 ## Checklist
-- [ ] Import Newsreader (600, 700) and Lora (400, 600) fonts in globals.css
-- [ ] Define custom color tokens in globals.css (:root) — warm sand bg, charcoal text, terracotta primary, forest green secondary
-- [ ] Register fonts and custom colors in tailwind.config.ts
-- [ ] Create Navigation component: sticky header with logo text, nav links (Our Cafes, Meal Subscription, Shop Products, Blog, Careers, Contact), "Subscribe Now" CTA button
-- [ ] Create Footer component: brand statement, quick links, Bangalore addresses, social handles, newsletter capture
-- [ ] Build landing page in index.tsx:
+- [x] Import Newsreader (600, 700) and Lora (400, 600) fonts in globals.css
+- [x] Define custom color tokens in globals.css (:root) — warm sand bg, charcoal text, terracotta primary, forest green secondary
+- [x] Register fonts and custom colors in tailwind.config.ts
+- [x] Create Navigation component: sticky header with logo text, nav links (Our Cafes, Meal Subscription, Shop Products, Blog, Careers, Contact), "Subscribe Now" CTA button
+- [x] Create Footer component: brand statement, quick links, Bangalore addresses, social handles, newsletter capture
+- [x] Build landing page in index.tsx:
   - Hero: Editorial image layout + value prop ("Premium Chain of High-End, Plant-Based Cafes...") + 2 CTAs (Explore Cafes outline, Start Subscription solid)
   - Philosophy section: 3-column grid for Move & Refuel / Meet & Connect / Hyper-Local Convenience pillars
   - Bestsellers retail grid: 4-column product carousel with granola, seed mixes, dips, salads + "Pick up In-Store" badges

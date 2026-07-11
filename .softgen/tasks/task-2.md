@@ -1,6 +1,6 @@
 ---
 title: Our Outlets Page
-status: todo
+status: in_progress
 priority: high
 type: feature
 tags: [outlets, locations]
