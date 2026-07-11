@@ -1,6 +1,6 @@
 ---
 title: Careers Page
-status: todo
+status: done
 priority: medium
 type: feature
 tags: [careers, team]
@@ -13,10 +13,10 @@ position: 5
 Team recruitment page highlighting culture, benefits, and current openings. Uses accordion for job listings.
 
 ## Checklist
-- [ ] Create /careers page (src/pages/careers.tsx)
-- [ ] Hero: "Grow With Us. Crafting the Future of Plant-Based Hospitality" + expansion story
-- [ ] Culture & Benefits grid: Iconography showing Holistic Work Culture, Culinary Training, Shift Meals, Career Paths
-- [ ] Current Openings: Vertical accordion by department (Cafe Ops, Culinary, Marketing, Supply Chain) with Apply Now buttons
+- [x] Create /careers page (src/pages/careers.tsx)
+- [x] Hero: "Grow With Us. Crafting the Future of Plant-Based Hospitality" + expansion story
+- [x] Culture & Benefits grid: Iconography showing Holistic Work Culture, Culinary Training, Shift Meals, Career Paths
+- [x] Current Openings: Vertical accordion by department (Cafe Ops, Culinary, Marketing, Supply Chain) with Apply Now buttons
 
 ## Acceptance
 - /careers page accessible via navigation
