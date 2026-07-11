@@ -1,6 +1,6 @@
 ---
 title: Blog Page (The Notebook)
-status: todo
+status: in_progress
 priority: medium
 type: feature
 tags: [blog, content]
