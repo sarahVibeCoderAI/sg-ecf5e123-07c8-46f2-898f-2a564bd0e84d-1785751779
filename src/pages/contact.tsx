@@ -36,7 +36,7 @@ export default function Contact() {
 
             <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
               <div className="space-y-8">
-                <Card className="border-0 shadow-sm rounded-lg">
+                <Card className="border-mushroom/30 bg-white shadow-sm rounded-lg">
                   <CardContent className="p-8 space-y-6">
                     <div className="space-y-4">
                       <h2 className="font-display text-2xl font-light">Get In Touch</h2>
@@ -47,14 +47,14 @@ export default function Contact() {
 
                     <div className="space-y-6 pt-4">
                       <div className="flex items-start space-x-4">
-                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <Phone className="h-5 w-5 text-primary" />
+                        <div className="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center flex-shrink-0">
+                          <Phone className="h-5 w-5 text-sage" />
                         </div>
                         <div>
                           <p className="font-medium text-sm mb-1">Phone</p>
                           <a
                             href="tel:+918012345678"
-                            className="text-foreground/70 hover:text-primary transition-colors"
+                            className="text-foreground/70 hover:text-sage transition-colors"
                           >
                             +91 80 1234 5678
                           </a>
@@ -65,14 +65,14 @@ export default function Contact() {
                       </div>
 
                       <div className="flex items-start space-x-4">
-                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <Mail className="h-5 w-5 text-primary" />
+                        <div className="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center flex-shrink-0">
+                          <Mail className="h-5 w-5 text-sage" />
                         </div>
                         <div>
                           <p className="font-medium text-sm mb-1">Email</p>
                           <a
                             href="mailto:hello@copperandcloves.com"
-                            className="text-foreground/70 hover:text-primary transition-colors"
+                            className="text-foreground/70 hover:text-sage transition-colors"
                           >
                             hello@copperandcloves.com
                           </a>
@@ -83,8 +83,8 @@ export default function Contact() {
                       </div>
 
                       <div className="flex items-start space-x-4">
-                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <MapPin className="h-5 w-5 text-primary" />
+                        <div className="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center flex-shrink-0">
+                          <MapPin className="h-5 w-5 text-sage" />
                         </div>
                         <div>
                           <p className="font-medium text-sm mb-1">Corporate Office</p>
@@ -100,10 +100,10 @@ export default function Contact() {
                 </Card>
 
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <Card className="border-0 shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg">
+                  <Card className="border-mushroom/30 bg-white shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg">
                     <CardContent className="p-6 space-y-3">
-                      <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
-                        <Calendar className="h-5 w-5 text-secondary" />
+                      <div className="w-10 h-10 rounded-lg bg-kale/10 flex items-center justify-center">
+                        <Calendar className="h-5 w-5 text-kale" />
                       </div>
                       <h3 className="font-display text-lg font-light">
                         Cafe Catering
@@ -113,17 +113,17 @@ export default function Contact() {
                       </p>
                       <a
                         href="mailto:catering@copperandcloves.com"
-                        className="text-sm text-secondary hover:underline inline-flex items-center"
+                        className="text-sm text-kale hover:underline inline-flex items-center"
                       >
                         catering@copperandcloves.com
                       </a>
                     </CardContent>
                   </Card>
 
-                  <Card className="border-0 shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg">
+                  <Card className="border-mushroom/30 bg-white shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg">
                     <CardContent className="p-6 space-y-3">
-                      <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
-                        <Users className="h-5 w-5 text-secondary" />
+                      <div className="w-10 h-10 rounded-lg bg-kale/10 flex items-center justify-center">
+                        <Users className="h-5 w-5 text-kale" />
                       </div>
                       <h3 className="font-display text-lg font-light">
                         Event Space Bookings
@@ -133,7 +133,7 @@ export default function Contact() {
                       </p>
                       <a
                         href="mailto:events@copperandcloves.com"
-                        className="text-sm text-secondary hover:underline inline-flex items-center"
+                        className="text-sm text-kale hover:underline inline-flex items-center"
                       >
                         events@copperandcloves.com
                       </a>
@@ -142,7 +142,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <Card className="border-0 shadow-sm rounded-lg">
+              <Card className="border-mushroom/30 bg-white shadow-sm rounded-lg">
                 <CardContent className="p-8">
                   <h2 className="font-display text-2xl font-light mb-6">
                     Send Us a Message
@@ -225,7 +225,7 @@ export default function Contact() {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                    <Button type="submit" size="lg" className="w-full bg-sage text-white hover:bg-sage/90">
                       Send Message
                     </Button>
 
@@ -239,7 +239,7 @@ export default function Contact() {
           </div>
         </section>
 
-        <section className="section-padding bg-card/50">
+        <section className="section-padding bg-white">
           <div className="container">
             <div className="text-center space-y-4 mb-12">
               <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
@@ -273,10 +273,10 @@ export default function Contact() {
               ].map((location) => (
                 <Card
                   key={location.name}
-                  className="border-0 shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg"
+                  className="border-mushroom/30 bg-white shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg"
                 >
                   <CardContent className="p-6 space-y-4">
-                    <h3 className="font-display text-xl font-light text-primary">
+                    <h3 className="font-display text-xl font-light text-sage">
                       {location.name}
                     </h3>
                     <div className="space-y-3 text-sm">
@@ -288,7 +288,7 @@ export default function Contact() {
                         <Phone className="h-4 w-4 text-foreground/60 flex-shrink-0" />
                         <a
                           href={`tel:${location.phone.replace(/\s/g, "")}`}
-                          className="text-foreground/70 hover:text-primary transition-colors"
+                          className="text-foreground/70 hover:text-sage transition-colors"
                         >
                           {location.phone}
                         </a>
@@ -298,7 +298,7 @@ export default function Contact() {
                         <p className="text-foreground/70">{location.hours}</p>
                       </div>
                     </div>
-                    <Button variant="outline" size="sm" className="w-full mt-4 border-border text-foreground hover:bg-foreground hover:text-background">
+                    <Button variant="outline" size="sm" className="w-full mt-4 border-kale text-kale hover:bg-kale hover:text-white">
                       Get Directions
                     </Button>
                   </CardContent>

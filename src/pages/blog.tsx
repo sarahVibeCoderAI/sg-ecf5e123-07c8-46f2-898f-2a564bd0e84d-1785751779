@@ -143,7 +143,7 @@ export default function Blog() {
             </div>
 
             {featuredArticle && (
-              <Card className="border-0 shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer rounded-lg">
+              <Card className="border-mushroom/30 bg-white shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer rounded-lg">
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="aspect-video lg:aspect-auto overflow-hidden">
                     <img
@@ -153,7 +153,7 @@ export default function Blog() {
                     />
                   </div>
                   <CardContent className="p-8 lg:p-12 flex flex-col justify-center space-y-6">
-                    <Badge className="w-fit bg-primary/10 text-primary border-0 text-xs uppercase tracking-wide">
+                    <Badge className="w-fit bg-sage/10 text-sage border-sage/20 text-xs uppercase tracking-wide">
                       {featuredArticle.category}
                     </Badge>
                     <h2 className="font-display text-2xl font-light sm:text-3xl lg:text-4xl tracking-tight leading-tight">
@@ -174,7 +174,7 @@ export default function Blog() {
                           </div>
                         </div>
                       </div>
-                      <Button variant="link" className="text-primary hover:text-primary/80">
+                      <Button variant="link" className="text-sage hover:text-sage/80">
                         Read Article
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -196,8 +196,8 @@ export default function Blog() {
                   onClick={() => setActiveCategory(category)}
                   className={`rounded-full text-xs uppercase tracking-wide ${
                     activeCategory === category
-                      ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                      : "border-border text-foreground hover:bg-foreground hover:text-background"
+                      ? "bg-sage text-white hover:bg-sage/90"
+                      : "border-mushroom text-foreground hover:bg-kale hover:text-white"
                   }`}
                 >
                   {category}
@@ -209,7 +209,7 @@ export default function Blog() {
               {filteredArticles.map((article) => (
                 <Card
                   key={article.id}
-                  className="border-0 shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer rounded-lg"
+                  className="border-mushroom/30 bg-white shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer rounded-lg"
                 >
                   <div className="aspect-video overflow-hidden">
                     <img
@@ -219,7 +219,7 @@ export default function Blog() {
                     />
                   </div>
                   <CardContent className="p-6 space-y-4">
-                    <Badge className="text-xs bg-secondary/10 text-secondary border-0 uppercase tracking-wide">
+                    <Badge className="text-xs bg-kale/10 text-kale border-kale/20 uppercase tracking-wide">
                       {article.category}
                     </Badge>
                     <h3 className="font-display text-xl font-light line-clamp-2">
@@ -246,7 +246,7 @@ export default function Blog() {
           </div>
         </section>
 
-        <section className="section-padding bg-card/50">
+        <section className="section-padding bg-white">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
@@ -255,7 +255,7 @@ export default function Blog() {
               <p className="text-lg text-foreground/70 leading-relaxed">
                 We welcome guest articles from wellness practitioners, nutritionists, and community members. Share your insights on plant-based living with our community.
               </p>
-              <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button asChild size="lg" className="bg-sage text-white hover:bg-sage/90">
                 <Link href="/contact">
                   Submit Your Story
                   <ArrowRight className="ml-2 h-4 w-4" />

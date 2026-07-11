@@ -107,7 +107,7 @@ export default function Careers() {
         <section className="section-padding">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <Badge className="bg-secondary/10 text-secondary border-0 text-xs uppercase tracking-wide px-4 py-1">
+              <Badge className="bg-kale/10 text-kale border-kale/20 text-xs uppercase tracking-wide px-4 py-1">
                 We're Hiring
               </Badge>
               <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl">
@@ -120,7 +120,7 @@ export default function Careers() {
           </div>
         </section>
 
-        <section className="section-padding bg-card/50">
+        <section className="section-padding bg-white">
           <div className="container">
             <div className="text-center space-y-4 mb-16">
               <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
@@ -134,11 +134,11 @@ export default function Careers() {
               {benefits.map((benefit) => (
                 <Card
                   key={benefit.title}
-                  className="border-0 shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg"
+                  className="border-mushroom/30 bg-white shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg"
                 >
                   <CardContent className="p-8 space-y-4 text-center">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-                      <benefit.icon className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 rounded-lg bg-sage/10 flex items-center justify-center mx-auto">
+                      <benefit.icon className="h-6 w-6 text-sage" />
                     </div>
                     <h3 className="font-display text-lg font-light">
                       {benefit.title}
@@ -167,7 +167,7 @@ export default function Careers() {
             <div className="max-w-4xl mx-auto space-y-12">
               {openings.map((department) => (
                 <div key={department.department} className="space-y-4">
-                  <h3 className="font-display text-2xl font-light text-primary border-b border-border pb-3">
+                  <h3 className="font-display text-2xl font-light text-sage border-b border-border pb-3">
                     {department.department}
                   </h3>
                   <Accordion type="single" collapsible className="w-full space-y-3">
@@ -175,9 +175,9 @@ export default function Careers() {
                       <AccordionItem
                         key={`${department.department}-${index}`}
                         value={`${department.department}-${index}`}
-                        className="border border-border rounded-lg px-6 shadow-sm"
+                        className="border border-mushroom/30 rounded-lg px-6 shadow-sm bg-white"
                       >
-                        <AccordionTrigger className="hover:no-underline hover:text-primary transition-colors py-6">
+                        <AccordionTrigger className="hover:no-underline hover:text-sage transition-colors py-6">
                           <div className="flex items-center justify-between w-full pr-4">
                             <div className="text-left">
                               <div className="font-display font-light text-lg">
@@ -194,7 +194,7 @@ export default function Careers() {
                             <p className="text-foreground/70 leading-relaxed">
                               {role.description}
                             </p>
-                            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                            <Button size="sm" className="bg-sage text-white hover:bg-sage/90">
                               Apply Now
                               <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>
@@ -209,7 +209,7 @@ export default function Careers() {
           </div>
         </section>
 
-        <section className="section-padding bg-card/50">
+        <section className="section-padding bg-white">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
@@ -218,7 +218,7 @@ export default function Careers() {
               <p className="text-lg text-foreground/70 leading-relaxed">
                 We're always open to connecting with talented individuals who share our vision. Send us your resume and tell us how you'd like to contribute to the C+C community.
               </p>
-              <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90">
+              <Button asChild size="lg" className="bg-kale text-white hover:bg-kale/90">
                 <Link href="/contact">
                   Send General Inquiry
                   <ArrowRight className="ml-2 h-4 w-4" />
