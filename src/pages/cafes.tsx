@@ -22,7 +22,7 @@ export default function Cafes() {
     {
       name: "Lavelle Road",
       address: "4, Walton Road, off Lavelle Road, KG Halli, Ashok Nagar, Bengaluru, Karnataka, 560001",
-      phone: "+91 80 1234 5678",
+      phone: "87921 94527",
       image: "/lavelle_road_16_of_23_.jpg",
       description: "A cosy neighbourhood spot, just off Lavelle Road. The perfect brunch spot post a Cubbon Park run, and in the centre of the CBD - this is your office lunch sorted. We share the space with Good Earth and Nicobar, so you can shop and grab lunch at the same time. Pick up one of our jars or our granola from our pantry.",
       amenities: ["Garden seating", "Ready-to-eat salads", "Perfect brunch spot", "Boutique shopping"],
