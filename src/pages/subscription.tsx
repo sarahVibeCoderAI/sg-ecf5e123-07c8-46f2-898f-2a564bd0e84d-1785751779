@@ -16,23 +16,35 @@ export default function Subscription() {
       />
       <Navigation />
       <main>
-        <section className="section-padding pt-16 md:pt-24 bg-white">
+        {/* Hero Section */}
+        <section className="section-padding pt-32 bg-gradient-to-b from-oat to-background">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center space-y-6 mb-16">
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light">
-                Meal Subscription
-              </h1>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                We've got the right solution for you. Our meal subscription is designed to make healthy eating easy, convenient, and delicious.
-              </p>
-            </div>
-
-            <div className="aspect-[16/9] max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl mb-20">
-              <img
-                src="/generated/meal-prep-bowls.png"
-                alt="Fresh meal subscription bowls"
-                className="object-cover w-full h-full"
-              />
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <h1 className="font-display text-4xl lg:text-5xl font-light leading-tight">
+                    We've got the right solution for you
+                  </h1>
+                  <p className="text-lg text-foreground/80 leading-relaxed">
+                    Our meal subscription is designed to make healthy eating easy, convenient, and delicious.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                    Start Your Subscription
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-sage text-sage hover:bg-sage hover:text-white">
+                    View Sample Menu
+                  </Button>
+                </div>
+              </div>
+              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+                <img
+                  src="https://copperandcloves.com/wp-content/uploads/2024/11/Copper-Cloves_Nov_23-9-scaled.jpg"
+                  alt="Healthy meal subscription bowls"
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -57,7 +69,7 @@ export default function Subscription() {
                 </div>
                 <div className="aspect-[4/3] rounded-lg overflow-hidden">
                   <img
-                    src="/generated/subscription-flexible-meals.png"
+                    src="https://copperandcloves.com/wp-content/uploads/2024/11/Copper-Cloves_Nov_23-23-1-scaled.jpg"
                     alt="Flexible meal subscription bowls"
                     className="object-cover w-full h-full"
                   />
@@ -193,7 +205,7 @@ export default function Subscription() {
               <div className="grid md:grid-cols-2">
                 <div className="aspect-square md:aspect-auto overflow-hidden">
                   <img
-                    src="/generated/subscription-trial-pack.png"
+                    src="https://copperandcloves.com/wp-content/uploads/2024/11/Copper-Cloves_Nov_23-15-1-scaled.jpg"
                     alt="Trial pack meals"
                     className="object-cover w-full h-full"
                   />
