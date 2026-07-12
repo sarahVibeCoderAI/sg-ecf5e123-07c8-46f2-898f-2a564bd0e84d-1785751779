@@ -30,14 +30,14 @@ export default function Cafes() {
       featured: true,
     },
     {
-      name: "Koramangala",
-      address: "5th Block, Koramangala, Bangalore 560095",
-      phone: "+91 80 4567 8903",
-      image: "/generated/outlet-exterior.png",
-      description: "Our newest location in the heart of Bangalore's tech hub.",
-      amenities: ["Wi-Fi Enabled", "Pet Friendly", "Event Space"],
-      hours: "7:00 AM - 10:00 PM",
-      delivery: "Hyper-local delivery within 5km radius",
+      name: "The Studio by Copper + Cloves, Domlur",
+      address: "4th floor, 167, 2nd cross rd, Stage 2, Domlur, Bengaluru, Karnataka, 560071",
+      phone: "90084 26703",
+      image: "/A7406794_1_.jpg",
+      description: "This Bali-style rooftop cafe has the best treetop views and is designed for post-workout refuelling and co-working. We run a workout studio in the same space - from yoga, to barre, to Pilates and Muay Thai - there's something for everyone at the Studio.",
+      amenities: ["Rooftop Seating", "Yoga & Pilates Studio", "Co-working Space", "Muay Thai"],
+      hours: "7:00 AM - 9:00 PM",
+      featured: true,
     },
   ];
 
