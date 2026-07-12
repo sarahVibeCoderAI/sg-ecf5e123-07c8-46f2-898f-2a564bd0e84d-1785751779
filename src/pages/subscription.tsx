@@ -57,7 +57,7 @@ export default function Subscription() {
                 </div>
                 <div className="aspect-[4/3] rounded-lg overflow-hidden">
                   <img
-                    src="/generated/meal-prep-bowls.png"
+                    src="/generated/subscription-flexible-meals.png"
                     alt="Flexible meal subscription bowls"
                     className="object-cover w-full h-full"
                   />
@@ -193,7 +193,7 @@ export default function Subscription() {
               <div className="grid md:grid-cols-2">
                 <div className="aspect-square md:aspect-auto overflow-hidden">
                   <img
-                    src="/generated/meal-prep-bowls.png"
+                    src="/generated/subscription-trial-pack.png"
                     alt="Trial pack meals"
                     className="object-cover w-full h-full"
                   />
