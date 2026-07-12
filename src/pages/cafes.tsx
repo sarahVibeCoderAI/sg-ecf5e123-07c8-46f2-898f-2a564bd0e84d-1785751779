@@ -107,7 +107,7 @@ export default function Cafes() {
 
                     <div className="space-y-3 pt-2">
                       <p className="text-sm font-medium uppercase tracking-wide text-foreground/80">
-                        {cafe.featured ? 'What You'll Find' : 'Amenities'}
+                        {cafe.featured ? "What You'll Find" : "Amenities"}
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {cafe.amenities.map((amenity, j) => (
