@@ -99,12 +99,6 @@ export default function Cafes() {
                       </div>
                     </div>
 
-                    {cafe.delivery && (
-                      <Badge className="bg-sage/10 text-sage border-sage/20">
-                        {cafe.delivery}
-                      </Badge>
-                    )}
-
                     <div className="space-y-3 pt-2">
                       <p className="text-sm font-medium uppercase tracking-wide text-foreground/80">
                         {cafe.featured ? "What You'll Find" : "Amenities"}
