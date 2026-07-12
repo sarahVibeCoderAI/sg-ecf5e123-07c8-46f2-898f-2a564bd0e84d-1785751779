@@ -128,22 +128,69 @@ export default function Cafes() {
               ))}
             </div>
 
-            <div className="mt-16 text-center">
-              <Card className="max-w-2xl mx-auto border-mushroom/30 bg-white p-8">
-                <CardContent className="space-y-4 p-0">
-                  <SunMedium className="h-12 w-12 mx-auto text-sage" />
-                  <h3 className="font-display text-2xl font-light">More Locations Coming Soon</h3>
-                  <p className="text-foreground/70">
-                    We're expanding across Bangalore. Join our community to be the first to know when we open near you.
-                  </p>
-                  <Button asChild className="bg-sage text-white hover:bg-sage/90">
-                    <Link href="/contact">
-                      Stay Updated
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
+            <div className="mt-16">
+              <h3 className="font-display text-3xl font-light text-center mb-8">Visit Us</h3>
+              <div className="grid gap-6 md:grid-cols-3">
+                <Card className="border-mushroom/30 bg-white">
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="font-display text-xl font-light">Indiranagar Flagship</h4>
+                    <p className="text-sm text-foreground/70">
+                      549A 9th A Main, Hoyasala Nagar, Indiranagar
+                    </p>
+                    <Button 
+                      asChild 
+                      size="sm" 
+                      variant="outline" 
+                      className="w-full border-sage text-sage hover:bg-sage hover:text-white"
+                    >
+                      <a href="https://maps.app.goo.gl/kX9fR2BjjAFyYdQG7" target="_blank" rel="noopener noreferrer">
+                        <MapPin className="mr-2 h-4 w-4" />
+                        Get Directions
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-mushroom/30 bg-white">
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="font-display text-xl font-light">Lavelle Road</h4>
+                    <p className="text-sm text-foreground/70">
+                      4, Walton Road, off Lavelle Road, Ashok Nagar
+                    </p>
+                    <Button 
+                      asChild 
+                      size="sm" 
+                      variant="outline" 
+                      className="w-full border-sage text-sage hover:bg-sage hover:text-white"
+                    >
+                      <a href="https://maps.app.goo.gl/uYJyXegy1MTPichcA" target="_blank" rel="noopener noreferrer">
+                        <MapPin className="mr-2 h-4 w-4" />
+                        Get Directions
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-mushroom/30 bg-white">
+                  <CardContent className="p-6 space-y-3">
+                    <h4 className="font-display text-xl font-light">The Studio, Domlur</h4>
+                    <p className="text-sm text-foreground/70">
+                      4th floor, 167, 2nd cross rd, Stage 2, Domlur
+                    </p>
+                    <Button 
+                      asChild 
+                      size="sm" 
+                      variant="outline" 
+                      className="w-full border-sage text-sage hover:bg-sage hover:text-white"
+                    >
+                      <a href="https://maps.app.goo.gl/BvSuqcC3kFR9moau7" target="_blank" rel="noopener noreferrer">
+                        <MapPin className="mr-2 h-4 w-4" />
+                        Get Directions
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
