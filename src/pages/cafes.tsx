@@ -5,22 +5,26 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight } from "lucide-react";
+import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt } from "lucide-react";
 
 export default function Cafes() {
   const cafes = [
     {
-      name: "Indiranagar",
-      address: "100 Feet Road, Indiranagar, Bangalore 560038",
-      image: "/generated/outlet-exterior.png",
-      amenities: ["Outdoor Seating", "Wi-Fi Enabled", "Pet Friendly"],
+      name: "Indiranagar Flagship",
+      address: "549A 9th A Main, Hoyasala Nagar, Indiranagar, Bengaluru, Karnataka, 560038",
+      phone: "89042 93030",
+      image: "/c_c_cafe_4_.jpg",
+      description: "Housed in a bungalow-conversion on a leafy-lane. We have indoor and garden seating, and you'll also find a bookstore (Champaca), thrift store (Love Me Twice) and a sustainable clothing store (No Nasties), so there's plenty of reasons to visit us.",
+      amenities: ["Indoor & Garden Seating", "Bookstore", "Thrift Store", "Sustainable Fashion"],
       hours: "7:00 AM - 9:00 PM",
-      delivery: "Hyper-local delivery within 5km radius",
+      featured: true,
     },
     {
       name: "Jayanagar",
       address: "4th Block, Jayanagar, Bangalore 560011",
+      phone: "+91 80 4567 8902",
       image: "/generated/outlet-exterior.png",
+      description: "A cozy neighborhood spot perfect for morning coffees and healthy lunches.",
       amenities: ["Co-working Space", "Wi-Fi Enabled", "Outdoor Seating"],
       hours: "7:00 AM - 9:00 PM",
       delivery: "Hyper-local delivery within 5km radius",
@@ -28,7 +32,9 @@ export default function Cafes() {
     {
       name: "Koramangala",
       address: "5th Block, Koramangala, Bangalore 560095",
+      phone: "+91 80 4567 8903",
       image: "/generated/outlet-exterior.png",
+      description: "Our newest location in the heart of Bangalore's tech hub.",
       amenities: ["Wi-Fi Enabled", "Pet Friendly", "Event Space"],
       hours: "7:00 AM - 10:00 PM",
       delivery: "Hyper-local delivery within 5km radius",
@@ -39,7 +45,7 @@ export default function Cafes() {
     <>
       <SEO
         title="Our Cafes | Copper + Cloves"
-        description="Visit our premium plant-based wellness cafes across Bangalore. Hyper-local delivery available within 5km radius."
+        description="Visit our premium plant-based wellness cafes across Bangalore. Spacious cafes always filled with natural light."
       />
       <Navigation />
       <main>
@@ -47,38 +53,62 @@ export default function Cafes() {
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6 mb-16">
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light">
-                Your Neighborhood Sanctuaries in Bangalore
+                Find Your Neighbourhood Cafe
               </h1>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Three sun-drenched spaces across the city, each designed as a retreat for nourishment, community, and mindful living.
+                Spacious cafes always filled with natural light. The perfect place to meet friends, enjoy freshly-made meals from scratch and pick up items from our pantry.
               </p>
             </div>
 
-            <div className="grid gap-8 lg:grid-cols-3">
+            <div className="space-y-12">
               {cafes.map((cafe, i) => (
-                <Card key={i} className="overflow-hidden border-mushroom/30 bg-white hover:shadow-xl transition-shadow">
-                  <div className="aspect-[4/3] overflow-hidden">
+                <Card key={i} className={`overflow-hidden border-mushroom/30 bg-white hover:shadow-xl transition-shadow ${cafe.featured ? 'lg:grid lg:grid-cols-2' : ''}`}>
+                  <div className={`${cafe.featured ? 'aspect-[4/3] lg:aspect-auto' : 'aspect-[4/3]'} overflow-hidden`}>
                     <img
                       src={cafe.image}
                       alt={`${cafe.name} cafe location`}
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <CardContent className="p-6 space-y-4">
+                  <CardContent className="p-8 lg:p-10 space-y-6">
                     <div>
-                      <h3 className="font-display text-2xl font-light mb-2">{cafe.name}</h3>
-                      <p className="text-sm text-foreground/60 flex items-start">
-                        <MapPin className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-sage" />
-                        {cafe.address}
-                      </p>
+                      <h3 className="font-display text-3xl font-light mb-3">{cafe.name}</h3>
+                      {cafe.description && (
+                        <p className="text-foreground/70 leading-relaxed mb-4">
+                          {cafe.description}
+                        </p>
+                      )}
                     </div>
 
-                    <Badge className="bg-sage/10 text-sage border-sage/20">
-                      {cafe.delivery}
-                    </Badge>
+                    <div className="space-y-4">
+                      <div className="flex items-start">
+                        <MapPin className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-sage" />
+                        <p className="text-sm text-foreground/80">{cafe.address}</p>
+                      </div>
 
-                    <div className="space-y-2 pt-2">
-                      <p className="text-sm font-medium uppercase tracking-wide text-foreground/80">Amenities</p>
+                      <div className="flex items-center">
+                        <Phone className="h-5 w-5 mr-3 flex-shrink-0 text-sage" />
+                        <a href={`tel:${cafe.phone.replace(/\s/g, '')}`} className="text-sm text-foreground/80 hover:text-sage transition-colors">
+                          {cafe.phone}
+                        </a>
+                      </div>
+
+                      <div className="flex items-center">
+                        <Clock className="h-5 w-5 mr-3 flex-shrink-0 text-sage" />
+                        <p className="text-sm text-foreground/80">{cafe.hours}</p>
+                      </div>
+                    </div>
+
+                    {cafe.delivery && (
+                      <Badge className="bg-sage/10 text-sage border-sage/20">
+                        {cafe.delivery}
+                      </Badge>
+                    )}
+
+                    <div className="space-y-3 pt-2">
+                      <p className="text-sm font-medium uppercase tracking-wide text-foreground/80">
+                        {cafe.featured ? 'What You'll Find' : 'Amenities'}
+                      </p>
                       <div className="flex flex-wrap gap-2">
                         {cafe.amenities.map((amenity, j) => (
                           <span
@@ -89,11 +119,6 @@ export default function Cafes() {
                           </span>
                         ))}
                       </div>
-                    </div>
-
-                    <div className="flex items-center text-sm text-foreground/60 pt-2">
-                      <Clock className="h-4 w-4 mr-2 text-sage" />
-                      {cafe.hours}
                     </div>
 
                     <div className="flex gap-3 pt-4">
