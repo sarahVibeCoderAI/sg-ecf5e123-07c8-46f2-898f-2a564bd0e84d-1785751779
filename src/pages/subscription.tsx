@@ -37,6 +37,37 @@ export default function Subscription() {
           </div>
         </section>
 
+        {/* Flexible System Section */}
+        <section className="section-padding bg-oat">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="space-y-6">
+                  <h2 className="font-display text-3xl lg:text-4xl font-light">
+                    Designed to Fit Your Lifestyle
+                  </h2>
+                  <div className="space-y-4 text-foreground/80 leading-relaxed">
+                    <p>
+                      Our meal subscription is designed to be totally flexible to fit in with your lifestyle. The C+C meal subscription is a credit based system which allows you to pick the meals you want and need, and not get tied in to a certain number of meals per day.
+                    </p>
+                    <p>
+                      Our daily range of add-ons means it's easy to guarantee 35g of protein per meal, and we can handle your healthy snacks and protein shakes.
+                    </p>
+                  </div>
+                </div>
+                <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                  <img
+                    src="/generated/meal-prep-bowls.png"
+                    alt="Flexible meal subscription bowls"
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* How It Works Section */}
         <section className="section-padding">
           <div className="container">
             <h2 className="font-display text-3xl sm:text-4xl font-light text-center mb-16">
