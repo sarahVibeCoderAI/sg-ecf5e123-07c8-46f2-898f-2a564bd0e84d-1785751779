@@ -4,14 +4,14 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { ArrowLeft, Clock, Users, ChefHat } from "lucide-react";
+import { ArrowLeft, Clock, Users } from "lucide-react";
 
 export default function LemonCoconutCookies() {
   return (
     <>
       <SEO
         title="Lemon + Coconut Oatmeal Cookies | The Notebook"
-        description="Bright lemon meets tropical coconut in these chewy oatmeal cookies - the perfect balance of tart and sweet."
+        description="These cookies are full of flavour and whole ingredients – perfect for sharing with friends."
         image="https://copperandcloves.com/wp-content/uploads/2020/08/8a0f7b89e524bdb05a21065a97d760a6-1.png"
       />
       <Navigation />
@@ -36,9 +36,6 @@ export default function LemonCoconutCookies() {
               <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl">
                 Lemon + Coconut Oatmeal Cookies
               </h1>
-              <p className="text-xl text-foreground/70 leading-relaxed">
-                Bright lemon zest meets tropical coconut in these perfectly chewy oatmeal cookies. They're naturally sweetened, wholesome, and irresistibly delicious - the kind of cookie that disappears from the cooling rack before dinner.
-              </p>
               
               <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-border">
                 <div className="flex items-center space-x-3">
@@ -53,15 +50,11 @@ export default function LemonCoconutCookies() {
                 <div className="flex items-center space-x-6 text-sm text-foreground/70">
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4" />
-                    <span>35 min</span>
+                    <span>13-15 Min</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4" />
-                    <span>Makes 18 cookies</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <ChefHat className="h-4 w-4" />
-                    <span>Easy</span>
+                    <span>Makes 12 cookies</span>
                   </div>
                 </div>
               </div>
@@ -70,23 +63,15 @@ export default function LemonCoconutCookies() {
             <div className="aspect-video rounded-lg overflow-hidden mb-12 shadow-xl">
               <img
                 src="https://copperandcloves.com/wp-content/uploads/2020/08/8a0f7b89e524bdb05a21065a97d760a6-1.png"
-                alt="Lemon coconut oatmeal cookies"
+                alt="Lemon + Coconut Oatmeal Cookies"
                 className="object-cover w-full h-full"
               />
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <section className="mb-12">
-                <h2 className="font-display text-2xl font-light tracking-tight mb-6">
-                  Why You'll Love These Cookies
-                </h2>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  These aren't your average oatmeal cookies. The bright pop of lemon zest cuts through the richness of coconut oil, while shredded coconut adds texture and tropical sweetness. They're chewy in the center with slightly crisp edges - that perfect cookie texture we all crave.
-                </p>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  What makes these special is how they balance indulgence with wholesome ingredients. Whole grain oats, coconut sugar for natural sweetness, and bright citrus make every bite feel nourishing without sacrificing flavor.
-                </p>
-              </section>
+              <p className="text-xl text-foreground/70 leading-relaxed mb-12">
+                These cookies are full of flavour and whole ingredients – perfect for sharing with friends. We created this recipe for Friendship Day, encouraging everyone to box them up and send to a friend along with a handwritten note. But that is a good idea any day!
+              </p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <section className="bg-card p-8 rounded-lg border border-border">
@@ -102,23 +87,31 @@ export default function LemonCoconutCookies() {
                       <ul className="space-y-2 text-foreground/80">
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>2 cups old-fashioned rolled oats</span>
+                          <span>1 cup oats</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>1 cup whole wheat flour (or all-purpose)</span>
+                          <span>1 cup wholewheat atta</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>1 cup unsweetened shredded coconut</span>
+                          <span>¾ cup coconut sugar or jaggery powder</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>1 teaspoon baking soda</span>
+                          <span>⅓ cup freshly grated coconut (or ¼ cup desiccated coconut)</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>½ teaspoon sea salt</span>
+                          <span>½ teaspoon baking soda</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="mr-2 text-sage">•</span>
+                          <span>½ teaspoon salt</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="mr-2 text-sage">•</span>
+                          <span>¼ teaspoon cardamom powder</span>
                         </li>
                       </ul>
                     </div>
@@ -130,68 +123,38 @@ export default function LemonCoconutCookies() {
                       <ul className="space-y-2 text-foreground/80">
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>½ cup coconut oil, melted</span>
+                          <span>½ cup extra virgin coconut oil</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>¾ cup coconut sugar</span>
+                          <span>¼ cup coconut milk</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>¼ cup maple syrup</span>
+                          <span>3 tablespoons of freshly squeezed lemon juice</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>2 tablespoons lemon juice</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>Zest of 2 lemons</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 teaspoon vanilla extract</span>
+                          <span>1½ tsp lemon zest</span>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </section>
 
-                <section className="space-y-8">
-                  <div className="bg-kale/5 p-8 rounded-lg border border-kale/20">
-                    <h3 className="font-display text-lg font-light mb-4">
-                      Chef's Notes
-                    </h3>
-                    <ul className="space-y-3 text-sm text-foreground/70">
-                      <li className="flex items-start">
-                        <span className="mr-2 text-kale">✓</span>
-                        <span>Use fresh lemon zest for the brightest flavor - bottled zest doesn't compare</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-2 text-kale">✓</span>
-                        <span>Don't skip the sea salt on top - it enhances the lemon and balances the sweetness</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-2 text-kale">✓</span>
-                        <span>Cookies will look slightly underdone when you pull them out - they firm up as they cool</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-card p-8 rounded-lg border border-border">
-                    <h3 className="font-display text-lg font-light mb-4">
-                      Storage
-                    </h3>
-                    <p className="text-sm text-foreground/70">
-                      Store in an airtight container at room temperature for up to 5 days. These also freeze beautifully - layer between parchment paper and freeze for up to 3 months.
-                    </p>
-                  </div>
+                <section className="bg-card p-8 rounded-lg border border-border">
+                  <h2 className="font-display text-2xl font-light tracking-tight mb-4">
+                    Storage
+                  </h2>
+                  <p className="text-sm text-foreground/70">
+                    Store in an airtight container and they will keep for 5-7 days. Share with friends and spread the love!
+                  </p>
                 </section>
               </div>
 
               <section className="mb-12">
                 <h2 className="font-display text-2xl font-light tracking-tight mb-6">
-                  Instructions
+                  What To Do
                 </h2>
                 <div className="space-y-6">
                   <div className="flex gap-6">
@@ -199,9 +162,8 @@ export default function LemonCoconutCookies() {
                       1
                     </div>
                     <div>
-                      <h3 className="font-medium mb-2">Preheat & Prep</h3>
                       <p className="text-foreground/70">
-                        Preheat your oven to 350°F (175°C). Line two baking sheets with parchment paper and set aside. This ensures your cookies won't stick and makes cleanup a breeze.
+                        Preheat your oven to 180 degrees and line a baking sheet with butter paper or rub with a little coconut oil.
                       </p>
                     </div>
                   </div>
@@ -211,9 +173,8 @@ export default function LemonCoconutCookies() {
                       2
                     </div>
                     <div>
-                      <h3 className="font-medium mb-2">Mix Dry Ingredients</h3>
                       <p className="text-foreground/70">
-                        In a large bowl, whisk together the oats, flour, shredded coconut, baking soda, and salt until well combined. The coconut should be evenly distributed throughout.
+                        First, take the oats, and grind in a mixie to a fine powder. This is now oat flour!
                       </p>
                     </div>
                   </div>
@@ -223,9 +184,8 @@ export default function LemonCoconutCookies() {
                       3
                     </div>
                     <div>
-                      <h3 className="font-medium mb-2">Combine Wet Ingredients</h3>
                       <p className="text-foreground/70">
-                        In a separate bowl, whisk together the melted coconut oil, coconut sugar, maple syrup, lemon juice, lemon zest, and vanilla extract until smooth. The mixture should be fragrant and glossy.
+                        In a large bowl add all the dry ingredients and stir to mix well.
                       </p>
                     </div>
                   </div>
@@ -235,9 +195,8 @@ export default function LemonCoconutCookies() {
                       4
                     </div>
                     <div>
-                      <h3 className="font-medium mb-2">Bring It Together</h3>
                       <p className="text-foreground/70">
-                        Pour the wet ingredients into the dry ingredients. Stir with a wooden spoon or spatula until just combined. Don't overmix - a few flour streaks are fine. The dough will be slightly sticky and fragrant with lemon.
+                        Add in the wet ingredients, and stir until everything is combined.
                       </p>
                     </div>
                   </div>
@@ -247,9 +206,8 @@ export default function LemonCoconutCookies() {
                       5
                     </div>
                     <div>
-                      <h3 className="font-medium mb-2">Shape & Bake</h3>
                       <p className="text-foreground/70">
-                        Using a cookie scoop or tablespoon, drop rounded balls of dough onto your prepared baking sheets, spacing them about 2 inches apart. Gently flatten each cookie slightly with your palm - they won't spread much on their own. Sprinkle with a pinch of flaky sea salt.
+                        Roll the dough into 10-12 equal-sized balls and place on a baking sheet. Flatten each ball slightly with a fork. Bake for 13-15 minutes (rotating the pan halfway through) or until golden brown. The exact amount of time in the oven will depend on the type of oven you have, so it's best to use how it looks (the dough will no longer look raw and will take on a golden brown colour).
                       </p>
                     </div>
                   </div>
@@ -259,9 +217,8 @@ export default function LemonCoconutCookies() {
                       6
                     </div>
                     <div>
-                      <h3 className="font-medium mb-2">Bake to Perfection</h3>
                       <p className="text-foreground/70">
-                        Bake for 12-14 minutes, until the edges are golden but the centers still look slightly soft. They'll continue to cook on the baking sheet after you remove them from the oven. Let them cool on the baking sheet for 5 minutes before transferring to a wire rack.
+                        When the cookies are done, remove from the oven and allow them to cool on the baking sheet for 10 minutes.
                       </p>
                     </div>
                   </div>
@@ -271,37 +228,12 @@ export default function LemonCoconutCookies() {
                       7
                     </div>
                     <div>
-                      <h3 className="font-medium mb-2">Cool & Enjoy</h3>
                       <p className="text-foreground/70">
-                        Transfer to a wire rack to cool completely. The cookies will firm up as they cool, developing that perfect chewy-crisp texture. Try to resist eating them all while they're warm (but we won't judge if you do).
+                        Allow them to cool before eating. Store in an airtight container and they will keep for 5-7 days. Share with friends and spread the love!
                       </p>
                     </div>
                   </div>
                 </div>
-              </section>
-
-              <section className="bg-card p-8 rounded-lg border border-border mb-12">
-                <h2 className="font-display text-2xl font-light tracking-tight mb-4">
-                  Variations
-                </h2>
-                <ul className="space-y-3 text-foreground/70">
-                  <li className="flex items-start">
-                    <span className="mr-2 text-sage">•</span>
-                    <span><strong>Lemon Coconut Cranberry:</strong> Add ½ cup dried cranberries to the dough for a tart contrast</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-sage">•</span>
-                    <span><strong>White Chocolate Version:</strong> Fold in ½ cup vegan white chocolate chips after mixing</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-sage">•</span>
-                    <span><strong>Lime Twist:</strong> Swap lemon for lime zest and juice for a more tropical flavor</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-sage">•</span>
-                    <span><strong>Gluten-Free:</strong> Use certified gluten-free oat flour and gluten-free oats</span>
-                  </li>
-                </ul>
               </section>
             </div>
 
