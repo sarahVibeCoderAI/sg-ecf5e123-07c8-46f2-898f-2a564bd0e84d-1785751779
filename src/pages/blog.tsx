@@ -16,6 +16,18 @@ export default function Blog() {
   const articles = [
     {
       id: 1,
+      title: "Sri Lankan Coconut Dal",
+      excerpt: "My mum is from Sri Lanka and this is one of the dishes she cooked for us when we were young - a really comforting dal that tastes a little different than South Indian dals.",
+      category: "Recipes",
+      image: "https://copperandcloves.com/wp-content/uploads/2020/08/e840610bd7468226aa6d296e90c65a2e-1.png",
+      author: "Sarah Nicole Edwards",
+      readTime: "8 min read",
+      date: "March 12, 2026",
+      featured: true,
+      slug: "sri-lankan-coconut-dal",
+    },
+    {
+      id: 2,
       title: "Lemon + Coconut Oatmeal Cookies",
       excerpt: "Bright lemon zest meets tropical coconut in these perfectly chewy oatmeal cookies - naturally sweetened and irresistibly delicious.",
       category: "Recipes",
@@ -23,7 +35,7 @@ export default function Blog() {
       author: "Sarah Nicole Edwards",
       readTime: "6 min read",
       date: "August 15, 2025",
-      featured: true,
+      featured: false,
       slug: "lemon-coconut-cookies",
     },
   ];
