@@ -24,9 +24,22 @@ export default function Blog() {
       readTime: "5 min read",
       date: "February 18, 2026",
       featured: true,
+      slug: null,
     },
     {
       id: 2,
+      title: "Lemon + Coconut Oatmeal Cookies",
+      excerpt: "Bright lemon zest meets tropical coconut in these perfectly chewy oatmeal cookies - naturally sweetened and irresistibly delicious.",
+      category: "Recipes",
+      image: "https://copperandcloves.com/wp-content/uploads/2020/08/8a0f7b89e524bdb05a21065a97d760a6-1.png",
+      author: "Sarah Nicole Edwards",
+      readTime: "6 min read",
+      date: "August 15, 2025",
+      featured: false,
+      slug: "lemon-coconut-cookies",
+    },
+    {
+      id: 3,
       title: "Salted Chocolate Chip Cookie",
       excerpt: "Perfectly chewy, loaded with chocolate chips, and finished with flaky sea salt for the ultimate indulgence.",
       category: "Recipes",
@@ -385,45 +398,47 @@ export default function Blog() {
             </div>
 
             {featuredArticle && (
-              <Card className="border-mushroom/30 bg-white shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer rounded-lg">
-                <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="aspect-video lg:aspect-auto overflow-hidden">
-                    <img
-                      src={featuredArticle.image}
-                      alt={featuredArticle.title}
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <CardContent className="p-8 lg:p-12 flex flex-col justify-center space-y-6">
-                    <Badge className="w-fit bg-sage/10 text-sage border-sage/20 text-xs uppercase tracking-wide">
-                      {featuredArticle.category}
-                    </Badge>
-                    <h2 className="font-display text-2xl font-light sm:text-3xl lg:text-4xl tracking-tight leading-tight">
-                      {featuredArticle.title}
-                    </h2>
-                    <p className="text-foreground/70 leading-relaxed">
-                      {featuredArticle.excerpt}
-                    </p>
-                    <div className="flex items-center justify-between pt-4 border-t border-border">
-                      <div className="space-y-1">
-                        <p className="text-sm font-medium">{featuredArticle.author}</p>
-                        <div className="flex items-center space-x-4 text-xs text-foreground/60">
-                          <span>{featuredArticle.date}</span>
-                          <span>•</span>
-                          <div className="flex items-center space-x-1">
-                            <Clock className="h-3 w-3" />
-                            <span>{featuredArticle.readTime}</span>
+              <Link href={featuredArticle.slug ? `/blog/${featuredArticle.slug}` : "#"} className="block">
+                <Card className="border-mushroom/30 bg-white shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer rounded-lg">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="aspect-video lg:aspect-auto overflow-hidden">
+                      <img
+                        src={featuredArticle.image}
+                        alt={featuredArticle.title}
+                        className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <CardContent className="p-8 lg:p-12 flex flex-col justify-center space-y-6">
+                      <Badge className="w-fit bg-sage/10 text-sage border-sage/20 text-xs uppercase tracking-wide">
+                        {featuredArticle.category}
+                      </Badge>
+                      <h2 className="font-display text-2xl font-light sm:text-3xl lg:text-4xl tracking-tight leading-tight">
+                        {featuredArticle.title}
+                      </h2>
+                      <p className="text-foreground/70 leading-relaxed">
+                        {featuredArticle.excerpt}
+                      </p>
+                      <div className="flex items-center justify-between pt-4 border-t border-border">
+                        <div className="space-y-1">
+                          <p className="text-sm font-medium">{featuredArticle.author}</p>
+                          <div className="flex items-center space-x-4 text-xs text-foreground/60">
+                            <span>{featuredArticle.date}</span>
+                            <span>•</span>
+                            <div className="flex items-center space-x-1">
+                              <Clock className="h-3 w-3" />
+                              <span>{featuredArticle.readTime}</span>
+                            </div>
                           </div>
                         </div>
+                        <Button variant="link" className="text-sage hover:text-sage/80">
+                          View Recipe
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
                       </div>
-                      <Button variant="link" className="text-sage hover:text-sage/80">
-                        View Recipe
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </div>
-                  </CardContent>
-                </div>
-              </Card>
+                    </CardContent>
+                  </div>
+                </Card>
+              </Link>
             )}
           </div>
         </section>
@@ -449,40 +464,43 @@ export default function Blog() {
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {filteredArticles.map((article) => (
-                <Card
+                <Link
                   key={article.id}
-                  className="border-mushroom/30 bg-white shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer rounded-lg"
+                  href={article.slug ? `/blog/${article.slug}` : "#"}
+                  className="block"
                 >
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <CardContent className="p-6 space-y-4">
-                    <Badge className="text-xs bg-kale/10 text-kale border-kale/20 uppercase tracking-wide">
-                      {article.category}
-                    </Badge>
-                    <h3 className="font-display text-xl font-light line-clamp-2">
-                      {article.title}
-                    </h3>
-                    <p className="text-sm text-foreground/70 line-clamp-3 leading-relaxed">
-                      {article.excerpt}
-                    </p>
-                    <div className="pt-4 border-t border-border space-y-2">
-                      <p className="text-sm font-medium">{article.author}</p>
-                      <div className="flex items-center space-x-4 text-xs text-foreground/60">
-                        <span>{article.date}</span>
-                        <span>•</span>
-                        <div className="flex items-center space-x-1">
-                          <Clock className="h-3 w-3" />
-                          <span>{article.readTime}</span>
+                  <Card className="border-mushroom/30 bg-white shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer rounded-lg">
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={article.image}
+                        alt={article.title}
+                        className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <CardContent className="p-6 space-y-4">
+                      <Badge className="text-xs bg-kale/10 text-kale border-kale/20 uppercase tracking-wide">
+                        {article.category}
+                      </Badge>
+                      <h3 className="font-display text-xl font-light line-clamp-2">
+                        {article.title}
+                      </h3>
+                      <p className="text-sm text-foreground/70 line-clamp-3 leading-relaxed">
+                        {article.excerpt}
+                      </p>
+                      <div className="pt-4 border-t border-border space-y-2">
+                        <p className="text-sm font-medium">{article.author}</p>
+                        <div className="flex items-center space-x-4 text-xs text-foreground/60">
+                          <span>{article.date}</span>
+                          <span>•</span>
+                          <div className="flex items-center space-x-1">
+                            <Clock className="h-3 w-3" />
+                            <span>{article.readTime}</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>
