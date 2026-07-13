@@ -143,12 +143,24 @@ export default function LemonCoconutCookies() {
                 </section>
 
                 <section className="bg-card p-8 rounded-lg border border-border">
-                  <h2 className="font-display text-2xl font-light tracking-tight mb-4">
-                    Storage
+                  <h2 className="font-display text-2xl font-light tracking-tight mb-6">
+                    Storage & Details
                   </h2>
-                  <p className="text-sm text-foreground/70">
-                    Store in an airtight container and they will keep for 5-7 days. Share with friends and spread the love!
-                  </p>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <span className="text-sage font-medium text-sm">Bake Time:</span>
+                      <span className="text-foreground/70 text-sm">13-15 minutes at 180°C</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-sage font-medium text-sm">Yield:</span>
+                      <span className="text-foreground/70 text-sm">Makes 12 cookies</span>
+                    </div>
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-sm text-foreground/70">
+                        Store in an airtight container and they will keep for 5-7 days. Share with friends and spread the love!
+                      </p>
+                    </div>
+                  </div>
                 </section>
               </div>
 
