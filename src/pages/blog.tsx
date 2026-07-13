@@ -28,6 +28,18 @@ export default function Blog() {
     },
     {
       id: 2,
+      title: "Breakfast Smoothie Bowl",
+      excerpt: "Dessert for breakfast? Yas! Rich in antioxidants from raw cacao and full of fibre - the cold brew gives you that caffeine kick!",
+      category: "Recipes",
+      image: "https://copperandcloves.com/wp-content/uploads/2020/07/0371145292de0f8341535e3601ab5c1d-1.png",
+      author: "Sarah Nicole Edwards",
+      readTime: "4 min read",
+      date: "January 28, 2026",
+      featured: false,
+      slug: "breakfast-smoothie-bowl",
+    },
+    {
+      id: 3,
       title: "Lemon + Coconut Oatmeal Cookies",
       excerpt: "Bright lemon zest meets tropical coconut in these perfectly chewy oatmeal cookies - naturally sweetened and irresistibly delicious.",
       category: "Recipes",
