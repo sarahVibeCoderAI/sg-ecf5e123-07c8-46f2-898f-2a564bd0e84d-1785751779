@@ -40,7 +40,7 @@ export default function Subscription() {
               </div>
               <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="https://copperandcloves.com/wp-content/uploads/2024/11/Copper-Cloves_Nov_23-9-scaled.jpg"
+                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-31.jpg"
                   alt="Healthy meal subscription bowls"
                   className="object-cover w-full h-full"
                 />
@@ -69,7 +69,7 @@ export default function Subscription() {
                 </div>
                 <div className="aspect-[4/3] rounded-lg overflow-hidden">
                   <img
-                    src="https://copperandcloves.com/wp-content/uploads/2024/11/Copper-Cloves_Nov_23-23-1-scaled.jpg"
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-12_1_.jpg"
                     alt="Flexible meal subscription bowls"
                     className="object-cover w-full h-full"
                   />
@@ -205,7 +205,7 @@ export default function Subscription() {
               <div className="grid md:grid-cols-2">
                 <div className="aspect-square md:aspect-auto overflow-hidden">
                   <img
-                    src="https://copperandcloves.com/wp-content/uploads/2024/11/Copper-Cloves_Nov_23-15-1-scaled.jpg"
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-42_1_.jpg"
                     alt="Trial pack meals"
                     className="object-cover w-full h-full"
                   />
