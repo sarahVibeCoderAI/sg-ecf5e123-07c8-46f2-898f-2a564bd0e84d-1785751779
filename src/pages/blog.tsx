@@ -16,6 +16,18 @@ export default function Blog() {
   const articles = [
     {
       id: 1,
+      title: "Start by Slowing Down",
+      excerpt: "Before we ever talk about what to eat, there is a quieter, more powerful place to begin — the simple act of eating slowly, and actually being there while you do it.",
+      category: "Mindful Eating",
+      image: "/Sarah_C_C_Subscription_Photoshoot_May_2024-22_1_.jpg",
+      author: "Sarah Nicole Edwards",
+      readTime: "5 min read",
+      date: "July 16, 2026",
+      featured: true,
+      slug: "start-by-slowing-down",
+    },
+    {
+      id: 2,
       title: "Avocado Lime Vegan Cheesecake",
       excerpt: "This no-bake vegan cheesecake is pure magic! Creamy avocado and bright lime come together in a luscious filling that's naturally sweetened.",
       category: "Recipes",
@@ -23,11 +35,11 @@ export default function Blog() {
       author: "Sarah Nicole Edwards",
       readTime: "8 min read",
       date: "December 2025",
-      featured: true,
+      featured: false,
       slug: "avocado-lime-cheesecake",
     },
     {
-      id: 2,
+      id: 3,
       title: "Sri Lankan Coconut Dal",
       excerpt: "My mum is from Sri Lanka and this is one of the dishes she cooked for us when we were young - a really comforting dal that tastes a little different than South Indian dals.",
       category: "Recipes",
@@ -39,7 +51,7 @@ export default function Blog() {
       slug: "sri-lankan-coconut-dal",
     },
     {
-      id: 3,
+      id: 4,
       title: "Breakfast Smoothie Bowl",
       excerpt: "Dessert for breakfast? Yas! Rich in antioxidants from raw cacao and full of fibre - the cold brew gives you that caffeine kick!",
       category: "Recipes",
@@ -51,7 +63,7 @@ export default function Blog() {
       slug: "breakfast-smoothie-bowl",
     },
     {
-      id: 4,
+      id: 5,
       title: "Charred Tomato + Bell Pepper Soup",
       excerpt: "Charring the tomatoes and bell peppers transforms this simple soup into something extraordinary. The smoky, caramelized flavors create depth that you just can't get any other way.",
       category: "Recipes",
@@ -63,7 +75,7 @@ export default function Blog() {
       slug: "charred-tomato-bell-pepper-soup",
     },
     {
-      id: 5,
+      id: 6,
       title: "Vegan Protein Cookie Dough",
       excerpt: "Yes, you can eat cookie dough straight from the bowl! This protein-packed version is completely safe to eat raw and tastes just like the real thing.",
       category: "Recipes",
@@ -75,7 +87,7 @@ export default function Blog() {
       slug: "vegan-protein-cookie-dough",
     },
     {
-      id: 6,
+      id: 7,
       title: "Chai Spiced Granola",
       excerpt: "The beauty of this recipe is that you can play around with the ingredients so much. If you prefer walnuts to almonds- just swap them in!",
       category: "Recipes",
@@ -87,7 +99,7 @@ export default function Blog() {
       slug: "chai-spiced-granola",
     },
     {
-      id: 7,
+      id: 8,
       title: "Beetroot, Orange + Coconut Salad",
       excerpt: "For the hot summer days, we've come up with a quick and easy recipe- beetroots, oranges and coconuts come together in this refreshing, colourful salad.",
       category: "Recipes",
@@ -99,7 +111,7 @@ export default function Blog() {
       slug: "beetroot-orange-coconut-salad",
     },
     {
-      id: 8,
+      id: 9,
       title: "One Pot Coconut Pumpkin Soup",
       excerpt: "This creamy coconut pumpkin soup is comfort in a bowl. Made in just one pot with simple ingredients, it's warming, nourishing, and perfect for cooler Bangalore evenings.",
       category: "Recipes",
@@ -111,7 +123,7 @@ export default function Blog() {
       slug: "coconut-pumpkin-soup",
     },
     {
-      id: 9,
+      id: 10,
       title: "Aromatic Cowpea Hummus",
       excerpt: "A protein-rich twist on classic hummus! Cowpeas (black-eyed peas) create a creamy, earthy base that's elevated with aromatic spices and fresh herbs.",
       category: "Recipes",
@@ -123,7 +135,7 @@ export default function Blog() {
       slug: "aromatic-cowpea-hummus",
     },
     {
-      id: 10,
+      id: 11,
       title: "Lemon + Coconut Oatmeal Cookies",
       excerpt: "Bright lemon zest meets tropical coconut in these perfectly chewy oatmeal cookies - naturally sweetened and irresistibly delicious.",
       category: "Recipes",
@@ -135,7 +147,7 @@ export default function Blog() {
       slug: "lemon-coconut-cookies",
     },
     {
-      id: 11,
+      id: 12,
       title: "Chocolate Dipped Banana + Almond Butter Skewers",
       excerpt: "A fun, healthy dessert that kids and adults love! Frozen banana skewers with almond butter and dark chocolate make the perfect naturally sweet treat.",
       category: "Recipes",
@@ -147,7 +159,7 @@ export default function Blog() {
       slug: "chocolate-dipped-banana-skewers",
     },
     {
-      id: 12,
+      id: 13,
       title: "Vegan 'bounty' Bars",
       excerpt: "Do you remember Bounty bars? We decided to make a vegan and healthier version of this classic, using local, Indian ingredients.",
       category: "Recipes",
@@ -159,7 +171,7 @@ export default function Blog() {
       slug: "vegan-bounty-bars",
     },
     {
-      id: 13,
+      id: 14,
       title: "Smoky Brinjal Dip",
       excerpt: "Dips are the perfect sharing food for when you have guests, and are easy to make in batches. This smoky brinjal dip will be the star of your next dinner party.",
       category: "Recipes",
@@ -171,7 +183,7 @@ export default function Blog() {
       slug: "smoky-brinjal-dip",
     },
     {
-      id: 14,
+      id: 15,
       title: "Homemade Pomegranate Molasses",
       excerpt: "Making your own pomegranate molasses is surprisingly simple and far more affordable than buying it. A culinary game changer with tart yet sweet flavour.",
       category: "Recipes",
@@ -183,7 +195,7 @@ export default function Blog() {
       slug: "homemade-pomegranate-molasses",
     },
     {
-      id: 15,
+      id: 16,
       title: "No-bake Carrot Bites",
       excerpt: "This is a great no-cook recipe to make ahead of time, so you have a go-to healthy dessert in the fridge. It is packed full of healthy nourishing ingredients.",
       category: "Recipes",
@@ -195,7 +207,7 @@ export default function Blog() {
       slug: "no-bake-carrot-bites",
     },
     {
-      id: 16,
+      id: 17,
       title: "Pea Smash",
       excerpt: "Give this a shot and it'll become a staple in your fridge. We just love it when you have something simple, delicious and versatile in the fridge that makes meal times easy.",
       category: "Recipes",
@@ -207,7 +219,7 @@ export default function Blog() {
       slug: "pea-smash",
     },
     {
-      id: 17,
+      id: 18,
       title: "Jamun Compote",
       excerpt: "Summers bring mangoes and when they go, they leave us with jamuns. This jamun compote helps to extend the season.",
       category: "Recipes",
