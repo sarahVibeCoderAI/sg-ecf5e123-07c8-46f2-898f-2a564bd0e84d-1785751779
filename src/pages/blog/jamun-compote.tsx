@@ -11,8 +11,8 @@ export default function JamunCompote() {
     <>
       <SEO
         title="Jamun Compote | The Notebook"
-        description="A simple compote that captures the sweet-tart essence of Indian blackberries."
-        image="https://copperandcloves.com/wp-content/uploads/2024/04/jamun_04-1.png"
+        description="Fresh, made without refined sugar - a delicious way to extend the jamun season."
+        image="https://copperandcloves.com/wp-content/uploads/2024/04/compote4-1.png"
       />
       <Navigation />
       <main>
@@ -50,11 +50,11 @@ export default function JamunCompote() {
                 <div className="flex items-center space-x-6 text-sm text-foreground/70">
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4" />
-                    <span>20 Min</span>
+                    <span>10 Min</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4" />
-                    <span>Makes 1 cup</span>
+                    <span>1-2 Serves</span>
                   </div>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export default function JamunCompote() {
 
             <div className="aspect-video rounded-lg overflow-hidden mb-12 shadow-xl">
               <img
-                src="https://copperandcloves.com/wp-content/uploads/2024/04/jamun_04-1.png"
+                src="https://copperandcloves.com/wp-content/uploads/2024/04/compote4-1.png"
                 alt="Jamun Compote"
                 className="object-cover w-full h-full"
               />
@@ -70,7 +70,7 @@ export default function JamunCompote() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-foreground/70 leading-relaxed mb-12">
-                Jamun, also known as Indian blackberry or java plum, is a beloved monsoon fruit in India. This simple compote captures its sweet-tart essence with a hint of warm spices, transforming these deep purple fruits into a versatile topping perfect for pancakes, yogurt, or desserts.
+                Summers bring mangoes and when they go, they leave us with jamuns. This jamun compote helps to extend the season and is fresh, made without refined sugar and as with the rest of our recipes, delicious and nutritious.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -84,27 +84,19 @@ export default function JamunCompote() {
                       <ul className="space-y-2 text-foreground/80">
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>2 cups fresh jamun (Indian blackberries), pitted</span>
+                          <span>850g jamun</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>3 tablespoons jaggery powder or coconut sugar</span>
+                          <span>Juice of one lemon</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>2 tablespoons water</span>
+                          <span>4 tbsp jaggery liquid or honey</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>1/2 teaspoon cinnamon powder</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1/4 teaspoon cardamom powder</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>Squeeze of lemon juice</span>
+                          <span>1 tsp sea salt</span>
                         </li>
                       </ul>
                     </div>
@@ -113,11 +105,11 @@ export default function JamunCompote() {
 
                 <section className="bg-card p-8 rounded-lg border border-border">
                   <h2 className="font-display text-2xl font-light tracking-tight mb-6">
-                    About Jamun
+                    Nutrition Profile
                   </h2>
                   <div className="space-y-4">
                     <p className="text-sm text-foreground/70">
-                      Jamun is a superfruit packed with antioxidants and vitamin C. In Ayurveda, it's known for helping regulate blood sugar levels. The fruit has a unique astringent quality that pairs beautifully with sweet and warm spices in this compote.
+                      Jamun is a pretty underrated fruit, the list of nutritional benefits is impressive. Jamun can be highly beneficial for diabetics because its low glycemic index turns starch into energy keeping blood sugar levels in check. The fruit's skin has antibacterial properties which can help to ease digestive problems, and the skin contains beneficial antioxidants.
                     </p>
                   </div>
                 </section>
@@ -134,7 +126,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Wash the jamun thoroughly and remove the pits. This is easiest done by gently squeezing each fruit—the pit should pop out.
+                        Deseed the jamun and chop finely
                       </p>
                     </div>
                   </div>
@@ -145,7 +137,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        In a medium saucepan, combine the pitted jamun, jaggery powder, and water. Place over medium heat.
+                        Put it in a blender along with the lemon, salt and jaggery liquid and blend to a very fine paste, it should be a bright purple smooth paste
                       </p>
                     </div>
                   </div>
@@ -156,7 +148,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        As the mixture heats up, the jamun will start to release their juices. Stir gently and bring to a gentle simmer.
+                        Pour it out into a pan and bring to the boil on a high heat, then turn down to a medium heat and reduce until its reaches a jam-like consistency.
                       </p>
                     </div>
                   </div>
@@ -167,7 +159,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Add the cinnamon and cardamom powder. Continue to simmer for about 10-15 minutes, stirring occasionally, until the fruit has broken down and the mixture has thickened to a syrupy consistency.
+                        Let it chill and store in your fridge in an airtight container.
                       </p>
                     </div>
                   </div>
@@ -178,18 +170,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Remove from heat and add a squeeze of lemon juice to brighten the flavors. Taste and adjust sweetness if needed.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      6
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        Let cool completely before transferring to a clean jar. Store in the refrigerator for up to a week. Serve over pancakes, yogurt, oatmeal, or vanilla ice cream.
+                        <strong>Serving ideas:</strong> Top a bowl of dahi or coconut yogurt and sprinkle pomegranate and pumpkin seeds. Use it to top your overnight oats jar or spread with your natural almond or peanut butter on toast. You could drizzle over fresh grated coconut, sliced banana and some sprinkled nuts on your morning chapati for a delicious breakfast!
                       </p>
                     </div>
                   </div>

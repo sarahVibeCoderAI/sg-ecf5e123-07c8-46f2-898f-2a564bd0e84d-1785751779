@@ -129,22 +129,12 @@ export default function VeganBountyBars() {
 
                 <section className="bg-card p-8 rounded-lg border border-border">
                   <h2 className="font-display text-2xl font-light tracking-tight mb-6">
-                    Storage & Details
+                    Notes
                   </h2>
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-sage font-medium text-sm">Prep Time:</span>
-                      <span className="text-foreground/70 text-sm">20 minutes</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="text-sage font-medium text-sm">Serves:</span>
-                      <span className="text-foreground/70 text-sm">2-4 people</span>
-                    </div>
-                    <div className="pt-4 border-t border-border">
-                      <p className="text-sm text-foreground/70">
-                        For this recipe we made our own chocolate using the organic cacao powder from Mason & Co. It was delicious, and surprisingly simple.
-                      </p>
-                    </div>
+                    <p className="text-sm text-foreground/70">
+                      For this recipe we made our own chocolate using the organic cacao powder from <strong>Mason & Co.</strong> It was delicious, and surprisingly simple.
+                    </p>
                   </div>
                 </section>
               </div>
