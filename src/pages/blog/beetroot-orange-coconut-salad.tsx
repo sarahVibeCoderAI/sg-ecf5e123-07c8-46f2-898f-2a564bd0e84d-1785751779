@@ -1,298 +1,131 @@
 import { SEO } from "@/components/SEO";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Clock, Users } from "lucide-react";
 import Link from "next/link";
-import { ArrowLeft, Clock, Users } from "lucide-react";
 
 export default function BeetrootOrangeCoconutSalad() {
   return (
     <>
       <SEO
-        title="Beetroot, Orange + Coconut Salad | The Notebook"
+        title="Beetroot, Orange + Coconut Salad - The Notebook | Copper + Cloves"
         description="For the hot summer days, we've come up with a quick and easy recipe- beetroots, oranges and coconuts come together in this refreshing, colourful salad."
         image="https://copperandcloves.com/wp-content/uploads/2024/04/salad4-1.png"
       />
       <Navigation />
-      <main>
-        <article className="section-padding">
-          <div className="container max-w-4xl">
-            <Button
-              asChild
-              variant="ghost"
-              className="mb-8 text-sage hover:text-sage/80"
-            >
-              <Link href="/blog">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to The Notebook
-              </Link>
-            </Button>
+      <main className="min-h-screen bg-background">
+        <article className="container mx-auto max-w-4xl px-4 py-12">
+          <Link
+            href="/blog"
+            className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-8"
+          >
+            ← Back to The Notebook
+          </Link>
 
-            <header className="space-y-6 mb-12">
-              <Badge className="bg-kale/10 text-kale border-kale/20 text-xs uppercase tracking-wide">
-                Recipe
-              </Badge>
-              <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl">
-                Beetroot, Orange + Coconut Salad
-              </h1>
-              
-              <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-border">
-                <div className="flex items-center space-x-3">
-                  <div className="h-12 w-12 rounded-full bg-sage/10 flex items-center justify-center">
-                    <span className="text-xl">👩‍🍳</span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium">Sarah Nicole Edwards</p>
-                    <p className="text-xs text-foreground/60">December 2024</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-6 text-sm text-foreground/70">
-                  <div className="flex items-center space-x-2">
-                    <Clock className="h-4 w-4" />
-                    <span>45 Min (30 min roasting)</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Users className="h-4 w-4" />
-                    <span>Serves 4</span>
-                  </div>
-                </div>
+          <header className="mb-8">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Beetroot, Orange + Coconut Salad
+            </h1>
+            <div className="flex items-center gap-6 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                <span>20 Min</span>
               </div>
-            </header>
-
-            <div className="aspect-video rounded-lg overflow-hidden mb-12 shadow-xl">
-              <img
-                src="https://copperandcloves.com/wp-content/uploads/2024/04/salad4-1.png"
-                alt="Beetroot, Orange + Coconut Salad"
-                className="object-cover w-full h-full"
-              />
+              <div className="flex items-center gap-2">
+                <Users className="w-4 h-4" />
+                <span>1-2 Serves</span>
+              </div>
             </div>
+          </header>
 
-            <div className="prose prose-lg max-w-none">
-              <p className="text-xl text-foreground/70 leading-relaxed mb-12">
-                For the hot summer days, we've come up with a quick and easy recipe- beetroots, oranges and coconuts come together in this refreshing, colourful salad. It's light, vibrant, and packed with nutrients. The earthiness of roasted beetroot pairs beautifully with the bright citrus notes of orange and the subtle sweetness of toasted coconut.
+          <div className="mb-12">
+            <img
+              src="https://copperandcloves.com/wp-content/uploads/2024/04/salad4-1.png"
+              alt="Beetroot, Orange + Coconut Salad"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+
+          <div className="prose prose-lg max-w-none">
+            <p className="text-lg text-foreground/90 leading-relaxed mb-8">
+              For the hot summer days, we've come up with a quick and easy recipe- beetroots, oranges and coconuts come together in this refreshing, colourful salad.
+            </p>
+
+            <section className="mb-12 bg-card p-8 rounded-lg border border-border">
+              <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">
+                Ingredients
+              </h2>
+              <ul className="space-y-2 text-foreground/80">
+                <li>2 small beetroot, skin scrubbed and cut into 8 wedges</li>
+                <li>1 tbsp cold-pressed oil</li>
+                <li>1/2 orange (other half is squeezed to make the dressing)</li>
+                <li>80g fresh coconut (about 1/4 of a coconut)</li>
+                <li>Handful dill leaves</li>
+                <li>Himalayan salt</li>
+                <li>Cracked black pepper</li>
+              </ul>
+
+              <h3 className="font-serif text-xl font-semibold text-foreground mt-6 mb-4">
+                Dressing
+              </h3>
+              <ul className="space-y-2 text-foreground/80">
+                <li>Juice of 1/2 orange</li>
+                <li>2 tablespoons extra virgin olive oil</li>
+                <li>1 tablespoon apple cider vinegar (with the mother)</li>
+                <li>1 teaspoon jaggery liquid</li>
+                <li>1 good grind of black pepper</li>
+                <li>1/2 tsp Himalayan salt</li>
+              </ul>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">
+                What To Do
+              </h2>
+              <ol className="space-y-4 text-foreground/80">
+                <li className="pl-2">
+                  <strong className="text-foreground">1.</strong> Prepare the beetroot by scrubbing the skin well, and cutting into 8 wedges. Whenever possible, don't peel root veggies. A lot of the nutrition and fibre is contained in the skin.
+                </li>
+                <li className="pl-2">
+                  <strong className="text-foreground">2.</strong> Place in a baking tray with a little oil, and a good crack of salt and pepper, cover with foil and roast at 180 C for 20 minutes
+                </li>
+                <li className="pl-2">
+                  <strong className="text-foreground">3.</strong> After 20 minutes, the beetroots should feel soft- uncover the foil and roast for a further 20 minutes without foil to allow them to crisp up at the edges.
+                </li>
+                <li className="pl-2">
+                  <strong className="text-foreground">4.</strong> Meanwhile cut the orange in half- keep one for the dressing. Take the remaining half, cut into slices and remove the segments (keep peel to make homemade marmalade or to zest into marinades). Discard white pith.
+                </li>
+                <li className="pl-2">
+                  <strong className="text-foreground">5.</strong> Cut the coconut into thin flakes and toast in the oven for 5 minutes until some parts have told golden brown.
+                </li>
+                <li className="pl-2">
+                  <strong className="text-foreground">6.</strong> Meanwhile make the dressing- mix all ingredients in a cup and whisk with a fork until combined.
+                </li>
+                <li className="pl-2">
+                  <strong className="text-foreground">7.</strong> Once beetroot is nicely caramelised, arrange on a large plate evenly and place the orange segments in between., scatter the coconut on top and the torn mint leaves.
+                </li>
+                <li className="pl-2">
+                  <strong className="text-foreground">8.</strong> Pour the dressing over the top and allow all the flavours to marinate for 5 minutes or so.
+                </li>
+                <li className="pl-2">
+                  <strong className="text-foreground">9.</strong> Garnish with torn dill leaves.
+                </li>
+              </ol>
+            </section>
+
+            <section className="mb-8 bg-muted/30 p-6 rounded-lg">
+              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+                Nutrition profile
+              </h3>
+              <p className="text-foreground/80">
+                Beetroot and orange are high in vitamin C and coconuts are loaded with nourishing and anti oxidant properties- this salad is full of ingredients that are good for your skin. It's a good balance of hydrating citrus, colourful vegetables and healthy fats.
               </p>
+            </section>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <section className="bg-card p-8 rounded-lg border border-border">
-                  <h2 className="font-display text-2xl font-light tracking-tight mb-6">
-                    Ingredients
-                  </h2>
-                  
-                  <div className="space-y-6">
-                    <div>
-                      <h3 className="text-sm uppercase tracking-wide text-sage mb-3 font-medium">
-                        For the Salad
-                      </h3>
-                      <ul className="space-y-2 text-foreground/80">
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>4 medium beetroots, washed and trimmed</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>2 large oranges, peeled and segmented</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>½ cup fresh coconut, thinly sliced or grated (or desiccated coconut, toasted)</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>4 cups mixed salad greens (arugula, spinach, or lettuce)</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>¼ cup fresh mint leaves, roughly chopped</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>2 tablespoons pumpkin seeds (optional, for extra crunch)</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h3 className="text-sm uppercase tracking-wide text-sage mb-3 font-medium">
-                        For the Dressing
-                      </h3>
-                      <ul className="space-y-2 text-foreground/80">
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>3 tablespoons extra virgin olive oil</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tablespoon apple cider vinegar</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tablespoon orange juice (from the segmented oranges)</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 teaspoon jaggery or maple syrup</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>½ teaspoon Dijon mustard</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>Salt and black pepper to taste</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </section>
-
-                <section className="bg-card p-8 rounded-lg border border-border">
-                  <h2 className="font-display text-2xl font-light tracking-tight mb-6">
-                    Storage & Details
-                  </h2>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-sage font-medium text-sm">Roast Time:</span>
-                      <span className="text-foreground/70 text-sm">30-40 minutes at 200°C</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="text-sage font-medium text-sm">Prep Time:</span>
-                      <span className="text-foreground/70 text-sm">15 minutes</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="text-sage font-medium text-sm">Serves:</span>
-                      <span className="text-foreground/70 text-sm">4 as a side salad</span>
-                    </div>
-                    <div className="pt-4 border-t border-border">
-                      <p className="text-sm text-foreground/70">
-                        This salad is best enjoyed fresh. Roasted beetroot can be prepared up to 2 days in advance and stored in the refrigerator. Assemble the salad just before serving for optimal freshness.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              </div>
-
-              <section className="mb-12">
-                <h2 className="font-display text-2xl font-light tracking-tight mb-6">
-                  What To Do
-                </h2>
-                <div className="space-y-6">
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      1
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        Preheat your oven to 200°C (400°F). Wrap each beetroot individually in aluminum foil and place them on a baking tray.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      2
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        Roast the beetroots for 30-40 minutes, or until they are tender when pierced with a fork. The exact time will depend on the size of your beetroots.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      3
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        Once the beetroots are cooked, remove them from the oven and let them cool slightly. When cool enough to handle, peel off the skin (it should come off easily) and cut the beetroots into bite-sized wedges or slices.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      4
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        While the beetroots are roasting, prepare the dressing by whisking together the olive oil, apple cider vinegar, orange juice, jaggery (or maple syrup), Dijon mustard, salt, and black pepper in a small bowl until well combined. Set aside.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      5
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        Segment the oranges by cutting away the peel and pith with a sharp knife, then carefully cutting between the membranes to release each segment. Collect any juice that drips out and add it to the dressing.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      6
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        If using fresh coconut, toast the slices in a dry pan over medium heat for 2-3 minutes until lightly golden and fragrant. If using desiccated coconut, toast it in the same way until golden brown. Watch carefully to prevent burning.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      7
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        In a large serving bowl, arrange the mixed salad greens as a base. Top with the roasted beetroot wedges, orange segments, toasted coconut, and chopped mint leaves.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      8
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        Drizzle the prepared dressing over the salad and toss gently to combine. Sprinkle with pumpkin seeds if using.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      9
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        Serve immediately and enjoy this vibrant, refreshing salad!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            <footer className="pt-12 border-t border-border">
-              <div className="flex items-center justify-between">
-                <Button asChild variant="outline" className="border-sage text-sage hover:bg-sage hover:text-white">
-                  <Link href="/blog">
-                    <ArrowLeft className="mr-2 h-4 w-4" />
-                    Back to The Notebook
-                  </Link>
-                </Button>
-                <Button asChild className="bg-sage text-white hover:bg-sage/90">
-                  <Link href="/subscription">
-                    Try Our Meal Plans
-                  </Link>
-                </Button>
-              </div>
+            <footer className="mt-12 pt-8 border-t border-border">
+              <p className="text-sm text-muted-foreground">
+                Recipe by Sarah Nicole Edwards
+              </p>
             </footer>
           </div>
         </article>
