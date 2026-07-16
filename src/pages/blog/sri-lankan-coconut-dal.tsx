@@ -55,9 +55,11 @@ export default function SriLankanCoconutDal() {
                   </div>
                 </div>
 
-                <p className="text-lg text-foreground/70 leading-relaxed">
-                  My mum is from Sri Lanka and this is one of the dishes she cooked for us when we were young- I've adjusted the recipe a little but it is a really comforting dish for me, somehow it tastes little different than dals we make in South India- even though all the ingredients will be familiar to you.
-                </p>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-xl text-foreground/80 leading-relaxed mb-8">
+                    My mum is from Sri Lanka and this is one of the dishes she cooked for us when we were young— and now it is part of C+C's famous Sri Lankan Thali which is our bestseller across our cafes! A really comforting dal that tastes a little different than South Indian dals, this version uses coconut milk for a creamy richness that makes it absolutely irresistible.
+                  </p>
+                </div>
               </div>
 
               <div className="aspect-video rounded-lg overflow-hidden">
