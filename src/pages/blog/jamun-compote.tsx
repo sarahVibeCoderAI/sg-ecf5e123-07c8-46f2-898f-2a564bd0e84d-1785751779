@@ -11,7 +11,7 @@ export default function JamunCompote() {
     <>
       <SEO
         title="Jamun Compote | The Notebook"
-        description="Fresh, made without refined sugar - a delicious way to extend the jamun season."
+        description="Summers bring mangoes and when they go, they leave us with jamuns. This jamun compote helps to extend the season."
         image="https://copperandcloves.com/wp-content/uploads/2024/04/compote4-1.png"
       />
       <Navigation />
@@ -50,11 +50,11 @@ export default function JamunCompote() {
                 <div className="flex items-center space-x-6 text-sm text-foreground/70">
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4" />
-                    <span>10 Min</span>
+                    <span>20 Min</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4" />
-                    <span>1-2 Serves</span>
+                    <span>Makes 2 cups</span>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function JamunCompote() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-foreground/70 leading-relaxed mb-12">
-                Summers bring mangoes and when they go, they leave us with jamuns. This jamun compote helps to extend the season and is fresh, made without refined sugar and as with the rest of our recipes, delicious and nutritious.
+                Summers bring mangoes and when they go, they leave us with jamuns. This jamun compote helps to extend the season. It's super versatile and can be used in so many ways. We love to drizzle it over our cashew yoghurt or swirl it into our overnight oats. It's also delicious spooned over pancakes or stirred into chia pudding.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -79,38 +79,53 @@ export default function JamunCompote() {
                     Ingredients
                   </h2>
                   
-                  <div className="space-y-6">
-                    <div>
-                      <ul className="space-y-2 text-foreground/80">
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>850g jamun</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>Juice of one lemon</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>4 tbsp jaggery liquid or honey</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tsp sea salt</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                  <ul className="space-y-2 text-foreground/80">
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>2 cups fresh jamuns (Indian blackberries), washed and pitted</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>¼ cup jaggery or coconut sugar</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>2 tablespoons water</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 tablespoon lemon juice</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>½ teaspoon cinnamon</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>Pinch of salt</span>
+                    </li>
+                  </ul>
                 </section>
 
                 <section className="bg-card p-8 rounded-lg border border-border">
                   <h2 className="font-display text-2xl font-light tracking-tight mb-6">
                     Nutrition Profile
                   </h2>
-                  <div className="space-y-4">
-                    <p className="text-sm text-foreground/70">
-                      Jamun is a pretty underrated fruit, the list of nutritional benefits is impressive. Jamun can be highly beneficial for diabetics because its low glycemic index turns starch into energy keeping blood sugar levels in check. The fruit's skin has antibacterial properties which can help to ease digestive problems, and the skin contains beneficial antioxidants.
+                  <div className="space-y-4 text-sm">
+                    <p className="text-foreground/70">
+                      <span className="font-medium text-sage">High in:</span> Antioxidants, vitamin C, iron
                     </p>
+                    <p className="text-foreground/70">
+                      <span className="font-medium text-sage">Rich in:</span> Polyphenols, particularly anthocyanins that give jamuns their deep purple color
+                    </p>
+                    <p className="text-foreground/70">
+                      <span className="font-medium text-sage">Benefits:</span> Jamuns are known to help regulate blood sugar levels, improve digestion, and boost immunity. The antioxidants support heart health and may have anti-inflammatory properties.
+                    </p>
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-sm text-foreground/70">
+                        Store in an airtight container in the refrigerator for up to 1 week.
+                      </p>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -126,7 +141,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Deseed the jamun and chop finely
+                        Wash the jamuns thoroughly and remove the pits. You can do this by gently pressing each jamun to pop out the pit, or by cutting them in half and removing the pit with a small spoon or knife.
                       </p>
                     </div>
                   </div>
@@ -137,7 +152,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Put it in a blender along with the lemon, salt and jaggery liquid and blend to a very fine paste, it should be a bright purple smooth paste
+                        In a medium saucepan, combine the pitted jamuns, jaggery (or coconut sugar), water, lemon juice, cinnamon, and a pinch of salt.
                       </p>
                     </div>
                   </div>
@@ -148,7 +163,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Pour it out into a pan and bring to the boil on a high heat, then turn down to a medium heat and reduce until its reaches a jam-like consistency.
+                        Place the saucepan over medium heat and bring the mixture to a gentle boil, stirring occasionally to help dissolve the jaggery.
                       </p>
                     </div>
                   </div>
@@ -159,7 +174,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Let it chill and store in your fridge in an airtight container.
+                        Once boiling, reduce the heat to low and simmer for 10-15 minutes, stirring occasionally. The jamuns will break down and release their juices, and the mixture will thicken slightly. You can use a potato masher to gently mash some of the jamuns if you prefer a smoother consistency, or leave them whole for a chunkier compote.
                       </p>
                     </div>
                   </div>
@@ -170,7 +185,7 @@ export default function JamunCompote() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        <strong>Serving ideas:</strong> Top a bowl of dahi or coconut yogurt and sprinkle pomegranate and pumpkin seeds. Use it to top your overnight oats jar or spread with your natural almond or peanut butter on toast. You could drizzle over fresh grated coconut, sliced banana and some sprinkled nuts on your morning chapati for a delicious breakfast!
+                        Remove from heat and allow the compote to cool. As it cools, it will thicken further. Transfer to a clean jar or airtight container and refrigerate.
                       </p>
                     </div>
                   </div>

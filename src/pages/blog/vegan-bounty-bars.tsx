@@ -11,7 +11,7 @@ export default function VeganBountyBars() {
     <>
       <SEO
         title="Vegan 'bounty' Bars | The Notebook"
-        description="Sweet, sticky coconut covered with chocolate - a vegan and healthier version of this classic."
+        description="Do you remember Bounty bars? We decided to make a vegan and healthier version of this classic, using local, Indian ingredients."
         image="https://copperandcloves.com/wp-content/uploads/2024/04/bar2-1.png"
       />
       <Navigation />
@@ -50,11 +50,11 @@ export default function VeganBountyBars() {
                 <div className="flex items-center space-x-6 text-sm text-foreground/70">
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4" />
-                    <span>20 Min</span>
+                    <span>1 hour (+ 2 hours chill time)</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4" />
-                    <span>2-4 Serves</span>
+                    <span>Makes 12 bars</span>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function VeganBountyBars() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-foreground/70 leading-relaxed mb-12">
-                Do you remember Bounty bars? Sweet, sticky coconut covered with milk chocolate, wrapped in those blue and white wrappers? We decided to make a vegan and healthier version of this classic, using local, Indian ingredients. We think these are even better than the original! With far less sugar and saturated fats, they don't have that sickly-sweet vibe going on. Plus no plastic wrapper!
+                Do you remember Bounty bars? We decided to make a vegan and healthier version of this classic, using local, Indian ingredients. Sweet, sticky coconut covered with chocolate- these are very rich and should be quite small in size! With far less sugar and saturated fats, these don't have that sickly-sweet vibe. We use khopra or fresh coconut, and jaggery which are local ingredients that can be used to sweeten things.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -81,46 +81,45 @@ export default function VeganBountyBars() {
                   
                   <div className="space-y-6">
                     <div>
+                      <h3 className="text-sm uppercase tracking-wide text-sage mb-3 font-medium">
+                        For the Coconut Filling
+                      </h3>
                       <ul className="space-y-2 text-foreground/80">
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>120g Dessicated coconut</span>
+                          <span>1 ½ cup fresh coconut, grated</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>3 tbsps jaggery liquid or runny honey</span>
+                          <span>⅓ cup jaggery powder</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>1 tbsp vanilla extract</span>
+                          <span>3 tablespoons coconut oil</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>3 tbsp extra virgin cold-pressed coconut oil</span>
+                          <span>1 teaspoon vanilla extract</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="mr-2 text-sage">•</span>
+                          <span>Pinch of salt</span>
                         </li>
                       </ul>
                     </div>
 
                     <div>
                       <h3 className="text-sm uppercase tracking-wide text-sage mb-3 font-medium">
-                        For The Chocolate
+                        For the Chocolate Coating
                       </h3>
                       <ul className="space-y-2 text-foreground/80">
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>5 tbsp Mason & Co. raw cacao powder</span>
+                          <span>200g dark chocolate (70% cocoa or higher), chopped</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-sage">•</span>
-                          <span>2 tablespoons homemade almond butter</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>3 tbsp extra virgin cold-pressed coconut oil</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tbsp jaggery liquid or honey</span>
+                          <span>1 tablespoon coconut oil</span>
                         </li>
                       </ul>
                     </div>
@@ -129,12 +128,26 @@ export default function VeganBountyBars() {
 
                 <section className="bg-card p-8 rounded-lg border border-border">
                   <h2 className="font-display text-2xl font-light tracking-tight mb-6">
-                    Notes
+                    Storage & Details
                   </h2>
                   <div className="space-y-4">
-                    <p className="text-sm text-foreground/70">
-                      For this recipe we made our own chocolate using the organic cacao powder from <strong>Mason & Co.</strong> It was delicious, and surprisingly simple.
-                    </p>
+                    <div className="flex items-start gap-3">
+                      <span className="text-sage font-medium text-sm">Prep Time:</span>
+                      <span className="text-foreground/70 text-sm">1 hour</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-sage font-medium text-sm">Chill Time:</span>
+                      <span className="text-foreground/70 text-sm">2 hours</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-sage font-medium text-sm">Yield:</span>
+                      <span className="text-foreground/70 text-sm">Makes 12 bars</span>
+                    </div>
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-sm text-foreground/70">
+                        Store in an airtight container in the refrigerator for up to 1 week, or freeze for up to 3 months.
+                      </p>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -150,7 +163,7 @@ export default function VeganBountyBars() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        First make the coconut filling. In a bowl, combine the coconut, jaggery liquid, vanilla, coconut oil and almond butter and stir through well until it becomes sticky.
+                        In a food processor, blend the grated coconut, jaggery powder, coconut oil, vanilla extract, and a pinch of salt until the mixture is well combined and holds together when pressed.
                       </p>
                     </div>
                   </div>
@@ -161,7 +174,7 @@ export default function VeganBountyBars() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Line a baking tray with parchment paper and spread the coconut mix onto it and pop it in the freezer for 20 minutes.
+                        Line a small rectangular baking tin (about 8x8 inches or 20x20 cm) with parchment paper. Press the coconut mixture firmly into the tin to create an even layer. Place the tin in the freezer for at least 30 minutes, or until the mixture is firm.
                       </p>
                     </div>
                   </div>
@@ -172,7 +185,7 @@ export default function VeganBountyBars() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        While it hardens up in the freezer, mix all the ingredients for the raw chocolate together in a pan over a very low flame, and whisk vigorously. After a while it should form a smooth liquid like melted chocolate.
+                        Once the coconut layer is firm, remove it from the tin and cut it into 12 equal bars. Place the bars back in the freezer while you prepare the chocolate coating.
                       </p>
                     </div>
                   </div>
@@ -183,7 +196,7 @@ export default function VeganBountyBars() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Remove the tray from the freezer and pour the prepared chocolate over the filling, and put it back in the freezer for another 20 minutes. The chocolate layer should have hardened.
+                        Melt the chopped dark chocolate and coconut oil together using a double boiler or in short bursts in the microwave, stirring frequently until smooth.
                       </p>
                     </div>
                   </div>
@@ -194,7 +207,7 @@ export default function VeganBountyBars() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Remove from freezer and cut into slabs or just break it into pieces. This dish is perfect for when you are having friends over- put the plate in the middle and watch it disappear!
+                        Using a fork or a dipping tool, dip each coconut bar into the melted chocolate, ensuring it's fully coated. Allow any excess chocolate to drip off, then place the coated bar on a parchment-lined baking sheet.
                       </p>
                     </div>
                   </div>
@@ -205,7 +218,7 @@ export default function VeganBountyBars() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Take pictures of your bounty bars, tag us and tell us how you liked them!
+                        Once all the bars are coated, return the baking sheet to the freezer for another 30 minutes, or until the chocolate is fully set. Store in the refrigerator and enjoy!
                       </p>
                     </div>
                   </div>

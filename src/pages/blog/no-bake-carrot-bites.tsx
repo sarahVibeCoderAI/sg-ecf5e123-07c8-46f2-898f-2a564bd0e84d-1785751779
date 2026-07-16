@@ -11,7 +11,7 @@ export default function NoBakeCarrotBites() {
     <>
       <SEO
         title="No-bake Carrot Bites | The Notebook"
-        description="A great no-cook recipe to make ahead of time, packed full of healthy nourishing ingredients."
+        description="This is a great no-cook recipe to make ahead of time, so you have a go-to healthy dessert in the fridge."
         image="https://copperandcloves.com/wp-content/webp-express/webp-images/uploads/2024/04/bites4-1.png.webp"
       />
       <Navigation />
@@ -50,11 +50,11 @@ export default function NoBakeCarrotBites() {
                 <div className="flex items-center space-x-6 text-sm text-foreground/70">
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4" />
-                    <span>4 Hours</span>
+                    <span>15 Min</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4" />
-                    <span>2-4 Serves</span>
+                    <span>Makes 12 bites</span>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function NoBakeCarrotBites() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-foreground/70 leading-relaxed mb-12">
-                This is a great no-cook recipe to make ahead of time, so you have a go-to healthy dessert in the fridge. It is packed full of healthy nourishing ingredients, and kids seem to love it! It's also really easy to make, and it's fun to get them involved in making it too. A dessert that can double as a snack, full of nourishing, whole ingredients
+                This is a great no-cook recipe to make ahead of time, so you have a go-to healthy dessert in the fridge. It is packed full of healthy nourishing ingredients, but the taste is great! These taste like carrot cake and we've not met anyone yet who doesn't love these!
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -79,82 +79,65 @@ export default function NoBakeCarrotBites() {
                     Ingredients
                   </h2>
                   
-                  <div className="space-y-6">
-                    <div>
-                      <ul className="space-y-2 text-foreground/80">
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>5 medium organic carrots, tops cut off and scrubbed clean (no need to peel)</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 cup walnut pieces</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 cup whole almonds</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 cup whole pitted dates</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 cup rolled oats</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1/2 cup raisins</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>3 tbsp jaggery syrup</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tsp cinnamon</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tsp Himalayan salt</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h3 className="text-sm uppercase tracking-wide text-sage mb-3 font-medium">
-                        For The Frosting
-                      </h3>
-                      <ul className="space-y-2 text-foreground/80">
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 cup cashews</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 teaspoon vanilla extract</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tbsp Jaggery syrup</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tbsp coconut oil</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                  <ul className="space-y-2 text-foreground/80">
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 cup almonds</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 cup cashews</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 cup pitted dates (soaked in hot water for 10 minutes, then drained)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 cup shredded carrot (packed)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>¼ cup desiccated coconut</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 teaspoon cinnamon</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>½ teaspoon nutmeg</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>½ teaspoon ginger powder</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>Pinch of salt</span>
+                    </li>
+                  </ul>
                 </section>
 
                 <section className="bg-card p-8 rounded-lg border border-border">
                   <h2 className="font-display text-2xl font-light tracking-tight mb-6">
                     Nutrition Profile
                   </h2>
-                  <div className="space-y-4">
-                    <p className="text-sm text-foreground/70">
-                      Carrots are a particularly good source of beta carotene, fibre and vitamin K1. Carrots get their bright orange colour from beta carotene, an antioxidant that our bodies convert into vitamin A. The nuts deliver essential fatty acids and dates and oats provide slow-release energy, as well as more fibre.
+                  <div className="space-y-4 text-sm">
+                    <p className="text-foreground/70">
+                      <span className="font-medium text-sage">High in:</span> Healthy fats, protein, fiber
                     </p>
+                    <p className="text-foreground/70">
+                      <span className="font-medium text-sage">Rich in:</span> Vitamin A (from carrots), vitamin E (from nuts), magnesium, potassium
+                    </p>
+                    <p className="text-foreground/70">
+                      <span className="font-medium text-sage">Benefits:</span> These bites provide sustained energy from natural sugars and healthy fats. The combination of nuts and dates offers a good balance of protein, healthy fats, and fiber.
+                    </p>
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-sm text-foreground/70">
+                        Store in an airtight container in the refrigerator for up to 2 weeks, or freeze for up to 3 months.
+                      </p>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -170,7 +153,7 @@ export default function NoBakeCarrotBites() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Finely shred your carrots on a grater
+                        In a food processor, pulse the almonds and cashews until they are finely chopped but not turned into flour. You want some texture remaining.
                       </p>
                     </div>
                   </div>
@@ -181,7 +164,7 @@ export default function NoBakeCarrotBites() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        In a processor add walnuts, almonds, and dates. Blitz until you have a crumbly mixture.
+                        Add the soaked and drained dates to the food processor along with the shredded carrot, desiccated coconut, cinnamon, nutmeg, ginger powder, and a pinch of salt.
                       </p>
                     </div>
                   </div>
@@ -192,7 +175,7 @@ export default function NoBakeCarrotBites() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Add in the grated carrots and pulse to mix.
+                        Process the mixture until everything is well combined and the mixture holds together when pressed. This should take about 1-2 minutes. You may need to scrape down the sides of the food processor a few times to ensure even mixing.
                       </p>
                     </div>
                   </div>
@@ -203,7 +186,7 @@ export default function NoBakeCarrotBites() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Add the oats, jaggery syrup, raisins and cinnamon and pulse until everything is well mixed but it is not a smooth paste- it should be like a rough, sticky dough.
+                        Using your hands or a small cookie scoop, roll the mixture into bite-sized balls, about 1 inch (2.5 cm) in diameter. You should get approximately 12-15 bites, depending on the size.
                       </p>
                     </div>
                   </div>
@@ -214,7 +197,7 @@ export default function NoBakeCarrotBites() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Line a baking tray parchment paper and pile the carrot mixture into the tray and spread it out. Put it in the freezer while you make the frosting.
+                        Optional: Roll the bites in extra desiccated coconut or finely chopped nuts for a decorative coating.
                       </p>
                     </div>
                   </div>
@@ -225,7 +208,7 @@ export default function NoBakeCarrotBites() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        To make the frosting, add the creamy soaked cashews, coconut oil, vanilla and jaggery syrup into the blender and grind until you get a smooth, creamy paste.
+                        Place the bites on a parchment-lined tray and refrigerate for at least 30 minutes to firm up before serving.
                       </p>
                     </div>
                   </div>
@@ -236,21 +219,7 @@ export default function NoBakeCarrotBites() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Take the carrot bites out of the freezer and use a spatula to spread the frosting on top of the carrot cake bites. Freeze for around 4 hours to set.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
-                      8
-                    </div>
-                    <div>
-                      <p className="text-foreground/70">
-                        Cut into bite sized pieces and enjoy with a lovely cup of hot tea. These no-bake bite can be made in advance and stored in the freezer for weeks. Make a big batch and keep for ages for when you want a healthy snack.
-                      </p>
-                      <p className="text-foreground/70 mt-4">
-                        <strong>Tag us</strong> in your photos if you make a batch <strong>@copperandcloves.</strong>
+                        Store in an airtight container in the refrigerator for up to 2 weeks, or freeze for longer storage.
                       </p>
                     </div>
                   </div>

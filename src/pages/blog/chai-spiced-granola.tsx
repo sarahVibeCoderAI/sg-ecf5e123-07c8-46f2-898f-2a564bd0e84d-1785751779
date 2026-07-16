@@ -11,7 +11,7 @@ export default function ChaiSpicedGranola() {
     <>
       <SEO
         title="Chai Spiced Granola | The Notebook"
-        description="You can play around with the ingredients so much - swap walnuts for almonds, watermelon seeds for sunflower seeds!"
+        description="The beauty of this recipe is that you can play around with the ingredients so much. If you prefer walnuts to almonds- just swap them in!"
         image="https://copperandcloves.com/wp-content/uploads/2024/04/granola3-1.png"
       />
       <Navigation />
@@ -50,11 +50,11 @@ export default function ChaiSpicedGranola() {
                 <div className="flex items-center space-x-6 text-sm text-foreground/70">
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4" />
-                    <span>15 Min</span>
+                    <span>35 Min</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4" />
-                    <span>1-2 Serves</span>
+                    <span>Makes 6 cups</span>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function ChaiSpicedGranola() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-foreground/70 leading-relaxed mb-12">
-                The beauty of this recipe is that you can play around with the ingredients so much. If you prefer walnuts to almonds- just swap them in! If you happen to have watermelon seeds instead of sunflower seeds, make the sub! I've put the measurements in mugs so if you want more variety, just mix up the nuts and keep the quantity roughly the same.
+                The beauty of this recipe is that you can play around with the ingredients so much. If you prefer walnuts to almonds- just swap them in! Don't like raisins? Use dried cranberries instead. This granola is infused with warming chai spices that make your kitchen smell amazing as it bakes. It's perfect with yoghurt, milk, or just by the handful as a snack.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -79,64 +79,72 @@ export default function ChaiSpicedGranola() {
                     Ingredients
                   </h2>
                   
-                  <div className="space-y-6">
-                    <div>
-                      <ul className="space-y-2 text-foreground/80">
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1/2 fresh coconut, thinly sliced</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>2 mugs rolled oats</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 mug almonds, chopped</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 mug pistas, chopped</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 mug pumpkin seeds</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 mug sunflower seeds</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>3 tablespoons flax seeds</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>3 tablespoons extra virgin coconut oil</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1/2 mug of liquid jaggery or honey</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>3 tsp. cinnamon powder</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>3 tsp. green cardamom powder</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 tsp. sea salt</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2 text-sage">•</span>
-                          <span>1 mug raisins</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                  <ul className="space-y-2 text-foreground/80">
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>3 cups rolled oats</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 cup almonds, roughly chopped</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>½ cup cashews, roughly chopped</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>½ cup desiccated coconut</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>¼ cup pumpkin seeds</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>¼ cup sunflower seeds</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>2 teaspoons cinnamon</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 teaspoon cardamom powder</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 teaspoon ginger powder</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>½ teaspoon nutmeg</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>¼ teaspoon cloves</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>½ teaspoon salt</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>⅓ cup coconut oil, melted</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>⅓ cup jaggery or maple syrup</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>1 teaspoon vanilla extract</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-sage">•</span>
+                      <span>½ cup raisins or dried cranberries (added after baking)</span>
+                    </li>
+                  </ul>
                 </section>
 
                 <section className="bg-card p-8 rounded-lg border border-border">
@@ -146,11 +154,16 @@ export default function ChaiSpicedGranola() {
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <span className="text-sage font-medium text-sm">Bake Time:</span>
-                      <span className="text-foreground/70 text-sm">25-45 minutes at 180°C</span>
+                      <span className="text-foreground/70 text-sm">30-35 minutes at 160°C</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="text-sage font-medium text-sm">Storage:</span>
-                      <span className="text-foreground/70 text-sm">Store in a sealed, clean jar for up to 3 weeks</span>
+                      <span className="text-sage font-medium text-sm">Yield:</span>
+                      <span className="text-foreground/70 text-sm">Makes about 6 cups</span>
+                    </div>
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-sm text-foreground/70">
+                        Store in an airtight container at room temperature for up to 2 weeks, or in the refrigerator for up to 1 month. The granola will stay crispy if stored properly.
+                      </p>
                     </div>
                   </div>
                 </section>
@@ -167,7 +180,7 @@ export default function ChaiSpicedGranola() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        First slice the coconut into this slices and lightly toast in the oven (around 180C) until starting to turn golden brown at the edges. Set aside.
+                        Preheat your oven to 160°C (320°F). Line a large baking tray with parchment paper or lightly grease it with coconut oil.
                       </p>
                     </div>
                   </div>
@@ -178,7 +191,7 @@ export default function ChaiSpicedGranola() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Put the oats and all the chopped nuts and whole seeds into a mixing bowl. Mix together the coconut oil, the honey/jaggery liquid and the salt and spices and then pour into the dry oaty-nutty-seedy mixture. Mix well until everything is well coated and sticky.
+                        In a large mixing bowl, combine the rolled oats, chopped almonds, cashews, desiccated coconut, pumpkin seeds, sunflower seeds, cinnamon, cardamom, ginger powder, nutmeg, cloves, and salt. Stir well to evenly distribute the spices.
                       </p>
                     </div>
                   </div>
@@ -189,7 +202,7 @@ export default function ChaiSpicedGranola() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Transfer the sticky mixture into a wide flat baking tray and ensure it is even spread across. Toast in the oven at 180C for between 25-45 minutes (it totally depends on the strength of your oven). Take it out and stir it once after 15 minutes to ensure it toasts evenly.
+                        In a small saucepan or microwave-safe bowl, gently warm the coconut oil, jaggery (or maple syrup), and vanilla extract together until the jaggery has dissolved and the mixture is well combined. If using maple syrup, you can simply stir everything together without heating.
                       </p>
                     </div>
                   </div>
@@ -200,7 +213,51 @@ export default function ChaiSpicedGranola() {
                     </div>
                     <div>
                       <p className="text-foreground/70">
-                        Take it out and let it cool down. Once cool, add the raisins and the pre-toasted coconut. Store in a sealed, clean jar for up to 3 weeks.
+                        Pour the wet mixture over the dry ingredients and stir thoroughly until everything is evenly coated. Make sure all the oats and nuts are coated with the oil and sweetener.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6">
+                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
+                      5
+                    </div>
+                    <div>
+                      <p className="text-foreground/70">
+                        Spread the granola mixture evenly on the prepared baking tray in a single layer. Try not to stir or disturb the granola too much during baking to help it form nice clusters.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6">
+                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
+                      6
+                    </div>
+                    <div>
+                      <p className="text-foreground/70">
+                        Bake for 30-35 minutes, stirring gently halfway through, until the granola is golden brown and fragrant. Keep an eye on it during the last 10 minutes to prevent burning, as the edges can brown quickly.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6">
+                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
+                      7
+                    </div>
+                    <div>
+                      <p className="text-foreground/70">
+                        Remove the granola from the oven and let it cool completely on the baking tray. As it cools, it will become crispy and form clusters. Don't stir it while it's cooling!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6">
+                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-sage text-white flex items-center justify-center text-sm font-medium">
+                      8
+                    </div>
+                    <div>
+                      <p className="text-foreground/70">
+                        Once completely cool, break the granola into clusters and stir in the raisins or dried cranberries. Transfer to an airtight container and store.
                       </p>
                     </div>
                   </div>
