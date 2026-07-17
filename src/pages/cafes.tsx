@@ -17,7 +17,7 @@ export default function Cafes() {
       hours: "9.30am - 8pm Daily",
       phone: "+91 80 4173 4025",
       image: "/c_c_cafe_4_.jpg",
-      amenities: ["Dine-in", "Takeaway", "Meal Subscriptions", "Retail Products"],
+      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Boutique Shopping"],
       deliveryRadius: "3km delivery radius",
     },
     {
@@ -28,7 +28,7 @@ export default function Cafes() {
       hours: "9.30am - 8pm Daily",
       phone: "+91 80 4173 4025",
       image: "/lavelle_road_16_of_23_.jpg",
-      amenities: ["Dine-in", "Takeaway", "Meal Subscriptions", "Community Events"],
+      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Boutique Shopping"],
       deliveryRadius: "3km delivery radius",
     },
     {
@@ -39,7 +39,7 @@ export default function Cafes() {
       hours: "9.30am - 8pm Daily",
       phone: "+91 80 4173 4025",
       image: "/A7406794_1_.jpg",
-      amenities: ["Dine-in", "Takeaway", "Outdoor Seating", "Wellness Workshops"],
+      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Boutique Shopping"],
       deliveryRadius: "3km delivery radius",
     },
   ];
