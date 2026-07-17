@@ -65,8 +65,8 @@ export default function Cafes() {
 
             <div className="space-y-12">
               {cafes.map((cafe, i) => (
-                <Card key={i} className={`overflow-hidden border-mushroom/30 bg-white hover:shadow-xl transition-shadow ${cafe.featured ? 'lg:grid lg:grid-cols-2' : ''}`}>
-                  <div className={`${cafe.featured ? 'aspect-[4/3] lg:aspect-auto' : 'aspect-[4/3]'} overflow-hidden`}>
+                <Card key={i} className="overflow-hidden border-mushroom/30 bg-white hover:shadow-xl transition-shadow">
+                  <div className="aspect-[4/3] overflow-hidden">
                     <img
                       src={cafe.image}
                       alt={`${cafe.name} cafe location`}
@@ -76,11 +76,6 @@ export default function Cafes() {
                   <CardContent className="p-8 lg:p-10 space-y-6">
                     <div>
                       <h3 className="font-display text-3xl font-light mb-3">{cafe.name}</h3>
-                      {cafe.description && (
-                        <p className="text-foreground/70 leading-relaxed mb-4">
-                          {cafe.description}
-                        </p>
-                      )}
                     </div>
 
                     <div className="space-y-4">
@@ -104,7 +99,7 @@ export default function Cafes() {
 
                     <div className="space-y-3 pt-2">
                       <p className="text-sm font-medium uppercase tracking-wide text-foreground/80">
-                        {cafe.featured ? "What You'll Find" : "Amenities"}
+                        Amenities
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {cafe.amenities.map((amenity, j) => (
