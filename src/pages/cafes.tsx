@@ -19,6 +19,7 @@ export default function Cafes() {
       image: "/c_c_cafe_4_.jpg",
       amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Bookstore", "Boutique Shopping", "Garden Seating", "Indoor Seating"],
       deliveryRadius: "3km delivery radius",
+      mapsUrl: "https://maps.app.goo.gl/kX9fR2BjjAFyYdQG7",
     },
     {
       id: 2,
@@ -29,16 +30,18 @@ export default function Cafes() {
       image: "/lavelle_road_16_of_23_.jpg",
       amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly"],
       deliveryRadius: "3km delivery radius",
+      mapsUrl: "https://maps.app.goo.gl/ijZsNGVDaDU7A2X79",
     },
     {
       id: 3,
-      name: "Copper + Cloves Domlur/The Studio",
+      name: "Domlur/The Studio",
       address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
       hours: "9.30am - 8pm Daily",
       phone: "09008426703",
       image: "/A7406794_1_.jpg",
       amenities: ["Workout Studio", "Dine-in", "Co-working Friendly", "Indoor Seating"],
       deliveryRadius: "3km delivery radius",
+      mapsUrl: "https://maps.app.goo.gl/DQs1BRv2DzSW1uN59",
     },
   ];
 
@@ -114,12 +117,19 @@ export default function Cafes() {
                       </div>
                     </div>
 
-                    <div className="flex gap-3 pt-4">
-                      <Button size="sm" variant="outline" className="flex-1 border-kale text-kale hover:bg-kale hover:text-white">
-                        Get Directions
-                      </Button>
-                      <Button size="sm" className="flex-1 bg-sage text-white hover:bg-sage/90">
-                        Order Now
+                    <div className="pt-4">
+                      <Button
+                        asChild
+                        size="lg"
+                        className="w-full bg-sage text-white hover:bg-sage/90"
+                      >
+                        <a
+                          href={cafe.mapsUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Get Directions
+                        </a>
                       </Button>
                     </div>
                   </CardContent>
