@@ -17,11 +17,11 @@ export default function Subscription() {
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="section-padding pt-32 bg-gradient-to-b from-oat to-background">
+        <section className="section-padding pt-40 pb-24 bg-gradient-to-b from-oat to-background">
           <div className="container">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div className="space-y-8">
-                <div className="space-y-4">
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center max-w-6xl mx-auto">
+              <div className="space-y-10">
+                <div className="space-y-6">
                   <h1 className="font-display text-4xl lg:text-5xl font-light leading-tight">
                     We've got the right solution for you
                   </h1>
