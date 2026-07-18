@@ -12,34 +12,32 @@ export default function Cafes() {
     {
       id: 1,
       name: "Indiranagar",
-      address: "100 Feet Road, Indiranagar",
-      city: "Bangalore, Karnataka 560038",
+      description: "Our flagship, set in a beautiful white bungalow.",
+      address: "549A, 9th A Main Rd, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
       hours: "9.30am - 8pm Daily",
-      phone: "+91 80 4173 4025",
+      phone: "08904293030",
       image: "/c_c_cafe_4_.jpg",
-      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Boutique Shopping"],
+      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Bookstore", "Boutique Shopping", "Garden Seating", "Indoor Seating"],
       deliveryRadius: "3km delivery radius",
     },
     {
       id: 2,
-      name: "Indiranagar",
-      address: "100 Feet Road, Indiranagar",
-      city: "Bangalore, Karnataka 560038",
+      name: "Lavelle Road",
+      address: "4, Walton Rd, Good Earth, off Lavelle Road, KG Halli, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
       hours: "9.30am - 8pm Daily",
-      phone: "+91 80 4173 4025",
+      phone: "8792194527",
       image: "/lavelle_road_16_of_23_.jpg",
-      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Boutique Shopping"],
+      amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly"],
       deliveryRadius: "3km delivery radius",
     },
     {
       id: 3,
-      name: "Indiranagar",
-      address: "100 Feet Road, Indiranagar",
-      city: "Bangalore, Karnataka 560038",
+      name: "Copper + Cloves Domlur/The Studio",
+      address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
       hours: "9.30am - 8pm Daily",
-      phone: "+91 80 4173 4025",
+      phone: "09008426703",
       image: "/A7406794_1_.jpg",
-      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Boutique Shopping"],
+      amenities: ["Workout Studio", "Dine-in", "Co-working Friendly", "Indoor Seating"],
       deliveryRadius: "3km delivery radius",
     },
   ];
@@ -76,6 +74,9 @@ export default function Cafes() {
                   <CardContent className="p-8 lg:p-10 space-y-6">
                     <div>
                       <h3 className="font-display text-3xl font-light mb-3">{cafe.name}</h3>
+                      {cafe.description && (
+                        <p className="text-foreground/70 italic">{cafe.description}</p>
+                      )}
                     </div>
 
                     <div className="space-y-4">
