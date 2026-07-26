@@ -4,15 +4,26 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Check, Leaf, Calendar, Package, MapPin, X } from "lucide-react";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import Link from "next/link";
-import { Check, Calendar, TruckIcon, ChefHat, Heart, Pause, Leaf, Sparkles } from "lucide-react";
+import { TruckIcon, ChefHat, Heart, Pause, Sparkles } from "lucide-react";
 
 export default function Subscription() {
+  const [showMenuModal, setShowMenuModal] = useState(false);
+
   return (
     <>
       <SEO
-        title="Meal Subscription | Copper + Cloves"
-        description="We've got the right solution for you. Our meal subscription is designed to make healthy eating easy, convenient, and delicious."
+        title="Meal Subscription - Copper + Cloves"
+        description="Nourishing plant-based meal subscriptions delivered to your Bangalore doorstep. Flexible plans, hyper-local ingredients, zero compromise on taste."
+        image="/og-image.png"
       />
       <Navigation />
       <main>
@@ -39,7 +50,12 @@ export default function Subscription() {
                       Start Your Subscription
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" className="border-sage text-sage hover:bg-sage hover:text-white">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-sage text-sage hover:bg-sage hover:text-white"
+                    onClick={() => setShowMenuModal(true)}
+                  >
                     View Sample Menu
                   </Button>
                 </div>
@@ -250,6 +266,22 @@ export default function Subscription() {
         </section>
       </main>
       <Footer />
+
+      {/* Sample Menu Modal */}
+      <Dialog open={showMenuModal} onOpenChange={setShowMenuModal}>
+        <DialogContent className="max-w-4xl max-h-[90vh] p-0">
+          <DialogHeader className="p-6 pb-0">
+            <DialogTitle className="text-2xl font-display">Sample Menu</DialogTitle>
+          </DialogHeader>
+          <div className="overflow-auto p-6 pt-4">
+            <img
+              src="/WhatsApp_Image_2026-07-23_at_15.36.03.jpeg"
+              alt="Sample meal subscription menu"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </>
   );
 }
