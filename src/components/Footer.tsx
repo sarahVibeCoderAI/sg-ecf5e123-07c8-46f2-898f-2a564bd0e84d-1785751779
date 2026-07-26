@@ -79,25 +79,40 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-sans text-xs font-medium uppercase tracking-wide">Our Locations</h4>
-            <ul className="space-y-2 text-sm text-foreground/60">
-              <li>Indiranagar, Bangalore</li>
-              <li>Jayanagar, Bangalore</li>
-              <li>Koramangala, Bangalore</li>
+          <div>
+            <h4 className="font-display text-lg font-semibold mb-4">Our Locations</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/kX9fR2BjjAFyYdQG7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-copper transition-colors"
+                >
+                  Indiranagar, Bangalore
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/DQs1BRv2DzSW1uN59"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-copper transition-colors"
+                >
+                  Domlur, Bangalore
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/ijZsNGVDaDU7A2X79"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-copper transition-colors"
+                >
+                  Lavelle Road, Bangalore
+                </a>
+              </li>
             </ul>
-            <div className="pt-2">
-              <p className="text-sm text-foreground/60">
-                <a href="tel:+918012345678" className="hover:text-foreground transition-colors">
-                  +91 80 1234 5678
-                </a>
-              </p>
-              <p className="text-sm text-foreground/60">
-                <a href="mailto:hello@copperandcloves.com" className="hover:text-foreground transition-colors">
-                  hello@copperandcloves.com
-                </a>
-              </p>
-            </div>
           </div>
 
           <div className="space-y-4">
