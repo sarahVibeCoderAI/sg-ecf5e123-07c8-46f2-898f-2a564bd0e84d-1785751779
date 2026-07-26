@@ -221,33 +221,32 @@ export default function Subscription() {
           </div>
         </section>
 
-        <section className="section-padding">
+        {/* Trial Pack CTA */}
+        <section className="section-padding bg-oat">
           <div className="container">
-            <Card className="max-w-3xl mx-auto border-mushroom/30 bg-white overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <div className="aspect-square md:aspect-auto overflow-hidden">
-                  <img
-                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-42_1_.jpg"
-                    alt="Trial pack meals"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <CardContent className="p-8 lg:p-10 flex flex-col justify-center space-y-6">
-                  <Badge className="w-fit bg-sage/10 text-sage border-sage/20">
-                    Try Before You Commit
-                  </Badge>
-                  <h3 className="font-display text-3xl font-light">
-                    Still uncertain? Sign up for our trial pack!!
-                  </h3>
-                  <p className="text-foreground/70 leading-relaxed">
-                    Experience our chef-crafted meals with a 5-day trial. Perfect for testing how our subscription fits into your lifestyle.
-                  </p>
-                  <Button className="bg-sage text-white hover:bg-sage/90 w-fit">
-                    Get Trial Pack
-                  </Button>
-                </CardContent>
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+                <img
+                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-42_1_.jpg"
+                  alt="Trial pack meals"
+                  className="object-cover w-full h-full"
+                />
               </div>
-            </Card>
+              <div className="space-y-6">
+                <h2 className="font-display text-3xl lg:text-4xl font-light">
+                  Try Before You Commit
+                </h2>
+                <p className="text-lg text-foreground/80 leading-relaxed">
+                  Experience our chef-crafted meals with a 3-day trial.
+                </p>
+                <p className="text-sm text-foreground/60 italic">
+                  *only available to customers who live in the CBD or Indiranagar area of Bangalore.
+                </p>
+                <Button size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                  Get Your Trial Pack
+                </Button>
+              </div>
+            </div>
           </div>
         </section>
 
