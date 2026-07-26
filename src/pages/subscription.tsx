@@ -269,15 +269,15 @@ export default function Subscription() {
 
       {/* Sample Menu Modal */}
       <Dialog open={showMenuModal} onOpenChange={setShowMenuModal}>
-        <DialogContent className="max-w-4xl max-h-[90vh] p-0">
-          <DialogHeader className="p-6 pb-0">
-            <DialogTitle className="text-2xl font-display">Sample Menu</DialogTitle>
+        <DialogContent className="max-w-2xl max-h-[85vh] p-0 overflow-hidden">
+          <DialogHeader className="p-4 pb-3 border-b">
+            <DialogTitle className="text-xl font-display">Sample Menu</DialogTitle>
           </DialogHeader>
-          <div className="overflow-auto p-6 pt-4">
+          <div className="overflow-y-auto p-4" style={{ maxHeight: 'calc(85vh - 80px)' }}>
             <img
               src="/WhatsApp_Image_2026-07-23_at_15.36.03.jpeg"
               alt="Sample meal subscription menu"
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg shadow-sm"
             />
           </div>
         </DialogContent>
