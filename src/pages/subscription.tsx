@@ -237,7 +237,7 @@ export default function Subscription() {
                   Try Before You Commit
                 </h2>
                 <p className="text-lg text-foreground/80 leading-relaxed">
-                  Experience our chef-crafted meals with a 3-day trial.
+                  Experience our chef-crafted meals with a 3-day trial. A chance to see how our subscription fits in with your lifestyle.
                 </p>
                 <p className="text-sm text-foreground/60 italic">
                   *only available to customers who live in the CBD or Indiranagar area of Bangalore.
