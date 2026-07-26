@@ -30,8 +30,14 @@ export default function Subscription() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-copper hover:bg-copper/90 text-white">
-                    Start Your Subscription
+                  <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                    <a
+                      href="https://wa.me/919008454373?text=Hey%20I'm%20interested%20in%20the%20Copper%20%2B%20Cloves%20nourishing%20meal%20subscription%20-%20can%20I%20get%20more%20details%20on%20how%20it%20works."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Start Your Subscription
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="border-sage text-sage hover:bg-sage hover:text-white">
                     View Sample Menu
