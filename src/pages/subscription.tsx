@@ -228,67 +228,67 @@ export default function Subscription() {
               <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
                 A simple credit system
               </h2>
-              <p className="text-lg text-foreground/80 leading-relaxed mb-4">
+              <p className="text-base text-foreground/80 leading-relaxed mb-4">
                 Healthy eating doesn't need to be complicated. Choose a monthly pack of credits and use them however you'd like.
               </p>
-              <div className="space-y-2 text-foreground/70 mb-4">
+              <div className="space-y-2 text-foreground/70 text-base mb-4">
                 <p><strong>1 credit</strong> = Any meal (warm bowls, salads, smoothie bowls or sourdough bowls)</p>
-                <p><strong>0.5 credits</strong> = Protein shakes, bliss balls, beverages and other nourishing extras</p>
+                <p><strong>0.5 credits</strong> = Protein shakes, snacks, hydrating juices and other nourishing extras</p>
               </div>
-              <p className="text-foreground/80 leading-relaxed">
-                Every Friday, we'll send you a new menu for the following week. Simply choose the meals, snacks and shakes you'd like, decide when you'd like them delivered, and we'll take care of the rest.
+              <p className="text-base text-foreground/80 leading-relaxed">
+                Every Friday, we'll send you a new menu for the following week with innovative meals using seasonal ingredients, rotating snacks and beverages so you never get bored. Simply choose the meals, snacks and shakes you'd like, decide when you'd like them delivered, and we'll take care of the rest.
               </p>
             </div>
 
             {/* Pricing Cards */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
               <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 space-y-4">
-                  <h3 className="font-display text-xl font-semibold">Weekday Essentials</h3>
-                  <div className="space-y-1">
-                    <p className="text-2xl font-semibold text-copper">20 Credits</p>
-                    <p className="text-3xl font-display font-light">₹7,999</p>
+                <CardContent className="p-6 flex flex-col h-full">
+                  <h3 className="font-display text-lg font-semibold h-14 flex items-center">Weekday Essentials</h3>
+                  <div className="space-y-1 mb-4">
+                    <p className="text-xl font-semibold text-copper">20 Credits</p>
+                    <p className="text-2xl font-display font-light">₹7,999</p>
                   </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
+                  <p className="text-sm text-foreground/70 leading-relaxed mt-auto">
                     Perfect for weekday lunches or dinners, with the flexibility to choose exactly which days you need us.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 space-y-4">
-                  <h3 className="font-display text-xl font-semibold">Everyday Balance</h3>
-                  <div className="space-y-1">
-                    <p className="text-2xl font-semibold text-copper">30 Credits</p>
-                    <p className="text-3xl font-display font-light">₹11,499</p>
+                <CardContent className="p-6 flex flex-col h-full">
+                  <h3 className="font-display text-lg font-semibold h-14 flex items-center">Everyday Balance</h3>
+                  <div className="space-y-1 mb-4">
+                    <p className="text-xl font-semibold text-copper">30 Credits</p>
+                    <p className="text-2xl font-display font-light">₹11,499</p>
                   </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
+                  <p className="text-sm text-foreground/70 leading-relaxed mt-auto">
                     Ideal if you'd like one nourishing meal most days, with the freedom to add a few snacks or drinks throughout the month.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 space-y-4">
-                  <h3 className="font-display text-xl font-semibold">Daily Nourishment</h3>
-                  <div className="space-y-1">
-                    <p className="text-2xl font-semibold text-copper">40 Credits</p>
-                    <p className="text-3xl font-display font-light">₹14,399</p>
+                <CardContent className="p-6 flex flex-col h-full">
+                  <h3 className="font-display text-lg font-semibold h-14 flex items-center">Daily Nourishment</h3>
+                  <div className="space-y-1 mb-4">
+                    <p className="text-xl font-semibold text-copper">40 Credits</p>
+                    <p className="text-2xl font-display font-light">₹14,399</p>
                   </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
+                  <p className="text-sm text-foreground/70 leading-relaxed mt-auto">
                     Designed for those who enjoy a nourishing meal each day, with room to add protein shakes, bliss balls and other snacks to keep you fuelled between meals.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 space-y-4">
-                  <h3 className="font-display text-xl font-semibold">Fully Nourished</h3>
-                  <div className="space-y-1">
-                    <p className="text-2xl font-semibold text-copper">60 Credits</p>
-                    <p className="text-3xl font-display font-light">₹20,999</p>
+                <CardContent className="p-6 flex flex-col h-full">
+                  <h3 className="font-display text-lg font-semibold h-14 flex items-center">Fully Nourished</h3>
+                  <div className="space-y-1 mb-4">
+                    <p className="text-xl font-semibold text-copper">60 Credits</p>
+                    <p className="text-2xl font-display font-light">₹20,999</p>
                   </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
+                  <p className="text-sm text-foreground/70 leading-relaxed mt-auto">
                     Our best value plan for those who want Copper + Cloves to become part of their everyday routine, with enough credits for multiple meals and protein add-ons, shakes and snacks throughout the week.
                   </p>
                 </CardContent>
