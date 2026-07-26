@@ -242,8 +242,14 @@ export default function Subscription() {
                 <p className="text-sm text-foreground/60 italic">
                   *only available to customers who live in the CBD or Indiranagar area of Bangalore.
                 </p>
-                <Button size="lg" className="bg-copper hover:bg-copper/90 text-white">
-                  Get Your Trial Pack
+                <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                  <a
+                    href="https://wa.me/919008454373?text=Hey%20there%2C%20I%20am%20interested%20in%20taking%20a%203-credit%20trial%20pack%20of%20the%20meal%20subscription.%20How%20can%20I%20avail%20this%20offer%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get Your Trial Pack
+                  </a>
                 </Button>
               </div>
             </div>
