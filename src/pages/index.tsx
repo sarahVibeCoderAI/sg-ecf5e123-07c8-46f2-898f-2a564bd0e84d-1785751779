@@ -52,47 +52,25 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section-padding bg-white">
-          <div className="container">
-            <h2 className="font-display text-3xl sm:text-4xl font-light text-center mb-16">
-              The Copper + Cloves Philosophy
+        {/* Philosophy */}
+        <section className="py-12 lg:py-16 bg-muted/30">
+          <div className="container max-w-4xl text-center">
+            <h2 className="font-display text-3xl lg:text-5xl font-light mb-8">
+              Our Philosophy
             </h2>
-            <div className="grid gap-8 md:grid-cols-3">
-              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-sage/10">
-                    <Sparkles className="h-6 w-6 text-sage" />
-                  </div>
-                  <h3 className="font-display text-xl font-light">Move & Refuel</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    The perfect pit-stop post-workout to nourish your body with clean, whole foods designed for optimal recovery and sustained energy.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-sage/10">
-                    <Users className="h-6 w-6 text-sage" />
-                  </div>
-                  <h3 className="font-display text-xl font-light">Meet & Connect</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Each outlet is a sun-drenched sanctuary to meet new people or connect with loved ones.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-sage/10">
-                    <Heart className="h-6 w-6 text-sage" />
-                  </div>
-                  <h3 className="font-display text-xl font-light">Holistic Wellness</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Nourish in the cafe, nourish on-the-go with our ready-to-eat salads or let us take care of everything with our meal subscription service.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="space-y-6 text-foreground/80">
+              <p className="text-lg lg:text-xl font-bold">
+                Wellness Is More Than What You Eat
+              </p>
+              <p className="text-base lg:text-lg leading-relaxed">
+                Good health isn't built in a week.
+              </p>
+              <p className="text-base lg:text-lg leading-relaxed">
+                It's built through the small choices we make every day—what we eat, how we move, the people we surround ourselves with and the moments we make time for ourselves.
+              </p>
+              <p className="text-base lg:text-lg leading-relaxed">
+                We're here to make those choices a little easier.
+              </p>
             </div>
           </div>
         </section>
