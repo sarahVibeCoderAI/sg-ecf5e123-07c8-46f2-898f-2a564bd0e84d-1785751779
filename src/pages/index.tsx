@@ -24,7 +24,7 @@ export default function Home() {
               src="/c_c_cafe_1_.jpg"
               alt="Copper + Cloves cafe interior"
               fill
-              className="object-cover"
+              className="object-cover object-[center_35%]"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
