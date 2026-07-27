@@ -122,13 +122,15 @@ export default function Home() {
               <Card className="bg-card border-border hover:shadow-lg transition-shadow">
                 <CardContent className="p-8 space-y-4">
                   <h3 className="font-display text-2xl font-semibold text-copper">
-                    Studio
+                    The Studio
                   </h3>
                   <p className="text-base text-foreground/70 leading-relaxed">
                     Movement, breathwork and recovery.
                   </p>
                   <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
-                    <Link href="/contact">Get in Touch →</Link>
+                    <a href="https://www.thestudiobycopperandcloves.in/" target="_blank" rel="noopener noreferrer">
+                      Explore →
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -143,7 +145,9 @@ export default function Home() {
                     Events that bring people together.
                   </p>
                   <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
-                    <Link href="/contact">Join Us →</Link>
+                    <a href="https://urbanaut.app/about-copperandcloves" target="_blank" rel="noopener noreferrer">
+                      Join Us →
+                    </a>
                   </Button>
                 </CardContent>
               </Card>

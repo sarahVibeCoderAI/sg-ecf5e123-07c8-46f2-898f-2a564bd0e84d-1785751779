@@ -2,6 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/cafes", label: "Our Cafés" },
+  { href: "/subscription", label: "Meal Subscription" },
+  { href: "/blog", label: "Journal" },
+  { href: "/careers", label: "Careers" },
+  { href: "/contact", label: "Contact" },
+];
+
 export function Navigation() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
