@@ -154,6 +154,18 @@ export default function Subscription() {
                 </CardContent>
               </Card>
             </div>
+
+            <div className="text-center mt-8">
+              <Button asChild size="lg" className="bg-sage hover:bg-sage/90 text-white">
+                <a
+                  href="https://www.google.com/maps/place/Healthy+Meal+Subscription+%2B+Delivery+by+Copper+%2B+Cloves/@12.9639476,77.6357571,17z/data=!3m1!5s0x3bae141c76fe09fd:0x89461a77a9c3fce0!4m8!3m7!1s0x3bae1523f855b2e1:0xcb130a860beec0d7!8m2!3d12.9639476!4d77.638332!9m1!1b1!16s%2Fg%2F11twzdjlwz?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read all our Google Reviews →
+                </a>
+              </Button>
+            </div>
           </div>
         </section>
 
