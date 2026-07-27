@@ -249,7 +249,7 @@ export default function Subscription() {
                     <p className="text-xl font-semibold text-copper">20 Credits</p>
                     <p className="text-2xl font-display font-light">₹7,999</p>
                   </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed mt-auto">
+                  <p className="text-sm text-foreground/70 leading-relaxed">
                     Perfect for weekday lunches or dinners, with the flexibility to choose exactly which days you need us.
                   </p>
                 </CardContent>
@@ -262,7 +262,7 @@ export default function Subscription() {
                     <p className="text-xl font-semibold text-copper">30 Credits</p>
                     <p className="text-2xl font-display font-light">₹11,499</p>
                   </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed mt-auto">
+                  <p className="text-sm text-foreground/70 leading-relaxed">
                     Ideal if you'd like one nourishing meal most days, with the freedom to add a few snacks or drinks throughout the month.
                   </p>
                 </CardContent>
@@ -275,7 +275,7 @@ export default function Subscription() {
                     <p className="text-xl font-semibold text-copper">40 Credits</p>
                     <p className="text-2xl font-display font-light">₹14,399</p>
                   </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed mt-auto">
+                  <p className="text-sm text-foreground/70 leading-relaxed">
                     Designed for those who enjoy a nourishing meal each day, with room to add protein shakes, bliss balls and other snacks to keep you fuelled between meals.
                   </p>
                 </CardContent>
@@ -288,7 +288,7 @@ export default function Subscription() {
                     <p className="text-xl font-semibold text-copper">60 Credits</p>
                     <p className="text-2xl font-display font-light">₹20,999</p>
                   </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed mt-auto">
+                  <p className="text-sm text-foreground/70 leading-relaxed">
                     Our best value plan for those who want Copper + Cloves to become part of their everyday routine, with enough credits for multiple meals and protein add-ons, shakes and snacks throughout the week.
                   </p>
                 </CardContent>
