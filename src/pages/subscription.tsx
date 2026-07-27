@@ -263,7 +263,7 @@ export default function Subscription() {
                     <p className="text-2xl font-display font-light">₹11,499</p>
                   </div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Ideal if you'd like one nourishing meal most days, with the freedom to add a few snacks or drinks throughout the month.
+                    Ideal if you'd like one nourishing meal most days, with the freedom to add a few snacks or protein shakes throughout the month.
                   </p>
                 </CardContent>
               </Card>
