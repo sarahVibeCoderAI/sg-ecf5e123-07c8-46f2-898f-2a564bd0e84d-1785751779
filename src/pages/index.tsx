@@ -35,10 +35,10 @@ export default function Home() {
                 Wellness, Made Simple.
               </h1>
               <p className="text-lg lg:text-xl leading-relaxed">
-                Copper + Cloves is a modern wellness brand built around one simple belief: feeling your best should fit effortlessly into everyday life.
+                Copper + Cloves is built around one simple question: What helps people live well, consistently?
               </p>
               <p className="text-lg lg:text-xl leading-relaxed">
-                From vibrant cafés and flexible meal subscriptions to community events and wellness education, we're here to help you build healthier habits that last.
+                From cafés and meal subscriptions to community events and everyday products, everything we create is designed to make healthy living a little easier.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
