@@ -60,13 +60,13 @@ export default function Home() {
             </h2>
             <div className="space-y-6 text-foreground/80">
               <p className="text-lg lg:text-xl font-bold">
-                Wellness Is More Than What You Eat
+                Wellness doesn't have to consume your life.
               </p>
               <p className="text-base lg:text-lg leading-relaxed">
-                Good health isn't built in a week.
+                You don't need to spend hours meal prepping, count every calorie or track every metric to feel your best.
               </p>
               <p className="text-base lg:text-lg leading-relaxed">
-                It's built through the small choices we make every day—what we eat, how we move, the people we surround ourselves with and the moments we make time for ourselves.
+                We believe good health is built in the small choices we make every day—a nourishing lunch, a walk in the sunshine, time with friends, talking to a stranger, movement you enjoy and moments around the table.
               </p>
               <p className="text-base lg:text-lg leading-relaxed">
                 We're here to make those choices a little easier.
