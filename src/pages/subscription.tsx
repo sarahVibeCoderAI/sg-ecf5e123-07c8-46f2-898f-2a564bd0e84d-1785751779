@@ -22,10 +22,19 @@ export default function Subscription() {
   return (
     <>
       <SEO
-        title="Meal Subscription - Copper + Cloves"
-        description="Nourishing plant-based meal subscriptions delivered to your Bangalore doorstep. Flexible plans, hyper-local ingredients, zero compromise on taste."
-        image="/og-image.png"
+        title="Meal Subscription - Nourishing Plant-Based Meals Delivered | Copper + Cloves"
+        description="Fresh, plant-based meals delivered to your door in Bangalore. Hyper-local meal subscriptions designed around your schedule."
       />
+
+      {/* Trust Bar */}
+      <div className="bg-sage text-white py-3">
+        <div className="container">
+          <p className="text-center text-sm lg:text-base font-medium">
+            ★★★★★ 4.9 Google Rating | Thousands of meals delivered | Made fresh daily in Bangalore
+          </p>
+        </div>
+      </div>
+
       <Navigation />
       <main>
         {/* Hero Section */}
