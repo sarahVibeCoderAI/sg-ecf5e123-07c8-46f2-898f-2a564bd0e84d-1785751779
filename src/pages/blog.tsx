@@ -283,18 +283,9 @@ export default function Blog() {
           </div>
         </section>
 
-        <section className="py-20 px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-                The Notebook
-              </h1>
-              <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-                A thoughtfully curated collection of plant-based recipes, nutrition insights, and mindful eating practices. From our kitchen to yours — discover nourishing meals and wellness wisdom that support a more intentional way of living.
-              </p>
-            </div>
-
-            {/* Category Filter */}
+        {/* Category Filter */}
+        <section className="py-12 lg:py-16">
+          <div className="container">
             <div className="flex flex-wrap gap-3 justify-center mb-12">
               {categories.map((category) => (
                 <button
