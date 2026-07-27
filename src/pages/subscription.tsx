@@ -93,7 +93,7 @@ export default function Subscription() {
                 </p>
                 <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
                   <a
-                    href="https://wa.me/919008454373?text=Hey%20there%2C%20I%20would%20like%20to%20start%20a%20meal%20subscription%20with%20Copper%20%2B%20Cloves.%20Could%20you%20please%20provide%20me%20with%20more%20information%3F"
+                    href="https://wa.me/919008454373?text=Hey%20I'm%20interested%20in%20the%20Copper%20%2B%20Cloves%20nourishing%20meal%20subscription%20-%20can%20I%20get%20more%20details%20on%20how%20it%20works."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
