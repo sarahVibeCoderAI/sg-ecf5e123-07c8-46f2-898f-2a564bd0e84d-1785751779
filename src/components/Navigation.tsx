@@ -41,16 +41,10 @@ export function Navigation() {
               Meal Subscription
             </Link>
             <Link
-              href="/products"
-              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
-            >
-              Shop Products
-            </Link>
-            <Link
               href="/blog"
               className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
             >
-              Blog
+              Journal
             </Link>
             <Link
               href="/careers"
