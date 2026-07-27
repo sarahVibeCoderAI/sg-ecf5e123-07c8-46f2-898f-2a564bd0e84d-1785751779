@@ -35,7 +35,7 @@ export default function Subscription() {
               <div className="space-y-10">
                 <div className="space-y-6">
                   <h1 className="font-display text-4xl lg:text-5xl font-light leading-tight">
-                    We've got the right solution for you
+                    Put healthy eating on autopilot
                   </h1>
                   <p className="text-lg text-foreground/80 leading-relaxed">
                     Our meal subscription is designed to make healthy eating easy, convenient, and delicious.
