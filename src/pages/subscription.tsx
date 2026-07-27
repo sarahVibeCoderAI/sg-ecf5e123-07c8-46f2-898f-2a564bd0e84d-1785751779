@@ -102,7 +102,7 @@ export default function Subscription() {
         </section>
 
         {/* How It Works */}
-        <section className="py-12 lg:py-16 bg-muted/30">
+        <section className="py-8 lg:py-11 bg-muted/30">
           <div className="container max-w-6xl">
             <h2 className="font-display text-3xl sm:text-4xl font-light text-center mb-16">
               How It Works
@@ -172,8 +172,9 @@ export default function Subscription() {
           </div>
         </section>
 
-        <section className="section-padding bg-white">
-          <div className="container">
+        {/* Why Copper + Cloves */}
+        <section className="py-8 lg:py-11">
+          <div className="container max-w-6xl">
             <h2 className="font-display text-3xl sm:text-4xl font-light text-center mb-4">
               Why Copper + Cloves?
             </h2>
@@ -222,7 +223,7 @@ export default function Subscription() {
         </section>
 
         {/* Credit System Section */}
-        <section className="py-12 lg:py-16 bg-sage/10">
+        <section className="py-8 lg:py-11 bg-sage/10">
           <div className="container max-w-6xl">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
@@ -302,8 +303,8 @@ export default function Subscription() {
         </section>
 
         {/* Trial Pack CTA */}
-        <section className="section-padding bg-oat">
-          <div className="container">
+        <section className="py-8 lg:py-11">
+          <div className="container max-w-6xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
                 <img
