@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Leaf, Users, MapPin, ArrowRight, Sparkles, Heart, Truck } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,34 +16,37 @@ export default function Home() {
         description="Premium plant-based cafes designed with your wellness in mind. Hyper-local meal subscriptions and artisanal products across Bangalore."
       />
       <Navigation />
-      <main>
-        <section className="section-padding pt-12 md:pt-16">
-          <div className="container">
-            <div className="grid gap-12 lg:gap-16 lg:grid-cols-2 items-center">
-              <div className="space-y-8 lg:pr-8">
-                <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1]">
-                  Cafes designed with your wellness in mind.
-                </h1>
-                <p className="text-lg sm:text-xl text-foreground/70 leading-relaxed max-w-xl">
-                  Colourful, nourishing food, made from scratch with love, every day.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                  <Button asChild size="lg" variant="outline" className="border-kale text-kale hover:bg-kale hover:text-white">
-                    <Link href="/cafes">Explore Our Cafes</Link>
-                  </Button>
-                  <Button asChild size="lg" className="bg-sage text-white hover:bg-sage/90">
-                    <Link href="/subscription">Start Meal Subscription</Link>
-                  </Button>
-                </div>
-              </div>
-              <div className="relative lg:order-first lg:order-last">
-                <div className="aspect-[4/3] overflow-hidden rounded-xl shadow-2xl">
-                  <img
-                    src="/hero-main.jpg"
-                    alt="Copper + Cloves cafe - premium plant-based wellness"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
+      <main className="min-h-screen">
+        {/* Hero */}
+        <section className="relative h-[85vh] lg:h-screen flex items-center">
+          <div className="absolute inset-0">
+            <Image
+              src="/hero-main.jpg"
+              alt="Copper + Cloves interior"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
+          </div>
+          <div className="container relative z-10">
+            <div className="max-w-2xl text-white space-y-6">
+              <h1 className="font-display text-5xl lg:text-7xl font-light leading-tight">
+                Wellness, Made Simple.
+              </h1>
+              <p className="text-lg lg:text-xl leading-relaxed">
+                Copper + Cloves is a modern wellness brand built around one simple belief: feeling your best should fit effortlessly into everyday life.
+              </p>
+              <p className="text-lg lg:text-xl leading-relaxed">
+                From vibrant cafés and flexible meal subscriptions to community events and wellness education, we're here to help you build healthier habits that last.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                  <Link href="/cafes">Explore Our Cafés</Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white/20 backdrop-blur-sm">
+                  <Link href="/subscription">Start Meal Subscription</Link>
+                </Button>
               </div>
             </div>
           </div>
