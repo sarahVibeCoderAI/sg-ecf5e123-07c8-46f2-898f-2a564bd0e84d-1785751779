@@ -628,17 +628,87 @@ export default function Subscription() {
           </div>
         </section>
 
-        <section className="section-padding bg-white">
-          <div className="container text-center">
-            <h2 className="font-display text-3xl sm:text-4xl font-light mb-6">
-              Do You Have Questions?
-            </h2>
-            <p className="text-foreground/70 mb-8">
-              We've answered them here
-            </p>
-            <Button asChild className="bg-sage text-white hover:bg-sage/90">
-              <Link href="/contact">Contact Us</Link>
-            </Button>
+        {/* FAQ Section */}
+        <section className="py-12 lg:py-16 bg-muted/30">
+          <div className="container max-w-5xl">
+            <div className="text-center mb-10">
+              <p className="text-xs uppercase tracking-wider text-sage font-semibold mb-3">
+                ANSWERS TO YOUR QUESTIONS
+              </p>
+              <h2 className="font-display text-3xl lg:text-5xl font-light mb-4">
+                Everything you need to know about your daily ritual.
+              </h2>
+              <p className="text-base text-foreground/70 max-w-2xl mx-auto">
+                Have a specific question about our hyper-local delivery, menus, or pausing your plan? We've got you covered.
+              </p>
+            </div>
+
+            {/* Tab Navigation */}
+            <div className="flex flex-wrap justify-center gap-3 mb-8 border-b border-border pb-4">
+              {Object.entries(faqCategories).map(([key, category]) => (
+                <button
+                  key={key}
+                  onClick={() => {
+                    setActiveTab(key);
+                    setOpenFaq(null);
+                  }}
+                  className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${
+                    activeTab === key
+                      ? "bg-copper text-white"
+                      : "bg-transparent text-foreground/70 hover:text-foreground hover:bg-muted"
+                  }`}
+                >
+                  {category.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Accordion Questions */}
+            <div className="space-y-0 bg-card rounded-xl overflow-hidden border border-border">
+              {faqCategories[activeTab as keyof typeof faqCategories].questions.map((faq, index) => (
+                <div key={faq.id} className={index !== 0 ? "border-t border-border" : ""}>
+                  <button
+                    onClick={() => toggleFaq(faq.id)}
+                    className="w-full px-6 py-5 flex justify-between items-start gap-4 text-left hover:bg-muted/50 transition-colors"
+                  >
+                    <span className="font-display text-base lg:text-lg font-medium pr-4 leading-relaxed">
+                      {faq.question}
+                    </span>
+                    <span className="text-2xl text-copper flex-shrink-0 transition-transform duration-200" style={{
+                      transform: openFaq === faq.id ? "rotate(45deg)" : "rotate(0deg)"
+                    }}>
+                      +
+                    </span>
+                  </button>
+                  {openFaq === faq.id && (
+                    <div className="px-6 pb-6 pt-2 text-sm text-foreground/70 leading-relaxed whitespace-pre-line animate-in fade-in slide-in-from-top-2 duration-200">
+                      {faq.answer}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Support CTA Block */}
+            <div className="mt-10 bg-sage text-white rounded-xl p-8 text-center space-y-4">
+              <h3 className="font-display text-2xl font-light">
+                Still have a question about your specific area or meal needs?
+              </h3>
+              <p className="text-base opacity-90">
+                Our concierge team is here to help you design your ideal plan.
+              </p>
+              <div className="flex justify-center pt-2">
+                <Button asChild size="lg" className="bg-white text-sage hover:bg-white/90">
+                  <a
+                    href="https://wa.me/919008454373?text=I%20have%20some%20questions%20about%20the%20meal%20subscription%2C%20was%20hoping%20you%20could%20help%20me!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Chat with Us on WhatsApp
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -659,90 +729,6 @@ export default function Subscription() {
           </div>
         </DialogContent>
       </Dialog>
-
-      {/* FAQ Section */}
-      <section className="py-12 lg:py-16 bg-muted/30">
-        <div className="container max-w-5xl">
-          <div className="text-center mb-10">
-            <p className="text-xs uppercase tracking-wider text-sage font-semibold mb-3">
-              ANSWERS TO YOUR QUESTIONS
-            </p>
-            <h2 className="font-display text-3xl lg:text-5xl font-light mb-4">
-              Everything you need to know about your daily ritual.
-            </h2>
-            <p className="text-base text-foreground/70 max-w-2xl mx-auto">
-              Have a specific question about our hyper-local delivery, menus, or pausing your plan? We've got you covered.
-            </p>
-          </div>
-
-          {/* Tab Navigation */}
-          <div className="flex flex-wrap justify-center gap-3 mb-8 border-b border-border pb-4">
-            {Object.entries(faqCategories).map(([key, category]) => (
-              <button
-                key={key}
-                onClick={() => {
-                  setActiveTab(key);
-                  setOpenFaq(null);
-                }}
-                className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${
-                  activeTab === key
-                    ? "bg-copper text-white"
-                    : "bg-transparent text-foreground/70 hover:text-foreground hover:bg-muted"
-                }`}
-              >
-                {category.label}
-              </button>
-            ))}
-          </div>
-
-          {/* Accordion Questions */}
-          <div className="space-y-0 bg-card rounded-xl overflow-hidden border border-border">
-            {faqCategories[activeTab as keyof typeof faqCategories].questions.map((faq, index) => (
-              <div key={faq.id} className={index !== 0 ? "border-t border-border" : ""}>
-                <button
-                  onClick={() => toggleFaq(faq.id)}
-                  className="w-full px-6 py-5 flex justify-between items-start gap-4 text-left hover:bg-muted/50 transition-colors"
-                >
-                  <span className="font-display text-base lg:text-lg font-medium pr-4 leading-relaxed">
-                    {faq.question}
-                  </span>
-                  <span className="text-2xl text-copper flex-shrink-0 transition-transform duration-200" style={{
-                    transform: openFaq === faq.id ? "rotate(45deg)" : "rotate(0deg)"
-                  }}>
-                    +
-                  </span>
-                </button>
-                {openFaq === faq.id && (
-                  <div className="px-6 pb-6 pt-2 text-sm text-foreground/70 leading-relaxed whitespace-pre-line animate-in fade-in slide-in-from-top-2 duration-200">
-                    {faq.answer}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Support CTA Block */}
-          <div className="mt-10 bg-sage text-white rounded-xl p-8 text-center space-y-4">
-            <h3 className="font-display text-2xl font-light">
-              Still have a question about your specific area or meal needs?
-            </h3>
-            <p className="text-base opacity-90">
-              Our concierge team is here to help you design your ideal plan.
-            </p>
-            <div className="flex justify-center pt-2">
-              <Button asChild size="lg" className="bg-white text-sage hover:bg-white/90">
-                <a
-                  href="https://wa.me/919008454373?text=I%20have%20some%20questions%20about%20the%20meal%20subscription%2C%20was%20hoping%20you%20could%20help%20me!"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Chat with Us on WhatsApp
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
