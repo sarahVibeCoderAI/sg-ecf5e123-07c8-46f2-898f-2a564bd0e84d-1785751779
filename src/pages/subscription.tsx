@@ -86,7 +86,7 @@ export default function Subscription() {
               </div>
               <div className="space-y-6">
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
-                  Designed to Fit Your Lifestyle
+                  Put healthy eating on autopilot
                 </h2>
                 <p className="text-lg text-foreground/80 leading-relaxed">
                   Choose from our flexible subscription plans. Whether you need a few meals a week or a full month of nourishment, we've got the right solution for you.
