@@ -304,50 +304,46 @@ export default function Subscription() {
 
         {/* Why Copper + Cloves */}
         <section className="py-8 lg:py-11">
-          <div className="container max-w-6xl">
-            <h2 className="font-display text-3xl sm:text-4xl font-light text-center mb-4">
+          <div className="container max-w-4xl text-center">
+            <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
               Why Copper + Cloves?
             </h2>
-            <p className="text-center text-foreground/70 mb-16 max-w-2xl mx-auto">
-              Let us take care of your meals and help you save time!
+            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+              Everything we make is designed to help you eat well without compromising on flavour, quality or convenience.
             </p>
-
-            <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
-              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4 text-center">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-sage/10 mx-auto">
-                    <Pause className="h-8 w-8 text-sage" />
-                  </div>
-                  <h3 className="font-display text-xl font-light">Flexible Scheduling</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    If you travel often, you can pause your monthly meals while away. Schedule meals flexibly, whether it's a daily lunch on weekdays or three meals a day for a month.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4 text-center">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-sage/10 mx-auto">
-                    <Heart className="h-8 w-8 text-sage" />
-                  </div>
-                  <h3 className="font-display text-xl font-light">Total Convenience</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Take your pick from our weekly menus, and let us deliver our meals directly to you - no need for daily planning and arranging delivery!
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-mushroom/30 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4 text-center">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-sage/10 mx-auto">
-                    <Leaf className="h-8 w-8 text-sage" />
-                  </div>
-                  <h3 className="font-display text-xl font-light">Zero Plastic</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    We don't use any plastic whatsoever in our packages – everything is biodegradable and can be torn up and composted.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="max-w-2xl mx-auto text-left space-y-3">
+              <div className="flex items-start gap-3">
+                <span className="text-sage text-xl">✓</span>
+                <p className="text-base text-foreground/80">Made from scratch every day</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sage text-xl">✓</span>
+                <p className="text-base text-foreground/80">12+ ingredients in every salad</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sage text-xl">✓</span>
+                <p className="text-base text-foreground/80">Seasonal produce sourced from trusted farms</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sage text-xl">✓</span>
+                <p className="text-base text-foreground/80">Premium ingredients and house-made sauces</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sage text-xl">✓</span>
+                <p className="text-base text-foreground/80">Cold-pressed oils only</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sage text-xl">✓</span>
+                <p className="text-base text-foreground/80">No refined sugar or maida</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sage text-xl">✓</span>
+                <p className="text-base text-foreground/80">100% plant-based</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sage text-xl">✓</span>
+                <p className="text-base text-foreground/80">Gluten-free options available</p>
+              </div>
             </div>
           </div>
         </section>
