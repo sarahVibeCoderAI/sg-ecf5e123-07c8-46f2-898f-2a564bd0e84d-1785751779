@@ -15,15 +15,115 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { TruckIcon, ChefHat, Heart, Pause, Sparkles } from "lucide-react";
+import React from "react";
 
 export default function Subscription() {
   const [showMenuModal, setShowMenuModal] = useState(false);
+  const [openFaq, setOpenFaq] = React.useState<string | null>(null);
+  const [activeTab, setActiveTab] = React.useState<string>("delivery");
+
+  const toggleFaq = (id: string) => {
+    setOpenFaq(openFaq === id ? null : id);
+  };
+
+  const faqCategories = {
+    delivery: {
+      label: "Delivery & Radiuses",
+      questions: [
+        {
+          id: "delivery-1",
+          question: "Can I choose when and where my meals are delivered?",
+          answer: "Yes. Choose from morning, lunchtime or evening delivery, and nominate up to two delivery addresses—perfect if you split your week between home and the office."
+        },
+        {
+          id: "delivery-2",
+          question: "Can I receive multiple meals in one delivery?",
+          answer: "Yes. Many subscribers choose to receive several meals in a single delivery, making it easy to stock the fridge for the day or even the next few days."
+        },
+        {
+          id: "delivery-3",
+          question: "Can I collect my meals instead of paying for delivery?",
+          answer: "Yes. You're welcome to collect your meals from our cloud kitchen or any of our three Copper + Cloves cafés. We'll coordinate the most convenient collection point for you, and you'll avoid paying delivery charges."
+        },
+        {
+          id: "delivery-4",
+          question: "How are delivery charges calculated?",
+          answer: "Delivery charges vary depending on where you live and are calculated based on your delivery area. You'll be able to see the applicable delivery charges when you sign up."
+        },
+        {
+          id: "delivery-5",
+          question: "Which areas of Bangalore do you deliver to?",
+          answer: "Our core delivery network covers Indiranagar, Domlur, CV Raman Nagar, Cambridge Layout, Ulsoor, the Central Business District, Lavelle Road and many surrounding neighbourhoods.\n\nWe also deliver to areas including Koramangala, Frazer Town, Cooke Town and Cox Town through our delivery partners.\n\nIf you're outside our delivery area, you're always welcome to collect your meals from our cloud kitchen or one of our cafés."
+        },
+        {
+          id: "delivery-6",
+          question: "Do you deliver outside Bangalore?",
+          answer: "Not at the moment. We're currently focused on serving Bangalore and doing it exceptionally well.\n\nIf you'd love to see Copper + Cloves in your city, we'd love to hear from you. Visit our Contact page and let us know where you'd like us to open next."
+        }
+      ]
+    },
+    food: {
+      label: "Food, Nutrition & Sourcing",
+      questions: [
+        {
+          id: "food-1",
+          question: "What makes the Copper + Cloves meal subscription different?",
+          answer: "This isn't typical meal prep. Every week you'll enjoy a new menu inspired by cafés around the world, with fresh breakfasts, salads, warm bowls, snacks and protein shakes made from scratch using seasonal ingredients. It's healthy food you'll genuinely look forward to eating."
+        },
+        {
+          id: "food-2",
+          question: "What kind of food can I expect?",
+          answer: "Each day you'll have a choice of a breakfast, salad and warm bowl, with a weekly menu inspired by cuisines from around the world. Think Korean Bibimbap, Moroccan grain bowls, Mediterranean salads and nourishing Indian favourites, alongside protein shakes, snacks and fresh juices."
+        },
+        {
+          id: "food-3",
+          question: "Is the menu the same every week?",
+          answer: "No. Our menu changes every week using seasonal ingredients, so there's always something new to discover while keeping your meals balanced and varied."
+        },
+        {
+          id: "food-4",
+          question: "Can you cater for dietary requirements or allergies?",
+          answer: "We can easily accommodate gluten-free meals and simple ingredient exclusions, such as removing mushrooms.\n\nOur meal subscription is designed as a thoughtfully curated weekly menu rather than a fully customised meal plan. Because of this, we're not the best fit for highly specialised diets, complex medical nutrition plans or customers with multiple severe allergies.\n\nIf you have a straightforward dietary requirement, please get in touch before subscribing—we're always happy to let you know whether our meal subscription is the right fit for you."
+        }
+      ]
+    },
+    flexibility: {
+      label: "Pausing, Changes & Flexibility",
+      questions: [
+        {
+          id: "flex-1",
+          question: "How does the subscription work?",
+          answer: "Choose a credit package and use your credits however you'd like.\n\n• 1 credit = Any meal\n• 0.5 credits = Protein shakes, snacks and beverages\n\nEvery Friday you'll receive a new menu for the following week. Simply choose your meals, select your delivery days and we'll take care of the rest."
+        },
+        {
+          id: "flex-2",
+          question: "Can I try the subscription before committing?",
+          answer: "Yes. Our Trial Pack includes three meals for ₹999, including delivery, so you can experience the food, portion sizes and service before choosing a credit package."
+        },
+        {
+          id: "flex-3",
+          question: "Can I pause my subscription if I'm travelling?",
+          answer: "Absolutely. If you're travelling, simply let us know in advance and we'll pause your subscription while you're away. When you're back, we'll resume it from where you left off. Your credits are valid for 35 days, giving you plenty of flexibility."
+        }
+      ]
+    },
+    pricing: {
+      label: "Pricing & Payment",
+      questions: [
+        {
+          id: "pricing-1",
+          question: "How is this different from ordering on Swiggy or Zomato?",
+          answer: "Our meal subscription removes the daily decision of what to eat—and the habit of reaching for your phone every lunchtime. Instead of ordering meal by meal, you'll plan your week in advance from an exclusive subscriber menu, with fresh meals ready exactly when you need them. It's a simpler, more consistent way to eat well."
+        }
+      ]
+    }
+  };
 
   return (
     <>
       <SEO
-        title="Meal Subscription - Nourishing Plant-Based Meals Delivered | Copper + Cloves"
-        description="Fresh, plant-based meals delivered to your door in Bangalore. Hyper-local meal subscriptions designed around your schedule."
+        title="Meal Subscription - Copper + Cloves"
+        description="Hyper-local plant-based meal subscriptions delivered fresh to your door in Bangalore. Choose your weekly meals from globally-inspired menus."
       />
 
       {/* Trust Bar */}
@@ -561,6 +661,95 @@ export default function Subscription() {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* FAQ Section */}
+      <section className="py-12 lg:py-16 bg-muted/30">
+        <div className="container max-w-5xl">
+          <div className="text-center mb-10">
+            <p className="text-xs uppercase tracking-wider text-sage font-semibold mb-3">
+              ANSWERS TO YOUR QUESTIONS
+            </p>
+            <h2 className="font-display text-3xl lg:text-5xl font-light mb-4">
+              Everything you need to know about your daily ritual.
+            </h2>
+            <p className="text-base text-foreground/70 max-w-2xl mx-auto">
+              Have a specific question about our hyper-local delivery, menus, or pausing your plan? We've got you covered.
+            </p>
+          </div>
+
+          {/* Tab Navigation */}
+          <div className="flex flex-wrap justify-center gap-3 mb-8 border-b border-border pb-4">
+            {Object.entries(faqCategories).map(([key, category]) => (
+              <button
+                key={key}
+                onClick={() => {
+                  setActiveTab(key);
+                  setOpenFaq(null);
+                }}
+                className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${
+                  activeTab === key
+                    ? "bg-copper text-white"
+                    : "bg-transparent text-foreground/70 hover:text-foreground hover:bg-muted"
+                }`}
+              >
+                {category.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Accordion Questions */}
+          <div className="space-y-0 bg-card rounded-xl overflow-hidden border border-border">
+            {faqCategories[activeTab as keyof typeof faqCategories].questions.map((faq, index) => (
+              <div key={faq.id} className={index !== 0 ? "border-t border-border" : ""}>
+                <button
+                  onClick={() => toggleFaq(faq.id)}
+                  className="w-full px-6 py-5 flex justify-between items-start gap-4 text-left hover:bg-muted/50 transition-colors"
+                >
+                  <span className="font-display text-base lg:text-lg font-medium pr-4 leading-relaxed">
+                    {faq.question}
+                  </span>
+                  <span className="text-2xl text-copper flex-shrink-0 transition-transform duration-200" style={{
+                    transform: openFaq === faq.id ? "rotate(45deg)" : "rotate(0deg)"
+                  }}>
+                    +
+                  </span>
+                </button>
+                {openFaq === faq.id && (
+                  <div className="px-6 pb-6 pt-2 text-sm text-foreground/70 leading-relaxed whitespace-pre-line animate-in fade-in slide-in-from-top-2 duration-200">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Support CTA Block */}
+          <div className="mt-10 bg-sage text-white rounded-xl p-8 text-center space-y-4">
+            <h3 className="font-display text-2xl font-light">
+              Still have a question about your specific area or meal needs?
+            </h3>
+            <p className="text-base opacity-90">
+              Our concierge team is here to help you design your ideal plan.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+              <Button asChild size="lg" className="bg-white text-sage hover:bg-white/90">
+                <a
+                  href="https://wa.me/919008454373?text=Hey%20I%20have%20a%20question%20about%20the%20meal%20subscription"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chat with Us on WhatsApp
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
+                <Link href="/contact">
+                  Read Our Full Subscription Terms
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
