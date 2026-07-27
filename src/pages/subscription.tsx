@@ -101,9 +101,9 @@ export default function Subscription() {
           </div>
         </section>
 
-        {/* How It Works Section */}
-        <section className="section-padding">
-          <div className="container">
+        {/* How It Works */}
+        <section className="py-12 lg:py-16 bg-muted/30">
+          <div className="container max-w-6xl">
             <h2 className="font-display text-3xl sm:text-4xl font-light text-center mb-16">
               How It Works
             </h2>
@@ -222,7 +222,7 @@ export default function Subscription() {
         </section>
 
         {/* Credit System Section */}
-        <section className="section-padding bg-sage/10">
+        <section className="py-12 lg:py-16 bg-sage/10">
           <div className="container max-w-6xl">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
@@ -246,7 +246,7 @@ export default function Subscription() {
                 <CardContent className="p-6 flex flex-col h-full">
                   <h3 className="font-display text-lg font-semibold h-14 flex items-center">Weekday Essentials</h3>
                   <div className="space-y-1 mb-4">
-                    <p className="text-xl font-semibold text-copper">20 Credits</p>
+                    <p className="text-xl font-semibold text-sage">20 Credits</p>
                     <p className="text-2xl font-display font-light">₹7,999</p>
                   </div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
@@ -259,7 +259,7 @@ export default function Subscription() {
                 <CardContent className="p-6 flex flex-col h-full">
                   <h3 className="font-display text-lg font-semibold h-14 flex items-center">Everyday Balance</h3>
                   <div className="space-y-1 mb-4">
-                    <p className="text-xl font-semibold text-copper">30 Credits</p>
+                    <p className="text-xl font-semibold text-sage">30 Credits</p>
                     <p className="text-2xl font-display font-light">₹11,499</p>
                   </div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
@@ -272,7 +272,7 @@ export default function Subscription() {
                 <CardContent className="p-6 flex flex-col h-full">
                   <h3 className="font-display text-lg font-semibold h-14 flex items-center">Daily Nourishment</h3>
                   <div className="space-y-1 mb-4">
-                    <p className="text-xl font-semibold text-copper">40 Credits</p>
+                    <p className="text-xl font-semibold text-sage">40 Credits</p>
                     <p className="text-2xl font-display font-light">₹14,399</p>
                   </div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
@@ -285,7 +285,7 @@ export default function Subscription() {
                 <CardContent className="p-6 flex flex-col h-full">
                   <h3 className="font-display text-lg font-semibold h-14 flex items-center">Fully Nourished</h3>
                   <div className="space-y-1 mb-4">
-                    <p className="text-xl font-semibold text-copper">60 Credits</p>
+                    <p className="text-xl font-semibold text-sage">60 Credits</p>
                     <p className="text-2xl font-display font-light">₹20,999</p>
                   </div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
@@ -316,13 +316,13 @@ export default function Subscription() {
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
                   Try Before You Commit
                 </h2>
-                <p className="text-lg text-foreground/80 leading-relaxed">
+                <p className="text-base text-foreground/80 leading-relaxed">
                   Experience our chef-crafted meals with a 3-day trial. A chance to see how our subscription fits in with your lifestyle.
                 </p>
                 <p className="text-sm text-foreground/60 italic">
                   *only available to customers who live in the CBD or Indiranagar area of Bangalore.
                 </p>
-                <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                <Button asChild size="lg" className="bg-sage hover:bg-sage/90 text-white uppercase">
                   <a
                     href="https://wa.me/919008454373?text=Hey%20there%2C%20I%20am%20interested%20in%20taking%20a%203-credit%20trial%20pack%20of%20the%20meal%20subscription.%20How%20can%20I%20avail%20this%20offer%3F"
                     target="_blank"
