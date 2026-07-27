@@ -104,17 +104,18 @@ export default function Careers() {
       />
       <Navigation />
       <main>
-        <section className="section-padding">
+        {/* Hero */}
+        <section className="pt-24 pb-12 lg:pt-32 lg:pb-16">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <Badge className="bg-kale/10 text-kale border-kale/20 text-xs uppercase tracking-wide px-4 py-1">
-                We're Hiring
-              </Badge>
-              <h1 className="font-display text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl">
-                Grow With Us
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light">
+                Come Build Something With Us
               </h1>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Crafting the future of plant-based hospitality. We've grown from a single kitchen to a premium, scaling wellness chain with a team of passionate creators, chefs, and community builders. Join us.
+                Copper + Cloves is building a modern wellness brand centred around one simple idea: making healthy living a little easier.
+              </p>
+              <p className="text-lg text-foreground/70 leading-relaxed">
+                As we grow, we're looking for kind, curious people who care about doing great work and creating experiences that genuinely make a difference to people's everyday lives.
               </p>
             </div>
           </div>
@@ -209,21 +210,36 @@ export default function Careers() {
           </div>
         </section>
 
-        <section className="section-padding bg-white">
+        {/* Current Opportunities */}
+        <section className="py-12 lg:py-16 bg-white">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">
-                Don't See Your Role?
-              </h2>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                We're always open to connecting with talented individuals who share our vision. Send us your resume and tell us how you'd like to contribute to the C+C community.
-              </p>
-              <Button asChild size="lg" className="bg-kale text-white hover:bg-kale/90">
-                <Link href="/contact">
-                  Send General Inquiry
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+            <div className="max-w-3xl mx-auto space-y-8">
+              <div className="text-center space-y-4 mb-12">
+                <h2 className="font-display text-3xl sm:text-4xl font-light">
+                  We're Always Hiring
+                </h2>
+              </div>
+
+              <div className="space-y-6 text-foreground/70 leading-relaxed">
+                <p>
+                  Whether you're a chef, barista, front-of-house team member, manager, finance professional, operations specialist, marketing or social media creative, community or events lead, wellness practitioner, or someone who wants to help build what's next, we'd love to hear from you.
+                </p>
+                <p>
+                  We hire for attitude, curiosity and kindness just as much as experience. Whether you're starting your career or looking for your next leadership role, we're always looking for people who want to grow with us.
+                </p>
+                <p className="font-medium text-foreground">
+                  If that sounds like you, we'd love to hear your story.
+                </p>
+                <p>
+                  Send your resume and a short introduction letter to{" "}
+                  <a 
+                    href="mailto:people@copperandcloves.com"
+                    className="text-copper hover:underline font-medium"
+                  >
+                    people@copperandcloves.com
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
