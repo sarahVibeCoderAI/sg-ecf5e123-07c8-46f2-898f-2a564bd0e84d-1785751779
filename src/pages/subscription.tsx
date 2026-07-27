@@ -114,6 +114,49 @@ export default function Subscription() {
           </div>
         </section>
 
+        {/* Customer Testimonials */}
+        <section className="py-8 lg:py-11 bg-muted/30">
+          <div className="container max-w-6xl">
+            <div className="text-center mb-10">
+              <h2 className="font-display text-3xl lg:text-4xl font-light mb-4">
+                Trusted by hundreds of customers across Bangalore
+              </h2>
+              <p className="text-base text-foreground/80 mb-4">
+                Don't just take our word for it. Here's what our subscribers have to say.
+              </p>
+              <p className="text-lg font-semibold text-sage">
+                ★★★★★ 4.9/5 on Google
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="bg-card border-border">
+                <CardContent className="p-6 space-y-4">
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    "I absolutely love their meal subscription. The food is delicious, nutritious and feels really good on the stomach The quality of ingredients can be felt in every bite.. Their menu has the most interesting options to pick from, I'm not even Vegan but thoroughly enjoy their food. Would highly recommend."
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border">
+                <CardContent className="p-6 space-y-4">
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    "I cannot praise this meal subscription service highly enough, it is quite simply brilliant. There is a great variety of meals to choose from and they change every week, the delivery is reliable and the staff are very helpful. I am not a vegetarian but I decided six months ago that I needed to change my diet and lifestyle in order to loose weight and to lower my cholesterol and reduce my risk of developing diabetes. So six months later I have now lowered my cholesterol and am no longer in the pre-diabetes category, the meals from Copper and Cloves helped me achieve this. Keep up the great work C + C!"
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border">
+                <CardContent className="p-6 space-y-4">
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    "I have been doing the subscription for about 5 months now. Every aspect of it is top notch and thoughtful. When I moved to Bangalore, I was struggling to find the time to make healthy meals that I enjoy eating. I am so glad Copper + Cloves was recommended to me. The team behind Copper + Cloves is amazing too. The build strong relationships with their clients and ensure the logistics of the delivery are smooth."
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* Meals You'll Actually Look Forward To */}
         <section className="py-8 lg:py-11 bg-muted/30">
           <div className="container max-w-6xl">
