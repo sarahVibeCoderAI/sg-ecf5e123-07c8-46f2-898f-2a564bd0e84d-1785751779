@@ -400,17 +400,17 @@ export default function Home() {
         <section className="py-12 lg:py-16 bg-muted/30">
           <div className="container">
             <div className="grid gap-12 lg:grid-cols-2 items-center">
-              <div className="space-y-6 lg:pr-8">
+              <div className="space-y-4 lg:pr-8">
                 <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-copper/10 border border-copper/20">
                   <span className="text-sm font-medium text-copper uppercase tracking-wide">Coming Soon.</span>
                 </div>
-                <h2 className="font-display text-3xl sm:text-4xl font-light">
+                <h2 className="font-display text-2xl sm:text-3xl font-light">
                   Bringing Copper + Cloves Home
                 </h2>
                 <p className="text-foreground/70 leading-relaxed">
                   Soon you'll be able to enjoy some of our favourite pantry staples at home.
                 </p>
-                <div className="space-y-2 text-foreground/80">
+                <div className="space-y-1 text-foreground/80">
                   <p>Granola.</p>
                   <p>Dressings.</p>
                   <p>Dips.</p>
