@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { Leaf, Users, MapPin, ArrowRight, Sparkles, Heart, Truck } from "lucide-react";
+import { Leaf, Users, MapPin, ArrowRight, Sparkles, Heart, Truck, BookOpen } from "lucide-react";
 import Image from "next/image";
 import {
   Carousel,
