@@ -250,7 +250,7 @@ export default function Subscription() {
                     <p className="text-2xl font-display font-light">₹7,999</p>
                   </div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Perfect for weekday lunches or dinners, with the flexibility to choose exactly which days you need us.
+                    This is the plan for you if you mostly want weekday lunches or dinners, with the flexibility to choose exactly which days you need us. Meals can be delivered to your office directly as well as your home!
                   </p>
                 </CardContent>
               </Card>
