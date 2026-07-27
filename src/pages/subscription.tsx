@@ -359,83 +359,29 @@ export default function Subscription() {
           </div>
         </section>
 
-        {/* Credit System Section */}
-        <section className="py-8 lg:py-11 bg-sage/10">
-          <div className="container max-w-6xl">
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
-                A simple credit system
-              </h2>
-              <p className="text-base text-foreground/80 leading-relaxed mb-4">
-                Healthy eating doesn't need to be complicated. Choose a monthly pack of credits and use them however you'd like.
+        {/* Credit System */}
+        <section className="py-8 lg:py-11 bg-muted/30">
+          <div className="container max-w-4xl text-center">
+            <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
+              A Simple Credit System
+            </h2>
+            <div className="space-y-4 text-foreground/80">
+              <p className="text-base lg:text-lg leading-relaxed">
+                Healthy eating doesn't need to be complicated.
               </p>
-              <div className="space-y-2 text-foreground/70 text-base mb-4">
-                <p><strong>1 credit</strong> = Any meal (warm bowls, salads, smoothie bowls or sourdough bowls)</p>
-                <p><strong>0.5 credits</strong> = Protein shakes, snacks, hydrating juices and other nourishing extras</p>
-              </div>
-              <p className="text-base text-foreground/80 leading-relaxed">
-                Every Friday, we'll send you a new menu for the following week with innovative meals using seasonal ingredients, rotating snacks and beverages so you never get bored. Simply choose the meals, snacks and shakes you'd like, decide when you'd like them delivered, and we'll take care of the rest.
+              <p className="text-base lg:text-lg leading-relaxed">
+                Choose the pack of credits that suits you best and use them however you'd like.
+              </p>
+              <p className="text-base lg:text-lg leading-relaxed">
+                1 credit = Any meal (warm bowls, salads, smoothie bowls or sourdough bowls)
+              </p>
+              <p className="text-base lg:text-lg leading-relaxed">
+                0.5 credits = Protein shakes, snacks, hydrating juices and other nourishing extras
+              </p>
+              <p className="text-base lg:text-lg leading-relaxed">
+                Each week you get to choose innovative meals using seasonal ingredients, rotating snacks and fresh juices and shakes so you never get bored.
               </p>
             </div>
-
-            {/* Pricing Cards */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 flex flex-col h-full">
-                  <h3 className="font-display text-lg font-semibold h-14 flex items-center">Weekday Essentials</h3>
-                  <div className="space-y-1 mb-4">
-                    <p className="text-xl font-semibold text-sage">20 Credits</p>
-                    <p className="text-2xl font-display font-light">₹7,999</p>
-                  </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    This is the plan for you if you mostly want weekday lunches or dinners, with the flexibility to choose exactly which days you need us. Meals can be delivered to your office directly as well as your home!
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 flex flex-col h-full">
-                  <h3 className="font-display text-lg font-semibold h-14 flex items-center">Everyday Balance</h3>
-                  <div className="space-y-1 mb-4">
-                    <p className="text-xl font-semibold text-sage">30 Credits</p>
-                    <p className="text-2xl font-display font-light">₹11,499</p>
-                  </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Ideal if you'd like one nourishing meal most days, with the freedom to add a few snacks or protein shakes throughout the month.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 flex flex-col h-full">
-                  <h3 className="font-display text-lg font-semibold h-14 flex items-center">Daily Nourishment</h3>
-                  <div className="space-y-1 mb-4">
-                    <p className="text-xl font-semibold text-sage">40 Credits</p>
-                    <p className="text-2xl font-display font-light">₹14,399</p>
-                  </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Designed for those who might need more than one nourishing meal each day, with room to add protein add-ons, shakes and other snacks to keep you fuelled between meals.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 flex flex-col h-full">
-                  <h3 className="font-display text-lg font-semibold h-14 flex items-center">Fully Nourished</h3>
-                  <div className="space-y-1 mb-4">
-                    <p className="text-xl font-semibold text-sage">60 Credits</p>
-                    <p className="text-2xl font-display font-light">₹20,999</p>
-                  </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Our best value plan for those who want Copper + Cloves to become part of their everyday routine, with enough credits for multiple meals and protein add-ons, shakes and snacks throughout the week.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <p className="text-xs text-center text-foreground/50 italic">
-              *applicable taxes and delivery charges are additional
-            </p>
           </div>
         </section>
 
