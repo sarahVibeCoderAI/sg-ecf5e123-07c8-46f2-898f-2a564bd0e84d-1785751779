@@ -596,35 +596,33 @@ export default function Subscription() {
         </section>
 
         {/* Trial Pack CTA */}
-        <section className="py-8 lg:py-11">
+        <section className="py-6 lg:py-8 bg-background">
           <div className="container max-w-6xl">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
-                <img
-                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-42_1_.jpg"
-                  alt="Trial pack meals"
-                  className="object-cover w-full h-full"
-                />
-              </div>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
-                  Try Before You Commit
+                  Not quite ready to commit?
                 </h2>
-                <p className="text-base text-foreground/80 leading-relaxed">
-                  Experience our chef-crafted meals with a 3-day trial. A chance to see how our subscription fits in with your lifestyle.
+                <p className="text-lg text-foreground/80 leading-relaxed">
+                  Try our Trial Pack first. Three meals for ₹999, including delivery, so you can experience the food, portion sizes and service before choosing a credit package.
                 </p>
-                <p className="text-sm text-foreground/60 italic">
-                  *only available to customers who live in the CBD or Indiranagar area of Bangalore.
-                </p>
-                <Button asChild size="lg" className="bg-sage hover:bg-sage/90 text-white uppercase">
+                <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
                   <a
-                    href="https://wa.me/919008454373?text=Hey%20there%2C%20I%20am%20interested%20in%20taking%20a%203-credit%20trial%20pack%20of%20the%20meal%20subscription.%20How%20can%20I%20avail%20this%20offer%3F"
+                    href="https://wa.me/919008454373?text=Hey%20I'd%20like%20to%20try%20the%20Trial%20Pack%20-%20three%20meals%20for%20%E2%82%B9999."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Get Your Trial Pack
+                    Order Your Trial Pack
                   </a>
                 </Button>
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-42_1_.jpg"
+                  alt="Trial meal pack"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -731,20 +729,15 @@ export default function Subscription() {
             <p className="text-base opacity-90">
               Our concierge team is here to help you design your ideal plan.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+            <div className="flex justify-center pt-2">
               <Button asChild size="lg" className="bg-white text-sage hover:bg-white/90">
                 <a
-                  href="https://wa.me/919008454373?text=Hey%20I%20have%20a%20question%20about%20the%20meal%20subscription"
+                  href="https://wa.me/919008454373?text=I%20have%20some%20questions%20about%20the%20meal%20subscription%2C%20was%20hoping%20you%20could%20help%20me!"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Chat with Us on WhatsApp
                 </a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
-                <Link href="/contact">
-                  Read Our Full Subscription Terms
-                </Link>
               </Button>
             </div>
           </div>
