@@ -7,6 +7,12 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Leaf, Users, MapPin, ArrowRight, Sparkles, Heart, Truck } from "lucide-react";
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Home() {
   return (
@@ -298,13 +304,75 @@ export default function Home() {
           <div className="container">
             <div className="grid gap-12 lg:grid-cols-2 items-center">
               <div className="relative">
-                <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
-                  <img
-                    src="/community-outdoor.jpg"
-                    alt="Community gathering at Copper + Cloves"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
+                <Carousel
+                  opts={{
+                    align: "start",
+                    loop: true,
+                  }}
+                  plugins={[
+                    Autoplay({
+                      delay: 5000,
+                    }),
+                  ]}
+                  className="w-full"
+                >
+                  <CarouselContent>
+                    <CarouselItem>
+                      <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                        <img
+                          src="/community-outdoor.jpg"
+                          alt="Community gathering at Copper + Cloves"
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                        <img
+                          src="/BAG00673.jpg"
+                          alt="Community event"
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                        <img
+                          src="/BAG09529.jpg"
+                          alt="Community gathering"
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                        <img
+                          src="/DSC06124.jpg"
+                          alt="Community connection"
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                        <img
+                          src="/DSC06156.jpg"
+                          alt="Community together"
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                        <img
+                          src="/A7401065.JPEG"
+                          alt="Community meal"
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                </Carousel>
               </div>
               <div className="space-y-6 lg:pl-8">
                 <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-sage/10 border border-sage/20">
@@ -312,10 +380,10 @@ export default function Home() {
                   <span className="text-sm font-medium text-sage uppercase tracking-wide">Community Events</span>
                 </div>
                 <h2 className="font-display text-3xl sm:text-4xl font-light">
-                  More than just a cafe.
+                  Wellness Is Better Together
                 </h2>
                 <p className="text-foreground/70 leading-relaxed">
-                  Join us for cooking workshops, nutrition talks, community meetups and reading socials. Community is the missing pillar of wellness and we want to create that friendly-neighbourhood cafe where there's always something going on.
+                  From yoga brunches and reading socials to sober sundowners and community supper-clubs, we're creating spaces where people can slow down, connect and build meaningful friendships.
                 </p>
                 <Button asChild className="bg-sage text-white hover:bg-sage/90">
                   <Link href="/blog">
