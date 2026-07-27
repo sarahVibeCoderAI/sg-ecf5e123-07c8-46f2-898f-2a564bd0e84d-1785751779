@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Clock, BookOpen } from "lucide-react";
 import { useState } from "react";
 
 export default function Blog() {
@@ -266,6 +266,23 @@ export default function Blog() {
       />
       <Navigation />
       <main>
+        {/* Hero */}
+        <section className="pt-24 pb-12 lg:pt-32 lg:pb-16 bg-muted/30">
+          <div className="container">
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-copper/10 border border-copper/20">
+                <BookOpen className="h-4 w-4 text-copper" />
+                <span className="text-sm font-medium text-copper uppercase tracking-wide">The Journal</span>
+              </div>
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light">
+                Recipes you'll actually make.<br />
+                Nutrition without the noise.<br />
+                Thoughtful articles on food, habits and wellbeing.
+              </h1>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
