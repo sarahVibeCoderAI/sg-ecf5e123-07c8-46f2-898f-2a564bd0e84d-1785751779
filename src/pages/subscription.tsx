@@ -116,13 +116,13 @@ export default function Subscription() {
                 Healthy eating should never feel repetitive.
               </p>
               <p className="text-base text-foreground/70 leading-relaxed">
-                Every week we create a brand-new menu inspired by cafés from around the world, using seasonal ingredients and bold flavours that make eating well something to look forward to.
+                Every week, discover a new menu inspired by cafés around the world—from Korean Bibimbap Bowls and Moroccan grain bowls to Rainbow Noodle Salads, Blueberry Overnight Oats and Mango Chia Puddings.
               </p>
               <p className="text-base text-foreground/70 leading-relaxed">
-                One day you might choose a Korean Bibimbap Bowl, a Mediterranean salad bursting with fresh herbs or a Blueberry Overnight Oats Bowl. The next, it could be a Moroccan grain bowl, a Rainbow Noodle Salad with edamame and kaffir lime dressing, or a layered Mango Chia Pudding. Complete your day with nourishing extras like cacao protein balls, a peanut butter protein shake or our signature banana bread.
+                Complete your day with protein shakes, nourishing snacks and fresh juices, all designed to make healthy eating effortless.
               </p>
               <p className="text-base text-foreground/70 leading-relaxed">
-                This isn't diet food built around restriction. It's the kind of fresh, satisfying food you'd happily order from your favourite café—made to fuel your week.
+                Not diet food. Just fresh, vibrant meals you'd happily order from your favourite cafe
               </p>
             </div>
 
