@@ -68,7 +68,7 @@ export default function Home() {
               <p className="text-base lg:text-lg leading-relaxed">
                 We believe good health is built in the small choices we make every day—a nourishing lunch, a walk in the sunshine, time with friends, talking to a stranger, movement you enjoy and moments around the table.
               </p>
-              <p className="text-base lg:text-lg leading-relaxed">
+              <p className="text-base lg:text-lg leading-relaxed font-bold italic">
                 We're here to make those choices a little easier.
               </p>
             </div>
