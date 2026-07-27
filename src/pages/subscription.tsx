@@ -108,22 +108,37 @@ export default function Subscription() {
         {/* Meals You'll Actually Look Forward To */}
         <section className="py-8 lg:py-11 bg-muted/30">
           <div className="container max-w-6xl">
-            <div className="max-w-4xl mx-auto text-center space-y-6 mb-12">
-              <h2 className="font-display text-3xl lg:text-4xl font-light">
-                Meals You'll Actually Look Forward To
-              </h2>
-              <p className="text-lg text-foreground/80 leading-relaxed">
-                Healthy eating should never feel repetitive.
-              </p>
-              <p className="text-base text-foreground/70 leading-relaxed">
-                Every week, discover a new menu inspired by cafés around the world—from Korean Bibimbap Bowls and Moroccan grain bowls to Rainbow Noodle Salads, Blueberry Overnight Oats and Mango Chia Puddings.
-              </p>
-              <p className="text-base text-foreground/70 leading-relaxed">
-                Complete your day with protein shakes, nourishing snacks and fresh juices, all designed to make healthy eating effortless.
-              </p>
-              <p className="text-base text-foreground/70 leading-relaxed">
-                Not diet food. Just fresh, vibrant meals you'd happily order from your favourite cafe
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+              <div className="space-y-6">
+                <h2 className="font-display text-3xl lg:text-4xl font-light">
+                  Meals You'll Actually Look Forward To
+                </h2>
+                <p className="text-lg text-foreground/80 leading-relaxed">
+                  Healthy eating should never feel repetitive.
+                </p>
+                <div className="space-y-3">
+                  <p className="text-base text-foreground/80 leading-relaxed">
+                    Every week you'll discover:
+                  </p>
+                  <ul className="space-y-2 text-base text-foreground/70">
+                    <li>• Global flavours inspired by cafés around the world</li>
+                    <li>• Three fresh meal choices every day</li>
+                    <li>• Breakfasts, salads, warm bowls, snacks & protein shakes</li>
+                    <li>• Seasonal ingredients and menus that change weekly</li>
+                  </ul>
+                </div>
+                <p className="text-base text-foreground/70 leading-relaxed">
+                  Fresh, vibrant meals you'd happily order from your favourite café. Delivered.
+                </p>
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-29.jpg"
+                  alt="Meal subscription"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             {/* Feature Cards */}
@@ -141,7 +156,7 @@ export default function Subscription() {
                 <CardContent className="p-6 text-center space-y-3">
                   <h3 className="font-display text-lg font-semibold">Colourful by Nature</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Every salad is made with 12 or more fresh ingredients, creating naturally vibrant meals that are rich in fibre, plant diversity and micronutrients.
+                    Every salad is made with 12+ fresh ingredients, creating vibrant meals naturally rich in fibre, plant diversity and micronutrients.
                   </p>
                 </CardContent>
               </Card>
@@ -150,16 +165,16 @@ export default function Subscription() {
                 <CardContent className="p-6 text-center space-y-3">
                   <h3 className="font-display text-lg font-semibold">Crafted from Scratch</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Every dressing, sauce and marinade is made in-house using quality ingredients and seasonal produce. We use cold-pressed oils, never refined oils, and never use refined sugar, maida, artificial ingredients or pre-made sauces. Every meal is 100% plant-based, with gluten-free options available on request.
+                    We make our dressings, sauces and marinades in-house using premium ingredients and seasonal produce, so every meal tastes fresh from the kitchen.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="bg-card border-border">
                 <CardContent className="p-6 text-center space-y-3">
-                  <h3 className="font-display text-lg font-semibold">Nourishment, Your Way</h3>
+                  <h3 className="font-display text-lg font-semibold">Flexible by Design</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Each day's menu includes a breakfast, salad and warm bowl, giving you the flexibility to build your day around your lifestyle. Whether you're looking for a light lunch, meals from morning to evening or extra protein to support your training, your subscription adapts to you.
+                    Choose from breakfasts, salads, warm bowls, protein shakes and snacks to build a subscription that works around your routine.
                   </p>
                 </CardContent>
               </Card>
