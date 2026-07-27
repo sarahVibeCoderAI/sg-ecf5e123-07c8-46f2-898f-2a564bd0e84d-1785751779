@@ -201,38 +201,9 @@ export default function Home() {
                   Everything is made from scratch using seasonal ingredients, with recipes inspired by cafés around the world and flavours you'll genuinely look forward to eating.
                 </p>
                 
-                <div className="space-y-4 pt-4">
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
-                      <div className="h-2 w-2 rounded-full bg-sage" />
-                    </div>
-                    <p className="text-base text-foreground/80">Made from scratch every day</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
-                      <div className="h-2 w-2 rounded-full bg-sage" />
-                    </div>
-                    <p className="text-base text-foreground/80">Seasonal ingredients</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
-                      <div className="h-2 w-2 rounded-full bg-sage" />
-                    </div>
-                    <p className="text-base text-foreground/80">Plant-based by design</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
-                      <div className="h-2 w-2 rounded-full bg-sage" />
-                    </div>
-                    <p className="text-base text-foreground/80">Recipes inspired by cafés around the world</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
-                      <div className="h-2 w-2 rounded-full bg-sage" />
-                    </div>
-                    <p className="text-base text-foreground/80">Colourful, nourishing food</p>
-                  </div>
-                </div>
+                <p className="text-base lg:text-lg text-foreground/70 leading-relaxed pt-6">
+                  Whether you're joining us for brunch or picking up lunch on the go, our food is designed to leave you feeling good long after you've finished eating.
+                </p>
               </div>
 
               {/* Editorial Photo Collage */}
