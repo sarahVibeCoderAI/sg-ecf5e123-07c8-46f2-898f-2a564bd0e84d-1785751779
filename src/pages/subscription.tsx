@@ -86,10 +86,10 @@ export default function Subscription() {
               </div>
               <div className="space-y-6">
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
-                  Designed to fit your lifestyle
+                  Finally, healthy eating that works around your schedule
                 </h2>
                 <p className="text-lg text-foreground/80 leading-relaxed">
-                  Choose from our flexible subscription plans. Whether you need a few meals a week or a full month of nourishment, we've got the right solution for you.
+                  Whether you're eating at your desk, working from home or getting home late, we'll make sure there's always something nourishing waiting for you.
                 </p>
                 <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
                   <a
