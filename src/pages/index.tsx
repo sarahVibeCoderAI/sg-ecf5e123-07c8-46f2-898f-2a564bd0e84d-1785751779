@@ -395,6 +395,45 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Products - Coming Soon */}
+        <section className="py-12 lg:py-16 bg-muted/30">
+          <div className="container">
+            <div className="grid gap-12 lg:grid-cols-2 items-center">
+              <div className="space-y-6 lg:pr-8">
+                <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-copper/10 border border-copper/20">
+                  <span className="text-sm font-medium text-copper uppercase tracking-wide">Coming Soon.</span>
+                </div>
+                <h2 className="font-display text-3xl sm:text-4xl font-light">
+                  Bringing Copper + Cloves Home
+                </h2>
+                <p className="text-foreground/70 leading-relaxed">
+                  Soon you'll be able to enjoy some of our favourite pantry staples at home.
+                </p>
+                <div className="space-y-2 text-lg text-foreground/80">
+                  <p>Granola.</p>
+                  <p>Dressings.</p>
+                  <p>Dips.</p>
+                  <p>Seed toppers.</p>
+                </div>
+                <Button className="bg-copper text-white hover:bg-copper/90">
+                  Join the Waitlist
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+              <div className="relative">
+                <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
+                  <Image
+                    src="/A7406782_2_.jpg"
+                    alt="Copper + Cloves products"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
