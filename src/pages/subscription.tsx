@@ -372,10 +372,10 @@ export default function Subscription() {
               <p className="text-base lg:text-lg leading-relaxed">
                 Choose the pack of credits that suits you best and use them however you'd like.
               </p>
-              <p className="text-base lg:text-lg leading-relaxed">
+              <p className="text-base lg:text-lg leading-relaxed font-bold text-sage italic">
                 1 credit = Any meal (warm bowls, salads, smoothie bowls or sourdough bowls)
               </p>
-              <p className="text-base lg:text-lg leading-relaxed">
+              <p className="text-base lg:text-lg leading-relaxed font-bold text-sage italic">
                 0.5 credits = Protein shakes, snacks, hydrating juices and other nourishing extras
               </p>
               <p className="text-base lg:text-lg leading-relaxed">
