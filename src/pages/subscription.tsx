@@ -156,7 +156,7 @@ export default function Subscription() {
                 <CardContent className="p-6 text-center space-y-3">
                   <h3 className="font-display text-lg font-semibold">Global Flavours</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    From Korean and Mexican to Moroccan and Mediterranean, our menu changes every week, bringing fresh flavours from around the world to your table.
+                    From Korean and Mexican to Moroccan and Mediterranean, as well as twists on our favourite Indian classics, our menu changes every week, bringing fresh flavours from around the world to your table.
                   </p>
                 </CardContent>
               </Card>
