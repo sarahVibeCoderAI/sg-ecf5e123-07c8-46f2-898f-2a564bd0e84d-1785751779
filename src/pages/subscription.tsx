@@ -303,12 +303,12 @@ export default function Subscription() {
         </section>
 
         {/* Why Copper + Cloves */}
-        <section className="py-8 lg:py-11">
+        <section className="py-8 lg:py-11 bg-muted">
           <div className="container max-w-4xl text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
               Why Copper + Cloves?
             </h2>
-            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+            <p className="text-base lg:text-lg text-foreground/80 leading-relaxed mb-8">
               Everything we make is designed to help you eat well without compromising on flavour, quality or convenience.
             </p>
             <div className="max-w-2xl mx-auto text-left space-y-3">
