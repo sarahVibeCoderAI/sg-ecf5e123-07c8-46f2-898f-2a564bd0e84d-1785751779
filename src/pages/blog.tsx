@@ -275,10 +275,13 @@ export default function Blog() {
                 <span className="text-sm font-medium text-copper uppercase tracking-wide">The Journal</span>
               </div>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light">
+                The Journal
+              </h1>
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 Recipes you'll actually make.<br />
                 Nutrition without the noise.<br />
                 Thoughtful articles on food, habits and wellbeing.
-              </h1>
+              </p>
             </div>
           </div>
         </section>
