@@ -365,7 +365,7 @@ export default function Subscription() {
             <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
               A Simple Credit System
             </h2>
-            <div className="space-y-4 text-foreground/80">
+            <div className="space-y-4 text-foreground/80 mb-10">
               <p className="text-base lg:text-lg leading-relaxed">
                 Healthy eating doesn't need to be complicated.
               </p>
@@ -382,6 +382,53 @@ export default function Subscription() {
                 Each week you get to choose innovative meals using seasonal ingredients, rotating snacks and fresh juices and shakes so you never get bored.
               </p>
             </div>
+
+            {/* Pricing Cards */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-4">
+              <Card className="bg-card border-2 border-sage">
+                <CardContent className="p-8 text-center space-y-4">
+                  <h3 className="font-display text-2xl font-semibold">Weekday Essentials</h3>
+                  <p className="text-3xl font-bold text-sage">20 Credits • ₹7,999</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Perfect for weekday lunches or dinners, with the flexibility to choose exactly which days you need us. we can deliver directly to your office if that is what works for you.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-2 border-sage">
+                <CardContent className="p-8 text-center space-y-4">
+                  <h3 className="font-display text-2xl font-semibold">Everyday Balance</h3>
+                  <p className="text-3xl font-bold text-sage">30 Credits • ₹11,499</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Ideal if you'd like one nourishing meal most days, with the freedom to add a few snacks, protein boosters or drinks throughout the month.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-2 border-sage">
+                <CardContent className="p-8 text-center space-y-4">
+                  <h3 className="font-display text-2xl font-semibold">Daily Nourishment</h3>
+                  <p className="text-3xl font-bold text-sage">40 Credits • ₹14,399</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Designed for those who enjoy a nourishing meal each day, with room to add protein shakes, bliss balls and other snacks to keep you fuelled between meals.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-2 border-sage">
+                <CardContent className="p-8 text-center space-y-4">
+                  <h3 className="font-display text-2xl font-semibold">Fully Nourished</h3>
+                  <p className="text-3xl font-bold text-sage">60 Credits • ₹20,999</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Our best value plan for those who want Copper + Cloves to become part of their everyday routine, with enough credits for multiple meals and daily extras throughout the week.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <p className="text-xs text-foreground/60 italic">
+              *prices do not include delivery costs or applicable taxes
+            </p>
           </div>
         </section>
 
