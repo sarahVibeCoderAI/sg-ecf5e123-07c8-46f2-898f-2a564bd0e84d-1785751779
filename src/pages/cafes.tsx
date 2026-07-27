@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt } from "lucide-react";
+import Image from "next/image";
 
 export default function Cafes() {
   const cafes = [
@@ -53,153 +54,87 @@ export default function Cafes() {
       />
       <Navigation />
       <main>
-        <section className="section-padding pt-16 md:pt-24">
+        {/* Hero */}
+        <section className="pt-24 pb-12 lg:pt-32 lg:pb-16">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center space-y-6 mb-16">
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light">
-                Find Your Neighbourhood Cafe
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light">
+                Find Your Neighbourhood Café
               </h1>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Spacious cafes always filled with natural light. The perfect place to meet friends, enjoy freshly-made meals from scratch and pick up items from our pantry.
+                Whether it's a slow breakfast, lunch with friends or coffee in the afternoon, our cafés are designed to be places you'll want to come back to. Fresh, seasonal food made from scratch, warm hospitality and spaces that invite you to stay a while.
               </p>
             </div>
+          </div>
+        </section>
 
-            <div className="space-y-12">
-              {cafes.map((cafe, i) => (
-                <Card key={i} className="overflow-hidden border-mushroom/30 bg-white hover:shadow-xl transition-shadow">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img
+        {/* Cafes Grid */}
+        <section className="py-12 lg:py-16 bg-muted/30">
+          <div className="container max-w-6xl">
+            <div className="grid lg:grid-cols-2 gap-12">
+              {cafes.map((cafe, index) => (
+                <Card key={index} className="overflow-hidden border-border hover:shadow-lg transition-shadow bg-white p-8">
+                  <div className="aspect-[4/3] relative overflow-hidden rounded-lg mb-6">
+                    <Image
                       src={cafe.image}
-                      alt={`${cafe.name} cafe location`}
-                      className="object-cover w-full h-full"
+                      alt={cafe.name}
+                      fill
+                      className="object-cover"
                     />
                   </div>
-                  <CardContent className="p-8 lg:p-10 space-y-6">
+                  <CardContent className="p-0 space-y-4">
                     <div>
-                      <h3 className="font-display text-3xl font-light mb-3">{cafe.name}</h3>
-                      {cafe.description && (
-                        <p className="text-foreground/70 italic">{cafe.description}</p>
+                      <h2 className="font-display text-2xl font-semibold mb-2">
+                        {cafe.name}
+                      </h2>
+                      <p className="text-foreground/70">{cafe.address}</p>
+                    </div>
+
+                    <div className="space-y-3 pt-4">
+                      <div className="flex items-start gap-3">
+                        <MapPin className="h-5 w-5 text-copper mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-sm">Location</p>
+                          <p className="text-sm text-foreground/70">{cafe.location}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <svg className="h-5 w-5 text-copper mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                          <p className="font-medium text-sm">Hours</p>
+                          <p className="text-sm text-foreground/70">{cafe.hours}</p>
+                        </div>
+                      </div>
+
+                      {cafe.features && (
+                        <div className="flex flex-wrap gap-2 pt-2">
+                          {cafe.features.map((feature, idx) => (
+                            <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                              {feature}
+                            </Badge>
+                          ))}
+                        </div>
                       )}
                     </div>
 
-                    <div className="space-y-4">
-                      <div className="flex items-start">
-                        <MapPin className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-sage" />
-                        <p className="text-sm text-foreground/80">{cafe.address}</p>
-                      </div>
-
-                      <div className="flex items-center">
-                        <Phone className="h-5 w-5 mr-3 flex-shrink-0 text-sage" />
-                        <a href={`tel:${cafe.phone.replace(/\s/g, '')}`} className="text-sm text-foreground/80 hover:text-sage transition-colors">
-                          {cafe.phone}
-                        </a>
-                      </div>
-
-                      <div className="flex items-center">
-                        <Clock className="h-5 w-5 mr-3 flex-shrink-0 text-sage" />
-                        <p className="text-sm text-foreground/80">{cafe.hours}</p>
-                      </div>
-                    </div>
-
-                    <div className="space-y-3 pt-2">
-                      <p className="text-sm font-medium uppercase tracking-wide text-foreground/80">
-                        Amenities
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {cafe.amenities.map((amenity, j) => (
-                          <span
-                            key={j}
-                            className="text-xs px-3 py-1.5 rounded-full bg-oat border border-mushroom/20 text-foreground/70"
-                          >
-                            {amenity}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="pt-4">
-                      <Button
-                        asChild
-                        size="lg"
-                        className="w-full bg-sage text-white hover:bg-sage/90"
-                      >
-                        <a
-                          href={cafe.mapsUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                    <div className="flex gap-3 pt-4">
+                      <Button asChild className="flex-1 bg-copper hover:bg-copper/90 text-white">
+                        <a href={cafe.mapLink} target="_blank" rel="noopener noreferrer">
                           Get Directions
+                        </a>
+                      </Button>
+                      <Button asChild variant="outline" className="flex-1 border-copper text-copper hover:bg-copper/5">
+                        <a href={cafe.menuLink} target="_blank" rel="noopener noreferrer">
+                          View Menu
                         </a>
                       </Button>
                     </div>
                   </CardContent>
                 </Card>
               ))}
-            </div>
-
-            <div className="mt-16">
-              <h3 className="font-display text-3xl font-light text-center mb-8">Visit Us</h3>
-              <div className="grid gap-6 md:grid-cols-3">
-                <Card className="border-mushroom/30 bg-white">
-                  <CardContent className="p-6 space-y-3">
-                    <h4 className="font-display text-xl font-light">Indiranagar Flagship</h4>
-                    <p className="text-sm text-foreground/70">
-                      549A 9th A Main, Hoyasala Nagar, Indiranagar
-                    </p>
-                    <Button 
-                      asChild 
-                      size="sm" 
-                      variant="outline" 
-                      className="w-full border-sage text-sage hover:bg-sage hover:text-white"
-                    >
-                      <a href="https://maps.app.goo.gl/kX9fR2BjjAFyYdQG7" target="_blank" rel="noopener noreferrer">
-                        <MapPin className="mr-2 h-4 w-4" />
-                        Get Directions
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-mushroom/30 bg-white">
-                  <CardContent className="p-6 space-y-3">
-                    <h4 className="font-display text-xl font-light">Lavelle Road</h4>
-                    <p className="text-sm text-foreground/70">
-                      4, Walton Road, off Lavelle Road, Ashok Nagar
-                    </p>
-                    <Button 
-                      asChild 
-                      size="sm" 
-                      variant="outline" 
-                      className="w-full border-sage text-sage hover:bg-sage hover:text-white"
-                    >
-                      <a href="https://maps.app.goo.gl/uYJyXegy1MTPichcA" target="_blank" rel="noopener noreferrer">
-                        <MapPin className="mr-2 h-4 w-4" />
-                        Get Directions
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-mushroom/30 bg-white">
-                  <CardContent className="p-6 space-y-3">
-                    <h4 className="font-display text-xl font-light">The Studio, Domlur</h4>
-                    <p className="text-sm text-foreground/70">
-                      4th floor, 167, 2nd cross rd, Stage 2, Domlur
-                    </p>
-                    <Button 
-                      asChild 
-                      size="sm" 
-                      variant="outline" 
-                      className="w-full border-sage text-sage hover:bg-sage hover:text-white"
-                    >
-                      <a href="https://maps.app.goo.gl/BvSuqcC3kFR9moau7" target="_blank" rel="noopener noreferrer">
-                        <MapPin className="mr-2 h-4 w-4" />
-                        Get Directions
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
           </div>
         </section>
