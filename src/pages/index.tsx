@@ -75,6 +75,112 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Our Ecosystem */}
+        <section className="py-12 lg:py-16 bg-background">
+          <div className="container max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-3xl lg:text-5xl font-light mb-4">
+                Our Ecosystem
+              </h2>
+              <p className="text-lg lg:text-xl text-foreground/80">
+                One Brand. Many Ways to Nourish Yourself.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Cafés */}
+              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold text-copper">
+                    Cafés
+                  </h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Beautiful spaces designed for everyday nourishment.
+                  </p>
+                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
+                    <Link href="/cafes">Explore →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Meal Subscription */}
+              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold text-copper">
+                    Meal Subscription
+                  </h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Healthy eating on autopilot.
+                  </p>
+                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
+                    <Link href="/subscription">Learn More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Studio */}
+              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold text-copper">
+                    Studio
+                  </h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Movement, breathwork and recovery.
+                  </p>
+                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
+                    <Link href="/contact">Get in Touch →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Community */}
+              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold text-copper">
+                    Community
+                  </h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Events that bring people together.
+                  </p>
+                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
+                    <Link href="/contact">Join Us →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Recipes & Journal */}
+              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold text-copper">
+                    Recipes & Journal
+                  </h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Simple recipes, mindful eating and practical wellness advice.
+                  </p>
+                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
+                    <Link href="/blog">Read →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Coming Soon */}
+              <Card className="bg-muted/50 border-border hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold text-sage">
+                    Coming Soon
+                  </h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Pantry essentials you'll use every day.
+                  </p>
+                  <p className="text-sm text-foreground/60 italic">
+                    Granola. Dressings. Seed toppers.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         <section className="section-padding">
           <div className="container">
             <div className="flex items-center justify-between mb-12">
