@@ -13,7 +13,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import { TruckIcon, ChefHat, Heart, Pause, Sparkles } from "lucide-react";
+import { TruckIcon, ChefHat, Heart, Pause, Sparkles, Image } from "lucide-react";
 
 export default function Subscription() {
   const [showMenuModal, setShowMenuModal] = useState(false);
@@ -71,31 +71,34 @@ export default function Subscription() {
           </div>
         </section>
 
-        {/* Flexible System Section */}
-        <section className="section-padding bg-oat">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="space-y-6">
-                  <h2 className="font-display text-3xl lg:text-4xl font-light">
-                    Designed to Fit Your Lifestyle
-                  </h2>
-                  <div className="space-y-4 text-foreground/80 leading-relaxed">
-                    <p>
-                      Our meal subscription is designed to be totally flexible to fit in with your lifestyle. The C+C meal subscription is a credit based system which allows you to pick the meals you want and need, and not get tied in to a certain number of meals per day.
-                    </p>
-                    <p>
-                      Our daily range of add-ons means it's easy to guarantee 35g of protein per meal, and we can handle your healthy snacks and protein shakes.
-                    </p>
-                  </div>
-                </div>
-                <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                  <img
-                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-12_1_.jpg"
-                    alt="Flexible meal subscription bowls"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
+        {/* Designed to Fit Your Lifestyle */}
+        <section className="py-6 lg:py-8">
+          <div className="container max-w-6xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-12_1_.jpg"
+                  alt="Meal subscription delivery"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="space-y-6">
+                <h2 className="font-display text-3xl lg:text-4xl font-light">
+                  Designed to Fit Your Lifestyle
+                </h2>
+                <p className="text-lg text-foreground/80 leading-relaxed">
+                  Choose from our flexible subscription plans. Whether you need a few meals a week or a full month of nourishment, we've got the right solution for you.
+                </p>
+                <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                  <a
+                    href="https://wa.me/919008454373?text=Hey%20there%2C%20I%20would%20like%20to%20start%20a%20meal%20subscription%20with%20Copper%20%2B%20Cloves.%20Could%20you%20please%20provide%20me%20with%20more%20information%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Start Your Subscription
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
