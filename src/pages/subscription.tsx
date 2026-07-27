@@ -108,70 +108,49 @@ export default function Subscription() {
         {/* How It Works */}
         <section className="py-8 lg:py-11 bg-muted/30">
           <div className="container max-w-6xl">
-            <h2 className="font-display text-3xl sm:text-4xl font-light text-center mb-16">
-              How It Works
+            <h2 className="font-display text-3xl lg:text-4xl font-light text-center mb-12">
+              Getting Started is Easy
             </h2>
-            
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
-              <Card className="border-mushroom/30 bg-white text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-sage/10 mx-auto">
-                    <ChefHat className="h-8 w-8 text-sage" />
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center mx-auto font-bold text-sm">
-                    1
-                  </div>
-                  <h3 className="font-display text-xl font-light">Select Your Preferred Meals</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    There's a new exclusive menu sent out every Friday from which you can select your meals for the week.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-sage/20 flex items-center justify-center">
+                  <Calendar className="w-8 h-8 text-sage" />
+                </div>
+                <h3 className="font-display text-xl font-semibold">Choose Your Week</h3>
+                <p className="text-sm text-foreground/70 leading-relaxed">
+                  Every Friday, we'll send you an exclusive menu featuring seasonal dishes, protein shakes, snacks and beverages. Simply choose what you'd like for the week ahead.
+                </p>
+              </div>
 
-              <Card className="border-mushroom/30 bg-white text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-sage/10 mx-auto">
-                    <Calendar className="h-8 w-8 text-sage" />
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center mx-auto font-bold text-sm">
-                    2
-                  </div>
-                  <h3 className="font-display text-xl font-light">Pick Your Days and Time-Slots</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Customize your delivery schedule by selecting the days and time slots that best suit your daily routine.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-sage/20 flex items-center justify-center">
+                  <MapPin className="w-8 h-8 text-sage" />
+                </div>
+                <h3 className="font-display text-xl font-semibold">Fit It Around Your Schedule</h3>
+                <p className="text-sm text-foreground/70 leading-relaxed">
+                  Select the days, delivery times and address that work best for you. Whether you're at home or in the office, we'll deliver when you need us.
+                </p>
+              </div>
 
-              <Card className="border-mushroom/30 bg-white text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-sage/10 mx-auto">
-                    <TruckIcon className="h-8 w-8 text-sage" />
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center mx-auto font-bold text-sm">
-                    3
-                  </div>
-                  <h3 className="font-display text-xl font-light">Delivered to Your Doorstep</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    We deliver your selected meals on the dates chosen, and all of them come ready-to-eat for your convenience.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-sage/20 flex items-center justify-center">
+                  <TruckIcon className="w-8 h-8 text-sage" />
+                </div>
+                <h3 className="font-display text-xl font-semibold">We'll Take Care of the Rest</h3>
+                <p className="text-sm text-foreground/70 leading-relaxed">
+                  Your meals arrive fresh, ready to eat and delivered straight to your door, so there's no shopping, cooking or meal prep to think about.
+                </p>
+              </div>
 
-              <Card className="border-mushroom/30 bg-white text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-sage/10 mx-auto">
-                    <Sparkles className="h-8 w-8 text-sage" />
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center mx-auto font-bold text-sm">
-                    4
-                  </div>
-                  <h3 className="font-display text-xl font-light">Dig In & Enjoy Your Meals!</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    We make healthy eating fun and our meals will leave you feeling so great that you'll crave them repeatedly!
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-sage/20 flex items-center justify-center">
+                  <Heart className="w-8 h-8 text-sage" />
+                </div>
+                <h3 className="font-display text-xl font-semibold">Enjoy More, Think Less</h3>
+                <p className="text-sm text-foreground/70 leading-relaxed">
+                  With healthy meals already sorted, you can spend less time deciding what to eat and more time enjoying your week. Healthy eating becomes one less thing to think about.
+                </p>
+              </div>
             </div>
           </div>
         </section>
