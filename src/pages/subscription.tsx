@@ -13,7 +13,8 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import { TruckIcon, ChefHat, Heart, Pause, Sparkles, Image } from "lucide-react";
+import Image from "next/image";
+import { TruckIcon, ChefHat, Heart, Pause, Sparkles } from "lucide-react";
 
 export default function Subscription() {
   const [showMenuModal, setShowMenuModal] = useState(false);
