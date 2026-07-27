@@ -105,6 +105,146 @@ export default function Subscription() {
           </div>
         </section>
 
+        {/* Meals You'll Actually Look Forward To */}
+        <section className="py-8 lg:py-11 bg-muted/30">
+          <div className="container max-w-6xl">
+            <div className="max-w-4xl mx-auto text-center space-y-6 mb-12">
+              <h2 className="font-display text-3xl lg:text-4xl font-light">
+                Meals You'll Actually Look Forward To
+              </h2>
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                Healthy eating should never feel repetitive.
+              </p>
+              <p className="text-base text-foreground/70 leading-relaxed">
+                Every week we create a brand-new menu inspired by cafés from around the world, using seasonal ingredients and bold flavours that make eating well something to look forward to.
+              </p>
+              <p className="text-base text-foreground/70 leading-relaxed">
+                One day you might choose a Korean Bibimbap Bowl, a Mediterranean salad bursting with fresh herbs or a Blueberry Overnight Oats Bowl. The next, it could be a Moroccan grain bowl, a Rainbow Noodle Salad with edamame and kaffir lime dressing, or a layered Mango Chia Pudding. Complete your day with nourishing extras like cacao protein balls, a peanut butter protein shake or our signature banana bread.
+              </p>
+              <p className="text-base text-foreground/70 leading-relaxed">
+                This isn't diet food built around restriction. It's the kind of fresh, satisfying food you'd happily order from your favourite café—made to fuel your week.
+              </p>
+            </div>
+
+            {/* Feature Cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <Card className="bg-card border-border">
+                <CardContent className="p-6 text-center space-y-3">
+                  <h3 className="font-display text-lg font-semibold">Global Flavours</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    From Korean and Mexican to Moroccan and Mediterranean, our menu changes every week, bringing fresh flavours from around the world to your table.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border">
+                <CardContent className="p-6 text-center space-y-3">
+                  <h3 className="font-display text-lg font-semibold">Colourful by Nature</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Every salad is made with 12 or more fresh ingredients, creating naturally vibrant meals that are rich in fibre, plant diversity and micronutrients.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border">
+                <CardContent className="p-6 text-center space-y-3">
+                  <h3 className="font-display text-lg font-semibold">Crafted from Scratch</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Every dressing, sauce and marinade is made in-house using quality ingredients and seasonal produce. We use cold-pressed oils, never refined oils, and never use refined sugar, maida, artificial ingredients or pre-made sauces. Every meal is 100% plant-based, with gluten-free options available on request.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border">
+                <CardContent className="p-6 text-center space-y-3">
+                  <h3 className="font-display text-lg font-semibold">Nourishment, Your Way</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Each day's menu includes a breakfast, salad and warm bowl, giving you the flexibility to build your day around your lifestyle. Whether you're looking for a light lunch, meals from morning to evening or extra protein to support your training, your subscription adapts to you.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Photo Carousel */}
+            <div className="overflow-x-auto pb-4 -mx-4 px-4">
+              <div className="flex gap-4 min-w-max">
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-47.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-45_1_.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-39.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-34.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-32.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-22.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-19.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/BAG08141.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works */}
         <section className="py-8 lg:py-11 bg-muted/30">
           <div className="container max-w-6xl">
