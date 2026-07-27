@@ -318,7 +318,7 @@ export default function Subscription() {
               <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
                 Why Copper + Cloves?
               </h2>
-              <p className="text-xs lg:text-sm text-foreground/80 leading-relaxed mb-8">
+              <p className="text-xs lg:text-sm text-foreground/80 leading-relaxed mb-8 italic">
                 Everything we make is designed to help you eat well without compromising on flavour, quality or convenience.
               </p>
               <div className="max-w-2xl mx-auto text-left space-y-3">
