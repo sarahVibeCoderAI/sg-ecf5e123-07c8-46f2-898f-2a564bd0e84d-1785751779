@@ -170,14 +170,6 @@ export default function Subscription() {
               <div className="flex gap-4 min-w-max">
                 <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
                   <Image
-                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024.jpg"
-                    alt="Meal subscription"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
-                  <Image
                     src="/Sarah_C_C_Subscription_Photoshoot_May_2024-47.jpg"
                     alt="Meal subscription"
                     fill
@@ -187,14 +179,6 @@ export default function Subscription() {
                 <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
                   <Image
                     src="/Sarah_C_C_Subscription_Photoshoot_May_2024-45_1_.jpg"
-                    alt="Meal subscription"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
-                  <Image
-                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-39.jpg"
                     alt="Meal subscription"
                     fill
                     className="object-cover"
@@ -227,6 +211,14 @@ export default function Subscription() {
                 <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
                   <Image
                     src="/Sarah_C_C_Subscription_Photoshoot_May_2024-19.jpg"
+                    alt="Meal subscription"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024.jpg"
                     alt="Meal subscription"
                     fill
                     className="object-cover"
