@@ -276,7 +276,7 @@ export default function Subscription() {
                     <p className="text-2xl font-display font-light">₹14,399</p>
                   </div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Designed for those who enjoy a nourishing meal each day, with room to add protein shakes, bliss balls and other snacks to keep you fuelled between meals.
+                    Designed for those who might need more than one nourishing meal each day, with room to add protein add-ons, shakes and other snacks to keep you fuelled between meals.
                   </p>
                 </CardContent>
               </Card>
