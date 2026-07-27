@@ -312,46 +312,48 @@ export default function Subscription() {
         </section>
 
         {/* Why Copper + Cloves */}
-        <section className="py-8 lg:py-11 bg-muted">
-          <div className="container max-w-4xl text-center">
-            <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
-              Why Copper + Cloves?
-            </h2>
-            <p className="text-base lg:text-lg text-foreground/80 leading-relaxed mb-8">
-              Everything we make is designed to help you eat well without compromising on flavour, quality or convenience.
-            </p>
-            <div className="max-w-2xl mx-auto text-left space-y-3">
-              <div className="flex items-start gap-3">
-                <span className="text-sage text-xl">✓</span>
-                <p className="text-base text-foreground/80">Made from scratch every day</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-sage text-xl">✓</span>
-                <p className="text-base text-foreground/80">12+ ingredients in every salad</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-sage text-xl">✓</span>
-                <p className="text-base text-foreground/80">Seasonal produce sourced from trusted farms</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-sage text-xl">✓</span>
-                <p className="text-base text-foreground/80">Premium ingredients and house-made sauces</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-sage text-xl">✓</span>
-                <p className="text-base text-foreground/80">Cold-pressed oils only</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-sage text-xl">✓</span>
-                <p className="text-base text-foreground/80">No refined sugar or maida</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-sage text-xl">✓</span>
-                <p className="text-base text-foreground/80">100% plant-based</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-sage text-xl">✓</span>
-                <p className="text-base text-foreground/80">Gluten-free options available</p>
+        <section className="py-8 lg:py-11">
+          <div className="container max-w-4xl">
+            <div className="bg-muted border-2 border-sage rounded-2xl p-8 lg:p-12 text-center">
+              <h2 className="font-display text-3xl lg:text-4xl font-light mb-6">
+                Why Copper + Cloves?
+              </h2>
+              <p className="text-sm lg:text-base text-foreground/80 leading-relaxed mb-8">
+                Everything we make is designed to help you eat well without compromising on flavour, quality or convenience.
+              </p>
+              <div className="max-w-2xl mx-auto text-left space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="text-sage text-xl">✓</span>
+                  <p className="text-base text-foreground/80">Made from scratch every day</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-sage text-xl">✓</span>
+                  <p className="text-base text-foreground/80">12+ ingredients in every salad</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-sage text-xl">✓</span>
+                  <p className="text-base text-foreground/80">Seasonal produce sourced from trusted farms</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-sage text-xl">✓</span>
+                  <p className="text-base text-foreground/80">Premium ingredients and house-made sauces</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-sage text-xl">✓</span>
+                  <p className="text-base text-foreground/80">Cold-pressed oils only</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-sage text-xl">✓</span>
+                  <p className="text-base text-foreground/80">No refined sugar or maida</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-sage text-xl">✓</span>
+                  <p className="text-base text-foreground/80">100% plant-based</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-sage text-xl">✓</span>
+                  <p className="text-base text-foreground/80">Gluten-free options available</p>
+                </div>
               </div>
             </div>
           </div>
