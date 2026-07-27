@@ -432,6 +432,101 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Journal Section */}
+        <section className="section-padding bg-white">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto space-y-6 mb-12">
+              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-copper/10 border border-copper/20">
+                <BookOpen className="h-4 w-4 text-copper" />
+                <span className="text-sm font-medium text-copper uppercase tracking-wide">the Journal</span>
+              </div>
+              <h2 className="font-display text-3xl sm:text-4xl font-light">
+                Recipes you'll actually make.<br />
+                Nutrition without the noise.<br />
+                Thoughtful articles on food, habits and wellbeing.
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Featured Blog Posts */}
+              <Link href="/blog/lemon-coconut-cookies" className="group">
+                <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
+                  <div className="aspect-[4/3] relative overflow-hidden">
+                    <Image
+                      src="/generated/blog-recipe.png"
+                      alt="Lemon Coconut Cookies"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">Recipe</Badge>
+                    <h3 className="font-display text-xl font-semibold group-hover:text-copper transition-colors">
+                      Lemon Coconut Cookies
+                    </h3>
+                    <p className="text-sm text-foreground/70 line-clamp-2">
+                      Bright, citrusy and perfectly chewy - these cookies are a sunshine-in-a-bite moment.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link href="/blog/start-by-slowing-down" className="group">
+                <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
+                  <div className="aspect-[4/3] relative overflow-hidden">
+                    <Image
+                      src="/generated/blog-lifestyle.png"
+                      alt="Start By Slowing Down"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <Badge variant="secondary" className="bg-copper/10 text-copper border-copper/20">Lifestyle</Badge>
+                    <h3 className="font-display text-xl font-semibold group-hover:text-copper transition-colors">
+                      Start By Slowing Down
+                    </h3>
+                    <p className="text-sm text-foreground/70 line-clamp-2">
+                      In a world that glorifies busy, slowing down is a radical act of self-care.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link href="/blog/breakfast-smoothie-bowl" className="group">
+                <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
+                  <div className="aspect-[4/3] relative overflow-hidden">
+                    <Image
+                      src="/generated/blog-featured-nutrition.png"
+                      alt="Breakfast Smoothie Bowl"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">Nutrition</Badge>
+                    <h3 className="font-display text-xl font-semibold group-hover:text-copper transition-colors">
+                      Breakfast Smoothie Bowl
+                    </h3>
+                    <p className="text-sm text-foreground/70 line-clamp-2">
+                      A vibrant, nutrient-packed start to your day that tastes as good as it looks.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-12">
+              <Button asChild size="lg" variant="outline" className="border-copper text-copper hover:bg-copper/5">
+                <Link href="/blog">
+                  Explore All Articles
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
