@@ -178,7 +178,7 @@ export default function Subscription() {
                 </div>
                 <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
                   <Image
-                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024.jpg"
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-19.jpg"
                     alt="Meal subscription"
                     fill
                     className="object-cover"
@@ -218,7 +218,7 @@ export default function Subscription() {
                 </div>
                 <div className="relative w-80 h-80 rounded-xl overflow-hidden flex-shrink-0">
                   <Image
-                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-19.jpg"
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024.jpg"
                     alt="Meal subscription"
                     fill
                     className="object-cover"
