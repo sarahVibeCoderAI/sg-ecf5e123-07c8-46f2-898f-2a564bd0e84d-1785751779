@@ -441,11 +441,9 @@ export default function Home() {
                 <BookOpen className="h-4 w-4 text-copper" />
                 <span className="text-sm font-medium text-copper uppercase tracking-wide">the Journal</span>
               </div>
-              <h2 className="font-display text-3xl sm:text-4xl font-light">
-                Recipes you'll actually make.<br />
-                Nutrition without the noise.<br />
-                Thoughtful articles on food, habits and wellbeing.
-              </h2>
+              <p className="text-foreground/70 leading-relaxed">
+                Recipes you'll come back to. Straightforward nutrition you can trust. Reflections on food, wellbeing and everyday habits.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -453,11 +451,10 @@ export default function Home() {
               <Link href="/blog/lemon-coconut-cookies" className="group">
                 <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
                   <div className="aspect-[4/3] relative overflow-hidden">
-                    <Image
-                      src="/generated/blog-recipe.png"
+                    <img
+                      src="https://copperandcloves.com/wp-content/uploads/2020/08/8a0f7b89e524bdb05a21065a97d760a6-1.png"
                       alt="Lemon Coconut Cookies"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <CardContent className="p-6 space-y-3">
@@ -475,11 +472,10 @@ export default function Home() {
               <Link href="/blog/start-by-slowing-down" className="group">
                 <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
                   <div className="aspect-[4/3] relative overflow-hidden">
-                    <Image
-                      src="/generated/blog-lifestyle.png"
+                    <img
+                      src="/Sarah_C_C_Subscription_Photoshoot_May_2024-22_1_.jpg"
                       alt="Start By Slowing Down"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <CardContent className="p-6 space-y-3">
@@ -497,11 +493,10 @@ export default function Home() {
               <Link href="/blog/breakfast-smoothie-bowl" className="group">
                 <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
                   <div className="aspect-[4/3] relative overflow-hidden">
-                    <Image
-                      src="/generated/blog-featured-nutrition.png"
+                    <img
+                      src="https://copperandcloves.com/wp-content/uploads/2020/07/0371145292de0f8341535e3601ab5c1d-1.png"
                       alt="Breakfast Smoothie Bowl"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <CardContent className="p-6 space-y-3">
