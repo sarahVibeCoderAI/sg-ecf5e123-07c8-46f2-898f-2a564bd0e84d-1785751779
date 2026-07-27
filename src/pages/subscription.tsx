@@ -601,20 +601,22 @@ export default function Subscription() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
-                  Not quite ready to commit?
+                  Try Before You Subscribe
                 </h2>
                 <p className="text-lg text-foreground/80 leading-relaxed">
-                  Try our Trial Pack first. Three meals for ₹999, including delivery, so you can experience the food, portion sizes and service before choosing a credit package.
+                  Three meals for ₹999, including delivery. Experience the food, portion sizes and service before choosing the credit package that's right for you.
                 </p>
-                <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
-                  <a
-                    href="https://wa.me/919008454373?text=Hey%20I'd%20like%20to%20try%20the%20Trial%20Pack%20-%20three%20meals%20for%20%E2%82%B9999."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Order Your Trial Pack
-                  </a>
-                </Button>
+                <div className="flex justify-center lg:justify-start">
+                  <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                    <a
+                      href="https://wa.me/919008454373?text=Hey%20I'd%20like%20to%20try%20the%20Trial%20Pack%20-%20three%20meals%20for%20%E2%82%B9999."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Order Your Trial Pack
+                    </a>
+                  </Button>
+                </div>
               </div>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
