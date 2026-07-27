@@ -185,6 +185,144 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Food Made Properly */}
+        <section className="py-16 lg:py-24 bg-muted/30">
+          <div className="container max-w-7xl">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              {/* Text Content */}
+              <div className="space-y-8 lg:sticky lg:top-32">
+                <h2 className="font-display text-3xl lg:text-5xl font-light">
+                  Food Made Properly
+                </h2>
+                <p className="text-lg lg:text-xl text-foreground/80 leading-relaxed">
+                  We believe healthy food should be every bit as satisfying as it is nourishing.
+                </p>
+                <p className="text-base lg:text-lg text-foreground/70 leading-relaxed">
+                  Everything is made from scratch using seasonal ingredients, with recipes inspired by cafés around the world and flavours you'll genuinely look forward to eating.
+                </p>
+                
+                <div className="space-y-4 pt-4">
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
+                      <div className="h-2 w-2 rounded-full bg-sage" />
+                    </div>
+                    <p className="text-base text-foreground/80">Made from scratch every day</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
+                      <div className="h-2 w-2 rounded-full bg-sage" />
+                    </div>
+                    <p className="text-base text-foreground/80">Seasonal ingredients</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
+                      <div className="h-2 w-2 rounded-full bg-sage" />
+                    </div>
+                    <p className="text-base text-foreground/80">Plant-based by design</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
+                      <div className="h-2 w-2 rounded-full bg-sage" />
+                    </div>
+                    <p className="text-base text-foreground/80">Recipes inspired by cafés around the world</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 h-5 w-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0">
+                      <div className="h-2 w-2 rounded-full bg-sage" />
+                    </div>
+                    <p className="text-base text-foreground/80">Colourful, nourishing food</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Editorial Photo Collage */}
+              <div className="grid grid-cols-6 gap-4">
+                {/* Row 1 */}
+                <div className="col-span-4 aspect-[4/3] relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/Cafe-15.jpg"
+                    alt="Fresh prepared food"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="col-span-2 aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/C_C_-_B-158.jpg"
+                    alt="Cafe detail"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Row 2 */}
+                <div className="col-span-3 aspect-[3/4] relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/BAG08771.jpg"
+                    alt="Colorful bowl"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="col-span-3 aspect-[3/4] relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/CCa-3.jpg"
+                    alt="Fresh ingredients"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Row 3 */}
+                <div className="col-span-2 aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/BAG08143.jpg"
+                    alt="Plated meal"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="col-span-4 aspect-[4/3] relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/CANDCTOW_15_10-39.JPG"
+                    alt="Cafe atmosphere"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Row 4 */}
+                <div className="col-span-3 aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/BAG08132.jpg"
+                    alt="Fresh bowl"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="col-span-3 aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/C-C_Cafe-20.jpg"
+                    alt="Cafe interior"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Row 5 */}
+                <div className="col-span-6 aspect-[5/2] relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/BAG08141.jpg"
+                    alt="Beautiful spread"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="section-padding bg-white">
           <div className="container">
             <div className="grid gap-12 lg:grid-cols-2 items-center">
