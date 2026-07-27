@@ -384,11 +384,13 @@ export default function Subscription() {
             </div>
 
             {/* Pricing Cards */}
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-4">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 max-w-7xl mx-auto mb-4">
               <Card className="bg-card border-2 border-sage">
-                <CardContent className="p-8 text-center space-y-4">
-                  <h3 className="font-display text-2xl font-semibold">Weekday Essentials</h3>
-                  <p className="text-3xl font-bold text-sage">20 Credits • ₹7,999</p>
+                <CardContent className="p-6 text-center space-y-3">
+                  <h3 className="font-display text-xl font-semibold">Weekday Essentials</h3>
+                  <p className="text-2xl font-bold text-sage">20 Credits</p>
+                  <p className="text-base text-foreground/80">₹7,999</p>
+                  <div className="border-t border-border my-3"></div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
                     Perfect for weekday lunches or dinners, with the flexibility to choose exactly which days you need us. we can deliver directly to your office if that is what works for you.
                   </p>
@@ -396,9 +398,11 @@ export default function Subscription() {
               </Card>
 
               <Card className="bg-card border-2 border-sage">
-                <CardContent className="p-8 text-center space-y-4">
-                  <h3 className="font-display text-2xl font-semibold">Everyday Balance</h3>
-                  <p className="text-3xl font-bold text-sage">30 Credits • ₹11,499</p>
+                <CardContent className="p-6 text-center space-y-3">
+                  <h3 className="font-display text-xl font-semibold">Everyday Balance</h3>
+                  <p className="text-2xl font-bold text-sage">30 Credits</p>
+                  <p className="text-base text-foreground/80">₹11,499</p>
+                  <div className="border-t border-border my-3"></div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
                     Ideal if you'd like one nourishing meal most days, with the freedom to add a few snacks, protein boosters or drinks throughout the month.
                   </p>
@@ -406,9 +410,11 @@ export default function Subscription() {
               </Card>
 
               <Card className="bg-card border-2 border-sage">
-                <CardContent className="p-8 text-center space-y-4">
-                  <h3 className="font-display text-2xl font-semibold">Daily Nourishment</h3>
-                  <p className="text-3xl font-bold text-sage">40 Credits • ₹14,399</p>
+                <CardContent className="p-6 text-center space-y-3">
+                  <h3 className="font-display text-xl font-semibold">Daily Nourishment</h3>
+                  <p className="text-2xl font-bold text-sage">40 Credits</p>
+                  <p className="text-base text-foreground/80">₹14,399</p>
+                  <div className="border-t border-border my-3"></div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
                     Designed for those who enjoy a nourishing meal each day, with room to add protein shakes, bliss balls and other snacks to keep you fuelled between meals.
                   </p>
@@ -416,9 +422,11 @@ export default function Subscription() {
               </Card>
 
               <Card className="bg-card border-2 border-sage">
-                <CardContent className="p-8 text-center space-y-4">
-                  <h3 className="font-display text-2xl font-semibold">Fully Nourished</h3>
-                  <p className="text-3xl font-bold text-sage">60 Credits • ₹20,999</p>
+                <CardContent className="p-6 text-center space-y-3">
+                  <h3 className="font-display text-xl font-semibold">Fully Nourished</h3>
+                  <p className="text-2xl font-bold text-sage">60 Credits</p>
+                  <p className="text-base text-foreground/80">₹20,999</p>
+                  <div className="border-t border-border my-3"></div>
                   <p className="text-sm text-foreground/70 leading-relaxed">
                     Our best value plan for those who want Copper + Cloves to become part of their everyday routine, with enough credits for multiple meals and daily extras throughout the week.
                   </p>
