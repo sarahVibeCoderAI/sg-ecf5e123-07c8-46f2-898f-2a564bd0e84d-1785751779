@@ -697,7 +697,7 @@ export default function Subscription() {
               <p className="text-base opacity-90">
                 Our concierge team is here to help you design your ideal plan.
               </p>
-              <div className="flex justify-center pt-2">
+              <div className="flex flex-col items-center gap-3 pt-2">
                 <Button asChild size="lg" className="bg-white text-sage hover:bg-white/90">
                   <a
                     href="https://wa.me/919008454373?text=I%20have%20some%20questions%20about%20the%20meal%20subscription%2C%20was%20hoping%20you%20could%20help%20me!"
@@ -707,6 +707,9 @@ export default function Subscription() {
                     Chat with Us on WhatsApp
                   </a>
                 </Button>
+                <p className="text-sm italic opacity-90">
+                  We'll help you choose the right credit package, answer any questions and get you set up in just a few minutes.
+                </p>
               </div>
             </div>
           </div>
