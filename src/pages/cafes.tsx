@@ -92,14 +92,6 @@ export default function Cafes() {
 
                     <div className="space-y-3 pt-4">
                       <div className="flex items-start gap-3">
-                        <MapPin className="h-5 w-5 text-copper mt-0.5 flex-shrink-0" />
-                        <div>
-                          <p className="font-medium text-sm">Location</p>
-                          <p className="text-sm text-foreground/70">{cafe.location}</p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-3">
                         <svg className="h-5 w-5 text-copper mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -109,26 +101,19 @@ export default function Cafes() {
                         </div>
                       </div>
 
-                      {cafe.features && (
-                        <div className="flex flex-wrap gap-2 pt-2">
-                          {cafe.features.map((feature, idx) => (
-                            <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
-                              {feature}
-                            </Badge>
-                          ))}
-                        </div>
-                      )}
+                      <div className="flex flex-wrap gap-2 pt-2">
+                        {cafe.amenities.map((amenity, idx) => (
+                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                            {amenity}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
 
-                    <div className="flex gap-3 pt-4">
-                      <Button asChild className="flex-1 bg-copper hover:bg-copper/90 text-white">
-                        <a href={cafe.mapLink} target="_blank" rel="noopener noreferrer">
+                    <div className="pt-4">
+                      <Button asChild className="w-full bg-copper hover:bg-copper/90 text-white">
+                        <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
                           Get Directions
-                        </a>
-                      </Button>
-                      <Button asChild variant="outline" className="flex-1 border-copper text-copper hover:bg-copper/5">
-                        <a href={cafe.menuLink} target="_blank" rel="noopener noreferrer">
-                          View Menu
                         </a>
                       </Button>
                     </div>
