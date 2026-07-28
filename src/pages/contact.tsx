@@ -13,6 +13,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { MapPin, Phone, Mail, Calendar, Users, UtensilsCrossed, Clock, ArrowRight } from "lucide-react";
+import { Label } from "@/components/ui/label";
 
 export default function Contact() {
   return (
@@ -93,7 +94,7 @@ export default function Contact() {
                       </p>
                       <a
                         href="mailto:hello@copperandcloves.com"
-                        className="text-sm text-kale hover:underline inline-flex items-center"
+                        className="text-sm text-kale hover:underline block break-words"
                       >
                         hello@copperandcloves.com
                       </a>
@@ -113,7 +114,7 @@ export default function Contact() {
                       </p>
                       <a
                         href="mailto:thestudio@copperandcloves.com"
-                        className="text-sm text-kale hover:underline inline-flex items-center"
+                        className="text-sm text-kale hover:underline block break-words"
                       >
                         thestudio@copperandcloves.com
                       </a>
@@ -128,90 +129,51 @@ export default function Contact() {
                     Send Us a Message
                   </h2>
                   <form className="space-y-6">
+                    <div className="grid gap-6 md:grid-cols-2">
+                      <div className="space-y-2">
+                        <Label htmlFor="name">Name</Label>
+                        <Input id="name" placeholder="Your name" required />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="email">Email</Label>
+                        <Input id="email" type="email" placeholder="your@email.com" required />
+                      </div>
+                    </div>
+
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        Full Name *
-                      </label>
-                      <Input
-                        id="name"
-                        placeholder="Your name"
-                        className="bg-muted/30 border-border"
-                        required
+                      <Label htmlFor="subject">Subject</Label>
+                      <Input id="subject" placeholder="How can we help?" required />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="message">Message</Label>
+                      <Textarea 
+                        id="message" 
+                        placeholder="Tell us more about your inquiry..." 
+                        rows={6}
+                        required 
                       />
                     </div>
 
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        Email Address *
-                      </label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="your.email@example.com"
-                        className="bg-muted/30 border-border"
-                        required
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <label htmlFor="phone" className="text-sm font-medium">
-                        Contact Number
-                      </label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="+91 98765 43210"
-                        className="bg-muted/30 border-border"
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <label htmlFor="inquiry-type" className="text-sm font-medium">
-                        Type of Inquiry *
-                      </label>
-                      <Select required>
-                        <SelectTrigger className="bg-muted/30 border-border">
-                          <SelectValue placeholder="Select inquiry type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="catering">
-                            Catering Services
-                          </SelectItem>
-                          <SelectItem value="events">
-                            Event Space Booking
-                          </SelectItem>
-                          <SelectItem value="feedback">
-                            Product Feedback
-                          </SelectItem>
-                          <SelectItem value="partnership">
-                            Partnership Opportunity
-                          </SelectItem>
-                          <SelectItem value="general">
-                            General Inquiry
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
-                    <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium">
-                        Message *
-                      </label>
-                      <Textarea
-                        id="message"
-                        placeholder="Tell us how we can help..."
-                        className="bg-muted/30 border-border min-h-[120px]"
-                        required
-                      />
-                    </div>
-
-                    <Button type="submit" size="lg" className="w-full bg-sage text-white hover:bg-sage/90">
+                    <Button 
+                      type="submit" 
+                      className="w-full md:w-auto"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const form = e.currentTarget.form;
+                        if (form) {
+                          const name = (form.elements.namedItem('name') as HTMLInputElement)?.value;
+                          const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
+                          const subject = (form.elements.namedItem('subject') as HTMLInputElement)?.value;
+                          const message = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value;
+                          
+                          const mailtoLink = `mailto:hello@copperandcloves.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+                          window.location.href = mailtoLink;
+                        }
+                      }}
+                    >
                       Send Message
                     </Button>
-
-                    <p className="text-xs text-foreground/60 text-center">
-                      By submitting this form, you agree to our privacy policy and terms of service.
-                    </p>
                   </form>
                 </CardContent>
               </Card>
