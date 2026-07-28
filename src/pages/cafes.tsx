@@ -7,15 +7,29 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt } from "lucide-react";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
-export default function Cafes() {
+export function CafesPage() {
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    const intervalId = setInterval(() => {
+      api.scrollNext();
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [api]);
+
   const cafes = [
     {
       id: 1,
@@ -184,7 +198,7 @@ export default function Cafes() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Indiranagar */}
               <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
+                <Carousel setApi={setApi} className="w-full">
                   <CarouselContent>
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
