@@ -1,3 +1,4 @@
+/// <reference path="../types/behold.d.ts" />
 import { SEO } from "@/components/SEO";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
