@@ -128,6 +128,112 @@ export default function Cafes() {
             </div>
           </div>
         </section>
+
+        {/* More Than Just Cafés */}
+        <section className="py-16 lg:py-24">
+          <div className="container">
+            {/* Header with Photo Overlay */}
+            <div className="max-w-5xl mx-auto mb-16">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-center mb-12">
+                More Than Just Cafés.
+              </h2>
+              
+              {/* Hero Image with Text Overlay */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12">
+                <div className="aspect-[16/9] relative">
+                  <Image
+                    src="/BAG09463.jpg"
+                    alt="Community gathering at Copper + Cloves"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 flex items-center justify-center p-8 lg:p-16">
+                    <p className="text-white text-xl sm:text-2xl lg:text-3xl text-center max-w-3xl font-light leading-relaxed">
+                      At Copper + Cloves, <span className="font-semibold">we believe connection is the missing pillar of wellness.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Body Copy */}
+              <div className="max-w-3xl mx-auto space-y-6 text-foreground/80 leading-relaxed">
+                <p>
+                  Good food has always brought people together, but in a world of busy schedules, endless convenience and more time spent online than ever before, genuine connection doesn't always happen by chance.
+                </p>
+                <p>
+                  That's why we create spaces designed for more than just eating. Places to meet friends, discover something new, linger over another coffee, browse a book, bring your dog, join a run club, attend a workshop or simply spend a little longer than you planned.
+                </p>
+                <p>
+                  Each of our cafés has its own personality, shaped by the people, partners and community around it. Together, they're designed to make it easier to connect—with others, with your neighbourhood and with yourself.
+                </p>
+                <p>
+                  Because if you leave feeling a little more connected than when you arrived, we've done our job.
+                </p>
+              </div>
+            </div>
+
+            {/* Three Community Cards */}
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Indiranagar */}
+              <Card className="overflow-hidden border-border bg-white">
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <Image
+                    src="/20230628_-_IMG_8524_-_Raj_Kashyap.jpg"
+                    alt="Indiranagar cafe"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
+                  <p className="font-semibold text-foreground/90">Books, brunch & community</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets and puppy adoption days.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Lavelle Road */}
+              <Card className="overflow-hidden border-border bg-white">
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <Image
+                    src="/20230715_-_IMG_0625_-_Raj_Kashyap.jpg"
+                    alt="Lavelle Road cafe"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
+                  <p className="font-semibold text-foreground/90">Brunch, shopping & slow weekends.</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Re-fuel after a Cubbon run, browse Good Earth and Nicobar, join one of our seasonal workshops and community gatherings.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Domlur/The Studio */}
+              <Card className="overflow-hidden border-border bg-white">
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <Image
+                    src="/20230715_-_IMG_0778_-_Raj_Kashyap.jpg"
+                    alt="Domlur Studio"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="font-display text-2xl font-semibold">Domlur/ The Studio</h3>
+                  <p className="font-semibold text-foreground/90">Move, create & connect.</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Home to yoga and Pilates brunches, sound healing, creative workshops and Analog Club—our monthly digital detox gathering.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
