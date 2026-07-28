@@ -7,10 +7,26 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt } from "lucide-react";
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
 export default function Cafes() {
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    const autoplay = Autoplay({ delay: 3000 });
+    // @ts-ignore - Type compatibility issue between embla-carousel versions
+    api.plugins().autoplay = autoplay;
+    autoplay.init(api as any, {} as any);
+
+    return () => {
+      autoplay.destroy();
+    };
+  }, [api]);
+
   const cafes = [
     {
       id: 1,
@@ -179,11 +195,7 @@ export default function Cafes() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Indiranagar */}
               <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full" opts={{ loop: true }} plugins={[
-                  Autoplay({
-                    delay: 3000,
-                  }),
-                ]}>
+                <Carousel className="w-full" opts={{ loop: true }} setApi={setApi}>
                   <CarouselContent>
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
