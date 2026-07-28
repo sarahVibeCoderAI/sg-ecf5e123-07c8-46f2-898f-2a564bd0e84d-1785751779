@@ -123,107 +123,63 @@ export default function Contact() {
                 </div>
               </div>
 
-              <Card className="border-mushroom/30 bg-white shadow-sm rounded-lg">
-                <CardContent className="p-8">
-                  <h2 className="font-display text-2xl font-light mb-6">
-                    Send Us a Message
-                  </h2>
-                  <form className="space-y-6">
-                    <div className="grid gap-6 md:grid-cols-2">
-                      <div className="space-y-2">
-                        <Label htmlFor="name">Name</Label>
-                        <Input id="name" placeholder="Your name" required />
+              <div className="space-y-6">
+                <Card className="border-mushroom/30 bg-white shadow-sm rounded-lg">
+                  <CardContent className="p-6">
+                    <h2 className="font-display text-2xl font-light mb-4">
+                      Send Us a Message
+                    </h2>
+                    <form className="space-y-4">
+                      <div className="grid gap-4 md:grid-cols-2">
+                        <div className="space-y-2">
+                          <Label htmlFor="name">Name</Label>
+                          <Input id="name" placeholder="Your name" required />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="email">Email</Label>
+                          <Input id="email" type="email" placeholder="your@email.com" required />
+                        </div>
                       </div>
+
                       <div className="space-y-2">
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" type="email" placeholder="your@email.com" required />
+                        <Label htmlFor="subject">Subject</Label>
+                        <Input id="subject" placeholder="How can we help?" required />
                       </div>
-                    </div>
 
-                    <div className="space-y-2">
-                      <Label htmlFor="subject">Subject</Label>
-                      <Input id="subject" placeholder="How can we help?" required />
-                    </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="message">Message</Label>
+                        <Textarea 
+                          id="message" 
+                          placeholder="Tell us more about your inquiry..." 
+                          rows={3}
+                          required 
+                        />
+                      </div>
 
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea 
-                        id="message" 
-                        placeholder="Tell us more about your inquiry..." 
-                        rows={4}
-                        required 
-                      />
-                    </div>
-
-                    <Button 
-                      type="submit" 
-                      className="w-full md:w-auto"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        const form = e.currentTarget.form;
-                        if (form) {
-                          const name = (form.elements.namedItem('name') as HTMLInputElement)?.value;
-                          const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
-                          const subject = (form.elements.namedItem('subject') as HTMLInputElement)?.value;
-                          const message = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value;
-                          
-                          const mailtoLink = `mailto:hello@copperandcloves.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-                          window.location.href = mailtoLink;
-                        }
-                      }}
-                    >
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
+                      <Button 
+                        type="submit" 
+                        className="w-full md:w-auto"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          const form = e.currentTarget.form;
+                          if (form) {
+                            const name = (form.elements.namedItem('name') as HTMLInputElement)?.value;
+                            const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
+                            const subject = (form.elements.namedItem('subject') as HTMLInputElement)?.value;
+                            const message = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value;
+                            
+                            const mailtoLink = `mailto:hello@copperandcloves.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+                            window.location.href = mailtoLink;
+                          }
+                        }}
+                      >
+                        Send Message
+                      </Button>
+                    </form>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
-          </div>
-
-          {/* Newsletter Signup Section */}
-          <div className="max-w-2xl mx-auto mt-16">
-            <Card className="border-border bg-white shadow-sm">
-              <CardContent className="p-8 space-y-4">
-                <h3 className="font-display text-2xl font-semibold">Keep in Touch</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  We don't send weekly newsletters or clutter your inbox.
-                </p>
-                <p className="text-foreground/70 leading-relaxed">
-                  Just the occasional update on new menus, community events, journal articles, product launches and other things happening at Copper + Cloves.
-                </p>
-                
-                <form 
-                  className="flex flex-col sm:flex-row gap-3 pt-2"
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const form = e.currentTarget;
-                    const emailInput = form.elements.namedItem('newsletter-email') as HTMLInputElement;
-                    const email = emailInput?.value;
-                    
-                    if (email) {
-                      // Submit to Google Sheets via form action
-                      const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse';
-                      
-                      // For now, show a simple alert - needs Google Sheets integration
-                      alert('Newsletter signup feature requires Google Sheets integration. Email: ' + email);
-                      emailInput.value = '';
-                    }
-                  }}
-                >
-                  <Input 
-                    id="newsletter-email"
-                    name="newsletter-email"
-                    type="email" 
-                    placeholder="Your email address" 
-                    className="flex-1"
-                    required 
-                  />
-                  <Button type="submit" className="sm:w-auto">
-                    Keep Me Posted
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
           </div>
         </section>
 
