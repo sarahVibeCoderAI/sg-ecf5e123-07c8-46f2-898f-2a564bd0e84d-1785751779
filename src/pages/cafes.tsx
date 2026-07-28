@@ -266,192 +266,120 @@ export default function Cafes() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Indiranagar */}
               <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/20230628_-_IMG_8524_-_Raj_Kashyap.jpg"
-                          alt="Indiranagar cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/IMG_2392.HEIC"
-                          alt="Indiranagar community"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/IMG_8049.jpeg"
-                          alt="Indiranagar events"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src="/c_c_cafe_4_.jpg"
+                    alt="Indiranagar Cafe"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <CardContent className="p-6 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
-                  <p className="font-semibold text-foreground/90">Books, brunch & community</p>
+                  <p className="font-semibold text-foreground/90">The OG neighbourhood cafe.</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets with Love Me Twice and puppy adoption days.
+                    Our first location, bustling with regulars. Perfect for a quick breakfast, leisurely lunch, or grabbing retail goodies to go.
                   </p>
+                  
+                  <div className="space-y-2 text-sm text-foreground/70 pt-2">
+                    <div className="flex items-center gap-2">
+                      <Phone className="w-4 h-4 text-primary" />
+                      <a href="tel:+918904293030" className="hover:text-primary transition-colors">
+                        +91 8904293030
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-primary" />
+                      <p>9.30am - 8pm on weekdays and 8.30pm on weekends</p>
+                    </div>
+                  </div>
+
+                  <Button variant="outline" className="w-full mt-4 border-secondary text-secondary hover:bg-secondary hover:text-white" asChild>
+                    <a href="https://maps.app.goo.gl/HxsBbogFjbZVSEpK7" target="_blank" rel="noopener noreferrer">
+                      Get Directions
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
 
               {/* Lavelle Road */}
               <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_10_of_23_.jpg"
-                          alt="Lavelle Road cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_3_of_23_.jpg"
-                          alt="Lavelle Road atmosphere"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_17_of_23_.jpg"
-                          alt="Lavelle Road community"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_23_of_23_.jpg"
-                          alt="Lavelle Road space"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/dog_at_lavelle.jpeg"
-                          alt="Dog-friendly Lavelle Road cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src="/lavelle_road_16_of_23_.jpg"
+                    alt="Lavelle Road Cafe"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <CardContent className="p-6 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
-                  <p className="font-semibold text-foreground/90">Brunch, shopping & slow weekends.</p>
+                  <p className="font-semibold text-foreground/90">Brunch central & our biggest space.</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Re-fuel after a Cubbon run, browse Good Earth and Nicobar, join one of our seasonal workshops and community gatherings.
+                    Spacious seating for group brunches, work sessions, and afternoon meetings. Home to our largest retail section.
                   </p>
+                  
+                  <div className="flex gap-2 pt-2">
+                    <Badge variant="secondary" className="bg-muted text-foreground/70">dine in</Badge>
+                    <Badge variant="secondary" className="bg-muted text-foreground/70">boutique shopping</Badge>
+                  </div>
+                  
+                  <div className="space-y-2 text-sm text-foreground/70 pt-2">
+                    <div className="flex items-center gap-2">
+                      <Phone className="w-4 h-4 text-primary" />
+                      <a href="tel:+918792194527" className="hover:text-primary transition-colors">
+                        +91 8792194527
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-primary" />
+                      <p>9am - 8pm</p>
+                    </div>
+                  </div>
+
+                  <Button variant="outline" className="w-full mt-4 border-secondary text-secondary hover:bg-secondary hover:text-white" asChild>
+                    <a href="https://maps.app.goo.gl/uYJyXegy1MTPichcA" target="_blank" rel="noopener noreferrer">
+                      Get Directions
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
 
               {/* Domlur/The Studio */}
               <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/BAG02912.jpg"
-                          alt="Domlur Studio"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/BAG09552.jpg"
-                          alt="Domlur yoga and movement"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/BAG09564.jpg"
-                          alt="Domlur workshops"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/C1373T01.jpg"
-                          alt="Domlur creative space"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/DSC04892.jpg"
-                          alt="Domlur community gathering"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/DSC08847.jpg"
-                          alt="Domlur wellness activities"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src="/A7406794_1_.jpg"
+                    alt="Domlur/The Studio"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <CardContent className="p-6 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold">Domlur/ The Studio</h3>
-                  <p className="font-semibold text-foreground/90">Move, create & connect.</p>
+                  <h3 className="font-display text-2xl font-semibold">Domlur/The Studio</h3>
+                  <p className="font-semibold text-foreground/90">Community & wellness hub.</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Home to yoga and Pilates brunches, sound healing, creative workshops and Analog Club—our monthly digital detox gathering.
+                    A dedicated space for movement, workshops, and connection. Host to yoga, sound healing, and our monthly Analog Club gatherings.
                   </p>
+                  
+                  <div className="space-y-2 text-sm text-foreground/70 pt-2">
+                    <div className="flex items-center gap-2">
+                      <Phone className="w-4 h-4 text-primary" />
+                      <a href="tel:+919008426703" className="hover:text-primary transition-colors">
+                        +91 9008426703
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-primary" />
+                      <p>7.30am to 8pm</p>
+                    </div>
+                  </div>
+
+                  <Button variant="outline" className="w-full mt-4 border-secondary text-secondary hover:bg-secondary hover:text-white" asChild>
+                    <a href="https://maps.app.goo.gl/DQs1BRv2DzSW1uN59" target="_blank" rel="noopener noreferrer">
+                      Get Directions
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
