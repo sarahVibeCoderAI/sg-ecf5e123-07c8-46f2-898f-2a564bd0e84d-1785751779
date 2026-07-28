@@ -251,13 +251,13 @@ export default function Cafes() {
                   Good food has always brought people together, but in a world of busy schedules, endless convenience and more time spent online than ever before, genuine connection doesn't always happen by chance.
                 </p>
                 <p>
-                  That's why we create spaces designed for more than just eating. Places to meet friends, discover something new, linger over another coffee, browse a book, bring your dog, join a run club, attend a workshop or simply spend a little longer than you planned.
+                  That's why <span className="font-semibold">we create spaces designed for more than just eating.</span> Places to meet friends, discover something new, linger over another coffee, browse a book, bring your dog, join a run club, attend a workshop or simply spend a little longer than you planned.
                 </p>
                 <p>
-                  Each of our cafés has its own personality, shaped by the people, partners and community around it. Together, they're designed to make it easier to connect—with others, with your neighbourhood and with yourself.
+                  Each of our cafés has its own personality, <span className="font-semibold">shaped by the people, partners and community around it.</span> Together, they're designed to make it easier to connect—with others, with your neighbourhood and with yourself.
                 </p>
                 <p>
-                  Because if you leave feeling a little more connected than when you arrived, we've done our job.
+                  Because <span className="font-semibold">if you leave feeling a little more connected than when you arrived, we've done our job.</span>
                 </p>
               </div>
             </div>
