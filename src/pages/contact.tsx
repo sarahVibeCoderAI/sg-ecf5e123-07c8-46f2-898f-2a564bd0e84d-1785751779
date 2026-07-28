@@ -178,6 +178,45 @@ export default function Contact() {
                     </form>
                   </CardContent>
                 </Card>
+
+                <Card className="border-mushroom/30 bg-white shadow-sm rounded-lg">
+                  <CardContent className="p-6">
+                    <h3 className="font-display text-2xl font-light mb-3">Keep in Touch</h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed mb-2">
+                      We don't send weekly newsletters or clutter your inbox.
+                    </p>
+                    <p className="text-sm text-foreground/70 leading-relaxed mb-4">
+                      Just the occasional update on new menus, community events, journal articles, product launches and other things happening at Copper + Cloves.
+                    </p>
+                    
+                    <form 
+                      className="flex flex-col sm:flex-row gap-3"
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        const form = e.currentTarget;
+                        const emailInput = form.elements.namedItem('newsletter-email') as HTMLInputElement;
+                        const email = emailInput?.value;
+                        
+                        if (email) {
+                          alert('Newsletter signup feature requires Google Sheets integration. Email: ' + email);
+                          emailInput.value = '';
+                        }
+                      }}
+                    >
+                      <Input 
+                        id="newsletter-email"
+                        name="newsletter-email"
+                        type="email" 
+                        placeholder="Your email address" 
+                        className="flex-1"
+                        required 
+                      />
+                      <Button type="submit" className="sm:w-auto">
+                        Keep Me Posted
+                      </Button>
+                    </form>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
