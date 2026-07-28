@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { MapPin, Phone, Mail, Calendar, Users } from "lucide-react";
+import { MapPin, Phone, Mail, Calendar, Users, UtensilsCrossed } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -64,35 +64,18 @@ export default function Contact() {
                         </div>
                       </div>
 
-                      <div className="flex items-start space-x-4">
-                        <div className="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center flex-shrink-0">
-                          <Mail className="h-5 w-5 text-sage" />
-                        </div>
-                        <div>
-                          <p className="font-medium text-sm mb-1">Email</p>
-                          <a
-                            href="mailto:hello@copperandcloves.com"
-                            className="text-foreground/70 hover:text-sage transition-colors"
-                          >
-                            hello@copperandcloves.com
-                          </a>
-                          <p className="text-sm text-foreground/60 mt-1">
-                            We respond within 24 hours
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start space-x-4">
-                        <div className="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center flex-shrink-0">
-                          <MapPin className="h-5 w-5 text-sage" />
-                        </div>
-                        <div>
-                          <p className="font-medium text-sm mb-1">Corporate Office</p>
-                          <p className="text-foreground/70">
-                            100 Feet Road, Indiranagar
-                            <br />
-                            Bangalore, Karnataka 560038
-                          </p>
+                      <div className="space-y-3">
+                        <div className="flex items-start gap-3">
+                          <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                          <div>
+                            <h3 className="font-semibold text-foreground mb-2">Email</h3>
+                            <a 
+                              href="mailto:hello@copperandcloves.com"
+                              className="text-sm text-primary hover:underline"
+                            >
+                              hello@copperandcloves.com
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -132,10 +115,10 @@ export default function Contact() {
                         Host workshops, wellness sessions, or community gatherings at our cafes.
                       </p>
                       <a
-                        href="mailto:events@copperandcloves.com"
+                        href="mailto:thestudio@copperandcloves.com"
                         className="text-sm text-kale hover:underline inline-flex items-center"
                       >
-                        events@copperandcloves.com
+                        thestudio@copperandcloves.com
                       </a>
                     </CardContent>
                   </Card>
