@@ -526,6 +526,7 @@ export default function Cafes() {
 
             {/* Instagram Grid - Live Feed via Behold */}
             <div className="w-full">
+              {/* @ts-expect-error - behold-widget is a custom web component from Behold.so */}
               <behold-widget feed-id="oO9ZBaWmPzk1V5xbqPS0"></behold-widget>
             </div>
 
