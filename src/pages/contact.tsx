@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { MapPin, Phone, Mail, Calendar, Users, UtensilsCrossed } from "lucide-react";
+import { MapPin, Phone, Mail, Calendar, Users, UtensilsCrossed, Clock, ArrowRight } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -239,16 +239,16 @@ export default function Contact() {
                   phone: "+91 80 4567 8901",
                 },
                 {
-                  name: "Jayanagar",
-                  address: "4th Block, 11th Main Road, Near Jayanagar Shopping Complex",
-                  hours: "7:00 AM - 9:00 PM",
-                  phone: "+91 80 4567 8902",
+                  name: "Lavelle Road",
+                  address: "4 Walton Road, Off Lavelle Road, Ashok Nagar, Bangalore, 560001",
+                  hours: "9am - 8pm",
+                  phone: "+91 8792194527",
                 },
                 {
-                  name: "Koramangala",
-                  address: "5th Block, 80 Feet Road, Near Sony World Signal",
-                  hours: "7:00 AM - 9:00 PM",
-                  phone: "+91 80 4567 8903",
+                  name: "Domlur/The Studio",
+                  address: "4th Floor, 2nd Cross, Shankanarg Road (off Double road), Domlur, Bangalore, 560071",
+                  hours: "7:30am - 8pm",
+                  phone: "+91 9008426703",
                 },
               ].map((location) => (
                 <Card
