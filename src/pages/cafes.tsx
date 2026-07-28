@@ -62,7 +62,7 @@ export default function Cafes() {
       <Navigation />
       <main>
         {/* Hero - Photo Collage with Text Overlay */}
-        <section className="relative pt-16 lg:pt-20">
+        <section className="relative">
           {/* Photo Collage Grid */}
           <div className="relative h-[70vh] lg:h-[80vh] overflow-hidden">
             <div className="grid grid-cols-4 grid-rows-3 gap-2 h-full">
@@ -111,7 +111,7 @@ export default function Cafes() {
               {/* Bottom row */}
               <div className="relative">
                 <Image
-                  src="/BAG08132.jpg"
+                  src="/DSC00427.JPG"
                   alt="Cafe plates"
                   fill
                   className="object-cover"
