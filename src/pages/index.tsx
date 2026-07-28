@@ -13,6 +13,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { Input } from "@/components/ui/input";
 
 export default function Home() {
   return (
@@ -397,39 +398,65 @@ export default function Home() {
         </section>
 
         {/* Products - Coming Soon */}
-        <section className="py-12 lg:py-16 bg-muted/30">
-          <div className="container">
-            <div className="grid gap-12 lg:grid-cols-2 items-center">
-              <div className="space-y-4 lg:pr-8">
-                <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-copper/10 border border-copper/20">
-                  <span className="text-sm font-medium text-copper uppercase tracking-wide">Coming Soon.</span>
-                </div>
-                <h2 className="font-display text-2xl sm:text-3xl font-light">
-                  Bringing Copper + Cloves Home
-                </h2>
-                <p className="text-foreground/70 leading-relaxed">
-                  Soon you'll be able to enjoy some of our favourite pantry staples at home.
-                </p>
-                <div className="space-y-1 text-foreground/80">
-                  <p>Granola.</p>
-                  <p>Dressings.</p>
-                  <p>Dips.</p>
-                  <p>Seed toppers.</p>
-                </div>
-                <Button className="bg-copper text-white hover:bg-copper/90">
-                  Be the first to know
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-              <div className="relative aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
-                <Image
-                  src="/A7406782_2_.jpg"
-                  alt="Copper + Cloves products"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+        <section className="section-padding bg-muted/30">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="font-display text-3xl md:text-4xl font-light">
+              Bringing Copper + Cloves Home
+            </h2>
+            
+            <div className="max-w-2xl mx-auto space-y-6">
+              <p className="text-base text-foreground/80 leading-relaxed">
+                Soon you'll be able to enjoy some of our favourite pantry staples at home. We're launching:
+              </p>
+              
+              <ul className="text-base text-foreground/80 leading-relaxed space-y-2 text-left max-w-lg mx-auto">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Boxes of our signature granola.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Your favourites of our salad dressings.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Our much-loved dips like romesco and basil-walnut pesto.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Our SuperSeed topper.</span>
+                </li>
+              </ul>
             </div>
+
+            <form 
+              action="https://docs.google.com/forms/d/e/1FAIpQLSc5JYdpCE0FenQJjlH59-p1Un1rlE_qCGF5PIao6arK9dQt3A/formResponse"
+              method="POST"
+              target="_blank"
+              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-4"
+              onSubmit={(e) => {
+                const form = e.currentTarget;
+                const emailInput = form.elements.namedItem('entry.981765683') as HTMLInputElement;
+                
+                setTimeout(() => {
+                  if (emailInput) {
+                    emailInput.value = '';
+                  }
+                  alert('Thank you! We\'ll notify you when our pantry staples launch.');
+                }, 100);
+              }}
+            >
+              <Input 
+                name="entry.981765683"
+                type="email" 
+                placeholder="Your email" 
+                className="flex-1"
+                required 
+              />
+              <Button type="submit" size="lg" className="sm:w-auto">
+                Be the first to know
+              </Button>
+            </form>
           </div>
         </section>
 
