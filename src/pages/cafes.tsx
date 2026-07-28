@@ -22,8 +22,8 @@ export default function Cafes() {
       name: "Indiranagar",
       description: "Our flagship, set in a beautiful white bungalow.",
       address: "549A, 9th A Main Rd, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
-      hours: "9.30am - 8pm Daily",
-      phone: "08904293030",
+      hours: "9.30am - 8pm on weekdays and 8.30pm on weekends",
+      phone: "+91 8904293030",
       image: "/c_c_cafe_4_.jpg",
       amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Bookstore", "Boutique Shopping", "Garden Seating", "Indoor Seating"],
       deliveryRadius: "3km delivery radius",
@@ -33,10 +33,10 @@ export default function Cafes() {
       id: 2,
       name: "Lavelle Road",
       address: "4, Walton Rd, Good Earth, off Lavelle Road, KG Halli, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-      hours: "9.30am - 8pm Daily",
-      phone: "8792194527",
+      hours: "9am - 8pm",
+      phone: "+91 8792194527",
       image: "/lavelle_road_16_of_23_.jpg",
-      amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly"],
+      amenities: ["Dine-in", "Boutique Shopping", "Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly"],
       deliveryRadius: "3km delivery radius",
       mapsUrl: "https://maps.app.goo.gl/ijZsNGVDaDU7A2X79",
     },
@@ -44,8 +44,8 @@ export default function Cafes() {
       id: 3,
       name: "Domlur/The Studio",
       address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
-      hours: "9.30am - 8pm Daily",
-      phone: "09008426703",
+      hours: "7.30am to 8pm",
+      phone: "+91 9008426703",
       image: "/A7406794_1_.jpg",
       amenities: ["Workout Studio", "Dine-in", "Co-working Friendly", "Indoor Seating"],
       deliveryRadius: "3km delivery radius",
@@ -195,6 +195,16 @@ export default function Cafes() {
                         </div>
                       </div>
 
+                      <div className="flex items-start gap-3">
+                        <Phone className="h-5 w-5 text-copper mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-sm">Phone</p>
+                          <a href={`tel:${cafe.phone.replace(/\s/g, '')}`} className="text-sm text-foreground/70 hover:text-copper transition-colors">
+                            {cafe.phone}
+                          </a>
+                        </div>
+                      </div>
+
                       <div className="flex flex-wrap gap-2 pt-2">
                         {cafe.amenities.map((amenity, idx) => (
                           <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
@@ -205,7 +215,7 @@ export default function Cafes() {
                     </div>
 
                     <div className="pt-4">
-                      <Button asChild className="w-full bg-copper hover:bg-copper/90 text-white">
+                      <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white">
                         <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
                           Get Directions
                         </a>
