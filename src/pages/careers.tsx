@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { Heart, Sparkles, UtensilsCrossed, TrendingUp } from "lucide-react";
+import Image from "next/image";
 
 export default function Careers() {
   const benefits = [
@@ -91,10 +92,53 @@ export default function Careers() {
         <section className="py-12 lg:py-16 bg-white">
           <div className="container">
             <div className="max-w-3xl mx-auto space-y-8">
-              <div className="text-center space-y-4 mb-12">
-                <h2 className="font-display text-3xl sm:text-4xl font-light">
-                  We're Always Hiring
-                </h2>
+              {/* Photo Gallery */}
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
+                <div className="aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/c_c_cafe_36_.jpg"
+                    alt="Team at work"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/DSC06545.jpg"
+                    alt="Cafe team"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/BAG00651.jpg"
+                    alt="Kitchen team"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/BAG00661.jpg"
+                    alt="Team culture"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="aspect-square relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/DSC08778-2.jpg"
+                    alt="Working together"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Openings Section */}
+              <div className="space-y-6">
+                <h2 className="font-display text-3xl font-semibold text-center">We're growing so we're always hiring!</h2>
               </div>
 
               <div className="space-y-6 text-foreground/70 leading-relaxed">
