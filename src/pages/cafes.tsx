@@ -16,17 +16,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-// Type declaration for Behold widget custom element
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'behold-widget': {
-        'feed-id': string;
-      };
-    }
-  }
-}
-
 export default function Cafes() {
   const cafes = [
     {
