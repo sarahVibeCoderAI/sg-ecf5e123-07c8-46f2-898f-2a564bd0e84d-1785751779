@@ -380,14 +380,72 @@ export default function Cafes() {
 
               {/* Domlur/The Studio */}
               <Card className="overflow-hidden border-border bg-white">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <Image
-                    src="/20230715_-_IMG_0778_-_Raj_Kashyap.jpg"
-                    alt="Domlur Studio"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/BAG02912.jpg"
+                          alt="Domlur Studio"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/BAG09552.jpg"
+                          alt="Domlur yoga and movement"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/BAG09564.jpg"
+                          alt="Domlur workshops"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/C1373T01.jpg"
+                          alt="Domlur creative space"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/DSC04892.jpg"
+                          alt="Domlur community gathering"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/DSC08847.jpg"
+                          alt="Domlur wellness activities"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-2" />
+                  <CarouselNext className="right-2" />
+                </Carousel>
                 <CardContent className="p-6 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Domlur/ The Studio</h3>
                   <p className="font-semibold text-foreground/90">Move, create & connect.</p>
