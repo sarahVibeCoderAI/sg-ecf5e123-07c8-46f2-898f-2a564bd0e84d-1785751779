@@ -231,59 +231,113 @@ export default function Contact() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
-              {[
-                {
-                  name: "Indiranagar",
-                  address: "100 Feet Road, Near Chinmaya Mission Hospital",
-                  hours: "7:00 AM - 9:00 PM",
-                  phone: "+91 80 4567 8901",
-                },
-                {
-                  name: "Lavelle Road",
-                  address: "4 Walton Road, Off Lavelle Road, Ashok Nagar, Bangalore, 560001",
-                  hours: "9am - 8pm",
-                  phone: "+91 8792194527",
-                },
-                {
-                  name: "Domlur/The Studio",
-                  address: "4th Floor, 2nd Cross, Shankanarg Road (off Double road), Domlur, Bangalore, 560071",
-                  hours: "7:30am - 8pm",
-                  phone: "+91 9008426703",
-                },
-              ].map((location) => (
-                <Card
-                  key={location.name}
-                  className="border-mushroom/30 bg-white shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg"
-                >
-                  <CardContent className="p-6 space-y-4">
-                    <h3 className="font-display text-xl font-light text-sage">
-                      {location.name}
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <div className="flex items-start space-x-2">
-                        <MapPin className="h-4 w-4 text-foreground/60 mt-0.5 flex-shrink-0" />
-                        <p className="text-foreground/70">{location.address}</p>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Phone className="h-4 w-4 text-foreground/60 flex-shrink-0" />
-                        <a
-                          href={`tel:${location.phone.replace(/\s/g, "")}`}
-                          className="text-foreground/70 hover:text-sage transition-colors"
-                        >
-                          {location.phone}
-                        </a>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Calendar className="h-4 w-4 text-foreground/60 flex-shrink-0" />
-                        <p className="text-foreground/70">{location.hours}</p>
-                      </div>
+              {/* Indiranagar */}
+              <Card className="overflow-hidden border-border bg-white">
+                <CardContent className="p-6 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
+                  
+                  <div className="space-y-3 text-sm text-foreground/70">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <p>549A 9th A main Road, Hoyasala Nagar, Indiranagar, Bangalore, 560038</p>
                     </div>
-                    <Button variant="outline" size="sm" className="w-full mt-4 border-kale text-kale hover:bg-kale hover:text-white">
-                      Get Directions
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+                    
+                    <div className="flex items-start gap-2">
+                      <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <a href="tel:+918904293030" className="hover:text-primary transition-colors">
+                        +91 8904293030
+                      </a>
+                    </div>
+                    
+                    <div className="flex items-start gap-2">
+                      <Clock className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <p>9.30am - 8pm on weekdays and 8.30pm on weekends</p>
+                    </div>
+                  </div>
+
+                  <a 
+                    href="https://maps.app.goo.gl/HxsBbogFjbZVSEpK7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                  >
+                    Get Directions
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Lavelle Road */}
+              <Card className="overflow-hidden border-border bg-white">
+                <CardContent className="p-6 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
+                  
+                  <div className="space-y-3 text-sm text-foreground/70">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <p>4 Walton Road, Off Lavelle Road, Ashok Nagar, Bangalore, 560001</p>
+                    </div>
+                    
+                    <div className="flex items-start gap-2">
+                      <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <a href="tel:+918792194527" className="hover:text-primary transition-colors">
+                        +91 8792194527
+                      </a>
+                    </div>
+                    
+                    <div className="flex items-start gap-2">
+                      <Clock className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <p>9am - 8pm</p>
+                    </div>
+                  </div>
+
+                  <a 
+                    href="https://maps.app.goo.gl/uYJyXegy1MTPichcA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                  >
+                    Get Directions
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Domlur/The Studio */}
+              <Card className="overflow-hidden border-border bg-white">
+                <CardContent className="p-6 space-y-4">
+                  <h3 className="font-display text-2xl font-semibold">Domlur/The Studio</h3>
+                  
+                  <div className="space-y-3 text-sm text-foreground/70">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <p>4th Floor, 2nd Cross, Shankanarg Road (off Double road), Domlur, Bangalore, 560071</p>
+                    </div>
+                    
+                    <div className="flex items-start gap-2">
+                      <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <a href="tel:+919008426703" className="hover:text-primary transition-colors">
+                        +91 9008426703
+                      </a>
+                    </div>
+                    
+                    <div className="flex items-start gap-2">
+                      <Clock className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <p>7.30am to 8pm</p>
+                    </div>
+                  </div>
+
+                  <a 
+                    href="https://maps.app.goo.gl/DQs1BRv2DzSW1uN59"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                  >
+                    Get Directions
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
