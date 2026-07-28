@@ -59,10 +59,10 @@ export default function Cafes() {
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light">
-                Find Your Neighbourhood Café
+                Come Hungry
               </h1>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Whether it's a slow breakfast, lunch with friends or coffee in the afternoon, our cafés are designed to be places you'll want to come back to. Fresh, seasonal food made from scratch, warm hospitality and spaces that invite you to stay a while.
+                From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
               </p>
             </div>
           </div>
@@ -71,6 +71,11 @@ export default function Cafes() {
         {/* Cafes Grid */}
         <section className="py-12 lg:py-16 bg-muted/30">
           <div className="container max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-2xl sm:text-3xl font-light">
+                Find Your Neighbourhood Café
+              </h2>
+            </div>
             <div className="grid lg:grid-cols-2 gap-12">
               {cafes.map((cafe, index) => (
                 <Card key={index} className="overflow-hidden border-border hover:shadow-lg transition-shadow bg-white p-8">
