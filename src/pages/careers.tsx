@@ -124,6 +124,7 @@ export default function Careers() {
                     alt="Team culture"
                     fill
                     className="object-cover"
+                    style={{ objectPosition: 'center 60%' }}
                   />
                 </div>
                 <div className="aspect-square relative rounded-lg overflow-hidden">
