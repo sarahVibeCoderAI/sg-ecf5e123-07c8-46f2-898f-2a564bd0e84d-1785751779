@@ -73,24 +73,27 @@ export default function Cafes() {
                   alt="Copper + Cloves food"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: 'center 40%' }}
                 />
               </div>
               
               {/* Top right - stacked */}
               <div className="relative">
                 <Image
-                  src="/DSC04320.jpeg"
-                  alt="Cafe atmosphere"
+                  src="/IMG_8074_1_.JPG"
+                  alt="Fresh dishes"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: 'center 45%' }}
                 />
               </div>
               <div className="relative">
                 <Image
-                  src="/DSC04391.jpeg"
-                  alt="Coffee and treats"
+                  src="/c_c_cafe_42_.jpg"
+                  alt="Artisan coffee"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: 'center 40%' }}
                 />
               </div>
               
@@ -98,19 +101,21 @@ export default function Cafes() {
               <div className="col-span-2 relative">
                 <Image
                   src="/c_c_cafe_9_.jpg"
-                  alt="Fresh dishes"
+                  alt="Colorful brunch"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: 'center 45%' }}
                 />
               </div>
               
               {/* Bottom row */}
               <div className="relative">
                 <Image
-                  src="/DSC00234.jpeg"
-                  alt="Cafe interior"
+                  src="/BAG08132.jpg"
+                  alt="Cafe plates"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: 'center 40%' }}
                 />
               </div>
               <div className="relative">
@@ -119,14 +124,16 @@ export default function Cafes() {
                   alt="Brunch spread"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: 'center 45%' }}
                 />
               </div>
               <div className="col-span-2 relative">
                 <Image
-                  src="/c_c_cafe_20_.jpg"
+                  src="/A7406787.jpg"
                   alt="Menu highlights"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: 'center 40%' }}
                 />
               </div>
             </div>
