@@ -39,19 +39,17 @@ export default function Careers() {
       <Navigation />
       <main>
         {/* Hero */}
-        <section className="pt-24 pb-12 lg:pt-32 lg:pb-16">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light">
-                Come Build Something With Us
-              </h1>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                Copper + Cloves is building a modern wellness brand centred around one simple idea: making healthy living a little easier.
-              </p>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                As we grow, we're looking for kind, curious people who care about doing great work and creating experiences that genuinely make a difference to people's everyday lives.
-              </p>
-            </div>
+        <section className="pt-32 pb-16 bg-gradient-to-b from-muted/30 to-background">
+          <div className="max-w-4xl mx-auto px-6 text-center space-y-6">
+            <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight">
+              Come build something with us
+            </h1>
+            <p className="text-lg text-foreground/70 leading-relaxed">
+              Copper + Cloves is building a modern wellness brand centred around one simple idea: making healthy living a little easier.
+            </p>
+            <p className="text-lg text-foreground/70 leading-relaxed">
+              As we grow, we're looking for kind, curious people who care about doing great work and creating experiences that genuinely make a difference to people's everyday lives.
+            </p>
           </div>
         </section>
 
