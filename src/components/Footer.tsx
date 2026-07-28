@@ -4,9 +4,9 @@ import { Instagram } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/40 bg-background">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <footer className="bg-background border-t border-border/50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           {/* Column 1: Brand & Social */}
           <div className="space-y-6">
             <div className="space-y-4">
@@ -14,9 +14,9 @@ export function Footer() {
                 <Image 
                   src="/logo-horizontal.png" 
                   alt="Copper + Cloves" 
-                  width={200}
-                  height={40}
-                  className="h-8 w-auto"
+                  width={250}
+                  height={50}
+                  className="h-8 w-auto object-contain"
                 />
               </Link>
               <p className="text-foreground/70 leading-relaxed max-w-xs">
