@@ -150,7 +150,7 @@ export default function Contact() {
                       <Textarea 
                         id="message" 
                         placeholder="Tell us more about your inquiry..." 
-                        rows={6}
+                        rows={4}
                         required 
                       />
                     </div>
@@ -178,6 +178,52 @@ export default function Contact() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+
+          {/* Newsletter Signup Section */}
+          <div className="max-w-2xl mx-auto mt-16">
+            <Card className="border-border bg-white shadow-sm">
+              <CardContent className="p-8 space-y-4">
+                <h3 className="font-display text-2xl font-semibold">Keep in Touch</h3>
+                <p className="text-foreground/70 leading-relaxed">
+                  We don't send weekly newsletters or clutter your inbox.
+                </p>
+                <p className="text-foreground/70 leading-relaxed">
+                  Just the occasional update on new menus, community events, journal articles, product launches and other things happening at Copper + Cloves.
+                </p>
+                
+                <form 
+                  className="flex flex-col sm:flex-row gap-3 pt-2"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const form = e.currentTarget;
+                    const emailInput = form.elements.namedItem('newsletter-email') as HTMLInputElement;
+                    const email = emailInput?.value;
+                    
+                    if (email) {
+                      // Submit to Google Sheets via form action
+                      const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse';
+                      
+                      // For now, show a simple alert - needs Google Sheets integration
+                      alert('Newsletter signup feature requires Google Sheets integration. Email: ' + email);
+                      emailInput.value = '';
+                    }
+                  }}
+                >
+                  <Input 
+                    id="newsletter-email"
+                    name="newsletter-email"
+                    type="email" 
+                    placeholder="Your email address" 
+                    className="flex-1"
+                    required 
+                  />
+                  <Button type="submit" className="sm:w-auto">
+                    Keep Me Posted
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
