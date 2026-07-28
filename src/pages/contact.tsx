@@ -46,21 +46,18 @@ export default function Contact() {
                     </div>
 
                     <div className="space-y-6 pt-4">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center flex-shrink-0">
-                          <Phone className="h-5 w-5 text-sage" />
-                        </div>
-                        <div>
-                          <p className="font-medium text-sm mb-1">Phone</p>
-                          <a
-                            href="tel:+918012345678"
-                            className="text-foreground/70 hover:text-sage transition-colors"
-                          >
-                            +91 80 1234 5678
-                          </a>
-                          <p className="text-sm text-foreground/60 mt-1">
-                            Mon-Sat, 8:00 AM - 8:00 PM
-                          </p>
+                      {/* Phone */}
+                      <div className="space-y-3">
+                        <div className="flex items-start gap-3">
+                          <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                          <div className="space-y-2">
+                            <h3 className="font-semibold text-foreground">Phone</h3>
+                            <div className="text-sm text-foreground/70 space-y-1">
+                              <p>Indiranagar Cafe enquiries: 8904293030</p>
+                              <p>Domlur/Wellness Event/Studio enquiries: 9008426703</p>
+                              <p>Lavelle Road Cafe enquiries: 8792194527</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
@@ -95,10 +92,10 @@ export default function Contact() {
                         Bring C+C wellness to your office events, meetings, and celebrations.
                       </p>
                       <a
-                        href="mailto:catering@copperandcloves.com"
+                        href="mailto:hello@copperandcloves.com"
                         className="text-sm text-kale hover:underline inline-flex items-center"
                       >
-                        catering@copperandcloves.com
+                        hello@copperandcloves.com
                       </a>
                     </CardContent>
                   </Card>
@@ -112,7 +109,7 @@ export default function Contact() {
                         Event Space Bookings
                       </h3>
                       <p className="text-sm text-foreground/70 leading-relaxed">
-                        Host workshops, wellness sessions, or community gatherings at our cafes.
+                        Host workshops, wellness sessions, or community gatherings at our Studio.
                       </p>
                       <a
                         href="mailto:thestudio@copperandcloves.com"
