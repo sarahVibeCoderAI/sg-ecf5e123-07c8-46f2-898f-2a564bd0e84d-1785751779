@@ -7,26 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt } from "lucide-react";
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
-import { useEffect, useState } from "react";
-import Autoplay from "embla-carousel-autoplay";
 
 export default function Cafes() {
-  const [api, setApi] = useState<CarouselApi>();
-
-  useEffect(() => {
-    if (!api) return;
-
-    const autoplay = Autoplay({ delay: 3000 });
-    // @ts-expect-error - Type compatibility issue between embla-carousel versions
-    api.plugins().autoplay = autoplay;
-    autoplay.init(api as any, {} as any);
-
-    return () => {
-      autoplay.destroy();
-    };
-  }, [api]);
-
   const cafes = [
     {
       id: 1,
@@ -195,65 +177,19 @@ export default function Cafes() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Indiranagar */}
               <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full" opts={{ loop: true }} setApi={setApi}>
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/20230628_-_IMG_8524_-_Raj_Kashyap.jpg"
-                          alt="Indiranagar cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/20230715_-_IMG_0625_-_Raj_Kashyap.jpg"
-                          alt="Indiranagar cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/IMG_3706.HEIC"
-                          alt="Indiranagar cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/IMG_2392.HEIC"
-                          alt="Indiranagar cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/IMG_8049.jpeg"
-                          alt="Indiranagar cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                </Carousel>
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <Image
+                    src="/20230628_-_IMG_8524_-_Raj_Kashyap.jpg"
+                    alt="Indiranagar cafe"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <CardContent className="p-6 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
                   <p className="font-semibold text-foreground/90">Books, brunch & community</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets with Love Me Twice and puppy adoption days.
+                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets and puppy adoption days.
                   </p>
                 </CardContent>
               </Card>
@@ -295,20 +231,6 @@ export default function Cafes() {
                   </p>
                 </CardContent>
               </Card>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12 max-w-2xl mx-auto">
-              <Button size="lg" className="bg-copper hover:bg-copper/90 text-white w-full sm:w-auto">
-                Join our WhatsApp community
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-copper text-copper hover:bg-copper/5 w-full sm:w-auto">
-                <a href="https://urbanaut.app/about-copperandcloves" target="_blank" rel="noopener noreferrer">
-                  Check out upcoming events
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
             </div>
           </div>
         </section>
