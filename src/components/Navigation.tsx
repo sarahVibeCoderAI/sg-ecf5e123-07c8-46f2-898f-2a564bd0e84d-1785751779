@@ -16,13 +16,13 @@ export function Navigation() {
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container">
         <div className="flex h-20 items-center justify-between gap-8">
-          <Link href="/" className="flex-shrink-0">
-            <Image
-              src="/logo-horizontal.png"
-              alt="Copper + Cloves"
+          <Link href="/" className="flex items-center gap-2 group">
+            <Image 
+              src="/logo-horizontal.png" 
+              alt="Copper + Cloves" 
               width={160}
-              height={36}
-              className="h-9 w-auto"
+              height={32}
+              className="h-8 w-auto"
               priority
             />
           </Link>

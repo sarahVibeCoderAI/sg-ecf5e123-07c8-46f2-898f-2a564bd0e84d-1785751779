@@ -8,22 +8,21 @@ export function Footer() {
       <div className="container py-16 md:py-20">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
           {/* Leftmost Column */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <Image
-                src="/logo-icon.png"
-                alt="Copper + Cloves"
-                width={32}
-                height={32}
-                className="h-8 w-8"
-              />
-              <h3 className="font-display text-lg font-light text-foreground">
-                Copper + Cloves
-              </h3>
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <Link href="/" className="inline-block">
+                <Image 
+                  src="/logo-horizontal.png" 
+                  alt="Copper + Cloves" 
+                  width={160}
+                  height={32}
+                  className="h-8 w-auto"
+                />
+              </Link>
+              <p className="text-foreground/70 leading-relaxed max-w-xs">
+                Making healthy living a little easier.
+              </p>
             </div>
-            <p className="text-sm text-foreground/60 leading-relaxed">
-              Making healthy living a little easier.
-            </p>
             <div className="space-y-2">
               <a
                 href="https://www.instagram.com/copperandcloves/"
