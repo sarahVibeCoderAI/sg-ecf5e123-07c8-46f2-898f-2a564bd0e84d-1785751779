@@ -313,14 +313,62 @@ export default function Cafes() {
 
               {/* Lavelle Road */}
               <Card className="overflow-hidden border-border bg-white">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <Image
-                    src="/20230715_-_IMG_0625_-_Raj_Kashyap.jpg"
-                    alt="Lavelle Road cafe"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/raj_10_of_23_.jpg"
+                          alt="Lavelle Road cafe"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/raj_3_of_23_.jpg"
+                          alt="Lavelle Road atmosphere"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/raj_17_of_23_.jpg"
+                          alt="Lavelle Road community"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/raj_23_of_23_.jpg"
+                          alt="Lavelle Road space"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/dog_at_lavelle.jpeg"
+                          alt="Dog-friendly Lavelle Road cafe"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-2" />
+                  <CarouselNext className="right-2" />
+                </Carousel>
                 <CardContent className="p-6 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
                   <p className="font-semibold text-foreground/90">Brunch, shopping & slow weekends.</p>
