@@ -190,22 +190,26 @@ export default function Contact() {
                     </p>
                     
                     <form 
+                      action="https://docs.google.com/forms/d/e/1FAIpQLSc5JYdpCE0FenQJjlH59-p1Un1rlE_qCGF5PIao6arK9dQt3A/formResponse"
+                      method="POST"
+                      target="_blank"
                       className="flex flex-col sm:flex-row gap-3"
                       onSubmit={(e) => {
-                        e.preventDefault();
                         const form = e.currentTarget;
-                        const emailInput = form.elements.namedItem('newsletter-email') as HTMLInputElement;
-                        const email = emailInput?.value;
+                        const emailInput = form.elements.namedItem('entry.981765683') as HTMLInputElement;
                         
-                        if (email) {
-                          alert('Newsletter signup feature requires Google Sheets integration. Email: ' + email);
-                          emailInput.value = '';
-                        }
+                        // Show success message after a short delay (form will submit in new tab)
+                        setTimeout(() => {
+                          if (emailInput) {
+                            emailInput.value = '';
+                          }
+                          alert('Thank you for signing up! You\'ll receive occasional updates from Copper + Cloves.');
+                        }, 100);
                       }}
                     >
                       <Input 
                         id="newsletter-email"
-                        name="newsletter-email"
+                        name="entry.981765683"
                         type="email" 
                         placeholder="Your email address" 
                         className="flex-1"
