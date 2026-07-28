@@ -149,7 +149,7 @@ export default function Cafes() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12">
                 <div className="aspect-[16/9] relative">
                   <Image
-                    src="/BAG09463.jpg"
+                    src="/BAG00879_1_.jpg"
                     alt="Community gathering at Copper + Cloves"
                     fill
                     className="object-cover"
