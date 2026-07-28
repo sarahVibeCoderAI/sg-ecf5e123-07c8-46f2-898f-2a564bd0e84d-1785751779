@@ -61,16 +61,91 @@ export default function Cafes() {
       />
       <Navigation />
       <main>
-        {/* Hero */}
-        <section className="pt-24 pb-12 lg:pt-32 lg:pb-16">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light">
-                Come Hungry
-              </h1>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
-              </p>
+        {/* Hero - Photo Collage with Text Overlay */}
+        <section className="relative pt-16 lg:pt-20">
+          {/* Photo Collage Grid */}
+          <div className="relative h-[70vh] lg:h-[80vh] overflow-hidden">
+            <div className="grid grid-cols-4 grid-rows-3 gap-2 h-full">
+              {/* Large hero image - top left, 2x2 */}
+              <div className="col-span-2 row-span-2 relative">
+                <Image
+                  src="/c_c_cafe_20_.jpg"
+                  alt="Copper + Cloves food"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Top right - stacked */}
+              <div className="relative">
+                <Image
+                  src="/DSC04320.jpeg"
+                  alt="Cafe atmosphere"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative">
+                <Image
+                  src="/DSC04391.jpeg"
+                  alt="Coffee and treats"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Middle right */}
+              <div className="col-span-2 relative">
+                <Image
+                  src="/c_c_cafe_9_.jpg"
+                  alt="Fresh dishes"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Bottom row */}
+              <div className="relative">
+                <Image
+                  src="/DSC00234.jpeg"
+                  alt="Cafe interior"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative">
+                <Image
+                  src="/DSC08534.jpg"
+                  alt="Brunch spread"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="col-span-2 relative">
+                <Image
+                  src="/c_c_cafe_20_.jpg"
+                  alt="Menu highlights"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-black/40" />
+            
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="container">
+                <div className="max-w-3xl mx-auto text-center space-y-6 px-4">
+                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
+                    Come Hungry
+                  </h1>
+                  <p className="text-lg text-white/90 leading-relaxed">
+                    From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
