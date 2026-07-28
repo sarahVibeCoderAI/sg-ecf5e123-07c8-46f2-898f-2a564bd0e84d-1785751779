@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Script from "next/script";
 import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt, Instagram } from "lucide-react";
 import Image from "next/image";
 import {
@@ -523,58 +524,9 @@ export default function Cafes() {
               </a>
             </div>
 
-            {/* Instagram Grid - 3 rows x 6 columns */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
-              {/* 
-                NOTE FOR INTEGRATION:
-                Replace these static images with live Instagram feed data from:
-                https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=YOUR_TOKEN&limit=18
-                
-                Each tile should map to a fetched post with:
-                - media_url for the image
-                - permalink for the click-through link
-                - caption for hover preview
-              */}
-              
-              {[
-                "/Sarah_C_C_Subscription_Photoshoot_May_2024-12_1_.jpg",
-                "/Sarah_C_C_Subscription_Photoshoot_May_2024-24.jpg",
-                "/Sarah_C_C_Subscription_Photoshoot_May_2024-19.jpg",
-                "/Sarah_C_C_Subscription_Photoshoot_May_2024-31.jpg",
-                "/Sarah_C_C_Subscription_Photoshoot_May_2024-39.jpg",
-                "/Sarah_C_C_Subscription_Photoshoot_May_2024-42_1_.jpg",
-                "/BAG02912.jpg",
-                "/BAG09552.jpg",
-                "/BAG09564.jpg",
-                "/C1373T01.jpg",
-                "/DSC04892.jpg",
-                "/DSC08847.jpg",
-                "/c_c_cafe_36_.jpg",
-                "/DSC06545.jpg",
-                "/BAG00651.jpg",
-                "/BAG00661.jpg",
-                "/DSC08778-2.jpg",
-                "/c_c_cafe_4_.jpg"
-              ].map((image, index) => (
-                <a
-                  key={index}
-                  href="https://www.instagram.com/copperandcloves/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative aspect-square overflow-hidden rounded-md bg-muted"
-                >
-                  <Image
-                    src={image}
-                    alt={`Instagram post ${index + 1}`}
-                    fill
-                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-103"
-                  />
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-[#232322]/45 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center justify-center">
-                    <Instagram className="w-8 h-8 text-white" />
-                  </div>
-                </a>
-              ))}
+            {/* Instagram Grid - Live Feed via Behold */}
+            <div className="w-full">
+              <behold-widget feed-id="oO9ZBaWmPzk1V5xbqPS0"></behold-widget>
             </div>
 
             {/* Bottom CTA */}
@@ -600,6 +552,17 @@ export default function Cafes() {
         </section>
       </main>
       <Footer />
+
+      {/* Behold Widget Script */}
+      <Script id="behold-widget-script" strategy="afterInteractive">
+        {`
+          (() => {
+            if(window.__bhldScript)return;window.__bhldScript=true;
+            const d=document,s=d.createElement("script");s.type="module";
+            s.src="https://w.behold.so/widget.js";setTimeout(()=>{d.head.append(s);},0);
+          })();
+        `}
+      </Script>
     </>
   );
 }
