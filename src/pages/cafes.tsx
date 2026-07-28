@@ -1,12 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect } from "react";
+import { SEO } from "@/components/SEO";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin } from "lucide-react";
+import Link from "next/link";
+import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt } from "lucide-react";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -16,8 +17,8 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 
-function CafesPage() {
-  const [api, setApi] = React.useState<CarouselApi>();
+export function CafesPage() {
+  const [api, setApi] = useState<CarouselApi>();
 
   useEffect(() => {
     if (!api) return;
@@ -31,33 +32,47 @@ function CafesPage() {
 
   const cafes = [
     {
+      id: 1,
       name: "Indiranagar",
-      address: "Copper + Cloves, 717, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008",
-      hours: "Monday - Sunday: 8:00 AM - 9:00 PM",
+      description: "Our flagship, set in a beautiful white bungalow.",
+      address: "549A, 9th A Main Rd, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+      hours: "9.30am - 8pm Daily",
+      phone: "08904293030",
       image: "/c_c_cafe_4_.jpg",
-      mapsUrl: "https://maps.app.goo.gl/CsB9tG6QCUCRdNxG6",
-      amenities: ["Dine-in", "Takeaway", "Outdoor Seating", "Wi-Fi"]
+      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Bookstore", "Boutique Shopping", "Garden Seating", "Indoor Seating"],
+      deliveryRadius: "3km delivery radius",
+      mapsUrl: "https://maps.app.goo.gl/kX9fR2BjjAFyYdQG7",
     },
     {
+      id: 2,
       name: "Lavelle Road",
-      address: "56, Lavelle Rd, Ashok Nagar, Bengaluru, Karnataka 560001",
-      hours: "Monday - Sunday: 8:00 AM - 9:00 PM",
+      address: "4, Walton Rd, Good Earth, off Lavelle Road, KG Halli, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+      hours: "9.30am - 8pm Daily",
+      phone: "8792194527",
       image: "/lavelle_road_16_of_23_.jpg",
-      mapsUrl: "https://maps.app.goo.gl/nSvHpNuacx77zUcw5",
-      amenities: ["Dine-in", "Takeaway", "Wi-Fi", "Pet-friendly"]
+      amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly"],
+      deliveryRadius: "3km delivery radius",
+      mapsUrl: "https://maps.app.goo.gl/ijZsNGVDaDU7A2X79",
     },
     {
-      name: "Domlur (The Studio)",
-      address: "26, 3rd Floor, above SBI, Jyoti Nivas College Rd, 5th Block, Koramangala, Bengaluru, Karnataka 560095",
-      hours: "Monday - Sunday: 8:00 AM - 7:00 PM",
+      id: 3,
+      name: "Domlur/The Studio",
+      address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
+      hours: "9.30am - 8pm Daily",
+      phone: "09008426703",
       image: "/A7406794_1_.jpg",
-      mapsUrl: "https://maps.app.goo.gl/yJc3tUmC4UVKwSc29",
-      amenities: ["Dine-in", "Takeaway", "Workshops", "Community Events"]
-    }
+      amenities: ["Workout Studio", "Dine-in", "Co-working Friendly", "Indoor Seating"],
+      deliveryRadius: "3km delivery radius",
+      mapsUrl: "https://maps.app.goo.gl/DQs1BRv2DzSW1uN59",
+    },
   ];
 
   return (
     <>
+      <SEO
+        title="Our Cafes | Copper + Cloves"
+        description="Visit our premium plant-based wellness cafes across Bangalore. Spacious cafes always filled with natural light."
+      />
       <Navigation />
       <main>
         {/* Hero */}
@@ -287,5 +302,3 @@ function CafesPage() {
     </>
   );
 }
-
-export default CafesPage;
