@@ -2,7 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt } from "lucide-react";
@@ -265,135 +265,110 @@ export default function Cafes() {
             {/* Three Community Cards */}
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Indiranagar */}
-              <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/20230628_-_IMG_8524_-_Raj_Kashyap.jpg"
-                          alt="Indiranagar cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/IMG_2392.HEIC"
-                          alt="Indiranagar community"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/IMG_8049.jpeg"
-                          alt="Indiranagar events"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
-                <CardContent className="p-6 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
-                  <p className="font-semibold text-foreground/90">Books, brunch & community</p>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets with Love Me Twice and puppy adoption days.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Lavelle Road */}
-              <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_10_of_23_.jpg"
-                          alt="Lavelle Road cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_3_of_23_.jpg"
-                          alt="Lavelle Road atmosphere"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_17_of_23_.jpg"
-                          alt="Lavelle Road community"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_23_of_23_.jpg"
-                          alt="Lavelle Road space"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/dog_at_lavelle.jpeg"
-                          alt="Dog-friendly Lavelle Road cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
-                <CardContent className="p-6 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
-                  <p className="font-semibold text-foreground/90">Brunch, shopping & slow weekends.</p>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Re-fuel after a Cubbon run, browse Good Earth and Nicobar, join one of our seasonal workshops and community gatherings.
-                  </p>
+              <Card className="border-border">
+                <CardHeader>
+                  <CardTitle className="font-display text-2xl">Indiranagar</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2 text-sm">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">
+                        1081, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Clock className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">9.30am - 8pm (weekdays) and 8.30pm (weekends)</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Phone className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">89042 93030</p>
+                    </div>
+                  </div>
+                  <div className="pt-2">
+                    <a
+                      href="https://maps.app.goo.gl/qr2M6aYbKZU5BpLs9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                    >
+                      Get Directions
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
 
               {/* Domlur/The Studio */}
-              <Card className="overflow-hidden border-border bg-white">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <Image
-                    src="/20230715_-_IMG_0778_-_Raj_Kashyap.jpg"
-                    alt="Domlur Studio"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold">Domlur/ The Studio</h3>
-                  <p className="font-semibold text-foreground/90">Move, create & connect.</p>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Home to yoga and Pilates brunches, sound healing, creative workshops and Analog Club—our monthly digital detox gathering.
-                  </p>
+              <Card className="border-border">
+                <CardHeader>
+                  <CardTitle className="font-display text-2xl">Domlur/The Studio</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2 text-sm">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">
+                        135, Dollars Colony Main Rd, near Nexus Koramangala, Phase 4, Dollars Colony, Bengaluru, Karnataka 560095
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Clock className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">7.30am - 8pm</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Phone className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">9008426703</p>
+                    </div>
+                  </div>
+                  <div className="pt-2">
+                    <a
+                      href="https://maps.app.goo.gl/MjV6YtWBb42xfVcm8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                    >
+                      Get Directions
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Lavelle Road */}
+              <Card className="border-border">
+                <CardHeader>
+                  <CardTitle className="font-display text-2xl">Lavelle Road</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2 text-sm">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">
+                        16, Vittal Mallya Rd, Ashok Nagar, Bengaluru, Karnataka 560001
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Clock className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">9am - 8pm</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Phone className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                      <p className="text-foreground/80">87921 945</p>
+                    </div>
+                  </div>
+                  <div className="pt-2">
+                    <a
+                      href="https://maps.app.goo.gl/fRi1c3PLDCfJyQ6T6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                    >
+                      Get Directions
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
             </div>
