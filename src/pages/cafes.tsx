@@ -7,6 +7,13 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt } from "lucide-react";
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Cafes() {
   const cafes = [
@@ -177,19 +184,47 @@ export default function Cafes() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Indiranagar */}
               <Card className="overflow-hidden border-border bg-white">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <Image
-                    src="/20230628_-_IMG_8524_-_Raj_Kashyap.jpg"
-                    alt="Indiranagar cafe"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/20230628_-_IMG_8524_-_Raj_Kashyap.jpg"
+                          alt="Indiranagar cafe"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/IMG_2392.HEIC"
+                          alt="Indiranagar community"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/IMG_8049.jpeg"
+                          alt="Indiranagar events"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-2" />
+                  <CarouselNext className="right-2" />
+                </Carousel>
                 <CardContent className="p-6 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
                   <p className="font-semibold text-foreground/90">Books, brunch & community</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets and puppy adoption days.
+                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets with Love Me Twice and puppy adoption days.
                   </p>
                 </CardContent>
               </Card>
@@ -231,6 +266,20 @@ export default function Cafes() {
                   </p>
                 </CardContent>
               </Card>
+            </div>
+
+            {/* Community Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 max-w-2xl mx-auto">
+              <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Join Our WhatsApp Community
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-copper text-copper hover:bg-copper/5">
+                <a href="https://urbanaut.app/about-copperandcloves" target="_blank" rel="noopener noreferrer">
+                  Check Out Upcoming Events
+                </a>
+              </Button>
             </div>
           </div>
         </section>
