@@ -1,4 +1,3 @@
-/// <reference path="../types/behold.d.ts" />
 import { SEO } from "@/components/SEO";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -16,6 +15,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
+// Type declaration for Behold widget custom element
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'behold-widget': {
+        'feed-id': string;
+      };
+    }
+  }
+}
 
 export default function Cafes() {
   const cafes = [
