@@ -46,6 +46,32 @@ export function Footer() {
                 Join our WhatsApp Community
               </a>
             </div>
+
+            {/* Newsletter Signup */}
+            <div className="space-y-4 pt-6 border-t border-border/50">
+              <h3 className="font-display text-xl font-semibold">Keep in Touch</h3>
+              <p className="text-sm text-foreground/70 leading-relaxed">
+                We don't send weekly newsletters or clutter your inbox.
+              </p>
+              <p className="text-sm text-foreground/70 leading-relaxed">
+                Just the occasional update on new menus, community events, journal articles, product launches and other things happening at Copper + Cloves.
+              </p>
+              
+              <form className="space-y-3">
+                <input
+                  type="email"
+                  placeholder="your email address"
+                  className="w-full px-4 py-2.5 border border-border rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="w-full px-6 py-2.5 bg-secondary text-white rounded-md hover:bg-secondary/90 transition-colors text-sm font-medium"
+                >
+                  Keep Me Posted
+                </button>
+              </form>
+            </div>
           </div>
 
           {/* Middle Column - Navigation Links */}
