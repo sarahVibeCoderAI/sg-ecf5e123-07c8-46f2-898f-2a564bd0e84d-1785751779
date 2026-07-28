@@ -399,64 +399,80 @@ export default function Home() {
 
         {/* Products - Coming Soon */}
         <section className="section-padding bg-muted/30">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="font-display text-3xl md:text-4xl font-light">
-              Bringing Copper + Cloves Home
-            </h2>
-            
-            <div className="max-w-2xl mx-auto space-y-6">
-              <p className="text-base text-foreground/80 leading-relaxed">
-                Soon you'll be able to enjoy some of our favourite pantry staples at home. We're launching:
-              </p>
-              
-              <ul className="text-base text-foreground/80 leading-relaxed space-y-2 text-left max-w-lg mx-auto">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Boxes of our signature granola.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Your favourites of our salad dressings.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Our much-loved dips like romesco and basil-walnut pesto.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Our SuperSeed topper.</span>
-                </li>
-              </ul>
-            </div>
-
-            <form 
-              action="https://docs.google.com/forms/d/e/1FAIpQLSc5JYdpCE0FenQJjlH59-p1Un1rlE_qCGF5PIao6arK9dQt3A/formResponse"
-              method="POST"
-              target="_blank"
-              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-4"
-              onSubmit={(e) => {
-                const form = e.currentTarget;
-                const emailInput = form.elements.namedItem('entry.981765683') as HTMLInputElement;
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Left Column: Text & CTA */}
+              <div className="space-y-8">
+                <h2 className="font-display text-3xl md:text-4xl font-light">
+                  Bringing Copper + Cloves Home
+                </h2>
                 
-                setTimeout(() => {
-                  if (emailInput) {
-                    emailInput.value = '';
-                  }
-                  alert('Thank you! We\'ll notify you when our pantry staples launch.');
-                }, 100);
-              }}
-            >
-              <Input 
-                name="entry.981765683"
-                type="email" 
-                placeholder="Your email" 
-                className="flex-1"
-                required 
-              />
-              <Button type="submit" size="lg" className="sm:w-auto">
-                Be the first to know
-              </Button>
-            </form>
+                <div className="space-y-6">
+                  <p className="text-base text-foreground/80 leading-relaxed">
+                    Soon you'll be able to enjoy some of our favourite pantry staples at home. We're launching:
+                  </p>
+                  
+                  <ul className="text-base text-foreground/80 leading-relaxed space-y-2">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Boxes of our signature granola.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Your favourites of our salad dressings.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Our much-loved dips like romesco and basil-walnut pesto.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Our SuperSeed topper.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <form 
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSc5JYdpCE0FenQJjlH59-p1Un1rlE_qCGF5PIao6arK9dQt3A/formResponse"
+                  method="POST"
+                  target="_blank"
+                  className="flex flex-col sm:flex-row gap-3 max-w-md pt-4"
+                  onSubmit={(e) => {
+                    const form = e.currentTarget;
+                    const emailInput = form.elements.namedItem('entry.981765683') as HTMLInputElement;
+                    
+                    setTimeout(() => {
+                      if (emailInput) {
+                        emailInput.value = '';
+                      }
+                      alert('Thank you! We\'ll notify you when our pantry staples launch.');
+                    }, 100);
+                  }}
+                >
+                  <Input 
+                    name="entry.981765683"
+                    type="email" 
+                    placeholder="Your email" 
+                    className="flex-1"
+                    required 
+                  />
+                  <Button type="submit" size="lg" className="sm:w-auto">
+                    Be the first to know
+                  </Button>
+                </form>
+              </div>
+
+              {/* Right Column: Image */}
+              <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden">
+                <Image
+                  src="/A7406782_2_.jpg"
+                  alt="Copper + Cloves pantry products"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
