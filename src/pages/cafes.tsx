@@ -18,7 +18,7 @@ export default function Cafes() {
     if (!api) return;
 
     const autoplay = Autoplay({ delay: 3000 });
-    // @ts-ignore - Type compatibility issue between embla-carousel versions
+    // @ts-expect-error - Type compatibility issue between embla-carousel versions
     api.plugins().autoplay = autoplay;
     autoplay.init(api as any, {} as any);
 
