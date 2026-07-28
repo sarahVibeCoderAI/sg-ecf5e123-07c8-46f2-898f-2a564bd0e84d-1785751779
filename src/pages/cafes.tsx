@@ -69,7 +69,7 @@ export default function Cafes() {
               {/* Large hero image - top left, 2x2 */}
               <div className="col-span-2 row-span-2 relative">
                 <Image
-                  src="/c_c_cafe_20_.jpg"
+                  src="/DSC04391.jpeg"
                   alt="Copper + Cloves food"
                   fill
                   className="object-cover"
@@ -100,7 +100,7 @@ export default function Cafes() {
               {/* Middle right */}
               <div className="col-span-2 relative">
                 <Image
-                  src="/c_c_cafe_9_.jpg"
+                  src="/DSC04320.jpeg"
                   alt="Colorful brunch"
                   fill
                   className="object-cover"
