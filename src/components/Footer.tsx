@@ -133,6 +133,21 @@ export function Footer() {
         <div className="mt-12 border-t border-border/40 pt-8 text-center text-sm text-foreground/60">
           <p>&copy; {new Date().getFullYear()} Copper + Cloves. All rights reserved.</p>
         </div>
+
+        {/* Company Registration Details */}
+        <div className="mt-12 pt-8 border-t border-border/30">
+          <div className="text-center space-y-1">
+            <p className="text-xs text-foreground/50">
+              Copper and Cloves Wellness Pvt Ltd
+            </p>
+            <p className="text-xs text-foreground/50">
+              GST: 29AAICC0601N1ZM
+            </p>
+            <p className="text-xs text-foreground/50">
+              Registered Address: 503/504 5th floor, Saket Callipolis, Varthur Hobli, Doddakannelli Sarjapur Main Road, Bangalore 560035
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   );
