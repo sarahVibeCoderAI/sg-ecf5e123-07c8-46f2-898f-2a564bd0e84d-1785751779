@@ -59,25 +59,43 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Philosophy */}
-        <section className="py-12 lg:py-16 bg-muted/30">
-          <div className="container max-w-4xl text-center">
-            <h2 className="font-display text-3xl lg:text-5xl font-light mb-8">
+        {/* Our Philosophy Section */}
+        <section className="section-padding">
+          <div className="max-w-5xl mx-auto px-6 lg:px-8">
+            <h2 className="font-display text-4xl md:text-5xl font-light text-center mb-20">
               Our Philosophy
             </h2>
-            <div className="space-y-6 text-foreground/80">
-              <p className="text-lg lg:text-xl font-bold">
-                Wellness doesn't have to consume your life.
-              </p>
-              <p className="text-base lg:text-lg leading-relaxed">
-                You don't need to spend hours meal prepping, count every calorie or track every metric to feel your best.
-              </p>
-              <p className="text-base lg:text-lg leading-relaxed">
-                We believe good health is built in the small choices we make every day—a nourishing lunch, a walk in the sunshine, time with friends, talking to a stranger, movement you enjoy and moments around the table.
-              </p>
-              <p className="text-base lg:text-lg leading-relaxed font-bold italic">
-                We're here to make those choices a little easier.
-              </p>
+            
+            <div className="space-y-16 md:space-y-20">
+              {/* Statement 1 */}
+              <div className="max-w-3xl mx-auto space-y-4">
+                <h3 className="font-display text-2xl md:text-3xl font-semibold italic text-foreground/90">
+                  Wellness doesn't have to consume your life.
+                </h3>
+                <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
+                  We believe in a balanced approach to health that fits seamlessly into your daily routine, not one that demands your entire focus.
+                </p>
+              </div>
+
+              {/* Statement 2 */}
+              <div className="max-w-3xl mx-auto space-y-4">
+                <h3 className="font-display text-2xl md:text-3xl font-semibold italic text-foreground/90">
+                  Good health is built in the <em className="not-italic font-normal italic">small choices</em> we make every day.
+                </h3>
+                <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
+                  It's not about grand gestures or extreme restrictions. It's the consistent, mindful decisions that add up to lasting wellness.
+                </p>
+              </div>
+
+              {/* Statement 3 */}
+              <div className="max-w-3xl mx-auto space-y-4">
+                <h3 className="font-display text-2xl md:text-3xl font-semibold italic text-foreground/90">
+                  We're here to make those choices a little easier.
+                </h3>
+                <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
+                  From nourishing meals to community support, we provide the tools and environment that make healthy living feel effortless.
+                </p>
+              </div>
             </div>
           </div>
         </section>
