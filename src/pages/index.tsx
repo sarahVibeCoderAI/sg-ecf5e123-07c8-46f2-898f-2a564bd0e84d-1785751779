@@ -456,7 +456,7 @@ export default function Home() {
                     className="flex-1 h-11"
                     required 
                   />
-                  <Button type="submit" size="lg" className="sm:w-auto h-11 gap-2">
+                  <Button type="submit" size="lg" className="sm:w-auto h-11 gap-2 normal-case">
                     Be the first to know
                     <ArrowRight className="w-4 h-4" />
                   </Button>
