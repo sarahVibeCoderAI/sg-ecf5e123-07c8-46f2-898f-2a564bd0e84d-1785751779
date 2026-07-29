@@ -80,7 +80,7 @@ export default function Home() {
               {/* Statement 2 */}
               <div className="max-w-3xl mx-auto space-y-4">
                 <h3 className="font-display text-2xl md:text-3xl font-semibold italic text-foreground/90">
-                  Good health is built in the <em className="not-italic font-normal italic">small choices</em> we make every day.
+                  Good health is built in the <span className="font-normal italic">small choices</span> we make every day.
                 </h3>
                 <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
                   It's not about grand gestures or extreme restrictions. It's the consistent, mindful decisions that add up to lasting wellness.
