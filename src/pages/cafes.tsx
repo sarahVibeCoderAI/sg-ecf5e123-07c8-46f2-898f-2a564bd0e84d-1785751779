@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Script from "next/script";
-import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt, Instagram, Utensils, Navigation } from "lucide-react";
+import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt, Instagram, Utensils, Navigation as NavigationIcon } from "lucide-react";
 import Image from "next/image";
 import {
   Carousel,
@@ -214,7 +214,7 @@ export default function Cafes() {
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2"
                       >
-                        <Navigation className="w-4 h-4" />
+                        <NavigationIcon className="w-4 h-4" />
                         Directions
                       </a>
                     </Button>
@@ -276,7 +276,7 @@ export default function Cafes() {
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2"
                       >
-                        <Navigation className="w-4 h-4" />
+                        <NavigationIcon className="w-4 h-4" />
                         Directions
                       </a>
                     </Button>
@@ -338,7 +338,7 @@ export default function Cafes() {
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2"
                       >
-                        <Navigation className="w-4 h-4" />
+                        <NavigationIcon className="w-4 h-4" />
                         Directions
                       </a>
                     </Button>
