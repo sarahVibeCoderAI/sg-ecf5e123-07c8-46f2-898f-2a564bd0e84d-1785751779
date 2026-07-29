@@ -453,17 +453,18 @@ export default function Home() {
                     name="entry.981765683"
                     type="email" 
                     placeholder="Your email" 
-                    className="flex-1"
+                    className="flex-1 h-11"
                     required 
                   />
-                  <Button type="submit" size="lg" className="sm:w-auto">
+                  <Button type="submit" size="lg" className="sm:w-auto h-11 gap-2">
                     Be the first to know
+                    <ArrowRight className="w-4 h-4" />
                   </Button>
                 </form>
               </div>
 
               {/* Right Column: Image */}
-              <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden">
+              <div className="relative h-[325px] lg:h-[390px] rounded-lg overflow-hidden">
                 <Image
                   src="/A7406782_2_.jpg"
                   alt="Copper + Cloves pantry products"
