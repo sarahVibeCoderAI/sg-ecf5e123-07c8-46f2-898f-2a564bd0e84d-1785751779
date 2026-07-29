@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Script from "next/script";
-import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt, Instagram, Utensils, Navigation as NavigationIcon } from "lucide-react";
+import { MapPin, Clock, Wifi, PawPrint, SunMedium, ArrowRight, Phone, BookOpen, ShoppingBag, Shirt, Instagram } from "lucide-react";
 import Image from "next/image";
 import {
   Carousel,
@@ -161,197 +161,81 @@ export default function Cafes() {
           </div>
         </section>
 
-        {/* Cafe Cards Section */}
-        <section className="section-padding bg-white">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="font-display text-3xl md:text-5xl font-light text-center mb-16">
-              Find Your Neighbourhood Cafe
-            </h2>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Indiranagar */}
-              <Card className="overflow-hidden border-mushroom/30 hover:shadow-xl transition-all duration-300 rounded-lg group">
-                <div className="relative h-56 overflow-hidden">
-                  <Image
-                    src="/c_c_cafe_20_.jpg"
-                    alt="Copper + Cloves Indiranagar"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-4">
-                  <div>
-                    <h3 className="font-display text-2xl font-light mb-2">Indiranagar</h3>
-                    <p className="text-sm text-foreground/60 flex items-start gap-2">
-                      <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                      <span>1137, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bangalore 560008</span>
-                    </p>
+        {/* Cafes Grid */}
+        <section className="py-12 lg:py-16 bg-muted/30">
+          <div className="container max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-2xl sm:text-3xl font-light">
+                Find Your Neighbourhood Café
+              </h2>
+            </div>
+            <div className="grid lg:grid-cols-2 gap-12">
+              {cafes.map((cafe, index) => (
+                <Card key={index} className="overflow-hidden border-border hover:shadow-lg transition-shadow bg-white p-8">
+                  <div className="aspect-[4/3] relative overflow-hidden rounded-lg mb-6">
+                    <Image
+                      src={cafe.image}
+                      alt={cafe.name}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
+                  <CardContent className="p-0 space-y-4">
+                    <div>
+                      <h2 className="font-display text-2xl font-semibold mb-2">
+                        {cafe.name}
+                      </h2>
+                      <p className="text-foreground/70">{cafe.address}</p>
+                    </div>
 
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center gap-2 text-foreground/70">
-                      <Clock className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span>Mon-Sun: 8am - 9pm</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-foreground/70">
-                      <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                      <a href="tel:8904293030" className="hover:text-primary transition-colors">
-                        8904293030
-                      </a>
-                    </div>
-                    <div className="flex items-start gap-2 text-foreground/70">
-                      <Utensils className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                      <span>Dine-in • Takeaway • Delivery (2km radius)</span>
-                    </div>
-                  </div>
+                    {cafe.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {cafe.tags.map((tag, idx) => (
+                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
 
-                  <div className="flex gap-2 pt-2">
-                    <Button asChild variant="default" size="sm" className="flex-1">
-                      <a 
-                        href="https://maps.app.goo.gl/UhfKk7CmRZbDSVGq8" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2"
-                      >
-                        <NavigationIcon className="w-4 h-4" />
-                        Directions
-                      </a>
-                    </Button>
-                    <Button asChild variant="outline" size="sm" className="flex-1">
-                      <a 
-                        href="https://www.zomato.com/bangalore/copper-cloves-indiranagar" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        Order Now
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                    <div className="space-y-3 pt-4">
+                      <div className="flex items-start gap-3">
+                        <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-sm">Phone</p>
+                          <a href={`tel:${cafe.phone.replace(/\s/g, '')}`} className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                            {cafe.phone}
+                          </a>
+                        </div>
+                      </div>
 
-              {/* Lavelle Road */}
-              <Card className="overflow-hidden border-mushroom/30 hover:shadow-xl transition-all duration-300 rounded-lg group">
-                <div className="relative h-56 overflow-hidden">
-                  <Image
-                    src="/lavelle_road_16_of_23_.jpg"
-                    alt="Copper + Cloves Lavelle Road"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-4">
-                  <div>
-                    <h3 className="font-display text-2xl font-light mb-2">Lavelle Road</h3>
-                    <p className="text-sm text-foreground/60 flex items-start gap-2">
-                      <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                      <span>45, Lavelle Rd, Shanthala Nagar, Ashok Nagar, Bangalore 560001</span>
-                    </p>
-                  </div>
+                      <div className="flex items-start gap-3">
+                        <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-sm">Hours</p>
+                          <p className="text-sm text-foreground/70">{cafe.hours}</p>
+                        </div>
+                      </div>
 
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center gap-2 text-foreground/70">
-                      <Clock className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span>Mon-Sun: 8am - 9pm</span>
+                      <div className="flex flex-wrap gap-2 pt-2">
+                        {cafe.amenities.map((amenity, idx) => (
+                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                            {amenity}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-foreground/70">
-                      <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                      <a href="tel:8792194527" className="hover:text-primary transition-colors">
-                        8792194527
-                      </a>
-                    </div>
-                    <div className="flex items-start gap-2 text-foreground/70">
-                      <Utensils className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                      <span>Dine-in • Takeaway • Delivery (2km radius)</span>
-                    </div>
-                  </div>
 
-                  <div className="flex gap-2 pt-2">
-                    <Button asChild variant="default" size="sm" className="flex-1">
-                      <a 
-                        href="https://maps.app.goo.gl/hQm1LSm3dYNqCDfu5" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2"
-                      >
-                        <NavigationIcon className="w-4 h-4" />
-                        Directions
-                      </a>
-                    </Button>
-                    <Button asChild variant="outline" size="sm" className="flex-1">
-                      <a 
-                        href="https://www.zomato.com/bangalore/copper-cloves-1-lavelle-road" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        Order Now
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Domlur */}
-              <Card className="overflow-hidden border-mushroom/30 hover:shadow-xl transition-all duration-300 rounded-lg group">
-                <div className="relative h-56 overflow-hidden">
-                  <Image
-                    src="/raj_3_of_23_.jpg"
-                    alt="Copper + Cloves Domlur"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-4">
-                  <div>
-                    <h3 className="font-display text-2xl font-light mb-2">Domlur</h3>
-                    <p className="text-sm text-foreground/60 flex items-start gap-2">
-                      <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                      <span>77, 1st Floor, 6th Cross Rd, Domlur I Stage, Domlur, Bangalore 560071</span>
-                    </p>
-                  </div>
-
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center gap-2 text-foreground/70">
-                      <Clock className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span>Mon-Sat: 9am - 6pm (Closed Sundays)</span>
+                    <div className="pt-4">
+                      <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white">
+                        <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
+                          Get Directions
+                        </a>
+                      </Button>
                     </div>
-                    <div className="flex items-center gap-2 text-foreground/70">
-                      <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                      <a href="tel:9008426703" className="hover:text-primary transition-colors">
-                        9008426703
-                      </a>
-                    </div>
-                    <div className="flex items-start gap-2 text-foreground/70">
-                      <Utensils className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                      <span>Meal prep studio • Event space</span>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-2 pt-2">
-                    <Button asChild variant="default" size="sm" className="flex-1">
-                      <a 
-                        href="https://maps.app.goo.gl/nZSeDhZC8jxfPg5s8" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2"
-                      >
-                        <NavigationIcon className="w-4 h-4" />
-                        Directions
-                      </a>
-                    </Button>
-                    <Button asChild variant="outline" size="sm" className="flex-1">
-                      <a 
-                        href="mailto:thestudio@copperandcloves.com"
-                      >
-                        Enquire
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
