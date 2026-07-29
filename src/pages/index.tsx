@@ -61,40 +61,37 @@ export default function Home() {
 
         {/* Our Philosophy Section */}
         <section className="section-padding">
-          <div className="max-w-5xl mx-auto px-6 lg:px-8">
-            <h2 className="font-display text-4xl md:text-5xl font-light text-center mb-20">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 className="font-display text-4xl md:text-5xl font-light text-center mb-24">
               Our Philosophy
             </h2>
             
-            <div className="space-y-16 md:space-y-20">
-              {/* Statement 1 */}
-              <div className="max-w-3xl mx-auto space-y-4">
-                <h3 className="font-display text-2xl md:text-3xl font-semibold italic text-foreground/90">
+            <div className="space-y-20">
+              {/* Block 1 */}
+              <div className="space-y-6">
+                <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
                   Wellness doesn't have to consume your life.
                 </h3>
                 <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
-                  We believe in a balanced approach to health that fits seamlessly into your daily routine, not one that demands your entire focus.
+                  You don't need to spend hours meal prepping, count every calorie or track every metric to feel your best.
                 </p>
               </div>
 
-              {/* Statement 2 */}
-              <div className="max-w-3xl mx-auto space-y-4">
-                <h3 className="font-display text-2xl md:text-3xl font-semibold italic text-foreground/90">
-                  Good health is built in the <span className="font-normal italic">small choices</span> we make every day.
+              {/* Block 2 */}
+              <div className="space-y-6">
+                <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
+                  We believe good health is built in the small choices we make every day.
                 </h3>
                 <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
-                  It's not about grand gestures or extreme restrictions. It's the consistent, mindful decisions that add up to lasting wellness.
+                  Colourful, satisfying food, movement you enjoy, time with friends, a walk outside.
                 </p>
               </div>
 
-              {/* Statement 3 */}
-              <div className="max-w-3xl mx-auto space-y-4">
-                <h3 className="font-display text-2xl md:text-3xl font-semibold italic text-foreground/90">
-                  We're here to make those choices a little easier.
+              {/* Block 3 */}
+              <div className="space-y-6">
+                <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
+                  We're here to make living well a little easier.
                 </h3>
-                <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
-                  From nourishing meals to community support, we provide the tools and environment that make healthy living feel effortless.
-                </p>
               </div>
             </div>
           </div>
