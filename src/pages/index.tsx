@@ -399,12 +399,12 @@ export default function Home() {
 
         {/* Products - Coming Soon */}
         <section className="section-padding bg-muted/30">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column: Text & CTA */}
               <div className="space-y-8">
-                <h2 className="font-display text-3xl md:text-4xl font-light">
-                  Bringing Copper + Cloves Home
+                <h2 className="font-display text-[27px] md:text-[36px] font-light">
+                  Bring Copper + Cloves Home
                 </h2>
                 
                 <div className="space-y-6">
@@ -431,35 +431,6 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-
-                <form 
-                  action="https://docs.google.com/forms/d/e/1FAIpQLSc5JYdpCE0FenQJjlH59-p1Un1rlE_qCGF5PIao6arK9dQt3A/formResponse"
-                  method="POST"
-                  target="_blank"
-                  className="flex flex-col sm:flex-row gap-3 max-w-md pt-4"
-                  onSubmit={(e) => {
-                    const form = e.currentTarget;
-                    const emailInput = form.elements.namedItem('entry.981765683') as HTMLInputElement;
-                    
-                    setTimeout(() => {
-                      if (emailInput) {
-                        emailInput.value = '';
-                      }
-                      alert('Thank you! We\'ll notify you when our pantry staples launch.');
-                    }, 100);
-                  }}
-                >
-                  <Input 
-                    name="entry.981765683"
-                    type="email" 
-                    placeholder="Your email" 
-                    className="flex-1"
-                    required 
-                  />
-                  <Button type="submit" size="lg" className="sm:w-auto">
-                    Be the first to know
-                  </Button>
-                </form>
               </div>
 
               {/* Right Column: Image */}
