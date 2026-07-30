@@ -182,7 +182,7 @@ export default function Cafes() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
-                  <CardContent className="p-0 space-y-4">
+                  <CardContent className="p-8 space-y-4">
                     <div>
                       <h2 className="font-display text-2xl font-semibold mb-2">
                         {cafe.name}
@@ -229,7 +229,7 @@ export default function Cafes() {
                     </div>
 
                     <div className="pt-4">
-                      <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white">
+                      <Button asChild className="w-auto mx-auto px-8 bg-secondary hover:bg-secondary/90 text-white">
                         <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
                           Get Directions
                         </a>
@@ -326,7 +326,7 @@ export default function Cafes() {
                   <CarouselPrevious className="left-2" />
                   <CarouselNext className="right-2" />
                 </Carousel>
-                <CardContent className="p-6 space-y-3">
+                <CardContent className="p-8 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
                   <p className="font-semibold text-foreground/90">Books, dogs & retail therapy.</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
@@ -373,7 +373,7 @@ export default function Cafes() {
                   <CarouselPrevious className="left-2" />
                   <CarouselNext className="right-2" />
                 </Carousel>
-                <CardContent className="p-6 space-y-3">
+                <CardContent className="p-8 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
                   <p className="font-semibold text-foreground/90">Garden oasis in the business district.</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
@@ -450,7 +450,7 @@ export default function Cafes() {
                   <CarouselPrevious className="left-2" />
                   <CarouselNext className="right-2" />
                 </Carousel>
-                <CardContent className="p-6 space-y-3">
+                <CardContent className="p-8 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Domlur/ The Studio</h3>
                   <p className="font-semibold text-foreground/90">Move, create & connect.</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
