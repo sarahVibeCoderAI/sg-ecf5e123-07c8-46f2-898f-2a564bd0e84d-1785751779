@@ -146,15 +146,17 @@ export default function Cafes() {
             {/* Dark overlay for text readability */}
             <div className="absolute inset-0 bg-black/40" />
             
-            {/* Hero Text Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="absolute left-1/3 top-1/2 -translate-y-1/2 text-center max-w-md px-6">
-                <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
-                  Come Hungry,<br/>Leave Nourished
-                </h1>
-                <p className="text-lg text-white/90 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
-                  Three wellness sanctuaries across Bangalore serving wholesome plant-based meals
-                </p>
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="container">
+                <div className="max-w-3xl mx-auto text-center space-y-6 px-4">
+                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
+                    Come Hungry
+                  </h1>
+                  <p className="text-lg text-white/90 leading-relaxed">
+                    From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
