@@ -22,14 +22,13 @@ export default function Cafes() {
     {
       id: 1,
       name: "Indiranagar",
-      description: "Our flagship, set in a beautiful white bungalow.",
-      address: "549A, 9th A Main Rd, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
-      hours: "9.30am - 8pm on weekdays and 8.30pm on weekends",
-      phone: "+91 8904293030",
-      image: "/c_c_cafe_4_.jpg",
-      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Bookstore", "Boutique Shopping", "Garden Seating", "Indoor Seating"],
+      address: "905, 9th A Main Rd, Maruthi Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+      hours: "Monday: 11:30am – 8:00pm | Tuesday – Thursday: 9:30am – 8:00pm | Friday – Sunday: 9:30am – 8:30pm",
+      phone: "+91 8792194527",
+      image: "/c_c_cafe_20_.jpg",
+      amenities: ["Garden Seating", "Indoor Seating", "Retail Store", "Pet Friendly", "Takeaway"],
       deliveryRadius: "3km delivery radius",
-      mapsUrl: "https://maps.app.goo.gl/HxsBbogFjbZVSEpK7",
+      mapsUrl: "https://maps.app.goo.gl/P8zP6Bw7wYQ5d57x8",
       tags: []
     },
     {
