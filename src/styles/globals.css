@@ -91,7 +91,8 @@
   button, .nav-link {
     @apply uppercase tracking-wide;
   }
-  [data-radix-collection-item] button {
+  button[data-state="open"],
+  button[data-state="closed"] {
     text-transform: none !important;
     letter-spacing: normal !important;
   }
