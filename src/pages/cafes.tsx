@@ -15,6 +15,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Cafes() {
   const cafes = [
@@ -552,6 +553,158 @@ export default function Cafes() {
           </div>
         </section>
       </main>
+
+      {/* FAQ Section */}
+      <section className="section-padding bg-background">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12 space-y-4">
+            <p className="text-sm tracking-wider text-foreground/60 uppercase">
+              Plan your visit
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl font-light">
+              Everything you need to know before dropping by.
+            </h2>
+            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+              Have questions about opening hours, laptop policies, parking, or pets? We've got you covered.
+            </p>
+          </div>
+
+          {/* FAQ Accordion */}
+          <Accordion type="single" collapsible className="space-y-0">
+            {/* Question 1 */}
+            <AccordionItem value="item-1" className="border-b border-border/30 py-6">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+                What are your opening hours?
+              </AccordionTrigger>
+              <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4 space-y-6">
+                <p>Our cafés each have slightly different opening hours, so we've listed them below.</p>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Indiranagar</h4>
+                    <p>Monday: 11:30am – 8:00pm<br/>
+                    Tuesday – Thursday: 9:30am – 8:00pm<br/>
+                    Friday – Sunday: 9:30am – 8:30pm</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Lavelle Road</h4>
+                    <p>Monday – Sunday: 9:00am – 7:00pm</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Domlur / The Studio</h4>
+                    <p>Monday – Saturday: 7:30am – 8:00pm<br/>
+                    Sunday: 7:30am – 5:30pm</p>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Question 2 */}
+            <AccordionItem value="item-2" className="border-b border-border/30 py-6">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+                Is there parking?
+              </AccordionTrigger>
+              <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4 space-y-4">
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Indiranagar</h4>
+                  <p>There's street parking along 9th A Main, where we're located. During the week it's usually easy to find a spot, but weekends can get busy. We don't currently offer valet parking, and we're just a two-minute walk from Indiranagar Metro Station, so we'd recommend taking the Metro or a cab if you can.</p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Lavelle Road</h4>
+                  <p>Parking around Lavelle Road is limited. We usually recommend parking at UB City, which is just a three-minute walk away. We're also hoping to introduce valet parking in the future.</p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Domlur / The Studio</h4>
+                  <p>Domlur is a quieter neighbourhood, and you'll usually find street parking in the surrounding lanes.</p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Question 3 */}
+            <AccordionItem value="item-3" className="border-b border-border/30 py-6">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+                Can I work from the café?
+              </AccordionTrigger>
+              <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4 space-y-4">
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Domlur / The Studio</h4>
+                  <p>Absolutely. Domlur is our most work-friendly café, with plenty of natural light, free Wi-Fi and lots of plug points. We also offer half-day and full-day co-working passes. If you're looking to balance work with wellbeing, you can even join a class at The Studio before or after your workday.</p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Indiranagar</h4>
+                  <p>During the week, we have a dedicated co-working room where laptops are welcome. Our garden and main café are laptop-free spaces on weekdays, creating a calmer atmosphere for everyone. At weekends, we don't accommodate co-working anywhere in the café—we'd much rather you came to slow down, enjoy brunch and spend time with friends.</p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Lavelle Road</h4>
+                  <p>Laptops are welcome at our indoor tables on weekdays, with free Wi-Fi and plug points available along the high bar. Our garden is always a laptop-free space, and we don't offer co-working on weekends.</p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Question 4 */}
+            <AccordionItem value="item-4" className="border-b border-border/30 py-6">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+                Where can I order Copper + Cloves for delivery?
+              </AccordionTrigger>
+              <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4">
+                <p>If you're in Bangalore, you can order your favourite Copper + Cloves dishes through Swiggy or Zomato. Everything is prepared fresh in small batches in our kitchen before it's delivered to your door.</p>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Question 5 */}
+            <AccordionItem value="item-5" className="border-b border-border/30 py-6">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+                Do you take reservations?
+              </AccordionTrigger>
+              <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4">
+                <p>We're a walk-in café, so we don't take bookings.</p>
+                <p className="mt-4">If there's a wait, we'll add your name to our waitlist. In the meantime, grab a coffee, browse the bookstore or our partner stores, or simply relax—we'll let you know as soon as your table is ready.</p>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Question 6 */}
+            <AccordionItem value="item-6" className="border-b border-border/30 py-6">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+                Are your cafés pet friendly?
+              </AccordionTrigger>
+              <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4">
+                <p>Yes! Dogs are welcome at our Indiranagar and Lavelle Road cafés, and we even have a menu created especially for them. Unfortunately, the Studio/Domlur is not pet-friendly.</p>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Question 7 */}
+            <AccordionItem value="item-7" className="border-b border-border/30 py-6">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+                Do you have vegan and gluten-free options?
+              </AccordionTrigger>
+              <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4">
+                <p>Everything on our menu is 100% plant-based, with plenty of gluten-free options available including gluten-free bread (it's seeded and very delicious) as a chargeable substitute. If you have other allergies or dietary requirements, just let our team know and we'll be happy to help.</p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+
+          {/* Support CTA Block */}
+          <div className="mt-16 p-8 bg-muted/30 border border-border/30 rounded-lg text-center space-y-4">
+            <p className="text-lg text-foreground/80">
+              Planning a large group visit, event, or private gathering?
+            </p>
+            <p className="text-base text-foreground/70">
+              Reach out to our cafe managers directly or book a space.
+            </p>
+            <Button asChild size="lg" className="mt-4">
+              <Link href="/contact">Contact our cafe teams</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Behold Widget Script */}
