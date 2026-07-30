@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Leaf, Calendar, Package, MapPin, X } from "lucide-react";
+import { Check, Leaf, Calendar, Package, MapPin, X, Star } from "lucide-react";
 import { useState } from "react";
 import {
   Dialog,
