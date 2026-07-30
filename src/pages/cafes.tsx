@@ -147,17 +147,13 @@ export default function Cafes() {
             <div className="absolute inset-0 bg-black/40" />
             
             {/* Text Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="container">
-                <div className="max-w-3xl mx-auto text-center space-y-6 px-4">
-                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-                    Come Hungry
-                  </h1>
-                  <p className="text-lg text-white/90 leading-relaxed">
-                    From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
-                  </p>
-                </div>
-              </div>
+            <div className="absolute left-8 top-32 z-10 max-w-md">
+              <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-4">
+                Come Hungry
+              </h1>
+              <p className="text-lg text-foreground/80">
+                Three neighbourhood sanctuaries where plant-based meets premium, and every meal feels like coming home.
+              </p>
             </div>
           </div>
         </section>
