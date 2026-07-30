@@ -39,7 +39,7 @@ export default function Cafes() {
       hours: "9am - 8pm",
       phone: "+91 8792194527",
       image: "/raj_11_of_23_.jpg",
-      amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly", "Dine In", "Boutique Shopping", "Central Location"],
+      amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly", "Dine In", "Boutique Shopping"],
       deliveryRadius: "3km delivery radius",
       mapsUrl: "https://maps.app.goo.gl/uYJyXegy1MTPichcA",
       tags: []
@@ -183,42 +183,56 @@ export default function Cafes() {
                     />
                   </div>
                   <CardContent className="p-8 space-y-4">
-                    <h3 className="font-display text-xl font-semibold">{cafe.name}</h3>
-                    <p className="text-xs text-foreground/70">{cafe.description}</p>
-                    
-                    <div className="space-y-2 text-xs text-foreground/60">
-                      <p className="flex items-start gap-2">
-                        <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                        <span>{cafe.address}</span>
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <Clock className="w-4 h-4 flex-shrink-0 text-primary" />
-                        <span className="whitespace-pre-line">{cafe.hours}</span>
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <Phone className="w-4 h-4 flex-shrink-0 text-primary" />
-                        <span>{cafe.phone}</span>
-                      </p>
+                    <div>
+                      <h2 className="font-display text-2xl font-semibold mb-2">
+                        {cafe.name}
+                      </h2>
+                      <p className="text-foreground/70">{cafe.address}</p>
                     </div>
 
-                    <div className="flex flex-wrap gap-2">
-                      {cafe.amenities.map((amenity) => (
-                        <Badge key={amenity} variant="secondary" className="text-xs">
-                          {amenity}
-                        </Badge>
-                      ))}
+                    {cafe.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {cafe.tags.map((tag, idx) => (
+                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
+
+                    <div className="space-y-3 pt-4">
+                      <div className="flex items-start gap-3">
+                        <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-sm">Phone</p>
+                          <a href={`tel:${cafe.phone.replace(/\s/g, '')}`} className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                            {cafe.phone}
+                          </a>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-sm">Hours</p>
+                          <p className="text-sm text-foreground/70">{cafe.hours}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 pt-2">
+                        {cafe.amenities.map((amenity, idx) => (
+                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                            {amenity}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
 
-                    <p className="text-xs font-medium text-primary">{cafe.deliveryRadius}</p>
-
-                    <div className="flex flex-col gap-3 pt-2">
-                      <Button asChild variant="default" className="w-auto mx-auto px-8 text-sm">
+                    <div className="pt-4">
+                      <Button asChild className="w-auto mx-auto px-8 bg-secondary hover:bg-secondary/90 text-white">
                         <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
                           Get Directions
                         </a>
-                      </Button>
-                      <Button asChild variant="outline" className="w-auto mx-auto px-8 text-sm">
-                        <Link href="/subscription">Order Meal Subscription</Link>
                       </Button>
                     </div>
                   </CardContent>
