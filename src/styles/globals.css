@@ -91,8 +91,9 @@
   button, .nav-link {
     @apply uppercase tracking-wide;
   }
-  button[data-state] {
-    @apply normal-case tracking-normal;
+  [data-radix-collection-item] button {
+    text-transform: none !important;
+    letter-spacing: normal !important;
   }
 }
 
