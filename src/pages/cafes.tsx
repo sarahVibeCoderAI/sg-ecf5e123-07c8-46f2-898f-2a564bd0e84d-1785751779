@@ -181,47 +181,59 @@ export default function Cafes() {
                       className="object-cover"
                     />
                   </div>
-                  <CardContent className="p-6 space-y-4">
+                  <CardContent className="p-0 space-y-4">
                     <div>
-                      <h3 className="font-display text-2xl font-semibold mb-1">{cafe.name}</h3>
-                      <p className="text-sm text-foreground/60">{cafe.address}</p>
-                    </div>
-                    
-                    <div className="space-y-2 text-sm">
-                      <div className="flex items-center gap-2 text-foreground/70">
-                        <Clock className="w-4 h-4" />
-                        <span>{cafe.hours}</span>
-                      </div>
+                      <h2 className="font-display text-2xl font-semibold mb-2">
+                        {cafe.name}
+                      </h2>
+                      <p className="text-foreground/70">{cafe.address}</p>
                     </div>
 
-                    {cafe.tags && cafe.tags.length > 0 && (
+                    {cafe.tags.length > 0 && (
                       <div className="flex flex-wrap gap-2">
-                        {cafe.tags.map((tag) => (
-                          <Badge key={tag} variant="secondary" className="text-xs">
+                        {cafe.tags.map((tag, idx) => (
+                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
                             {tag}
                           </Badge>
                         ))}
                       </div>
                     )}
 
-                    <div className="space-y-2 text-sm">
-                      <div className="flex items-center gap-2 text-foreground/70">
-                        <Phone className="w-4 h-4" />
-                        <a href={`tel:${cafe.phone}`} className="hover:text-primary transition-colors">
-                          {cafe.phone}
-                        </a>
+                    <div className="space-y-3 pt-4">
+                      <div className="flex items-start gap-3">
+                        <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-sm">Phone</p>
+                          <a href={`tel:${cafe.phone.replace(/\s/g, '')}`} className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                            {cafe.phone}
+                          </a>
+                        </div>
                       </div>
-                      <div className="flex items-center gap-2 text-foreground/70">
-                        <MapPin className="w-4 h-4" />
-                        <span>{cafe.deliveryRadius}</span>
+
+                      <div className="flex items-start gap-3">
+                        <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-sm">Hours</p>
+                          <p className="text-sm text-foreground/70">{cafe.hours}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 pt-2">
+                        {cafe.amenities.map((amenity, idx) => (
+                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                            {amenity}
+                          </Badge>
+                        ))}
                       </div>
                     </div>
-                    
-                    <Button asChild variant="outline" className="w-full">
-                      <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
-                        Get directions
-                      </a>
-                    </Button>
+
+                    <div className="pt-4">
+                      <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white">
+                        <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
+                          Get Directions
+                        </a>
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
