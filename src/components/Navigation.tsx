@@ -13,7 +13,7 @@ const navLinks = [
 
 export function Navigation() {
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-lg supports-[backdrop-filter]:bg-background/95">
       <div className="container">
         <div className="flex h-20 items-center justify-between gap-8">
           <Link href="/" className="flex items-center gap-2 group">
