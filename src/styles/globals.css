@@ -96,6 +96,10 @@
     text-transform: none !important;
     letter-spacing: normal !important;
   }
+  .faq-question {
+    text-transform: none !important;
+    letter-spacing: normal !important;
+  }
 }
 
 @layer components {

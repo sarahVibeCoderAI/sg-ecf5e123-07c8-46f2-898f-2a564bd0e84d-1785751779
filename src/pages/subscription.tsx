@@ -682,7 +682,7 @@ export default function Subscription() {
                 <div key={faq.id} className={index !== 0 ? "border-t border-border" : ""}>
                   <button
                     onClick={() => toggleFaq(faq.id)}
-                    className="w-full px-6 py-5 flex justify-between items-start gap-4 text-left hover:bg-muted/50 transition-colors normal-case"
+                    className="w-full px-6 py-5 flex justify-between items-start gap-4 text-left hover:bg-muted/50 transition-colors normal-case faq-question"
                   >
                     <span className="font-display text-base lg:text-lg font-medium pr-4 leading-relaxed">
                       {faq.question}
