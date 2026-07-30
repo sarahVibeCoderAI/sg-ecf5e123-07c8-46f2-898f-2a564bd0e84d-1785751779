@@ -16,6 +16,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { TruckIcon, ChefHat, Heart, Pause, Sparkles } from "lucide-react";
 import React from "react";
+import { Accordion, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Subscription() {
   const [showMenuModal, setShowMenuModal] = useState(false);
@@ -114,6 +115,16 @@ export default function Subscription() {
           id: "pricing-1",
           question: "How is this different from ordering on Swiggy or Zomato?",
           answer: "Our meal subscription removes the daily decision of what to eat—and the habit of reaching for your phone every lunchtime. Instead of ordering meal by meal, you'll plan your week in advance from an exclusive subscriber menu, with fresh meals ready exactly when you need them. It's a simpler, more consistent way to eat well."
+        },
+        {
+          id: "pricing-2",
+          question: "What forms of payment do you accept?",
+          answer: "We accept all major credit cards, debit cards, UPI, and net banking."
+        },
+        {
+          id: "pricing-3",
+          question: "Are there any setup or cancellation fees?",
+          answer: "No. There are no setup or cancellation fees."
         }
       ]
     }
