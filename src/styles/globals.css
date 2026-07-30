@@ -91,6 +91,9 @@
   button, .nav-link {
     @apply uppercase tracking-wide;
   }
+  button[data-state] {
+    @apply normal-case tracking-normal;
+  }
 }
 
 @layer components {
