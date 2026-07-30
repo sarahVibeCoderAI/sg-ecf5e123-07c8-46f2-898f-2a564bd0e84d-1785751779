@@ -46,14 +46,14 @@ export default function Cafes() {
     },
     {
       id: 3,
-      name: "Domlur / The Studio",
-      address: "45, 1st Cross Road, 10th Block Ashwath Nagar, Domlur, Bengaluru, Karnataka 560071",
-      hours: "Monday – Sunday: 7:30am – 8:00pm",
-      phone: "+91 8792194527",
-      image: "/c_c_cafe_1_.jpg",
-      amenities: ["Indoor Seating", "Takeaway", "Pet Friendly"],
+      name: "Domlur/The Studio",
+      address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
+      hours: "7.30am to 8pm",
+      phone: "+91 9008426703",
+      image: "/A7406794_1_.jpg",
+      amenities: ["Workout Studio", "Dine-in", "Co-working Friendly", "Indoor Seating"],
       deliveryRadius: "3km delivery radius",
-      mapsUrl: "https://maps.app.goo.gl/8BcZXA7aDjV1LVYH6",
+      mapsUrl: "https://maps.app.goo.gl/DQs1BRv2DzSW1uN59",
       tags: []
     },
   ];
