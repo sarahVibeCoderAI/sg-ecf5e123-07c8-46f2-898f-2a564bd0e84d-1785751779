@@ -147,11 +147,11 @@ export default function Cafes() {
             <div className="absolute inset-0 bg-black/40" />
             
             {/* Text Overlay */}
-            <div className="absolute left-8 top-32 z-10 max-w-md">
-              <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-4">
+            <div className="absolute left-8 top-44 z-10 max-w-md">
+              <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-4">
                 Come Hungry
               </h1>
-              <p className="text-lg text-foreground/80">
+              <p className="text-lg text-white/90">
                 Three neighbourhood sanctuaries where plant-based meets premium, and every meal feels like coming home.
               </p>
             </div>
