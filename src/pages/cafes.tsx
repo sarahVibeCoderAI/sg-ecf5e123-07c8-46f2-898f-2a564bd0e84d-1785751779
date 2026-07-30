@@ -335,71 +335,26 @@ export default function Cafes() {
               </Card>
 
               {/* Lavelle Road */}
-              <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_10_of_23_.jpg"
-                          alt="Lavelle Road cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_3_of_23_.jpg"
-                          alt="Lavelle Road atmosphere"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_17_of_23_.jpg"
-                          alt="Lavelle Road community"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_23_of_23_.jpg"
-                          alt="Lavelle Road space"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/dog_at_lavelle.jpeg"
-                          alt="Dog-friendly Lavelle Road cafe"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
-                <CardContent className="p-6 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
-                  <p className="font-semibold text-foreground/90">Brunch, shopping & slow weekends.</p>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Re-fuel after a Cubbon run, browse Good Earth and Nicobar, join one of our seasonal workshops and community gatherings.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="group">
+                <div className="relative h-80 rounded-lg overflow-hidden mb-6">
+                  <Image
+                    src="/raj_11_of_23_.jpg"
+                    alt="Lavelle Road cafe exterior"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+                <h3 className="font-display text-2xl font-semibold mb-3">Lavelle Road</h3>
+                <p className="text-foreground/70 mb-4">
+                  Our newest outpost in the heart of Bangalore's business district. A sun-drenched garden sanctuary perfect for client meetings or peaceful lunches.
+                </p>
+                <div className="space-y-2 text-sm text-foreground/60">
+                  <p>📍 #61, Lavelle Road</p>
+                  <p>⏰ Mon-Sun: 9:00am – 7:00pm</p>
+                  <p>📱 +91 96327 10363</p>
+                </div>
+              </div>
 
               {/* Domlur/The Studio */}
               <Card className="overflow-hidden border-border bg-white">
