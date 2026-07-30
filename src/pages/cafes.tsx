@@ -114,13 +114,13 @@ export default function Cafes() {
               </div>
               
               {/* Bottom row */}
-              <div className="relative">
+              <div className="relative h-full overflow-hidden rounded-lg">
                 <Image
-                  src="/DSC00427.JPG"
-                  alt="Cafe plates"
+                  src="/IMG_5274.jpeg"
+                  alt="Cafe interior detail"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: 'center 40%' }}
+                  sizes="(max-width: 768px) 100vw, 25vw"
                 />
               </div>
               <div className="relative">
