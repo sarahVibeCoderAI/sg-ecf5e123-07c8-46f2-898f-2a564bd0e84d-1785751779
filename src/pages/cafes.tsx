@@ -574,7 +574,7 @@ export default function Cafes() {
           <Accordion type="single" collapsible className="space-y-0">
             {/* Question 1 */}
             <AccordionItem value="item-1" className="border-b border-border/30 py-6">
-              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors normal-case">
                 What are your opening hours?
               </AccordionTrigger>
               <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4 space-y-6">
@@ -604,7 +604,7 @@ export default function Cafes() {
 
             {/* Question 2 */}
             <AccordionItem value="item-2" className="border-b border-border/30 py-6">
-              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors normal-case">
                 Is there parking?
               </AccordionTrigger>
               <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4 space-y-4">
@@ -627,7 +627,7 @@ export default function Cafes() {
 
             {/* Question 3 */}
             <AccordionItem value="item-3" className="border-b border-border/30 py-6">
-              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors normal-case">
                 Can I work from the café?
               </AccordionTrigger>
               <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4 space-y-4">
@@ -650,7 +650,7 @@ export default function Cafes() {
 
             {/* Question 4 */}
             <AccordionItem value="item-4" className="border-b border-border/30 py-6">
-              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors normal-case">
                 Where can I order Copper + Cloves for delivery?
               </AccordionTrigger>
               <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4">
@@ -660,7 +660,7 @@ export default function Cafes() {
 
             {/* Question 5 */}
             <AccordionItem value="item-5" className="border-b border-border/30 py-6">
-              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors normal-case">
                 Do you take reservations?
               </AccordionTrigger>
               <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4">
@@ -671,7 +671,7 @@ export default function Cafes() {
 
             {/* Question 6 */}
             <AccordionItem value="item-6" className="border-b border-border/30 py-6">
-              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors normal-case">
                 Are your cafés pet friendly?
               </AccordionTrigger>
               <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4">
@@ -681,7 +681,7 @@ export default function Cafes() {
 
             {/* Question 7 */}
             <AccordionItem value="item-7" className="border-b border-border/30 py-6">
-              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors">
+              <AccordionTrigger className="text-left font-display text-xl md:text-2xl font-normal hover:text-primary transition-colors normal-case">
                 Do you have vegan and gluten-free options?
               </AccordionTrigger>
               <AccordionContent className="text-base md:text-lg text-foreground/70 leading-relaxed pt-4">
