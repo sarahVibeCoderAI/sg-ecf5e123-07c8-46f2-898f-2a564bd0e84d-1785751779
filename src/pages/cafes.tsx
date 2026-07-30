@@ -15,8 +15,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Cafes() {
   const cafes = [
@@ -497,227 +495,58 @@ export default function Cafes() {
         </section>
 
         {/* Instagram Feed Section */}
-        <section className="section-padding bg-card">
-          <div className="max-w-6xl mx-auto text-center space-y-8">
-            <div className="space-y-3">
-              <p className="text-sm uppercase tracking-wider text-primary font-medium">
-                FOLLOW OUR JOURNEY
+        <section className="py-20 bg-[#FAF8F5] border-t border-[#E8E2DA]">
+          <div className="max-w-7xl mx-auto px-6">
+            {/* Header */}
+            <div className="text-center mb-12 space-y-4">
+              <p className="uppercase tracking-[1.5px] text-xs text-foreground/60 font-semibold">
+                COMMUNITY & MOVEMENT
               </p>
-              <h2 className="font-display text-3xl md:text-4xl font-light">
-                @copperandcloves
+              <h2 className="font-display text-4xl md:text-5xl font-semibold">
+                Follow the Ritual{" "}
+                <a 
+                  href="https://www.instagram.com/copperandcloves/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-[#A36A53] transition-colors"
+                >
+                  @copperandcloves
+                </a>
               </h2>
-              <p className="text-foreground/70 max-w-2xl mx-auto">
-                Stay connected with our community through Instagram for daily inspiration, 
-                behind-the-scenes moments, and special announcements.
-              </p>
-            </div>
-            <Button 
-              asChild 
-              size="lg" 
-              className="gap-2"
-            >
-              <a 
-                href="https://www.instagram.com/copperandcloves/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/copperandcloves/"
+                target="_blank"
                 rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-foreground/70 hover:text-[#A36A53] transition-colors text-sm"
               >
-                Follow us on Instagram
-                <Instagram className="w-5 h-5" />
+                Join 15k+ mindful living community members
+                <ArrowRight className="w-4 h-4" />
               </a>
-            </Button>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="section-padding">
-          <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            {/* Section Header */}
-            <div className="text-center space-y-4 mb-12">
-              <p className="text-sm uppercase tracking-wider text-secondary font-medium">
-                PLAN YOUR VISIT
-              </p>
-              <h2 className="font-display text-3xl md:text-4xl font-light">
-                Everything you need to know before dropping by.
-              </h2>
-              <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto">
-                Have questions about opening hours, laptop policies, parking, or delivery? We've got you covered.
-              </p>
             </div>
 
-            {/* Tabs */}
-            <Tabs defaultValue="hours" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto gap-2 bg-transparent mb-8">
-                <TabsTrigger 
-                  value="hours" 
-                  className="data-[state=active]:bg-primary data-[state=active]:text-white text-sm md:text-base py-3 px-4 rounded-lg border border-border/30"
+            {/* Instagram Grid - Live Feed via Behold */}
+            <div className="w-full">
+              {/* @ts-expect-error - behold-widget is a custom web component from Behold.so */}
+              <behold-widget feed-id="oO9ZBaWmPzk1V5xbqPS0"></behold-widget>
+            </div>
+
+            {/* Bottom CTA */}
+            <div className="text-center mt-12">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-primary text-primary hover:bg-primary hover:text-white"
+                asChild
+              >
+                <a 
+                  href="https://www.instagram.com/copperandcloves/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
                 >
-                  Operating Hours
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="parking" 
-                  className="data-[state=active]:bg-primary data-[state=active]:text-white text-sm md:text-base py-3 px-4 rounded-lg border border-border/30"
-                >
-                  Parking & Getting Here
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="working" 
-                  className="data-[state=active]:bg-primary data-[state=active]:text-white text-sm md:text-base py-3 px-4 rounded-lg border border-border/30"
-                >
-                  Working & Wifi Policies
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="delivery" 
-                  className="data-[state=active]:bg-primary data-[state=active]:text-white text-sm md:text-base py-3 px-4 rounded-lg border border-border/30"
-                >
-                  Delivery & Takeaway
-                </TabsTrigger>
-              </TabsList>
-
-              {/* Tab 1: Operating Hours */}
-              <TabsContent value="hours" className="mt-8">
-                <Accordion type="single" collapsible className="w-full space-y-4">
-                  <AccordionItem value="item-1" className="border border-border/30 rounded-lg px-6 bg-card">
-                    <AccordionTrigger className="text-left font-display text-lg md:text-xl hover:no-underline py-6">
-                      What are the café's operating hours?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-base text-foreground/70 leading-relaxed pb-6">
-                      <p className="mb-4">Our Cafes have slightly different opening hours!</p>
-                      
-                      <div className="space-y-4">
-                        <div>
-                          <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full mb-3">
-                            Indiranagar
-                          </span>
-                          <ul className="space-y-1 ml-4">
-                            <li>Monday 11.30am to 8pm</li>
-                            <li>Tuesday 9:30 am–8 pm</li>
-                            <li>Wednesday 9:30 am–8 pm</li>
-                            <li>Thursday 9:30 am–8 pm</li>
-                            <li>Friday 9:30 am–8:30 pm</li>
-                            <li>Saturday 9:30 am–8:30 pm</li>
-                            <li>Sunday 9:30 am–8:30 pm</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </TabsContent>
-
-              {/* Tab 2: Parking & Getting Here */}
-              <TabsContent value="parking" className="mt-8">
-                <Accordion type="single" collapsible className="w-full space-y-4">
-                  <AccordionItem value="item-1" className="border border-border/30 rounded-lg px-6 bg-card">
-                    <AccordionTrigger className="text-left font-display text-lg md:text-xl hover:no-underline py-6">
-                      Is there parking at the cafes?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-base text-foreground/70 leading-relaxed pb-6">
-                      <div className="space-y-6">
-                        <div>
-                          <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full mb-3">
-                            Indiranagar
-                          </span>
-                          <p>
-                            There is street parking on 9th A main, where we are situated. During the week there is plenty of parking but on the weekends the streets get crowded. Unfortunately we do not have valet parking. We are a 2 minute walk from Indiranagar metro station. To avoid struggling to find parking, please consider taking the metro or a cab.
-                          </p>
-                        </div>
-
-                        <div>
-                          <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full mb-3">
-                            Lavelle Road
-                          </span>
-                          <p>
-                            There is very little parking on Walton Road/Lavelle Road. We suggest parking at UB city and it is a 3 minute walk from there. We're working on getting valet!
-                          </p>
-                        </div>
-
-                        <div>
-                          <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full mb-3">
-                            Domlur/The Studio
-                          </span>
-                          <p>
-                            This is a quiet area and there is some parking in the lanes nearby to the Studio/Copper + Cloves Domlur.
-                          </p>
-                        </div>
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </TabsContent>
-
-              {/* Tab 3: Working & Wifi Policies */}
-              <TabsContent value="working" className="mt-8">
-                <Accordion type="single" collapsible className="w-full space-y-4">
-                  <AccordionItem value="item-1" className="border border-border/30 rounded-lg px-6 bg-card">
-                    <AccordionTrigger className="text-left font-display text-lg md:text-xl hover:no-underline py-6">
-                      Can I work from Copper + Cloves cafes?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-base text-foreground/70 leading-relaxed pb-6">
-                      <div className="space-y-6">
-                        <div>
-                          <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full mb-3">
-                            Copper + Cloves Domlur
-                          </span>
-                          <p>
-                            Yes! The sunlit cafe is perfect for co-working and we offer half-day and whole-day co-working packages. We have plenty of plug points and free wifi. Plus the Studio shares the same space making it perfect to do a class before or after working.
-                          </p>
-                        </div>
-
-                        <div>
-                          <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full mb-3">
-                            Copper + Cloves Indiranagar
-                          </span>
-                          <p className="mb-3">
-                            There is a quiet room for co-working during the week. The garden and main dining room of the cafe is a no laptop zone during weekdays.
-                          </p>
-                          <p>
-                            Working from the cafe is not permitted on weekends in any area.
-                          </p>
-                        </div>
-
-                        <div>
-                          <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full mb-3">
-                            Lavelle Road
-                          </span>
-                          <p>
-                            Laptops are welcome at the inside tables on weekdays, and there is free wifi and plug-points at the high bar. There are no Laptops allowed in the garden seating area and we cannot accomodate co-working on weekends.
-                          </p>
-                        </div>
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </TabsContent>
-
-              {/* Tab 4: Delivery & Takeaway */}
-              <TabsContent value="delivery" className="mt-8">
-                <Accordion type="single" collapsible className="w-full space-y-4">
-                  <AccordionItem value="item-1" className="border border-border/30 rounded-lg px-6 bg-card">
-                    <AccordionTrigger className="text-left font-display text-lg md:text-xl hover:no-underline py-6">
-                      Where can I order Copper + Cloves food for delivery?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-base text-foreground/70 leading-relaxed pb-6">
-                      <p>
-                        If you live in Bangalore, you can enjoy our healthy, plant-based dishes in your own home by ordering through Swiggy or Zomato. We make our food in small batches in our kitchen.
-                      </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </TabsContent>
-            </Tabs>
-
-            {/* Support CTA Block */}
-            <div className="mt-16 p-8 md:p-10 bg-muted/30 border border-border/30 rounded-lg text-center space-y-4">
-              <p className="text-base md:text-lg text-foreground/80 font-medium">
-                Planning a large group visit, event, or private gathering?
-              </p>
-              <p className="text-base text-foreground/70">
-                Reach out to our cafe managers directly or book a space.
-              </p>
-              <Button asChild size="lg" className="mt-4">
-                <Link href="/contact">
-                  Contact Our Cafe Teams
-                </Link>
+                  <Instagram className="w-5 h-5" />
+                  Follow us on Instagram
+                </a>
               </Button>
             </div>
           </div>
