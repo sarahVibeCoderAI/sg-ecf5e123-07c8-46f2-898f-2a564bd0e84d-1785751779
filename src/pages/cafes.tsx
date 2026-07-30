@@ -242,6 +242,16 @@ export default function Cafes() {
           </div>
         </section>
 
+        {/* Menu Intro */}
+        <section className="py-16 px-6">
+          <div className="max-w-4xl mx-auto text-left">
+            <h2 className="font-display text-4xl md:text-5xl font-semibold mb-6">Come Hungry</h2>
+            <p className="text-lg text-foreground/70 leading-relaxed">
+              From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for
+            </p>
+          </div>
+        </section>
+
         {/* More Than Just Cafés */}
         <section className="py-16 lg:py-24">
           <div className="container">
