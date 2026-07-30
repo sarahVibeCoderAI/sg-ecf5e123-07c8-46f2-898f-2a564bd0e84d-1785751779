@@ -39,10 +39,10 @@ export default function Cafes() {
       hours: "9am - 8pm",
       phone: "+91 8792194527",
       image: "/raj_11_of_23_.jpg",
-      amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly"],
+      amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly", "Dine In", "Boutique Shopping"],
       deliveryRadius: "3km delivery radius",
       mapsUrl: "https://maps.app.goo.gl/uYJyXegy1MTPichcA",
-      tags: ["dine in", "boutique shopping"]
+      tags: []
     },
     {
       id: 3,
