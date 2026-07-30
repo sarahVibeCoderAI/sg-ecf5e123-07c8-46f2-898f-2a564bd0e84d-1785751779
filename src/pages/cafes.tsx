@@ -170,15 +170,16 @@ export default function Cafes() {
                 Find Your Neighbourhood Café
               </h2>
             </div>
-            <div className="grid lg:grid-cols-2 gap-12">
-              {cafes.map((cafe, index) => (
-                <Card key={index} className="overflow-hidden border-border hover:shadow-lg transition-shadow bg-white p-8">
-                  <div className="aspect-[4/3] relative overflow-hidden rounded-lg mb-6">
+            <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+              {cafes.map((cafe) => (
+                <Card key={cafe.id} className="overflow-hidden border-border bg-card hover:shadow-lg transition-shadow">
+                  <div className="relative h-64 overflow-hidden">
                     <Image
                       src={cafe.image}
-                      alt={cafe.name}
+                      alt={`${cafe.name} cafe`}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
                   <CardContent className="p-0 space-y-4">
