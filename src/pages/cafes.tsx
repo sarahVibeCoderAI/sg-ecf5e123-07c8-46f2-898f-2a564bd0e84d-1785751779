@@ -147,14 +147,16 @@ export default function Cafes() {
             <div className="absolute inset-0 bg-black/40" />
             
             {/* Text Overlay */}
-            <div className="absolute inset-0 flex items-end justify-start p-8 md:p-12 bg-gradient-to-t from-black/60 via-black/20 to-transparent">
-              <div className="text-left max-w-2xl">
-                <h1 className="font-display text-4xl md:text-6xl font-bold text-white mb-4">
-                  Find Your Neighbourhood Café
-                </h1>
-                <p className="text-lg md:text-xl text-white/90 max-w-xl">
-                  Three sun-drenched sanctuaries across Bangalore, each offering plant-based nourishment and community warmth.
-                </p>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="container">
+                <div className="max-w-3xl mx-auto text-center space-y-6 px-4">
+                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
+                    Come Hungry
+                  </h1>
+                  <p className="text-lg text-white/90 leading-relaxed">
+                    From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
