@@ -35,7 +35,7 @@ export default function Cafes() {
     {
       id: 2,
       name: "Lavelle Road",
-      address: "4, Walton Rd, Good Earth, off Lavelle Road, KG Halli, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+      address: "4, Walton Rd, Good Earth, off Lavelle Road, Ashok Nagar, Bengaluru, Karnataka 560001",
       hours: "9am - 8pm",
       phone: "+91 8792194527",
       image: "/raj_11_of_23_.jpg",
