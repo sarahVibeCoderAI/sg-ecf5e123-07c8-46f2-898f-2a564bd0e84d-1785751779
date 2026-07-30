@@ -46,14 +46,14 @@ export default function Cafes() {
     },
     {
       id: 3,
-      name: "Domlur/The Studio",
-      address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
-      hours: "7.30am to 8pm",
-      phone: "+91 9008426703",
-      image: "/A7406794_1_.jpg",
-      amenities: ["Workout Studio", "Dine-in", "Co-working Friendly", "Indoor Seating"],
+      name: "Domlur / The Studio",
+      address: "105, 2nd Floor, Sophia's Choice, 100 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
+      hours: "Monday – Sunday: 7:30am – 8:00pm",
+      phone: "+91 8792194527",
+      image: "/c_c_cafe_1_.jpg",
+      amenities: ["Takeaway", "Pet Friendly", "Delivery"],
       deliveryRadius: "3km delivery radius",
-      mapsUrl: "https://maps.app.goo.gl/DQs1BRv2DzSW1uN59",
+      mapsUrl: "https://maps.app.goo.gl/FtM6rvPrh9tE6Uvb9",
       tags: []
     },
   ];
