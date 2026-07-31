@@ -240,7 +240,7 @@ export default function Subscription() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 items-start">
               <Card className="bg-card border-border">
                 <CardContent className="p-6 space-y-4">
                   <p className="text-sm text-foreground/70 leading-relaxed">
