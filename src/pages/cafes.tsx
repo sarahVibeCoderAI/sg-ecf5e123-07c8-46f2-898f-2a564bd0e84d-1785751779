@@ -48,7 +48,7 @@ export default function Cafes() {
       id: 3,
       name: "Domlur/The Studio",
       address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
-      hours: "7.30am to 8pm",
+      hours: "Monday – Sunday: 9:00am – 8:00pm",
       phone: "+91 9008426703",
       image: "/A7406794_1_.jpg",
       amenities: ["Workout Studio", "Dine-in", "Co-working Friendly", "Indoor Seating"],
