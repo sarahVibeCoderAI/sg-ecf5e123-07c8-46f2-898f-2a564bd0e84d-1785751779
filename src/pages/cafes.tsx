@@ -295,8 +295,8 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/c_c_cafe_9_.jpg"
-                          alt="Indiranagar community"
+                          src="/Indiranagar-events/c_c_cafe_7_.jpg"
+                          alt="Indiranagar community event"
                           fill
                           className="object-cover"
                         />
@@ -305,7 +305,17 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/c_c_cafe_20_.jpg"
+                          src="/Indiranagar-events/IMG_3706.jpeg"
+                          alt="Indiranagar gathering"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/Indiranagar-events/IMG_4524.jpeg"
                           alt="Indiranagar cafe space"
                           fill
                           className="object-cover"
@@ -315,8 +325,8 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/DSC00234.jpeg"
-                          alt="Indiranagar gathering"
+                          src="/Indiranagar-events/IMG_25612023Raj_Kashyap.JPG"
+                          alt="Indiranagar reading social"
                           fill
                           className="object-cover"
                         />
