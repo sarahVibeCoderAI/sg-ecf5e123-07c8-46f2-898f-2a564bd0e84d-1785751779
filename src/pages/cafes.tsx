@@ -51,7 +51,7 @@ export default function Cafes() {
       hours: "Monday – Sunday: 9:00am – 8:00pm",
       phone: "+91 9008426703",
       image: "/A7406794_1_.jpg",
-      amenities: ["Workout Studio", "Dine-in", "Co-working Friendly", "Indoor Seating"],
+      amenities: ["Workout Studio", "Dine-in", "Take Away", "Co-working Friendly", "Indoor Seating", "Natural Light", "Solo Friendly"],
       deliveryRadius: "3km delivery radius",
       mapsUrl: "https://maps.app.goo.gl/DQs1BRv2DzSW1uN59",
       tags: []
@@ -172,7 +172,7 @@ export default function Cafes() {
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {cafes.map((cafe) => (
-                <Card key={cafe.id} className="overflow-hidden border-border bg-card hover:shadow-lg transition-shadow">
+                <Card key={cafe.id} className="overflow-hidden border-border bg-card hover:shadow-lg transition-shadow flex flex-col h-full">
                   <div className="relative h-64 overflow-hidden">
                     <Image
                       src={cafe.image}
@@ -182,7 +182,7 @@ export default function Cafes() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
-                  <CardContent className="p-8 space-y-4">
+                  <CardContent className="p-8 space-y-4 flex flex-col flex-1">
                     <div>
                       <h2 className="font-display text-2xl font-semibold mb-2">
                         {cafe.name}
@@ -228,7 +228,7 @@ export default function Cafes() {
                       </div>
                     </div>
 
-                    <div className="pt-4">
+                    <div className="pt-4 mt-auto">
                       <Button asChild className="w-auto mx-auto px-8 bg-secondary hover:bg-secondary/90 text-white">
                         <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
                           Get Directions
