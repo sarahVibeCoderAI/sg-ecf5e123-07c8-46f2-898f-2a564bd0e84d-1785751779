@@ -167,7 +167,7 @@ export default function Subscription() {
 
         {/* Designed to Fit Your Lifestyle */}
         <section className="py-6 lg:py-8">
-          <div className="container max-w-6xl">
+          <div className="container max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-2 lg:order-1">
                 <Image
@@ -209,7 +209,7 @@ export default function Subscription() {
 
         {/* Customer Testimonials */}
         <section className="py-8 lg:py-11 bg-muted/30">
-          <div className="container max-w-6xl">
+          <div className="container max-w-7xl">
             <div className="text-center mb-10">
               <h2 className="font-display text-3xl lg:text-4xl font-light mb-4">
                 Trusted by hundreds of customers across Bangalore
@@ -264,7 +264,7 @@ export default function Subscription() {
 
         {/* Meals You'll Actually Look Forward To */}
         <section className="py-8 lg:py-11 bg-muted/30">
-          <div className="container max-w-6xl">
+          <div className="container max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               <div className="space-y-6 order-2 lg:order-1">
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
@@ -411,7 +411,7 @@ export default function Subscription() {
 
         {/* How It Works */}
         <section className="py-8 lg:py-11 bg-muted/30">
-          <div className="container max-w-6xl">
+          <div className="container max-w-7xl">
             <h2 className="font-display text-3xl lg:text-4xl font-light text-center mb-12">
               Getting Started is Easy
             </h2>
@@ -590,7 +590,7 @@ export default function Subscription() {
 
         {/* Trial Pack CTA */}
         <section className="py-6 lg:py-8 bg-background">
-          <div className="container max-w-6xl">
+          <div className="container max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
