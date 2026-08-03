@@ -335,55 +335,67 @@ export default function Home() {
                   <CarouselContent>
                     <CarouselItem>
                       <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
-                        <img
+                        <Image
                           src="/community-outdoor.jpg"
                           alt="Community gathering at Copper + Cloves"
-                          className="object-cover w-full h-full"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                         />
                       </div>
                     </CarouselItem>
                     <CarouselItem>
                       <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
-                        <img
+                        <Image
                           src="/BAG00673.jpg"
                           alt="Community event"
-                          className="object-cover w-full h-full"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                         />
                       </div>
                     </CarouselItem>
                     <CarouselItem>
                       <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
-                        <img
+                        <Image
                           src="/BAG09529.jpg"
                           alt="Community gathering"
-                          className="object-cover w-full h-full"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                         />
                       </div>
                     </CarouselItem>
                     <CarouselItem>
                       <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
-                        <img
+                        <Image
                           src="/DSC06124.jpg"
                           alt="Community connection"
-                          className="object-cover w-full h-full"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                         />
                       </div>
                     </CarouselItem>
                     <CarouselItem>
                       <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
-                        <img
+                        <Image
                           src="/DSC06156.jpg"
                           alt="Community together"
-                          className="object-cover w-full h-full"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                         />
                       </div>
                     </CarouselItem>
                     <CarouselItem>
                       <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-2xl">
-                        <img
+                        <Image
                           src="/A7401065.JPEG"
                           alt="Community meal"
-                          className="object-cover w-full h-full"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                         />
                       </div>
                     </CarouselItem>
@@ -576,10 +588,12 @@ export default function Home() {
               <Link href="/blog/lemon-coconut-cookies" className="group">
                 <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
                   <div className="aspect-[4/3] relative overflow-hidden">
-                    <img
+                    <Image
                       src="https://copperandcloves.com/wp-content/uploads/2020/08/8a0f7b89e524bdb05a21065a97d760a6-1.png"
                       alt="Lemon Coconut Cookies"
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
                   <CardContent className="p-6 space-y-3">
@@ -597,10 +611,12 @@ export default function Home() {
               <Link href="/blog/start-by-slowing-down" className="group">
                 <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
                   <div className="aspect-[4/3] relative overflow-hidden">
-                    <img
+                    <Image
                       src="/Sarah_C_C_Subscription_Photoshoot_May_2024-22_1_.jpg"
                       alt="Start By Slowing Down"
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
                   <CardContent className="p-6 space-y-3">
@@ -618,10 +634,12 @@ export default function Home() {
               <Link href="/blog/breakfast-smoothie-bowl" className="group">
                 <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
                   <div className="aspect-[4/3] relative overflow-hidden">
-                    <img
+                    <Image
                       src="https://copperandcloves.com/wp-content/uploads/2020/07/0371145292de0f8341535e3601ab5c1d-1.png"
                       alt="Breakfast Smoothie Bowl"
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
                   <CardContent className="p-6 space-y-3">

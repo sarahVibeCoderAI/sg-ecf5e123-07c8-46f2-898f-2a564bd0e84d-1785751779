@@ -182,10 +182,13 @@ export default function Subscription() {
                 </div>
               </div>
               <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
-                <img
+                <Image
                   src="/Sarah_C_C_Subscription_Photoshoot_May_2024-31.jpg"
                   alt="Healthy meal subscription bowls"
-                  className="object-cover w-full h-full"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
                 />
               </div>
             </div>
@@ -737,11 +740,15 @@ export default function Subscription() {
             <DialogTitle className="text-xl font-display">Sample Menu</DialogTitle>
           </DialogHeader>
           <div className="overflow-y-auto p-4" style={{ maxHeight: 'calc(85vh - 80px)' }}>
-            <img
-              src="/WhatsApp_Image_2026-07-23_at_15.36.03.jpeg"
-              alt="Sample meal subscription menu"
-              className="w-full h-auto rounded-lg shadow-sm"
-            />
+            <div className="relative w-full aspect-[3/4]">
+              <Image
+                src="/WhatsApp_Image_2026-07-23_at_15.36.03.jpeg"
+                alt="Sample meal subscription menu"
+                fill
+                className="object-contain rounded-lg shadow-sm"
+                sizes="(max-width: 768px) 100vw, 672px"
+              />
+            </div>
           </div>
         </DialogContent>
       </Dialog>
