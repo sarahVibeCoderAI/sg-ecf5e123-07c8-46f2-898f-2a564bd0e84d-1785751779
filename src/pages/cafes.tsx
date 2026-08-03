@@ -328,9 +328,9 @@ export default function Cafes() {
                 </Carousel>
                 <CardContent className="p-8 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
-                  <p className="font-semibold text-foreground/90">Books, dogs & retail therapy.</p>
+                  <p className="font-semibold text-foreground/90">Books, brunch & community.</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    Shop our well-curated bookstore and retail section, grab a meal for the road, or bring your dog along for breakfast on the lawn.
+                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets and puppy adoption days.
                   </p>
                 </CardContent>
               </Card>
@@ -375,9 +375,9 @@ export default function Cafes() {
                 </Carousel>
                 <CardContent className="p-8 space-y-3">
                   <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
-                  <p className="font-semibold text-foreground/90">Garden oasis in the business district.</p>
+                  <p className="font-semibold text-foreground/90">Brunch, shopping & slow weekends.</p>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    A sun-drenched garden sanctuary in the heart of the city—perfect for client meetings, quiet work sessions or a peaceful lunch.
+                    Settle in after a Cubbon run, browse Good Earth and Nicobar, or join one of our seasonal workshops and community gatherings.
                   </p>
                 </CardContent>
               </Card>
