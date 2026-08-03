@@ -142,22 +142,17 @@ export default function Cafes() {
                 
               </div>
             </div>
-            
-            {/* Dark overlay for text readability */}
-            <div className="absolute inset-0 bg-black/40" />
-            
-            {/* Text Overlay */}
-            <div className="absolute inset-0 flex items-center justify-start">
-              <div className="container" style={{ backgroundImage: "none", backgroundColor: "transparent" }}>
-                <div className="max-w-md text-left space-y-6 px-4">
-                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white text-left">
-                    Come Hungry
-                  </h1>
-                  <p className="text-sm text-white/90 leading-relaxed text-left">
-                    From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
-                  </p>
-                </div>
-              </div>
+          </div>
+
+          {/* Text Content Below Hero */}
+          <div className="container max-w-4xl py-12 lg:py-16">
+            <div className="text-center space-y-6">
+              <h1 className="font-display text-4xl lg:text-5xl font-light">
+                Nourishment Begins Here
+              </h1>
+              <p className="text-lg lg:text-xl text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+                Fresh food made from scratch. Coffee worth lingering over. Spaces designed for conversation, connection and the little moments that make everyday life a little richer.
+              </p>
             </div>
           </div>
         </section>
