@@ -412,6 +412,68 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Our Studio */}
+        <section className="relative h-[500px] lg:h-[600px] overflow-hidden">
+          <Carousel
+            opts={{ align: "start", loop: true }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+                stopOnInteraction: false,
+              }) as any,
+            ]}
+            className="absolute inset-0 h-full"
+          >
+            <CarouselContent className="h-full ml-0">
+              <CarouselItem className="pl-0 h-full basis-full">
+                <div className="relative h-[500px] lg:h-[600px] w-full">
+                  <Image src="/studio-general/FIT_P57.jpg" alt="Studio movement class" fill className="object-cover" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-0 h-full basis-full">
+                <div className="relative h-[500px] lg:h-[600px] w-full">
+                  <Image src="/studio-general/Mat_Pilates_by_Physique_57.jpg" alt="Mat pilates session" fill className="object-cover" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-0 h-full basis-full">
+                <div className="relative h-[500px] lg:h-[600px] w-full">
+                  <Image src="/studio-general/DSC08847.jpg" alt="Wellness event at the studio" fill className="object-cover" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-0 h-full basis-full">
+                <div className="relative h-[500px] lg:h-[600px] w-full">
+                  <Image src="/studio-general/C1360T01.jpg" alt="Studio space" fill className="object-cover" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-0 h-full basis-full">
+                <div className="relative h-[500px] lg:h-[600px] w-full">
+                  <Image src="/studio-general/C1373T01.jpg" alt="Movement studio" fill className="object-cover" />
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+          </Carousel>
+
+          <div className="absolute inset-0 bg-black/50 z-10" />
+
+          <div className="absolute inset-0 z-20 flex items-center justify-center">
+            <div className="text-center text-white space-y-6 px-6 max-w-2xl">
+              <h2 className="font-display text-4xl lg:text-6xl font-light">
+                Our Studio
+              </h2>
+              <p className="text-lg lg:text-xl leading-relaxed">
+                Daily schedule of movement classes and wellness events.
+              </p>
+              <div className="pt-2">
+                <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
+                  <a href="https://www.thestudiobycopperandcloves.in/" target="_blank" rel="noopener noreferrer">
+                    Explore Our Studio
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Products - Coming Soon */}
         <section className="section-padding bg-muted/30">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
