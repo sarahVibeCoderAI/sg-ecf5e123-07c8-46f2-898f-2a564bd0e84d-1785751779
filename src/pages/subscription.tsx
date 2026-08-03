@@ -148,6 +148,23 @@ export default function Subscription() {
 
       <Navigation />
       <main>
+        {/* Hero Banner */}
+        <section className="relative h-[50vh] lg:h-[60vh] overflow-hidden">
+          <Image
+            src="/Sarah_C_C_Subscription_Photoshoot_May_2024-27.jpg"
+            alt="Nourish Every Day"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <h1 className="font-display text-5xl lg:text-7xl font-light text-white text-center px-4">
+              Nourish Every Day
+            </h1>
+          </div>
+        </section>
+
         {/* Designed to Fit Your Lifestyle */}
         <section className="py-6 lg:py-8">
           <div className="container max-w-6xl">
