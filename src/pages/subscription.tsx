@@ -196,7 +196,7 @@ export default function Subscription() {
         </section>
 
         {/* Designed to Fit Your Lifestyle */}
-        <section className="py-6 lg:py-8">
+        <section className="hidden lg:block py-6 lg:py-8">
           <div className="container max-w-6xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
