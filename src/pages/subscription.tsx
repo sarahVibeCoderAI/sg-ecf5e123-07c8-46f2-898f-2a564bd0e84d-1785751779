@@ -151,7 +151,7 @@ export default function Subscription() {
         {/* Hero Section */}
         <section className="section-padding pt-40 pb-24 bg-gradient-to-b from-oat to-background">
           <div className="container">
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center max-w-6xl mx-auto">
               <div className="space-y-10">
                 <div className="space-y-6">
                   <h1 className="font-display text-4xl lg:text-5xl font-light leading-tight">
@@ -181,7 +181,7 @@ export default function Subscription() {
                   </Button>
                 </div>
               </div>
-              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+              <div className="aspect-video lg:aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src="/Sarah_C_C_Subscription_Photoshoot_May_2024-31.jpg"
                   alt="Healthy meal subscription bowls"
