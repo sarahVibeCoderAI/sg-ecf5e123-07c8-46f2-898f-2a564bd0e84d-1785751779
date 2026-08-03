@@ -149,7 +149,7 @@ export default function Cafes() {
             {/* Text Overlay */}
             <div className="absolute inset-0 flex items-center justify-start">
               <div className="container" style={{ backgroundImage: "none", backgroundColor: "transparent" }}>
-                <div className="max-w-2xl text-left space-y-6 px-4">
+                <div className="max-w-md text-left space-y-6 px-4">
                   <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white text-left">
                     Come Hungry
                   </h1>
