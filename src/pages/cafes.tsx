@@ -507,7 +507,7 @@ export default function Cafes() {
                 COMMUNITY & MOVEMENT
               </p>
               <h2 className="font-display text-4xl md:text-5xl font-semibold">
-                Follow the Ritual{" "}
+                Connect with us{" "}
                 <a
                   href="https://www.instagram.com/copperandcloves/"
                   target="_blank"
@@ -523,7 +523,7 @@ export default function Cafes() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-foreground/70 hover:text-[#A36A53] transition-colors text-sm">
                 
-                Join 15k+ mindful living community members
+                join our 17k strong community
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
