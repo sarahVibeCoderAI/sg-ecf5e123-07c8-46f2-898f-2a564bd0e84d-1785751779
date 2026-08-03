@@ -28,7 +28,7 @@ export default function Home() {
         <section className="relative h-[600px] lg:h-[700px] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/c_c_cafe_1_.jpg"
+              src="/hero_image.jpeg"
               alt="Copper + Cloves cafe interior"
               fill
               className="object-cover object-[center_35%]"
