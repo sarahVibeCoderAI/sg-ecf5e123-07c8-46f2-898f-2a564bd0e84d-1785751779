@@ -13,57 +13,57 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  CarouselPrevious } from
+"@/components/ui/carousel";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Cafes() {
   const cafes = [
-    {
-      id: 1,
-      name: "Indiranagar",
-      description: "Our flagship, set in a beautiful white bungalow.",
-      address: "549A, 9th A Main Rd, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
-      hours: "Monday: 11:30am – 8:00pm | Tuesday – Thursday: 9:30am – 8:00pm | Friday – Sunday: 9:30am – 8:30pm",
-      phone: "+91 8904293030",
-      image: "/c_c_cafe_4_.jpg",
-      amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Bookstore", "Boutique Shopping", "Garden Seating", "Indoor Seating"],
-      deliveryRadius: "3km delivery radius",
-      mapsUrl: "https://maps.app.goo.gl/HxsBbogFjbZVSEpK7",
-      tags: []
-    },
-    {
-      id: 2,
-      name: "Lavelle Road",
-      address: "4, Walton Rd, Good Earth, off Lavelle Road, Ashok Nagar, Bengaluru, Karnataka 560001",
-      hours: "Monday – Sunday: 9:00am – 8:00pm",
-      phone: "+91 8792194527",
-      image: "/raj_11_of_23_.jpg",
-      amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly", "Dine In", "Boutique Shopping"],
-      deliveryRadius: "3km delivery radius",
-      mapsUrl: "https://maps.app.goo.gl/uYJyXegy1MTPichcA",
-      tags: []
-    },
-    {
-      id: 3,
-      name: "Domlur/The Studio",
-      address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
-      hours: "Monday – Sunday: 9:00am – 8:00pm",
-      phone: "+91 9008426703",
-      image: "/A7406794_1_.jpg",
-      amenities: ["Workout Studio", "Dine-in", "Take Away", "Co-working Friendly", "Indoor Seating", "Natural Light", "Solo Friendly"],
-      deliveryRadius: "3km delivery radius",
-      mapsUrl: "https://maps.app.goo.gl/DQs1BRv2DzSW1uN59",
-      tags: []
-    },
-  ];
+  {
+    id: 1,
+    name: "Indiranagar",
+    description: "Our flagship, set in a beautiful white bungalow.",
+    address: "549A, 9th A Main Rd, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+    hours: "Monday: 11:30am – 8:00pm | Tuesday – Thursday: 9:30am – 8:00pm | Friday – Sunday: 9:30am – 8:30pm",
+    phone: "+91 8904293030",
+    image: "/c_c_cafe_4_.jpg",
+    amenities: ["Dine-in", "Takeaway", "Pet Friendly", "Bookstore", "Boutique Shopping", "Garden Seating", "Indoor Seating"],
+    deliveryRadius: "3km delivery radius",
+    mapsUrl: "https://maps.app.goo.gl/HxsBbogFjbZVSEpK7",
+    tags: []
+  },
+  {
+    id: 2,
+    name: "Lavelle Road",
+    address: "4, Walton Rd, Good Earth, off Lavelle Road, Ashok Nagar, Bengaluru, Karnataka 560001",
+    hours: "Monday – Sunday: 9:00am – 8:00pm",
+    phone: "+91 8792194527",
+    image: "/raj_11_of_23_.jpg",
+    amenities: ["Garden Seating", "Indoor Seating", "Takeaway", "Pet Friendly", "Dine In", "Boutique Shopping"],
+    deliveryRadius: "3km delivery radius",
+    mapsUrl: "https://maps.app.goo.gl/uYJyXegy1MTPichcA",
+    tags: []
+  },
+  {
+    id: 3,
+    name: "Domlur/The Studio",
+    address: "4th Floor, 167, 2nd Stage, 2nd Cross, Shankarnag Rd, Domlur, Bengaluru, Karnataka 560071",
+    hours: "Monday – Sunday: 9:00am – 8:00pm",
+    phone: "+91 9008426703",
+    image: "/A7406794_1_.jpg",
+    amenities: ["Workout Studio", "Dine-in", "Take Away", "Co-working Friendly", "Indoor Seating", "Natural Light", "Solo Friendly"],
+    deliveryRadius: "3km delivery radius",
+    mapsUrl: "https://maps.app.goo.gl/DQs1BRv2DzSW1uN59",
+    tags: []
+  }];
+
 
   return (
     <>
       <SEO
         title="Our Cafes | Copper + Cloves"
-        description="Visit our premium plant-based wellness cafes across Bangalore. Spacious cafes always filled with natural light."
-      />
+        description="Visit our premium plant-based wellness cafes across Bangalore. Spacious cafes always filled with natural light." />
+      
       <Navigation />
       <main>
         {/* Hero - Photo Collage with Text Overlay */}
@@ -78,8 +78,8 @@ export default function Cafes() {
                   alt="Copper + Cloves food"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: 'center 40%' }}
-                />
+                  style={{ objectPosition: 'center 40%' }} />
+                
               </div>
               
               {/* Top right - stacked */}
@@ -89,8 +89,8 @@ export default function Cafes() {
                   alt="Fresh dishes"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: 'center 45%' }}
-                />
+                  style={{ objectPosition: 'center 45%' }} />
+                
               </div>
               <div className="relative">
                 <Image
@@ -98,8 +98,8 @@ export default function Cafes() {
                   alt="Artisan coffee"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: 'center 40%' }}
-                />
+                  style={{ objectPosition: 'center 40%' }} />
+                
               </div>
               
               {/* Middle right */}
@@ -109,8 +109,8 @@ export default function Cafes() {
                   alt="Colorful brunch"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: 'center 45%' }}
-                />
+                  style={{ objectPosition: 'center 45%' }} />
+                
               </div>
               
               {/* Bottom row */}
@@ -120,8 +120,8 @@ export default function Cafes() {
                   alt="Cafe interior detail"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 25vw"
-                />
+                  sizes="(max-width: 768px) 100vw, 25vw" />
+                
               </div>
               <div className="relative">
                 <Image
@@ -129,8 +129,8 @@ export default function Cafes() {
                   alt="Brunch spread"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: 'center 45%' }}
-                />
+                  style={{ objectPosition: 'center 45%' }} />
+                
               </div>
               <div className="col-span-2 relative">
                 <Image
@@ -138,8 +138,8 @@ export default function Cafes() {
                   alt="Menu highlights"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: 'center 40%' }}
-                />
+                  style={{ objectPosition: 'center 40%' }} />
+                
               </div>
             </div>
             
@@ -148,12 +148,12 @@ export default function Cafes() {
             
             {/* Text Overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="container">
+              <div className="container" style={{ backgroundImage: "none", backgroundColor: "transparent" }}>
                 <div className="max-w-3xl mx-auto text-center space-y-6 px-4">
-                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
+                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white" style={{ textAlign: "left", textDecoration: "none" }}>
                     Come Hungry
                   </h1>
-                  <p className="text-lg text-white/90 leading-relaxed">
+                  <p className="text-lg text-white/90 leading-relaxed" style={{ textAlign: "left" }}>
                     From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
                   </p>
                 </div>
@@ -171,16 +171,16 @@ export default function Cafes() {
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
-              {cafes.map((cafe) => (
-                <Card key={cafe.id} className="overflow-hidden border-border bg-card hover:shadow-lg transition-shadow flex flex-col h-full">
+              {cafes.map((cafe) =>
+              <Card key={cafe.id} className="overflow-hidden border-border bg-card hover:shadow-lg transition-shadow flex flex-col h-full">
                   <div className="relative h-64 overflow-hidden">
                     <Image
-                      src={cafe.image}
-                      alt={`${cafe.name} cafe`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
+                    src={cafe.image}
+                    alt={`${cafe.name} cafe`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw" />
+                  
                   </div>
                   <CardContent className="p-8 space-y-4 flex flex-col flex-1">
                     <div>
@@ -190,15 +190,15 @@ export default function Cafes() {
                       <p className="text-foreground/70">{cafe.address}</p>
                     </div>
 
-                    {cafe.tags.length > 0 && (
-                      <div className="flex flex-wrap gap-2">
-                        {cafe.tags.map((tag, idx) => (
-                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                    {cafe.tags.length > 0 &&
+                  <div className="flex flex-wrap gap-2">
+                        {cafe.tags.map((tag, idx) =>
+                    <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
                             {tag}
                           </Badge>
-                        ))}
-                      </div>
                     )}
+                      </div>
+                  }
 
                     <div className="space-y-3 pt-4">
                       <div className="flex items-start gap-3">
@@ -220,11 +220,11 @@ export default function Cafes() {
                       </div>
 
                       <div className="flex flex-wrap gap-2 pt-2">
-                        {cafe.amenities.map((amenity, idx) => (
-                          <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
+                        {cafe.amenities.map((amenity, idx) =>
+                      <Badge key={idx} variant="secondary" className="bg-muted text-foreground/70">
                             {amenity}
                           </Badge>
-                        ))}
+                      )}
                       </div>
                     </div>
 
@@ -237,7 +237,7 @@ export default function Cafes() {
                     </div>
                   </CardContent>
                 </Card>
-              ))}
+              )}
             </div>
           </div>
         </section>
@@ -258,8 +258,8 @@ export default function Cafes() {
                     src="/BAG00879_1_.jpg"
                     alt="Community gathering at Copper + Cloves"
                     fill
-                    className="object-cover"
-                  />
+                    className="object-cover" />
+                  
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                   <div className="absolute inset-0 flex items-center justify-center p-8 lg:p-16">
                     <p className="text-white text-xl sm:text-2xl lg:text-3xl text-center max-w-3xl font-light leading-relaxed">
@@ -298,8 +298,8 @@ export default function Cafes() {
                           src="/Indiranagar-events/c_c_cafe_7_.jpg"
                           alt="Indiranagar community event"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -308,8 +308,8 @@ export default function Cafes() {
                           src="/Indiranagar-events/IMG_3706.jpeg"
                           alt="Indiranagar gathering"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -318,8 +318,8 @@ export default function Cafes() {
                           src="/Indiranagar-events/IMG_4524.jpeg"
                           alt="Indiranagar cafe space"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -328,8 +328,8 @@ export default function Cafes() {
                           src="/Indiranagar-events/IMG_25612023Raj_Kashyap.JPG"
                           alt="Indiranagar reading social"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                   </CarouselContent>
@@ -355,8 +355,8 @@ export default function Cafes() {
                           src="/lavelle-road/raj_3_of_23_.jpg"
                           alt="Lavelle Road outdoor seating"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -365,8 +365,8 @@ export default function Cafes() {
                           src="/lavelle-road/raj_17_of_23_.jpg"
                           alt="Lavelle Road cafe interior"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -375,8 +375,8 @@ export default function Cafes() {
                           src="/lavelle-road/raj_23_of_23_.jpg"
                           alt="Lavelle Road garden"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -385,8 +385,8 @@ export default function Cafes() {
                           src="/lavelle-road/dog_at_lavelle.jpeg"
                           alt="Dog friendly at Lavelle Road"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                   </CarouselContent>
@@ -412,8 +412,8 @@ export default function Cafes() {
                           src="/studio-events/BAG02912.jpg"
                           alt="Domlur Studio"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -422,8 +422,8 @@ export default function Cafes() {
                           src="/studio-events/BAG09564.jpg"
                           alt="Domlur workshops"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -432,8 +432,8 @@ export default function Cafes() {
                           src="/studio-events/BAG09544_1_.jpg"
                           alt="Domlur movement session"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -442,8 +442,8 @@ export default function Cafes() {
                           src="/studio-events/C1373T01.jpg"
                           alt="Domlur creative space"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                     <CarouselItem>
@@ -452,8 +452,8 @@ export default function Cafes() {
                           src="/studio-events/C1425T01_2_.jpg"
                           alt="Domlur community gathering"
                           fill
-                          className="object-cover"
-                        />
+                          className="object-cover" />
+                        
                       </div>
                     </CarouselItem>
                   </CarouselContent>
@@ -496,12 +496,12 @@ export default function Cafes() {
               </p>
               <h2 className="font-display text-4xl md:text-5xl font-semibold">
                 Follow the Ritual{" "}
-                <a 
-                  href="https://www.instagram.com/copperandcloves/" 
-                  target="_blank" 
+                <a
+                  href="https://www.instagram.com/copperandcloves/"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary hover:text-[#A36A53] transition-colors"
-                >
+                  className="text-primary hover:text-[#A36A53] transition-colors">
+                  
                   @copperandcloves
                 </a>
               </h2>
@@ -509,8 +509,8 @@ export default function Cafes() {
                 href="https://www.instagram.com/copperandcloves/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-foreground/70 hover:text-[#A36A53] transition-colors text-sm"
-              >
+                className="inline-flex items-center gap-2 text-foreground/70 hover:text-[#A36A53] transition-colors text-sm">
+                
                 Join 15k+ mindful living community members
                 <ArrowRight className="w-4 h-4" />
               </a>
@@ -524,18 +524,18 @@ export default function Cafes() {
 
             {/* Bottom CTA */}
             <div className="text-center mt-12">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
-                asChild
-              >
-                <a 
-                  href="https://www.instagram.com/copperandcloves/" 
-                  target="_blank" 
+                asChild>
+                
+                <a
+                  href="https://www.instagram.com/copperandcloves/"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
+                  className="inline-flex items-center gap-2">
+                  
                   <Instagram className="w-5 h-5" />
                   Follow us on Instagram
                 </a>
@@ -574,8 +574,8 @@ export default function Cafes() {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Indiranagar</h4>
-                    <p>Monday: 11:30am – 8:00pm<br/>
-                    Tuesday – Thursday: 9:30am – 8:00pm<br/>
+                    <p>Monday: 11:30am – 8:00pm<br />
+                    Tuesday – Thursday: 9:30am – 8:00pm<br />
                     Friday – Sunday: 9:30am – 8:30pm</p>
                   </div>
                   
@@ -586,7 +586,7 @@ export default function Cafes() {
                   
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Domlur / The Studio</h4>
-                    <p>Monday – Saturday: 7:30am – 8:00pm<br/>
+                    <p>Monday – Saturday: 7:30am – 8:00pm<br />
                     Sunday: 7:30am – 5:30pm</p>
                   </div>
                 </div>
@@ -708,6 +708,6 @@ export default function Cafes() {
           })();
         `}
       </Script>
-    </>
-  );
+    </>);
+
 }
