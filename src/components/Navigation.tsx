@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -12,6 +17,8 @@ const navLinks = [
 ];
 
 export function Navigation() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-lg supports-[backdrop-filter]:bg-background/95">
       <div className="container">
@@ -27,6 +34,7 @@ export function Navigation() {
             />
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-center flex-1 gap-10">
             <Link
               href="/cafes"
@@ -60,10 +68,44 @@ export function Navigation() {
             </Link>
           </div>
 
-          <div className="flex-shrink-0">
-            <Button asChild size="default" className="text-[11px] uppercase tracking-wider px-6">
-              <Link href="/subscription">Subscribe Now</Link>
-            </Button>
+          <div className="flex items-center gap-4">
+            {/* Mobile Hamburger Menu */}
+            <Sheet open={open} onOpenChange={setOpen}>
+              <SheetTrigger asChild className="lg:hidden">
+                <Button variant="ghost" size="icon" className="text-foreground">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] bg-background">
+                <div className="flex flex-col gap-6 mt-8">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setOpen(false)}
+                      className="text-lg font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                  <div className="mt-4 pt-4 border-t border-border">
+                    <Button asChild size="lg" className="w-full text-[11px] uppercase tracking-wider">
+                      <Link href="/subscription" onClick={() => setOpen(false)}>
+                        Subscribe Now
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+
+            {/* Subscribe Button - Desktop */}
+            <div className="hidden lg:block flex-shrink-0">
+              <Button asChild size="default" className="text-[11px] uppercase tracking-wider px-6">
+                <Link href="/subscription">Subscribe Now</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
