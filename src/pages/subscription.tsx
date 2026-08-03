@@ -160,7 +160,7 @@ export default function Subscription() {
           <div className="absolute inset-0 bg-black/20" />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="font-display text-5xl lg:text-7xl font-light text-white text-center px-4">
-              Nourish Every Day
+              Nourish Every Day.
             </h1>
           </div>
         </section>
@@ -169,7 +169,7 @@ export default function Subscription() {
         <section className="py-6 lg:py-8">
           <div className="container max-w-6xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-2 lg:order-1">
                 <Image
                   src="/Sarah_C_C_Subscription_Photoshoot_May_2024-12_1_.jpg"
                   alt="Meal subscription delivery"
@@ -177,7 +177,7 @@ export default function Subscription() {
                   className="object-cover"
                 />
               </div>
-              <div className="space-y-6">
+              <div className="space-y-6 order-1 lg:order-2">
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
                   Put healthy eating on autopilot
                 </h2>
