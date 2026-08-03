@@ -153,7 +153,7 @@ export default function Cafes() {
                   <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white text-left">
                     Come Hungry
                   </h1>
-                  <p className="text-lg text-white/90 leading-relaxed text-left">
+                  <p className="text-sm text-white/90 leading-relaxed text-left">
                     From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
                   </p>
                 </div>
