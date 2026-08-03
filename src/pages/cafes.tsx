@@ -228,8 +228,8 @@ export default function Cafes() {
                       </div>
                     </div>
 
-                    <div className="pt-4 mt-auto">
-                      <Button asChild className="w-auto mx-auto px-8 bg-secondary hover:bg-secondary/90 text-white">
+                    <div className="pt-6 mt-auto border-t border-border">
+                      <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white">
                         <a href={cafe.mapsUrl} target="_blank" rel="noopener noreferrer">
                           Get Directions
                         </a>
