@@ -149,61 +149,18 @@ export default function Subscription() {
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="section-padding pt-40 pb-24 bg-gradient-to-b from-oat to-background">
+        <section className="pt-40 pb-16 lg:pb-24 bg-gradient-to-b from-oat to-background">
           <div className="container max-w-6xl mx-auto px-4">
-            {/* Mobile: Text First */}
-            <div className="block lg:hidden mb-8">
-              <div className="space-y-6 mb-8">
-                <h1 className="font-display text-4xl font-light leading-tight text-foreground">
+            <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+              {/* Text Content - Shows first on mobile, left on desktop */}
+              <div className="space-y-6 lg:space-y-8">
+                <h1 className="font-display text-4xl lg:text-5xl font-light leading-tight text-foreground">
                   Put healthy eating on autopilot
                 </h1>
                 <p className="text-lg text-foreground/80 leading-relaxed">
                   Our meal subscription is designed to make healthy eating easy, convenient, and delicious.
                 </p>
-              </div>
-              <div className="flex flex-col gap-4 mb-8">
-                <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white w-full">
-                  <a
-                    href="https://wa.me/919008454373?text=Hey%20I'm%20interested%20in%20the%20Copper%20%2B%20Cloves%20nourishing%20meal%20subscription%20-%20can%20I%20get%20more%20details%20on%20how%20the%20service%20works%3F"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Start Your Subscription
-                  </a>
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-sage text-sage hover:bg-sage hover:text-white w-full"
-                  onClick={() => setShowMenuModal(true)}
-                >
-                  View Sample Menu
-                </Button>
-              </div>
-              <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-31.jpg"
-                  alt="Healthy meal subscription bowls"
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* Desktop: Side by Side */}
-            <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-8">
-                <div className="space-y-6">
-                  <h1 className="font-display text-5xl font-light leading-tight text-foreground">
-                    Put healthy eating on autopilot
-                  </h1>
-                  <p className="text-lg text-foreground/80 leading-relaxed">
-                    Our meal subscription is designed to make healthy eating easy, convenient, and delicious.
-                  </p>
-                </div>
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
                     <a
                       href="https://wa.me/919008454373?text=Hey%20I'm%20interested%20in%20the%20Copper%20%2B%20Cloves%20nourishing%20meal%20subscription%20-%20can%20I%20get%20more%20details%20on%20how%20the%20service%20works%3F"
@@ -223,15 +180,19 @@ export default function Subscription() {
                   </Button>
                 </div>
               </div>
-              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-31.jpg"
-                  alt="Healthy meal subscription bowls"
-                  fill
-                  className="object-cover"
-                  sizes="50vw"
-                  priority
-                />
+
+              {/* Image - Shows second on mobile, right on desktop */}
+              <div className="w-full">
+                <div className="aspect-video lg:aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+                  <Image
+                    src="/Sarah_C_C_Subscription_Photoshoot_May_2024-31.jpg"
+                    alt="Healthy meal subscription bowls"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
