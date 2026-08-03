@@ -593,6 +593,9 @@ export default function Subscription() {
                     </a>
                   </Button>
                 </div>
+                <p className="text-xs text-foreground/60 italic">
+                  *offer only available to those in the Indiranagar area and CBD area of Bangalore.
+                </p>
               </div>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
