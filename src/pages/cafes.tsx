@@ -237,62 +237,100 @@ export default function Cafes() {
           </div>
         </section>
 
-        {/* More Than Just Cafés */}
-        <section className="py-16 lg:py-24 bg-background">
-          {/* Full-Width Hero Image */}
-          <div className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
-            <Image
-              src="/BAG00879_1_.jpg"
-              alt="Community gathering at Copper + Cloves"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/30" />
-          </div>
-
-          {/* Text Content - Punchy Statements */}
-          <div className="container max-w-7xl">
-            <div className="py-16 lg:py-24 space-y-12">
-              {/* Main Heading */}
-              <h2 className="font-display text-4xl lg:text-6xl font-light text-center">
-                We think cafés can do more.
-              </h2>
-
-              {/* Statements Grid - Asymmetric Layout */}
-              <div className="grid lg:grid-cols-2 gap-x-16 gap-y-8 max-w-6xl mx-auto">
-                {/* Left Column */}
-                <div className="space-y-8">
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can serve food that genuinely makes people feel better.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed lg:pl-12">
-                    They can support local growers.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can become part of everyday life.
-                  </p>
+        {/* Full-Bleed Manifesto Section */}
+        <section 
+          className="relative bg-[#2D3E35] text-[#FAF8F5]"
+          style={{
+            width: '100vw',
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)'
+          }}
+        >
+          <div className="px-6 md:px-[5%] py-[72px] md:py-[120px]">
+            <div className="max-w-7xl mx-auto">
+              {/* Desktop: 2-Column Asymmetric Layout | Mobile: Stacked */}
+              <div className="grid lg:grid-cols-[40%_60%] gap-12 lg:gap-16">
+                {/* Left Column - Main Statement */}
+                <div className="lg:sticky lg:top-24 lg:self-start">
+                  <h2 
+                    className="font-display font-light leading-[1.1]"
+                    style={{ fontSize: 'clamp(2.5rem, 5vw, 4.2rem)' }}
+                  >
+                    We think cafés can do more.
+                  </h2>
                 </div>
 
-                {/* Right Column */}
-                <div className="space-y-8 lg:pt-16">
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can bring neighbours together.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed lg:pl-12">
-                    They can make healthy eating feel exciting instead of restrictive.
-                  </p>
-                </div>
-              </div>
+                {/* Right Column - Manifesto Statements */}
+                <div className="space-y-12">
+                  <div className="space-y-8">
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}
+                    >
+                      They can serve food that genuinely makes people feel better.
+                    </p>
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}
+                    >
+                      They can support local growers.
+                    </p>
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}
+                    >
+                      They can become part of everyday life.
+                    </p>
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}
+                    >
+                      They can bring neighbours together.
+                    </p>
+                  </div>
 
-              {/* Closing Statement */}
-              <div className="text-center pt-8">
-                <p className="font-display text-3xl lg:text-4xl font-semibold text-copper">
-                  That's the kind of café we're building.
-                </p>
+                  <div className="space-y-8 pt-4">
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}
+                    >
+                      They can make healthy eating feel exciting instead of restrictive.
+                    </p>
+                  </div>
+
+                  {/* Closing Statement */}
+                  <div className="pt-8 border-t border-[#FAF8F5]/20">
+                    <p 
+                      className="font-display italic text-[#C87350]"
+                      style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)' }}
+                    >
+                      That's the kind of café we're building.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
 
+        {/* Community Cards Section */}
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="container max-w-7xl">
             {/* Three Community Cards */}
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto pb-12">
               {/* Indiranagar */}
