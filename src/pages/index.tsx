@@ -62,11 +62,11 @@ export default function Home() {
         {/* Our Philosophy Section */}
         <section className="section-padding">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="font-display text-4xl md:text-5xl font-light text-center mb-24">
+            <h2 className="font-display text-4xl md:text-5xl font-light text-center mb-12">
               Our Philosophy
             </h2>
             
-            <div className="space-y-20">
+            <div className="space-y-10">
               {/* Block 1 */}
               <div className="space-y-6">
                 <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
