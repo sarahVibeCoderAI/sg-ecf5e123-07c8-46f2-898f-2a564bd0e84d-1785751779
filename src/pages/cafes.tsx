@@ -147,13 +147,13 @@ export default function Cafes() {
             <div className="absolute inset-0 bg-black/40" />
             
             {/* Text Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-start">
               <div className="container" style={{ backgroundImage: "none", backgroundColor: "transparent" }}>
-                <div className="max-w-3xl mx-auto text-center space-y-6 px-4">
-                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white" style={{ textAlign: "left", textDecoration: "none" }}>
+                <div className="max-w-2xl text-left space-y-6 px-4">
+                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white text-left">
                     Come Hungry
                   </h1>
-                  <p className="text-lg text-white/90 leading-relaxed" style={{ textAlign: "left" }}>
+                  <p className="text-lg text-white/90 leading-relaxed text-left">
                     From colourful brunches and vibrant salads to sandwiches, smoothies and great coffee, our menu is full of dishes you'll want to come back for.
                   </p>
                 </div>
