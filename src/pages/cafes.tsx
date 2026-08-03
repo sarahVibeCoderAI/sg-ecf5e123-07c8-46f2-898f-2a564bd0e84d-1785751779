@@ -170,7 +170,7 @@ export default function Cafes() {
                 Find Your Neighbourhood Café
               </h2>
             </div>
-            <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
               {cafes.map((cafe) => (
                 <Card key={cafe.id} className="overflow-hidden border-border bg-card hover:shadow-lg transition-shadow flex flex-col h-full">
                   <div className="relative h-64 overflow-hidden">
