@@ -342,17 +342,7 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/lavelle_road_16_of_23_.jpg"
-                          alt="Lavelle Road garden"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/raj_3_of_23_.jpg"
+                          src="/lavelle-road/raj_3_of_23_.jpg"
                           alt="Lavelle Road outdoor seating"
                           fill
                           className="object-cover"
@@ -362,8 +352,28 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/raj_17_of_23_.jpg"
+                          src="/lavelle-road/raj_17_of_23_.jpg"
                           alt="Lavelle Road cafe interior"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/lavelle-road/raj_23_of_23_.jpg"
+                          alt="Lavelle Road garden"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/lavelle-road/dog_at_lavelle.jpeg"
+                          alt="Dog friendly at Lavelle Road"
                           fill
                           className="object-cover"
                         />
