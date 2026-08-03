@@ -249,7 +249,7 @@ export default function Subscription() {
         <section className="py-8 lg:py-11 bg-muted/30">
           <div className="container max-w-6xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-              <div className="space-y-6">
+              <div className="space-y-6 order-2 lg:order-1">
                 <h2 className="font-display text-3xl lg:text-4xl font-light">
                   Meals You'll Actually Look Forward To
                 </h2>
@@ -271,7 +271,7 @@ export default function Subscription() {
                   Fresh, vibrant meals you'd happily order from your favourite café. Delivered.
                 </p>
               </div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-1 lg:order-2">
                 <Image
                   src="/Sarah_C_C_Subscription_Photoshoot_May_2024-29.jpg"
                   alt="Meal subscription"
