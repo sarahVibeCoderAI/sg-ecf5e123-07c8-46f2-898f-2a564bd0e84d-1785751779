@@ -457,6 +457,10 @@ export default function Home() {
 
           <div className="absolute inset-0 z-20 flex items-center justify-center">
             <div className="text-center text-white space-y-6 px-6 max-w-2xl">
+              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-sage/10 border border-sage/20">
+                <Heart className="h-4 w-4 text-sage" />
+                <span className="text-sm font-medium text-sage uppercase tracking-wide">Wellbeing</span>
+              </div>
               <h2 className="font-display text-4xl lg:text-6xl font-light">
                 Our Studio
               </h2>
