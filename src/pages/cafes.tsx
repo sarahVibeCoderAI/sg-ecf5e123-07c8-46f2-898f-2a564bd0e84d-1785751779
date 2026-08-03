@@ -237,6 +237,23 @@ export default function Cafes() {
           </div>
         </section>
 
+        {/* Community Pillar Section - Full Bleed */}
+        <section className="relative w-full h-[50vh] lg:h-[60vh] overflow-hidden">
+          <Image
+            src="/raj_17_compressed.jpg"
+            alt="Community at Copper + Cloves"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 flex items-center justify-center px-4">
+            <h2 className="font-display text-4xl lg:text-6xl font-light text-white text-center max-w-4xl">
+              We believe community is the missing pillar of wellness
+            </h2>
+          </div>
+        </section>
+
         {/* More Than Just Cafés */}
         <section className="py-16 lg:py-24 bg-background">
           {/* Full-Width Hero Image */}
