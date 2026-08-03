@@ -105,7 +105,7 @@ export default function Home() {
                 Our Ecosystem
               </h2>
               <p className="text-lg lg:text-xl text-foreground/80">
-                One Brand. Many Ways to Nourish Yourself.
+                Everything we create is designed to make healthy living a little easier.
               </p>
             </div>
 
