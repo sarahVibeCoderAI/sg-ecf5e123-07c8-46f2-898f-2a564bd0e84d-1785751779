@@ -409,7 +409,7 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/BAG02912.jpg"
+                          src="/studio-events/BAG02912.jpg"
                           alt="Domlur Studio"
                           fill
                           className="object-cover"
@@ -419,17 +419,7 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/BAG09552.jpg"
-                          alt="Domlur yoga and movement"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/BAG09564.jpg"
+                          src="/studio-events/BAG09564.jpg"
                           alt="Domlur workshops"
                           fill
                           className="object-cover"
@@ -439,7 +429,17 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/C1373T01.jpg"
+                          src="/studio-events/BAG09544_1_.jpg"
+                          alt="Domlur movement session"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="aspect-[4/3] relative overflow-hidden">
+                        <Image
+                          src="/studio-events/C1373T01.jpg"
                           alt="Domlur creative space"
                           fill
                           className="object-cover"
@@ -449,18 +449,8 @@ export default function Cafes() {
                     <CarouselItem>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
-                          src="/DSC04892.jpg"
+                          src="/studio-events/C1425T01_2_.jpg"
                           alt="Domlur community gathering"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/DSC08847.jpg"
-                          alt="Domlur wellness activities"
                           fill
                           className="object-cover"
                         />
