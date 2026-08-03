@@ -148,54 +148,6 @@ export default function Subscription() {
 
       <Navigation />
       <main>
-        {/* NEW Hero Section */}
-        <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-background">
-          <div className="container max-w-6xl mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Text - Left Column */}
-              <div className="space-y-6">
-                <h1 className="font-display text-5xl lg:text-6xl font-light leading-tight text-foreground">
-                  Put Healthy Eating On Autopilot
-                </h1>
-                <p className="text-xl lg:text-2xl text-foreground/80 leading-relaxed">
-                  Nourish Every Day. Fresh meals. Flexible credits. Zero meal prep.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
-                    <a
-                      href="https://wa.me/919008454373?text=Hey%20I'm%20interested%20in%20the%20Copper%20%2B%20Cloves%20nourishing%20meal%20subscription%20-%20can%20I%20get%20more%20details%20on%20how%20the%20service%20works%3F"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Start Your Subscription
-                    </a>
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-sage text-sage hover:bg-sage hover:text-white"
-                    onClick={() => setShowMenuModal(true)}
-                  >
-                    View Sample Menu
-                  </Button>
-                </div>
-              </div>
-
-              {/* Image - Right Column */}
-              <div className="w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/Sarah_C_C_Subscription_Photoshoot_May_2024-32.jpg"
-                  alt="Healthy meal subscription bowls"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Designed to Fit Your Lifestyle */}
         <section className="py-6 lg:py-8">
           <div className="container max-w-6xl">
