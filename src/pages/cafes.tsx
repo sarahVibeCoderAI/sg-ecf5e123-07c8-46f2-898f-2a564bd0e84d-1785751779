@@ -160,10 +160,13 @@ export default function Cafes() {
         {/* Cafes Grid */}
         <section className="py-12 lg:py-16 bg-muted/30">
           <div className="container max-w-6xl">
-            <div className="text-center mb-12">
+            <div className="text-center mb-12 space-y-6">
               <h2 className="font-display text-2xl sm:text-3xl font-light">
                 Find Your Neighbourhood Café
               </h2>
+              <p className="text-lg text-foreground/80 leading-relaxed max-w-5xl mx-auto">
+                Nourishment Begins Here. Fresh food made from scratch. Coffee worth lingering over. Spaces designed for conversation, connection and the little moments that make everyday life a little richer.
+              </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
               {cafes.map((cafe) =>
@@ -233,97 +236,6 @@ export default function Cafes() {
                   </CardContent>
                 </Card>
               )}
-            </div>
-          </div>
-        </section>
-
-        {/* Full-Bleed Manifesto Section */}
-        <section 
-          className="relative bg-[#2D3E35] text-[#FAF8F5]"
-          style={{
-            width: '100vw',
-            marginLeft: 'calc(-50vw + 50%)',
-            marginRight: 'calc(-50vw + 50%)'
-          }}
-        >
-          <div className="px-6 md:px-[5%] py-[72px] md:py-[120px]">
-            <div className="max-w-7xl mx-auto">
-              {/* Desktop: 2-Column Asymmetric Layout | Mobile: Stacked */}
-              <div className="grid lg:grid-cols-[40%_60%] gap-12 lg:gap-16">
-                {/* Left Column - Main Statement */}
-                <div className="lg:sticky lg:top-24 lg:self-start">
-                  <h2 
-                    className="font-display font-light leading-[1.1]"
-                    style={{ fontSize: 'clamp(2.5rem, 5vw, 4.2rem)' }}
-                  >
-                    We think cafés can do more.
-                  </h2>
-                </div>
-
-                {/* Right Column - Manifesto Statements */}
-                <div className="space-y-12">
-                  <div className="space-y-8">
-                    <p 
-                      className="leading-[1.7]"
-                      style={{ 
-                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
-                        letterSpacing: '0.02em'
-                      }}
-                    >
-                      They can serve food that genuinely makes people feel better.
-                    </p>
-                    <p 
-                      className="leading-[1.7]"
-                      style={{ 
-                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
-                        letterSpacing: '0.02em'
-                      }}
-                    >
-                      They can support local growers.
-                    </p>
-                    <p 
-                      className="leading-[1.7]"
-                      style={{ 
-                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
-                        letterSpacing: '0.02em'
-                      }}
-                    >
-                      They can become part of everyday life.
-                    </p>
-                    <p 
-                      className="leading-[1.7]"
-                      style={{ 
-                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
-                        letterSpacing: '0.02em'
-                      }}
-                    >
-                      They can bring neighbours together.
-                    </p>
-                  </div>
-
-                  <div className="space-y-8 pt-4">
-                    <p 
-                      className="leading-[1.7]"
-                      style={{ 
-                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
-                        letterSpacing: '0.02em'
-                      }}
-                    >
-                      They can make healthy eating feel exciting instead of restrictive.
-                    </p>
-                  </div>
-
-                  {/* Closing Statement */}
-                  <div className="pt-8 border-t border-[#FAF8F5]/20">
-                    <p 
-                      className="font-display italic text-[#C87350]"
-                      style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)' }}
-                    >
-                      That's the kind of café we're building.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
