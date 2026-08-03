@@ -243,51 +243,63 @@ export default function Cafes() {
         </section>
 
         {/* More Than Just Cafés */}
-        <section className="py-16 lg:py-24">
-          <div className="container">
-            {/* Header with Photo Overlay */}
-            <div className="max-w-5xl mx-auto mb-16">
-              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-center mb-12">
-                More Than Just Cafés.
+        <section className="py-16 lg:py-24 bg-background">
+          {/* Full-Width Hero Image */}
+          <div className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
+            <Image
+              src="/BAG00879_1_.jpg"
+              alt="Community gathering at Copper + Cloves"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-black/30" />
+          </div>
+
+          {/* Text Content - Punchy Statements */}
+          <div className="container max-w-7xl">
+            <div className="py-16 lg:py-24 space-y-12">
+              {/* Main Heading */}
+              <h2 className="font-display text-4xl lg:text-6xl font-light text-center">
+                We think cafés can do more.
               </h2>
-              
-              {/* Hero Image with Text Overlay */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12">
-                <div className="aspect-[16/9] relative">
-                  <Image
-                    src="/BAG00879_1_.jpg"
-                    alt="Community gathering at Copper + Cloves"
-                    fill
-                    className="object-cover" />
-                  
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                  <div className="absolute inset-0 flex items-center justify-center p-8 lg:p-16">
-                    <p className="text-white text-xl sm:text-2xl lg:text-3xl text-center max-w-3xl font-light leading-relaxed">
-                      At Copper + Cloves, <span className="font-semibold">we believe connection is the missing pillar of wellness.</span>
-                    </p>
-                  </div>
+
+              {/* Statements Grid - Asymmetric Layout */}
+              <div className="grid lg:grid-cols-2 gap-x-16 gap-y-8 max-w-6xl mx-auto">
+                {/* Left Column */}
+                <div className="space-y-8">
+                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
+                    They can serve food that genuinely makes people feel better.
+                  </p>
+                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed lg:pl-12">
+                    They can support local growers.
+                  </p>
+                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
+                    They can become part of everyday life.
+                  </p>
+                </div>
+
+                {/* Right Column */}
+                <div className="space-y-8 lg:pt-16">
+                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
+                    They can bring neighbours together.
+                  </p>
+                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed lg:pl-12">
+                    They can make healthy eating feel exciting instead of restrictive.
+                  </p>
                 </div>
               </div>
 
-              {/* Body Copy */}
-              <div className="max-w-3xl mx-auto space-y-6 text-foreground/80 leading-relaxed">
-                <p>
-                  Good food has always brought people together, but in a world of busy schedules, endless convenience and more time spent online than ever before, genuine connection doesn't always happen by chance.
-                </p>
-                <p>
-                  That's why <span className="font-semibold">we create spaces designed for more than just eating.</span> Places to meet friends, discover something new, linger over another coffee, browse a book, bring your dog, join a run club, attend a workshop or simply spend a little longer than you planned.
-                </p>
-                <p>
-                  Each of our cafés has its own personality, <span className="font-semibold">shaped by the people, partners and community around it.</span> Together, they're designed to make it easier to connect—with others, with your neighbourhood and with yourself.
-                </p>
-                <p>
-                  Because <span className="font-semibold">if you leave feeling a little more connected than when you arrived, we've done our job.</span>
+              {/* Closing Statement */}
+              <div className="text-center pt-8">
+                <p className="font-display text-3xl lg:text-4xl font-semibold text-copper">
+                  That's the kind of café we're building.
                 </p>
               </div>
             </div>
 
             {/* Three Community Cards */}
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto pb-12">
               {/* Indiranagar */}
               <Card className="overflow-hidden border-border bg-white">
                 <Carousel className="w-full">
