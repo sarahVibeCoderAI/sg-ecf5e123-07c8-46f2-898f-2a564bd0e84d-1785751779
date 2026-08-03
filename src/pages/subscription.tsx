@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Leaf, Calendar, Package, MapPin, X, Star } from "lucide-react";
+import { Check, Leaf, Calendar, Package, MapPin, X, Star, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import {
   Dialog,
@@ -182,7 +182,7 @@ export default function Subscription() {
                     className="bg-sage hover:bg-sage/90 text-white"
                     onClick={() => setShowMenuModal(true)}
                   >
-                    View Our Sample Menu
+                    View our sample menu <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
