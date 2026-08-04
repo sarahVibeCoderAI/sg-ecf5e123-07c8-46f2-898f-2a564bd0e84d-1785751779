@@ -185,7 +185,7 @@ export default function Home() {
             </div>
 
             {/* Tier 4: The Climax & Anchor Conclusion */}
-            <div className="text-center space-y-6 max-w-4xl mx-auto">
+            <div className="text-center space-y-6 max-w-4xl mx-auto pb-12 lg:pb-0">
               <p 
                 className="leading-[1.7]"
                 style={{ 
