@@ -236,10 +236,13 @@ export default function Cafes() {
         {/* Cafes Grid */}
         <section className="py-12 lg:py-16 bg-muted/30">
           <div className="container max-w-6xl">
-            <div className="text-center mb-12">
+            <div className="text-center mb-12 space-y-6">
               <h2 className="font-display text-2xl sm:text-3xl font-light">
                 Find Your Neighbourhood Café
               </h2>
+              <p className="text-lg lg:text-xl text-foreground/80 leading-relaxed max-w-4xl mx-auto">
+                Nourishment Begins Here. Fresh food made properly. Great coffee. Spaces that bring people together.
+              </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
               {cafes.map((cafe) =>
