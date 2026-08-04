@@ -74,6 +74,137 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Editorial Brand Manifesto - Our Purpose */}
+        <section 
+          className="py-18 px-6 lg:py-[140px] lg:px-[8%]"
+          style={{ 
+            backgroundColor: '#305853',
+            width: '100vw',
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)'
+          }}>
+          <div className="max-w-6xl mx-auto">
+            {/* Tier 1: The Hero Statement */}
+            <div className="text-center space-y-6 mb-16 lg:mb-24">
+              <p 
+                className="uppercase tracking-[0.2em] text-[0.85rem] font-semibold"
+                style={{ color: '#C5A394' }}>
+                OUR PURPOSE
+              </p>
+              
+              <h2 
+                className="font-display font-light leading-[1.05]"
+                style={{ 
+                  fontSize: 'clamp(2.8rem, 5.5vw, 4.8rem)',
+                  color: '#F4EEE6'
+                }}>
+                We believe we're all looking for the same thing.
+              </h2>
+
+              <p 
+                className="font-display italic leading-[1.2] mt-5"
+                style={{ 
+                  fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
+                  color: '#C5A394'
+                }}>
+                To feel nourished.<br />
+                Not just by the food we eat, but by the way we live.
+              </p>
+            </div>
+
+            {/* Tier 2: Narrative Split / Context Box */}
+            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 mb-16 lg:mb-24 max-w-5xl mx-auto">
+              <div className="lg:col-span-5">
+                <p 
+                  className="font-display leading-[1.3]"
+                  style={{ 
+                    fontSize: 'clamp(1.4rem, 2.2vw, 1.8rem)',
+                    color: '#F4EEE6'
+                  }}>
+                  Healthy living has become far more complicated than it needs to be.
+                </p>
+              </div>
+
+              <div className="lg:col-span-7 space-y-6">
+                <p 
+                  className="leading-[1.8]"
+                  style={{ 
+                    fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
+                    color: 'rgba(244, 238, 230, 0.85)'
+                  }}>
+                  We're surrounded by conflicting advice, wellness trends and endless trackers promising to optimise every part of our lives.
+                </p>
+                <p 
+                  className="leading-[1.8]"
+                  style={{ 
+                    fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
+                    color: 'rgba(244, 238, 230, 0.85)'
+                  }}>
+                  We think there's a simpler way.
+                </p>
+              </div>
+            </div>
+
+            {/* Tier 3: The 5 Nourishment Principles - Horizontal Magazine Grid */}
+            <div 
+              className="grid grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-6 py-12 lg:py-12 my-12 lg:my-16"
+              style={{
+                borderTop: '1px solid rgba(142, 148, 122, 0.3)',
+                borderBottom: '1px solid rgba(142, 148, 122, 0.3)'
+              }}>
+              {[
+                { index: '+', text: 'Nourishing food.' },
+                { index: '+', text: 'Movement you enjoy.' },
+                { index: '+', text: 'Time outdoors.' },
+                { index: '+', text: 'Conversations around the table.' },
+                { index: '+', text: 'A strong community.' }
+              ].map((principle, idx) => (
+                <div 
+                  key={idx}
+                  className="space-y-4 opacity-0 animate-fade-in"
+                  style={{ 
+                    animationDelay: `${idx * 150}ms`,
+                    animationFillMode: 'forwards'
+                  }}>
+                  <span 
+                    className="text-sm font-medium"
+                    style={{ color: '#8E947A' }}>
+                    {principle.index}
+                  </span>
+                  <p 
+                    className="font-display font-normal leading-[1.2]"
+                    style={{ 
+                      fontSize: 'clamp(1.25rem, 1.8vw, 1.6rem)',
+                      color: '#F4EEE6'
+                    }}>
+                    {principle.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Tier 4: The Climax & Anchor Conclusion */}
+            <div className="text-center space-y-6 max-w-4xl mx-auto">
+              <p 
+                className="leading-[1.7]"
+                style={{ 
+                  fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)',
+                  color: '#8E947A'
+                }}>
+                These are the things that nourish us.
+              </p>
+              <p 
+                className="font-display font-medium leading-[1.1]"
+                style={{ 
+                  fontSize: 'clamp(2.5rem, 4.5vw, 4rem)',
+                  color: '#C5A394'
+                }}>
+                That's what we're building at Copper + Cloves.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Our Ecosystem */}
         <section className="py-12 lg:py-16 bg-background">
           <div className="container max-w-6xl">
