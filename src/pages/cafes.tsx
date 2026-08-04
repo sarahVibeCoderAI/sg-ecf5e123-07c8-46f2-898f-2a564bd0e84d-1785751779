@@ -337,6 +337,135 @@ export default function Cafes() {
           </div>
         </section>
 
+        {/* Community Events & Rituals Section */}
+        <section className="py-16 lg:py-24" style={{ backgroundColor: '#F4EEE6' }}>
+          <div className="container max-w-7xl px-6">
+            {/* Section Header */}
+            <div className="mb-12 space-y-4">
+              <p 
+                className="text-sm tracking-[1.5px] uppercase font-semibold"
+                style={{ color: '#C5A394' }}>
+                COMMUNITY & RITUALS
+              </p>
+              <h2 
+                className="font-display font-light leading-[1.1]"
+                style={{ 
+                  fontSize: 'clamp(2.2rem, 3.8vw, 3.5rem)',
+                  color: '#305853'
+                }}>
+                Something's Always Happening
+              </h2>
+            </div>
+
+            {/* Asymmetric 2-Column Layout */}
+            <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+              {/* Left Column (7 cols) - Event Content */}
+              <div className="lg:col-span-7 space-y-8">
+                {/* Intro Paragraph */}
+                <p 
+                  className="leading-relaxed"
+                  style={{ 
+                    fontSize: 'clamp(1.1rem, 1.5vw, 1.35rem)',
+                    color: '#305853'
+                  }}>
+                  Every week, our cafés become home to reading socials, book launches, supper clubs, thrift markets, puppy meet-ups, run clubs and workshops.
+                </p>
+
+                {/* Interactive Event Pills */}
+                <div className="flex flex-wrap gap-3">
+                  {[
+                    'Reading Socials',
+                    'Book Launches',
+                    'Supper Clubs',
+                    'Thrift Markets',
+                    'Puppy Meet-ups',
+                    'Run Clubs',
+                    'Workshops'
+                  ].map((event, idx) => (
+                    <button
+                      key={idx}
+                      className="px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 hover:text-white"
+                      style={{
+                        backgroundColor: '#FFFFFF',
+                        border: '1px solid #B8A38F',
+                        color: '#305853'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = '#8E947A';
+                        e.currentTarget.style.color = '#FFFFFF';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = '#FFFFFF';
+                        e.currentTarget.style.color = '#305853';
+                      }}>
+                      {event}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Column (5 cols) - Analog Club Spotlight */}
+              <div className="lg:col-span-5">
+                <div 
+                  className="p-8 lg:p-10 rounded-2xl space-y-4"
+                  style={{ backgroundColor: '#305853' }}>
+                  {/* Badge */}
+                  <p 
+                    className="text-xs tracking-[1.5px] uppercase font-semibold"
+                    style={{ color: '#C5A394' }}>
+                    MONTHLY RITUAL
+                  </p>
+
+                  {/* Feature Title */}
+                  <h3 
+                    className="font-display text-3xl lg:text-4xl font-light"
+                    style={{ color: '#F4EEE6' }}>
+                    Analog Club
+                  </h3>
+
+                  {/* Icon - Phone with line through it */}
+                  <div className="py-4">
+                    <svg 
+                      width="48" 
+                      height="48" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="#C5A394" 
+                      strokeWidth="1.5" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                      <line x1="2" y1="2" x2="22" y2="22"/>
+                    </svg>
+                  </div>
+
+                  {/* Body Copy */}
+                  <p 
+                    className="leading-relaxed"
+                    style={{ 
+                      color: '#F4EEE6',
+                      opacity: '0.9',
+                      fontSize: '1rem'
+                    }}>
+                    We also host Analog Club—our monthly digital detox where phones are put away and conversations take centre stage.
+                  </p>
+
+                  {/* CTA Link */}
+                  <a 
+                    href="https://urbanaut.app/about-copperandcloves"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 pt-2 group"
+                    style={{ color: '#C5A394' }}>
+                    Join the next offline gathering
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Community Cards Section */}
         <section className="py-16 lg:py-24 bg-background">
           <div className="container max-w-7xl">
