@@ -372,9 +372,22 @@ export default function Cafes() {
 
                 {/* Event Badges System */}
                 <div className="flex flex-wrap gap-3 pt-4">
-                  {['Reading Socials', 'Book Launches', 'Supper Clubs', 'Thrift Markets', 'Puppy Meet-ups', 'Run Clubs', 'Workshops'].map((event) => (
-                    <button
-                      key={event}
+                  {[
+                    { label: 'Reading Socials', url: 'https://urbanaut.app/about-copperandcloves' },
+                    { label: 'Book Launches', url: 'https://champaca.in/blogs/events' },
+                    { label: 'Supper Clubs', url: 'https://urbanaut.app/about-copperandcloves' },
+                    { label: 'Thrift Markets', url: 'https://www.instagram.com/lovemetwice_vintageandthrift/?hl=en' },
+                    { label: 'Puppy Meet-ups', url: 'https://urbanaut.app/about-copperandcloves' },
+                    { label: 'Yoga Brunches', url: 'https://urbanaut.app/about-copperandcloves' },
+                    { label: 'Friday Work Deli', url: 'https://urbanaut.app/about-copperandcloves' },
+                    { label: 'Salsa Evenings', url: 'https://urbanaut.app/about-copperandcloves' },
+                    { label: 'Cooking Workshops', url: 'https://urbanaut.app/about-copperandcloves' }
+                  ].map((event) => (
+                    <a
+                      key={event.label}
+                      href={event.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out"
                       style={{
                         backgroundColor: '#FFFFFF',
@@ -389,65 +402,64 @@ export default function Cafes() {
                         e.currentTarget.style.backgroundColor = '#FFFFFF';
                         e.currentTarget.style.color = '#305853';
                       }}>
-                      {event}
-                    </button>
+                      {event.label}
+                    </a>
                   ))}
                 </div>
               </div>
 
               {/* Right Column (5 columns) - The Analog Club Feature Card */}
               <div className="lg:col-span-5">
-                <div 
-                  className="rounded-xl p-8 lg:p-10 space-y-6"
-                  style={{ backgroundColor: '#305853' }}>
-                  {/* Status Indicators Row */}
-                  <div className="flex items-center justify-between gap-4">
-                    <p 
-                      className="uppercase text-xs font-semibold tracking-[0.05em]"
-                      style={{ color: '#C5A394' }}>
-                      MONTHLY DETOX RITUAL
-                    </p>
-                    <div 
-                      className="px-3 py-1 rounded-full text-xs font-medium"
-                      style={{
-                        color: '#8E947A',
-                        border: '1px solid #8E947A'
-                      }}>
-                      NO PHONES ALLOWED
+                <a 
+                  href="https://urbanaut.app/about-copperandcloves"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block">
+                  <div 
+                    className="rounded-xl p-8 lg:p-10 space-y-6 transition-transform duration-300 hover:scale-[1.02]"
+                    style={{ backgroundColor: '#305853' }}>
+                    {/* Status Indicators Row */}
+                    <div className="flex items-center justify-between gap-4">
+                      <p 
+                        className="uppercase text-xs font-semibold tracking-[0.05em]"
+                        style={{ color: '#C5A394' }}>
+                        MONTHLY DETOX RITUAL
+                      </p>
+                      <div 
+                        className="px-3 py-1 rounded-full text-xs font-medium"
+                        style={{
+                          color: '#8E947A',
+                          border: '1px solid #8E947A'
+                        }}>
+                        NO PHONES ALLOWED
+                      </div>
                     </div>
+
+                    {/* Card Title */}
+                    <h3 
+                      className="font-display font-light"
+                      style={{ 
+                        fontSize: 'clamp(1.8rem, 2.5vw, 2.4rem)',
+                        color: '#F4EEE6'
+                      }}>
+                      The Analog Club
+                    </h3>
+
+                    {/* Card Description */}
+                    <p 
+                      className="leading-relaxed"
+                      style={{ color: 'rgba(244, 238, 230, 0.9)' }}>
+                      We also host Analog Club—our monthly digital detox where phones are put away and conversations take centre stage.
+                    </p>
+
+                    {/* CTA Link */}
+                    <span 
+                      className="inline-flex items-center gap-2 text-sm font-medium transition-colors duration-300 mt-4"
+                      style={{ color: '#C5A394' }}>
+                      Explore upcoming gatherings →
+                    </span>
                   </div>
-
-                  {/* Card Title */}
-                  <h3 
-                    className="font-display font-light"
-                    style={{ 
-                      fontSize: 'clamp(1.8rem, 2.5vw, 2.4rem)',
-                      color: '#F4EEE6'
-                    }}>
-                    The Analog Club
-                  </h3>
-
-                  {/* Card Description */}
-                  <p 
-                    className="leading-relaxed"
-                    style={{ color: 'rgba(244, 238, 230, 0.9)' }}>
-                    We also host Analog Club—our monthly digital detox where phones are put away and conversations take centre stage.
-                  </p>
-
-                  {/* CTA Link */}
-                  <a 
-                    href="#"
-                    className="inline-flex items-center gap-2 text-sm font-medium transition-colors duration-300 mt-4"
-                    style={{ color: '#C5A394' }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.color = '#8E947A';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.color = '#C5A394';
-                    }}>
-                    Explore upcoming gatherings →
-                  </a>
-                </div>
+                </a>
               </div>
             </div>
           </div>
