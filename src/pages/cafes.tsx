@@ -339,7 +339,7 @@ export default function Cafes() {
 
         {/* Editorial Community & Rituals Section */}
         <section 
-          className="py-[60px] px-6 lg:py-[100px] lg:px-[6%]"
+          className="py-[60px] px-6 lg:py-[100px] lg:px-[6%] pb-8 lg:pb-12"
           style={{ backgroundColor: '#F4EEE6' }}>
           <div className="max-w-7xl mx-auto">
             {/* 2-Column Asymmetric Grid */}
@@ -409,7 +409,7 @@ export default function Cafes() {
               </div>
 
               {/* Right Column (5 columns) - The Analog Club Feature Card */}
-              <div className="lg:col-span-5">
+              <div className="lg:col-span-5 lg:mt-12">
                 <a 
                   href="https://urbanaut.app/about-copperandcloves"
                   target="_blank"
