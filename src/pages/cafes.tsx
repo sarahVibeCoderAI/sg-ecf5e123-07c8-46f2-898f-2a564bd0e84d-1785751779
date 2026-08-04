@@ -337,6 +337,122 @@ export default function Cafes() {
           </div>
         </section>
 
+        {/* Editorial Community & Rituals Section */}
+        <section 
+          className="py-[60px] px-6 lg:py-[100px] lg:px-[6%]"
+          style={{ backgroundColor: '#F4EEE6' }}>
+          <div className="max-w-7xl mx-auto">
+            {/* 2-Column Asymmetric Grid */}
+            <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+              {/* Left Column (7 columns) - Editorial Header & Event Chips */}
+              <div className="lg:col-span-7 space-y-8">
+                {/* Section Kicker */}
+                <p 
+                  className="uppercase tracking-[0.15em] text-sm font-semibold"
+                  style={{ color: '#C5A394' }}>
+                  COMMUNITY & RITUALS
+                </p>
+
+                {/* Main Headline */}
+                <h2 
+                  className="font-display font-light leading-[1.1]"
+                  style={{ 
+                    fontSize: 'clamp(2.4rem, 4vw, 3.6rem)',
+                    color: '#305853'
+                  }}>
+                  Something's Always Happening
+                </h2>
+
+                {/* Body Copy */}
+                <p 
+                  className="text-lg leading-relaxed"
+                  style={{ color: 'rgba(48, 88, 83, 0.9)' }}>
+                  Every week, our cafés become home to reading socials, book launches, supper clubs, thrift markets, puppy meet-ups, run clubs and workshops.
+                </p>
+
+                {/* Event Badges System */}
+                <div className="flex flex-wrap gap-3 pt-4">
+                  {['Reading Socials', 'Book Launches', 'Supper Clubs', 'Thrift Markets', 'Puppy Meet-ups', 'Run Clubs', 'Workshops'].map((event) => (
+                    <button
+                      key={event}
+                      className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out"
+                      style={{
+                        backgroundColor: '#FFFFFF',
+                        color: '#305853',
+                        border: '1px solid #B8A38F'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = '#305853';
+                        e.currentTarget.style.color = '#F4EEE6';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = '#FFFFFF';
+                        e.currentTarget.style.color = '#305853';
+                      }}>
+                      {event}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Column (5 columns) - The Analog Club Feature Card */}
+              <div className="lg:col-span-5">
+                <div 
+                  className="rounded-xl p-8 lg:p-10 space-y-6"
+                  style={{ backgroundColor: '#305853' }}>
+                  {/* Status Indicators Row */}
+                  <div className="flex items-center justify-between gap-4">
+                    <p 
+                      className="uppercase text-xs font-semibold tracking-[0.05em]"
+                      style={{ color: '#C5A394' }}>
+                      MONTHLY DETOX RITUAL
+                    </p>
+                    <div 
+                      className="px-3 py-1 rounded-full text-xs font-medium"
+                      style={{
+                        color: '#8E947A',
+                        border: '1px solid #8E947A'
+                      }}>
+                      NO PHONES ALLOWED
+                    </div>
+                  </div>
+
+                  {/* Card Title */}
+                  <h3 
+                    className="font-display font-light"
+                    style={{ 
+                      fontSize: 'clamp(1.8rem, 2.5vw, 2.4rem)',
+                      color: '#F4EEE6'
+                    }}>
+                    The Analog Club
+                  </h3>
+
+                  {/* Card Description */}
+                  <p 
+                    className="leading-relaxed"
+                    style={{ color: 'rgba(244, 238, 230, 0.9)' }}>
+                    We also host Analog Club—our monthly digital detox where phones are put away and conversations take centre stage.
+                  </p>
+
+                  {/* CTA Link */}
+                  <a 
+                    href="#"
+                    className="inline-flex items-center gap-2 text-sm font-medium transition-colors duration-300 mt-4"
+                    style={{ color: '#C5A394' }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = '#8E947A';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = '#C5A394';
+                    }}>
+                    Explore upcoming gatherings →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Community Cards Section */}
         <section className="py-16 lg:py-24 bg-background">
           <div className="container max-w-7xl">
