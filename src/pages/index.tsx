@@ -523,7 +523,7 @@ export default function Home() {
                   <Heart className="h-4 w-4 text-sage" />
                   <span className="text-sm font-medium text-sage uppercase tracking-wide">Community Events</span>
                 </div>
-                <h2 className="font-display text-3xl sm:text-4xl font-light">
+                <h2 className="font-display text-3xl lg:text-5xl font-light">
                   Wellness Is Better Together
                 </h2>
                 <p className="text-foreground/70 leading-relaxed">
