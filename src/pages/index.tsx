@@ -111,89 +111,106 @@ export default function Home() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Cafés */}
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <h3 className="font-display text-2xl font-semibold text-copper">
-                    Cafés
-                  </h3>
-                  <p className="text-base text-foreground/70 leading-relaxed">
-                    Beautiful spaces designed for everyday nourishment.
-                  </p>
-                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
-                    <Link href="/cafes">Explore →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <Link href="/cafes" className="block group">
+                <Card className="bg-card border-border hover:shadow-lg transition-all h-full">
+                  <CardContent className="p-8 space-y-4">
+                    <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
+                      Gather
+                    </Badge>
+                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                      Cafés
+                    </h3>
+                    <p className="text-base text-foreground/70 leading-relaxed">
+                      Beautiful spaces designed for everyday nourishment.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
 
               {/* Meal Subscription */}
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <h3 className="font-display text-2xl font-semibold text-copper">
-                    Meal Subscription
-                  </h3>
-                  <p className="text-base text-foreground/70 leading-relaxed">
-                    Healthy eating on autopilot.
-                  </p>
-                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
-                    <Link href="/subscription">Learn More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <Link href="/subscription" className="block group">
+                <Card className="bg-card border-border hover:shadow-lg transition-all h-full">
+                  <CardContent className="p-8 space-y-4">
+                    <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
+                      Nourish Every Day
+                    </Badge>
+                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                      Meal Subscription
+                    </h3>
+                    <p className="text-base text-foreground/70 leading-relaxed">
+                      Healthy eating on autopilot.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
 
               {/* Studio */}
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <h3 className="font-display text-2xl font-semibold text-copper">
-                    The Studio
-                  </h3>
-                  <p className="text-base text-foreground/70 leading-relaxed">
-                    Movement, breathwork and recovery.
-                  </p>
-                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
-                    <a href="https://www.thestudiobycopperandcloves.in/" target="_blank" rel="noopener noreferrer">
-                      Explore →
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
+              <a 
+                href="https://www.thestudiobycopperandcloves.in/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block group">
+                <Card className="bg-card border-border hover:shadow-lg transition-all h-full">
+                  <CardContent className="p-8 space-y-4">
+                    <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
+                      Nourish Your Body
+                    </Badge>
+                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                      The Studio
+                    </h3>
+                    <p className="text-base text-foreground/70 leading-relaxed">
+                      Movement, breathwork and recovery.
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
 
               {/* Community */}
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <h3 className="font-display text-2xl font-semibold text-copper">
-                    Community
-                  </h3>
-                  <p className="text-base text-foreground/70 leading-relaxed">
-                    Events that bring people together.
-                  </p>
-                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
-                    <a href="https://urbanaut.app/about-copperandcloves" target="_blank" rel="noopener noreferrer">
-                      Join Us →
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
+              <a 
+                href="https://urbanaut.app/about-copperandcloves" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block group">
+                <Card className="bg-card border-border hover:shadow-lg transition-all h-full">
+                  <CardContent className="p-8 space-y-4">
+                    <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
+                      Connect
+                    </Badge>
+                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                      Community
+                    </h3>
+                    <p className="text-base text-foreground/70 leading-relaxed">
+                      Events that bring people together.
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
 
               {/* Recipes & Journal */}
-              <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-8 space-y-4">
-                  <h3 className="font-display text-2xl font-semibold text-copper">
-                    Recipes & Journal
-                  </h3>
-                  <p className="text-base text-foreground/70 leading-relaxed">
-                    Simple recipes, mindful eating and practical wellness advice.
-                  </p>
-                  <Button asChild variant="link" className="text-copper p-0 h-auto font-semibold">
-                    <Link href="/blog">Read →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <Link href="/blog" className="block group">
+                <Card className="bg-card border-border hover:shadow-lg transition-all h-full">
+                  <CardContent className="p-8 space-y-4">
+                    <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
+                      Read
+                    </Badge>
+                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                      Recipes & Journal
+                    </h3>
+                    <p className="text-base text-foreground/70 leading-relaxed">
+                      Simple recipes, mindful eating and practical wellness advice.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
 
               {/* Coming Soon */}
-              <Card className="bg-muted/50 border-border hover:shadow-lg transition-shadow">
+              <Card className="bg-muted/50 border-border hover:shadow-lg transition-all h-full">
                 <CardContent className="p-8 space-y-4">
+                  <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
+                    Nourish at Home
+                  </Badge>
                   <h3 className="font-display text-2xl font-semibold text-sage">
-                    Coming Soon
+                    Retail Products
                   </h3>
                   <p className="text-base text-foreground/70 leading-relaxed">
                     Pantry essentials you'll use every day.
