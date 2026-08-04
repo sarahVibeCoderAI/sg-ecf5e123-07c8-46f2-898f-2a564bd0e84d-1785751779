@@ -102,9 +102,10 @@ export default function Home() {
               </h2>
 
               <p 
-                className="font-display italic leading-[1.2] mt-5"
+                className="font-display italic leading-[1.15] mt-5 lg:sticky lg:top-[120px] lg:self-start lg:z-10"
                 style={{ 
-                  fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
+                  fontSize: 'clamp(2.5rem, 4.5vw, 3.8rem)',
+                  fontWeight: 600,
                   color: '#C5A394'
                 }}>
                 To feel nourished.<br />
@@ -347,7 +348,7 @@ export default function Home() {
           <div className="container max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Text Content */}
-              <div className="space-y-8 lg:sticky lg:top-32">
+              <div className="space-y-8 lg:sticky lg:top-[120px] lg:self-start lg:z-10">
                 <h2 className="font-display text-3xl lg:text-5xl font-light">
                   Food Made Properly
                 </h2>
