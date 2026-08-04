@@ -238,7 +238,9 @@ export default function Cafes() {
         <section className="py-12 lg:py-16 bg-muted/30">
           <div className="container max-w-6xl">
             <div className="text-center mb-12 space-y-6">
-              <h2 className="font-display text-2xl sm:text-3xl font-light">
+              <h2 
+                className="font-display font-light leading-[1.1]"
+                style={{ fontSize: 'clamp(2.5rem, 5vw, 4.2rem)' }}>
                 Find Your Neighbourhood Café
               </h2>
               <p className="text-lg lg:text-xl text-foreground/80 leading-relaxed max-w-4xl mx-auto">
