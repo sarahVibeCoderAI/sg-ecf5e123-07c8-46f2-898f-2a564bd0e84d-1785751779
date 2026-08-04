@@ -219,10 +219,11 @@ export default function Cafes() {
                     </p>
                     
                     <p 
-                      className="italic font-light border-b-2 border-[#C5A394] inline-block pb-2"
+                      className="italic font-bold"
                       style={{ 
                         fontSize: 'clamp(1.25rem, 2.5vw, 2rem)',
-                        letterSpacing: '0.01em'
+                        letterSpacing: '0.01em',
+                        color: '#C5A394'
                       }}>
                       That's the kind of café we're building.
                     </p>
