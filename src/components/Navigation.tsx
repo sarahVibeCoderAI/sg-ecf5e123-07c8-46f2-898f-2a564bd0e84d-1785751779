@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -18,9 +18,46 @@ const navLinks = [
 
 export function Navigation() {
   const [open, setOpen] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if we're within the first 800px (hero + manifesto sections)
+      setIsAtTop(window.scrollY < 800);
+    };
+
+    // Initial check
+    handleScroll();
+
+    // Listen to scroll events
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Dynamic text color classes based on scroll position
+  const textColorClass = isAtTop 
+    ? "text-[#F4EEE6]" 
+    : "text-foreground/70";
+  
+  const hoverColorClass = isAtTop
+    ? "hover:text-white"
+    : "hover:text-primary";
+
+  const menuIconClass = isAtTop
+    ? "text-[#F4EEE6]"
+    : "text-foreground";
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-lg supports-[backdrop-filter]:bg-background/95">
+    <nav 
+      className="sticky top-0 z-50 w-full border-b transition-all duration-300"
+      style={{
+        borderColor: isAtTop ? 'rgba(244, 238, 230, 0.2)' : 'rgba(0, 0, 0, 0.1)',
+        backgroundColor: isAtTop ? 'rgba(48, 88, 83, 0.7)' : 'rgba(250, 247, 242, 0.95)',
+        backdropFilter: 'blur(12px)'
+      }}>
       <div className="container">
         <div className="flex h-20 items-center justify-between gap-8">
           <Link href="/" className="flex items-center gap-2 group">
@@ -29,7 +66,10 @@ export function Navigation() {
               alt="Copper + Cloves" 
               width={250}
               height={50}
-              className="h-10 w-auto object-contain"
+              className="h-10 w-auto object-contain transition-opacity duration-300"
+              style={{ 
+                filter: isAtTop ? 'brightness(0) invert(1)' : 'none' 
+              }}
               priority
             />
           </Link>
@@ -38,31 +78,31 @@ export function Navigation() {
           <div className="hidden lg:flex items-center justify-center flex-1 gap-10">
             <Link
               href="/cafes"
-              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+              className={`text-[11px] font-medium ${textColorClass} ${hoverColorClass} transition-colors uppercase tracking-wider whitespace-nowrap`}
             >
               Our Cafes
             </Link>
             <Link
               href="/subscription"
-              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+              className={`text-[11px] font-medium ${textColorClass} ${hoverColorClass} transition-colors uppercase tracking-wider whitespace-nowrap`}
             >
               Meal Subscription
             </Link>
             <Link
               href="/blog"
-              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+              className={`text-[11px] font-medium ${textColorClass} ${hoverColorClass} transition-colors uppercase tracking-wider whitespace-nowrap`}
             >
               Journal
             </Link>
             <Link
               href="/careers"
-              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+              className={`text-[11px] font-medium ${textColorClass} ${hoverColorClass} transition-colors uppercase tracking-wider whitespace-nowrap`}
             >
               Careers
             </Link>
             <Link
               href="/contact"
-              className="text-[11px] font-medium text-foreground/70 hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap"
+              className={`text-[11px] font-medium ${textColorClass} ${hoverColorClass} transition-colors uppercase tracking-wider whitespace-nowrap`}
             >
               Contact
             </Link>
@@ -72,7 +112,7 @@ export function Navigation() {
             {/* Mobile Hamburger Menu */}
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild className="lg:hidden">
-                <Button variant="ghost" size="icon" className="text-foreground">
+                <Button variant="ghost" size="icon" className={menuIconClass}>
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Toggle menu</span>
                 </Button>
@@ -102,7 +142,14 @@ export function Navigation() {
 
             {/* Subscribe Button - Desktop */}
             <div className="hidden lg:block flex-shrink-0">
-              <Button asChild size="default" className="text-[11px] uppercase tracking-wider px-6">
+              <Button 
+                asChild 
+                size="default" 
+                className={`text-[11px] uppercase tracking-wider px-6 transition-all duration-300 ${
+                  isAtTop 
+                    ? 'bg-[#C5A394] hover:bg-[#C5A394]/90 text-white border-[#C5A394]' 
+                    : ''
+                }`}>
                 <Link href="/subscription">Subscribe Now</Link>
               </Button>
             </div>
