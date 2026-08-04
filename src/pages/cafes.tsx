@@ -143,18 +143,6 @@ export default function Cafes() {
               </div>
             </div>
           </div>
-
-          {/* Text Content Below Hero */}
-          <div className="container max-w-4xl py-12 lg:py-16">
-            <div className="text-center space-y-6">
-              <h1 className="font-display text-4xl lg:text-5xl font-light">
-                Nourishment Begins Here
-              </h1>
-              <p className="text-lg lg:text-xl text-foreground/80 leading-relaxed max-w-3xl mx-auto">
-                Fresh food made from scratch. Coffee worth lingering over. Spaces designed for conversation, connection and the little moments that make everyday life a little richer.
-              </p>
-            </div>
-          </div>
         </section>
 
         {/* Cafes Grid */}
