@@ -242,62 +242,9 @@ export default function Cafes() {
           </div>
         </section>
 
-        {/* More Than Just Cafés */}
+        {/* Community Cards Section */}
         <section className="py-16 lg:py-24 bg-background">
-          {/* Full-Width Hero Image */}
-          <div className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
-            <Image
-              src="/BAG00879_1_.jpg"
-              alt="Community gathering at Copper + Cloves"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/30" />
-          </div>
-
-          {/* Text Content - Punchy Statements */}
           <div className="container max-w-7xl">
-            <div className="py-16 lg:py-24 space-y-12">
-              {/* Main Heading */}
-              <h2 className="font-display text-4xl lg:text-6xl font-light text-center">
-                We think cafés can do more.
-              </h2>
-
-              {/* Statements Grid - Asymmetric Layout */}
-              <div className="grid lg:grid-cols-2 gap-x-16 gap-y-8 max-w-6xl mx-auto">
-                {/* Left Column */}
-                <div className="space-y-8">
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can serve food that genuinely makes people feel better.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed lg:pl-12">
-                    They can support local growers.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can become part of everyday life.
-                  </p>
-                </div>
-
-                {/* Right Column */}
-                <div className="space-y-8 lg:pt-16">
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can bring neighbours together.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed lg:pl-12">
-                    They can make healthy eating feel exciting instead of restrictive.
-                  </p>
-                </div>
-              </div>
-
-              {/* Closing Statement */}
-              <div className="text-center pt-8">
-                <p className="font-display text-3xl lg:text-4xl font-semibold text-copper">
-                  That's the kind of café we're building.
-                </p>
-              </div>
-            </div>
-
             {/* Three Community Cards */}
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto pb-12">
               {/* Indiranagar */}
