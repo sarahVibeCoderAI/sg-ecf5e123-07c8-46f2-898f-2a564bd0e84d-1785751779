@@ -186,44 +186,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Our Philosophy Section */}
-        <section className="section-padding">
-          <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="font-display text-4xl md:text-5xl font-light text-center mb-12">
-              Our Philosophy
-            </h2>
-            
-            <div className="space-y-10">
-              {/* Block 1 */}
-              <div className="space-y-6">
-                <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
-                  Wellness doesn't have to consume your life.
-                </h3>
-                <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
-                  You don't need to spend hours meal prepping, count every calorie or track every metric to feel your best.
-                </p>
-              </div>
-
-              {/* Block 2 */}
-              <div className="space-y-6">
-                <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
-                  We believe good health is built in the small choices we make every day.
-                </h3>
-                <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
-                  Colourful, satisfying food, movement you enjoy, time with friends, a walk outside.
-                </p>
-              </div>
-
-              {/* Block 3 */}
-              <div className="space-y-6">
-                <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
-                  We're here to make living well a little easier.
-                </h3>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Our Ecosystem */}
         <section className="py-12 lg:py-16 bg-background">
           <div className="container max-w-6xl">
