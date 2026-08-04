@@ -631,7 +631,7 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column: Text & CTA */}
               <div className="space-y-8">
-                <h2 className="font-display text-[22px] md:text-[29px] font-light">
+                <h2 className="font-display text-[28px] md:text-[36px] font-light whitespace-nowrap">
                   Bring Copper + Cloves Home
                 </h2>
                 
