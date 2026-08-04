@@ -101,16 +101,26 @@ export default function Home() {
                 We believe we're all looking for the same thing.
               </h2>
 
-              <p 
-                className="font-display italic leading-[1.15] mt-5 lg:sticky lg:top-[120px] lg:self-start lg:z-10"
-                style={{ 
-                  fontSize: 'clamp(2.5rem, 4.5vw, 3.8rem)',
-                  fontWeight: 600,
-                  color: '#C5A394'
-                }}>
-                To feel nourished.<br />
-                Not just by the food we eat, but by the way we live.
-              </p>
+              <div className="mt-5 lg:sticky lg:top-[120px] lg:self-start lg:z-10 space-y-3">
+                <p 
+                  className="font-display italic leading-[1.15]"
+                  style={{ 
+                    fontSize: 'clamp(2.5rem, 4.5vw, 3.8rem)',
+                    fontWeight: 600,
+                    color: '#C5A394'
+                  }}>
+                  To feel nourished.
+                </p>
+                <p 
+                  className="font-display italic leading-[1.2]"
+                  style={{ 
+                    fontSize: 'clamp(2rem, 3.8vw, 3.2rem)',
+                    fontWeight: 500,
+                    color: '#F4EEE6'
+                  }}>
+                  Not just by the food we eat, but by the way we live.
+                </p>
+              </div>
             </div>
 
             {/* Tier 2: Narrative Split / Context Box */}
