@@ -177,7 +177,7 @@ export default function Home() {
               <p 
                 className="font-display font-light leading-[1.1]"
                 style={{ 
-                  fontSize: 'clamp(2.2rem, 4vw, 3.5rem)',
+                  fontSize: 'clamp(1.8rem, 3.5vw, 3rem)',
                   color: '#C5A394'
                 }}>
                 That's what we're building at Copper + Cloves.
