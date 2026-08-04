@@ -84,7 +84,7 @@ export default function Home() {
             marginRight: 'calc(-50vw + 50%)'
           }}>
           <div className="max-w-6xl mx-auto">
-            {/* Tier 1: Section Kicker & Main Headline */}
+            {/* Tier 1: The Hero Statement */}
             <div className="text-center space-y-6 mb-16 lg:mb-24">
               <p 
                 className="uppercase tracking-[0.2em] text-[0.85rem] font-semibold"
@@ -100,113 +100,108 @@ export default function Home() {
                 }}>
                 We believe we're all looking for the same thing.
               </h2>
+
+              <p 
+                className="font-display italic leading-[1.15] mt-5 lg:sticky lg:top-[120px] lg:self-start lg:z-10"
+                style={{ 
+                  fontSize: 'clamp(2.5rem, 4.5vw, 3.8rem)',
+                  fontWeight: 600,
+                  color: '#C5A394'
+                }}>
+                To feel nourished.<br />
+                Not just by the food we eat, but by the way we live.
+              </p>
             </div>
 
-            {/* Sticky Grid Layout for "To feel nourished" and narrative */}
-            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start">
-              {/* Sticky Statement - Left Column */}
-              <div className="lg:col-span-5 lg:sticky lg:top-[120px] lg:self-start">
+            {/* Tier 2: Narrative Split / Context Box */}
+            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 mb-16 lg:mb-24 max-w-5xl mx-auto">
+              <div className="lg:col-span-5">
                 <p 
-                  className="font-display italic leading-[1.15]"
+                  className="font-display leading-[1.3]"
                   style={{ 
-                    fontSize: 'clamp(2.5rem, 4.5vw, 3.8rem)',
-                    fontWeight: 600,
-                    color: '#C5A394'
+                    fontSize: 'clamp(1.4rem, 2.2vw, 1.8rem)',
+                    color: '#F4EEE6'
                   }}>
-                  To feel nourished.<br />
-                  Not just by the food we eat, but by the way we live.
+                  Healthy living has become far more complicated than it needs to be.
                 </p>
               </div>
 
-              {/* Scrolling Narrative - Right Column */}
-              <div className="lg:col-span-7 space-y-12">
-                <div className="space-y-6">
+              <div className="lg:col-span-7 space-y-6">
+                <p 
+                  className="leading-[1.8]"
+                  style={{ 
+                    fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
+                    color: 'rgba(244, 238, 230, 0.85)'
+                  }}>
+                  We're surrounded by conflicting advice, wellness trends and endless trackers promising to optimise every part of our lives.
+                </p>
+                <p 
+                  className="leading-[1.8]"
+                  style={{ 
+                    fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
+                    color: 'rgba(244, 238, 230, 0.85)'
+                  }}>
+                  We think there's a simpler way.
+                </p>
+              </div>
+            </div>
+
+            {/* Tier 3: The 5 Nourishment Principles - Horizontal Magazine Grid */}
+            <div 
+              className="grid grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-6 py-12 lg:py-12 my-12 lg:my-16"
+              style={{
+                borderTop: '1px solid rgba(142, 148, 122, 0.3)',
+                borderBottom: '1px solid rgba(142, 148, 122, 0.3)'
+              }}>
+              {[
+                { index: '+', text: 'Nourishing food.' },
+                { index: '+', text: 'Movement you enjoy.' },
+                { index: '+', text: 'Time outdoors.' },
+                { index: '+', text: 'Conversations around the table.' },
+                { index: '+', text: 'A strong community.' }
+              ].map((principle, idx) => (
+                <div 
+                  key={idx}
+                  className="space-y-4 opacity-0 animate-fade-in"
+                  style={{ 
+                    animationDelay: `${idx * 150}ms`,
+                    animationFillMode: 'forwards'
+                  }}>
+                  <span 
+                    className="text-sm font-medium"
+                    style={{ color: '#8E947A' }}>
+                    {principle.index}
+                  </span>
                   <p 
-                    className="font-display leading-[1.3]"
+                    className="font-display font-normal leading-[1.2]"
                     style={{ 
-                      fontSize: 'clamp(1.4rem, 2.2vw, 1.8rem)',
+                      fontSize: 'clamp(1.25rem, 1.8vw, 1.6rem)',
                       color: '#F4EEE6'
                     }}>
-                    Healthy living has become far more complicated than it needs to be.
-                  </p>
-                  
-                  <p 
-                    className="leading-[1.8]"
-                    style={{ 
-                      fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
-                      color: 'rgba(244, 238, 230, 0.85)'
-                    }}>
-                    We're surrounded by conflicting advice, wellness trends and endless trackers promising to optimise every part of our lives.
-                  </p>
-                  
-                  <p 
-                    className="leading-[1.8]"
-                    style={{ 
-                      fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
-                      color: 'rgba(244, 238, 230, 0.85)'
-                    }}>
-                    We think there's a simpler way.
+                    {principle.text}
                   </p>
                 </div>
+              ))}
+            </div>
 
-                {/* 5 Nourishment Principles */}
-                <div 
-                  className="grid grid-cols-1 gap-8 py-12 lg:py-12"
-                  style={{
-                    borderTop: '1px solid rgba(142, 148, 122, 0.3)',
-                    borderBottom: '1px solid rgba(142, 148, 122, 0.3)'
-                  }}>
-                  {[
-                    { index: '+', text: 'Nourishing food.' },
-                    { index: '+', text: 'Movement you enjoy.' },
-                    { index: '+', text: 'Time outdoors.' },
-                    { index: '+', text: 'Conversations around the table.' },
-                    { index: '+', text: 'A strong community.' }
-                  ].map((principle, idx) => (
-                    <div 
-                      key={idx}
-                      className="space-y-2 opacity-0 animate-fade-in"
-                      style={{ 
-                        animationDelay: `${idx * 150}ms`,
-                        animationFillMode: 'forwards'
-                      }}>
-                      <span 
-                        className="text-sm font-medium"
-                        style={{ color: '#8E947A' }}>
-                        {principle.index}
-                      </span>
-                      <p 
-                        className="font-display font-normal leading-[1.2]"
-                        style={{ 
-                          fontSize: 'clamp(1.25rem, 1.8vw, 1.6rem)',
-                          color: '#F4EEE6'
-                        }}>
-                        {principle.text}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Climax Statement */}
-                <div className="space-y-6 pt-8">
-                  <p 
-                    className="leading-[1.7]"
-                    style={{ 
-                      fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)',
-                      color: '#8E947A'
-                    }}>
-                    These are the things that nourish us.
-                  </p>
-                  <p 
-                    className="font-display font-medium leading-[1.1]"
-                    style={{ 
-                      fontSize: 'clamp(2.5rem, 4.5vw, 4rem)',
-                      color: '#C5A394'
-                    }}>
-                    That's what we're building at Copper + Cloves.
-                  </p>
-                </div>
-              </div>
+            {/* Tier 4: The Climax & Anchor Conclusion */}
+            <div className="text-center space-y-6 max-w-4xl mx-auto pb-12 lg:pb-0">
+              <p 
+                className="leading-[1.7]"
+                style={{ 
+                  fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)',
+                  color: '#8E947A'
+                }}>
+                These are the things that nourish us.
+              </p>
+              <p 
+                className="font-display font-medium leading-[1.1]"
+                style={{ 
+                  fontSize: 'clamp(2.5rem, 4.5vw, 4rem)',
+                  color: '#C5A394'
+                }}>
+                That's what we're building at Copper + Cloves.
+              </p>
             </div>
           </div>
         </section>
@@ -352,10 +347,8 @@ export default function Home() {
         <section className="py-16 lg:py-24 bg-muted/30">
           <div className="container max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
-              {/* Sticky Text Content - Left Column */}
-              <div 
-                className="space-y-8 lg:sticky lg:self-start"
-                style={{ top: '120px', zIndex: 10 }}>
+              {/* Text Content */}
+              <div className="space-y-8 lg:sticky lg:top-[120px] lg:self-start lg:z-10">
                 <h2 className="font-display text-3xl lg:text-5xl font-light">
                   Food Made Properly
                 </h2>
@@ -371,7 +364,7 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Scrolling Photo Collage - Right Column */}
+              {/* Editorial Photo Collage */}
               <div className="grid grid-cols-6 gap-4">
                 {/* Row 1 */}
                 <div className="col-span-4 aspect-[4/3] relative rounded-lg overflow-hidden">
