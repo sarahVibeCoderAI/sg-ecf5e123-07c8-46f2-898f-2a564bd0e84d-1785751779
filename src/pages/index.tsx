@@ -349,7 +349,7 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Text Content */}
               <div className="space-y-8 lg:sticky lg:top-[120px] lg:self-start lg:z-10">
-                <h2 className="font-display text-3xl lg:text-5xl font-light">
+                <h2 className="font-display font-light" style={{ fontSize: 'clamp(2.25rem, 4vw, 3rem)' }}>
                   Food Made Properly
                 </h2>
                 <p className="text-lg lg:text-xl text-foreground/80 leading-relaxed">
