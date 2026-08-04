@@ -145,6 +145,94 @@ export default function Cafes() {
           </div>
         </section>
 
+        {/* Full-Bleed Manifesto Section */}
+        <section 
+          className="relative bg-[#305853] text-[#FAF8F5] overflow-hidden"
+          style={{
+            width: '100vw',
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)'
+          }}>
+          <div className="py-[72px] px-6 lg:py-[120px] lg:px-[5%]">
+            <div className="max-w-7xl mx-auto">
+              {/* Desktop: 2-column asymmetric layout | Mobile: stacked */}
+              <div className="grid lg:grid-cols-[40%_60%] gap-12 lg:gap-16">
+                {/* Left Column - Sticky Anchor Statement */}
+                <div className="lg:sticky lg:top-24 lg:self-start">
+                  <h2 
+                    className="font-display font-light leading-[1.1]"
+                    style={{ fontSize: 'clamp(2.5rem, 5vw, 4.2rem)' }}>
+                    We think cafés can do more.
+                  </h2>
+                </div>
+
+                {/* Right Column - Manifesto Points */}
+                <div className="space-y-8 lg:space-y-10">
+                  {/* Manifesto Promises */}
+                  <div className="space-y-6 lg:space-y-8">
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}>
+                      They can serve food that genuinely makes people feel better.
+                    </p>
+                    
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}>
+                      They can support local growers.
+                    </p>
+                    
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}>
+                      They can become part of everyday life.
+                    </p>
+                    
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}>
+                      They can bring neighbours together.
+                    </p>
+                  </div>
+
+                  {/* Concluding Statement */}
+                  <div className="pt-4 lg:pt-6 space-y-6">
+                    <p 
+                      className="leading-[1.7]"
+                      style={{ 
+                        fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                        letterSpacing: '0.02em'
+                      }}>
+                      They can make healthy eating feel exciting instead of restrictive.
+                    </p>
+                    
+                    <p 
+                      className="italic font-light border-b-2 border-[#C5A394] inline-block pb-2"
+                      style={{ 
+                        fontSize: 'clamp(1.25rem, 2.5vw, 2rem)',
+                        letterSpacing: '0.01em'
+                      }}>
+                      That's the kind of café we're building.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Cafes Grid */}
         <section className="py-12 lg:py-16 bg-muted/30">
           <div className="container max-w-6xl">
