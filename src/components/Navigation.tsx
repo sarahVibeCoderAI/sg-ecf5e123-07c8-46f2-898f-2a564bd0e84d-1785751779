@@ -54,9 +54,13 @@ export function Navigation() {
     <nav 
       className="sticky top-0 z-50 w-full border-b transition-all duration-300"
       style={{
-        borderColor: isAtTop ? 'rgba(244, 238, 230, 0.2)' : 'rgba(0, 0, 0, 0.1)',
-        backgroundColor: isAtTop ? 'rgba(48, 88, 83, 0.7)' : 'rgba(250, 247, 242, 0.95)',
-        backdropFilter: 'blur(12px)'
+        borderColor: isAtTop ? 'rgba(244, 238, 230, 0.15)' : 'rgba(0, 0, 0, 0.08)',
+        backgroundColor: isAtTop ? 'rgba(48, 88, 83, 0.4)' : 'rgba(250, 247, 242, 0.65)',
+        backdropFilter: 'blur(20px) saturate(180%)',
+        WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+        boxShadow: isAtTop 
+          ? '0 4px 24px rgba(0, 0, 0, 0.12)' 
+          : '0 2px 16px rgba(0, 0, 0, 0.04)'
       }}>
       <div className="container">
         <div className="flex h-20 items-center justify-between gap-8">
