@@ -206,7 +206,9 @@ export default function Home() {
                     <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
                       Gather
                     </Badge>
-                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                    <h3 
+                      className="font-display text-2xl font-semibold group-hover:opacity-80 transition-colors"
+                      style={{ color: '#305853' }}>
                       Cafés
                     </h3>
                     <p className="text-base text-foreground/70 leading-relaxed">
@@ -223,7 +225,9 @@ export default function Home() {
                     <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
                       Nourish Every Day
                     </Badge>
-                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                    <h3 
+                      className="font-display text-2xl font-semibold group-hover:opacity-80 transition-colors"
+                      style={{ color: '#305853' }}>
                       Meal Subscription
                     </h3>
                     <p className="text-base text-foreground/70 leading-relaxed">
@@ -244,7 +248,9 @@ export default function Home() {
                     <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
                       Nourish Your Body
                     </Badge>
-                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                    <h3 
+                      className="font-display text-2xl font-semibold group-hover:opacity-80 transition-colors"
+                      style={{ color: '#305853' }}>
                       The Studio
                     </h3>
                     <p className="text-base text-foreground/70 leading-relaxed">
@@ -265,7 +271,9 @@ export default function Home() {
                     <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
                       Connect
                     </Badge>
-                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                    <h3 
+                      className="font-display text-2xl font-semibold group-hover:opacity-80 transition-colors"
+                      style={{ color: '#305853' }}>
                       Community
                     </h3>
                     <p className="text-base text-foreground/70 leading-relaxed">
@@ -282,7 +290,9 @@ export default function Home() {
                     <Badge variant="secondary" className="bg-sage/10 text-sage border-sage/20">
                       Read
                     </Badge>
-                    <h3 className="font-display text-2xl font-semibold text-copper group-hover:text-copper/80 transition-colors">
+                    <h3 
+                      className="font-display text-2xl font-semibold group-hover:opacity-80 transition-colors"
+                      style={{ color: '#305853' }}>
                       Recipes & Journal
                     </h3>
                     <p className="text-base text-foreground/70 leading-relaxed">
@@ -299,7 +309,7 @@ export default function Home() {
                     Nourish at Home
                   </Badge>
                   <h3 className="font-display text-2xl font-semibold text-sage">
-                    Retail Products
+                    Our Products
                   </h3>
                   <p className="text-base text-foreground/70 leading-relaxed">
                     Pantry essentials you'll use every day.
