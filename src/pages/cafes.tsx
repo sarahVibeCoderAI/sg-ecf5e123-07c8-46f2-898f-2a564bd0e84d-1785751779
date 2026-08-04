@@ -865,9 +865,9 @@ export default function Cafes() {
 
           {/* Support CTA Block */}
           <div className="mt-16 p-8 bg-muted/30 border border-border/30 rounded-lg text-center space-y-4">
-            <p className="text-lg text-foreground/80">
+            <h3 className="font-display text-2xl md:text-3xl font-light text-foreground">
               Planning a large group visit, event, or private gathering?
-            </p>
+            </h3>
             <p className="text-base text-foreground/70">
               Reach out to our cafe managers directly or book a space.
             </p>
