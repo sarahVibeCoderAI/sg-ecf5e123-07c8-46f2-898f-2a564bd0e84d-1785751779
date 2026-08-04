@@ -243,9 +243,10 @@ export default function Cafes() {
                 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.2rem)' }}>
                 Find Your Neighbourhood Café
               </h2>
-              <p className="text-lg lg:text-xl text-foreground/80 leading-relaxed max-w-4xl mx-auto">
-                Nourishment Begins Here. Fresh food made properly. Great coffee. Spaces that bring people together.
-              </p>
+              <div className="text-lg lg:text-xl text-foreground/80 leading-relaxed max-w-4xl mx-auto space-y-2">
+                <p>Nourishment Begins Here.</p>
+                <p>Fresh food made properly. Great coffee. Spaces that bring people together.</p>
+              </div>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
               {cafes.map((cafe) =>
