@@ -145,6 +145,100 @@ export default function Cafes() {
           </div>
         </section>
 
+        {/* Full-Bleed Manifesto Section */}
+        <section 
+          className="relative overflow-hidden bg-[#305853]"
+          style={{
+            width: '100vw',
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)'
+          }}
+        >
+          <div className="px-6 md:px-[5%] py-[72px] md:py-[120px]">
+            <div className="max-w-7xl mx-auto">
+              {/* Desktop: 2-Column Layout | Mobile: Stacked */}
+              <div className="grid lg:grid-cols-[40%_60%] gap-12 lg:gap-16 items-start">
+                {/* Left Column - Anchor Statement */}
+                <div className="lg:sticky lg:top-24">
+                  <h2 
+                    className="font-display font-light text-[#FAF8F5] leading-[1.1]"
+                    style={{
+                      fontSize: 'clamp(2.5rem, 5vw, 4.2rem)'
+                    }}
+                  >
+                    We think cafés can do more.
+                  </h2>
+                </div>
+
+                {/* Right Column - Promises + Closing */}
+                <div className="space-y-8 lg:space-y-10">
+                  {/* Promise Statements */}
+                  <p 
+                    className="text-[#FAF8F5] leading-[1.7]"
+                    style={{
+                      fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                      letterSpacing: '0.02em'
+                    }}
+                  >
+                    They can serve food that genuinely makes people feel better.
+                  </p>
+                  
+                  <p 
+                    className="text-[#FAF8F5] leading-[1.7]"
+                    style={{
+                      fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                      letterSpacing: '0.02em'
+                    }}
+                  >
+                    They can support local growers.
+                  </p>
+                  
+                  <p 
+                    className="text-[#FAF8F5] leading-[1.7]"
+                    style={{
+                      fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                      letterSpacing: '0.02em'
+                    }}
+                  >
+                    They can become part of everyday life.
+                  </p>
+                  
+                  <p 
+                    className="text-[#FAF8F5] leading-[1.7]"
+                    style={{
+                      fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                      letterSpacing: '0.02em'
+                    }}
+                  >
+                    They can bring neighbours together.
+                  </p>
+                  
+                  <p 
+                    className="text-[#FAF8F5] leading-[1.7]"
+                    style={{
+                      fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                      letterSpacing: '0.02em'
+                    }}
+                  >
+                    They can make healthy eating feel exciting instead of restrictive.
+                  </p>
+
+                  {/* Closing Statement with Terracotta Accent */}
+                  <p 
+                    className="text-[#FAF8F5] leading-[1.7] italic pt-4 border-b-2 border-[#C5A394] pb-2 inline-block"
+                    style={{
+                      fontSize: 'clamp(1.125rem, 2vw, 1.75rem)',
+                      letterSpacing: '0.02em'
+                    }}
+                  >
+                    That's the kind of café we're building.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Cafes Grid */}
         <section className="py-12 lg:py-16 bg-muted/30">
           <div className="container max-w-6xl">
@@ -239,262 +333,6 @@ export default function Cafes() {
             <h2 className="font-display text-4xl lg:text-6xl font-light text-white text-center max-w-4xl">
               We believe community is the missing pillar of wellness
             </h2>
-          </div>
-        </section>
-
-        {/* More Than Just Cafés */}
-        <section className="py-16 lg:py-24 bg-background">
-          {/* Full-Width Hero Image */}
-          <div className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
-            <Image
-              src="/BAG00879_1_.jpg"
-              alt="Community gathering at Copper + Cloves"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/30" />
-          </div>
-
-          {/* Text Content - Punchy Statements */}
-          <div className="container max-w-7xl">
-            <div className="py-16 lg:py-24 space-y-12">
-              {/* Main Heading */}
-              <h2 className="font-display text-4xl lg:text-6xl font-light text-center">
-                We think cafés can do more.
-              </h2>
-
-              {/* Statements Grid - Asymmetric Layout */}
-              <div className="grid lg:grid-cols-2 gap-x-16 gap-y-8 max-w-6xl mx-auto">
-                {/* Left Column */}
-                <div className="space-y-8">
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can serve food that genuinely makes people feel better.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed lg:pl-12">
-                    They can support local growers.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can become part of everyday life.
-                  </p>
-                </div>
-
-                {/* Right Column */}
-                <div className="space-y-8 lg:pt-16">
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed">
-                    They can bring neighbours together.
-                  </p>
-                  <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed lg:pl-12">
-                    They can make healthy eating feel exciting instead of restrictive.
-                  </p>
-                </div>
-              </div>
-
-              {/* Closing Statement */}
-              <div className="text-center pt-8">
-                <p className="font-display text-3xl lg:text-4xl font-semibold text-copper">
-                  That's the kind of café we're building.
-                </p>
-              </div>
-            </div>
-
-            {/* Three Community Cards */}
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto pb-12">
-              {/* Indiranagar */}
-              <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/Indiranagar-events/c_c_cafe_7_.jpg"
-                          alt="Indiranagar community event"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/Indiranagar-events/IMG_3706.jpeg"
-                          alt="Indiranagar gathering"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/Indiranagar-events/IMG_4524.jpeg"
-                          alt="Indiranagar cafe space"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/Indiranagar-events/IMG_25612023Raj_Kashyap.JPG"
-                          alt="Indiranagar reading social"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
-                <CardContent className="p-8 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold">Indiranagar</h3>
-                  <p className="font-semibold text-foreground/90">Books, brunch & community.</p>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Browse Champaca Bookstore, discover thoughtfully curated local brands, join reading socials, thrift markets and puppy adoption days.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Lavelle Road */}
-              <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/lavelle-road/raj_3_of_23_.jpg"
-                          alt="Lavelle Road outdoor seating"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/lavelle-road/raj_17_of_23_.jpg"
-                          alt="Lavelle Road cafe interior"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/lavelle-road/raj_23_of_23_.jpg"
-                          alt="Lavelle Road garden"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/lavelle-road/dog_at_lavelle.jpeg"
-                          alt="Dog friendly at Lavelle Road"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
-                <CardContent className="p-8 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold">Lavelle Road</h3>
-                  <p className="font-semibold text-foreground/90">Brunch, shopping & slow weekends.</p>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Settle in after a Cubbon run, browse Good Earth and Nicobar, or join one of our seasonal workshops and community gatherings.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Domlur/The Studio */}
-              <Card className="overflow-hidden border-border bg-white">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/studio-events/BAG02912.jpg"
-                          alt="Domlur Studio"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/studio-events/BAG09564.jpg"
-                          alt="Domlur workshops"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/studio-events/BAG09544_1_.jpg"
-                          alt="Domlur movement session"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/studio-events/C1373T01.jpg"
-                          alt="Domlur creative space"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                      <div className="aspect-[4/3] relative overflow-hidden">
-                        <Image
-                          src="/studio-events/C1425T01_2_.jpg"
-                          alt="Domlur community gathering"
-                          fill
-                          className="object-cover" />
-                        
-                      </div>
-                    </CarouselItem>
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
-                <CardContent className="p-8 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold">Domlur/ The Studio</h3>
-                  <p className="font-semibold text-foreground/90">Move, create & connect.</p>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Home to yoga and Pilates brunches, sound healing, creative workshops and Analog Club—our monthly digital detox gathering.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Community Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 max-w-2xl mx-auto">
-              <Button asChild size="lg" className="bg-copper hover:bg-copper/90 text-white">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Join Our WhatsApp Community
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-copper text-copper hover:bg-copper/5">
-                <a href="https://urbanaut.app/about-copperandcloves" target="_blank" rel="noopener noreferrer">
-                  Check Out Upcoming Events
-                </a>
-              </Button>
-            </div>
           </div>
         </section>
 
