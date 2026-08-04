@@ -39,27 +39,27 @@ export function Navigation() {
 
   // Dynamic text color classes based on scroll position
   const textColorClass = isAtTop 
-    ? "text-[#F4EEE6]" 
+    ? "text-[#305853]" 
     : "text-foreground/70";
   
   const hoverColorClass = isAtTop
-    ? "hover:text-white"
+    ? "hover:text-[#305853]/70"
     : "hover:text-primary";
 
   const menuIconClass = isAtTop
-    ? "text-[#F4EEE6]"
+    ? "text-[#305853]"
     : "text-foreground";
 
   return (
     <nav 
       className="sticky top-0 z-50 w-full border-b transition-all duration-300"
       style={{
-        borderColor: isAtTop ? 'rgba(244, 238, 230, 0.15)' : 'rgba(0, 0, 0, 0.08)',
-        backgroundColor: isAtTop ? 'rgba(48, 88, 83, 0.4)' : 'rgba(250, 247, 242, 0.65)',
+        borderColor: isAtTop ? 'rgba(48, 88, 83, 0.1)' : 'rgba(0, 0, 0, 0.08)',
+        backgroundColor: isAtTop ? 'rgba(244, 238, 230, 0.65)' : 'rgba(250, 247, 242, 0.65)',
         backdropFilter: 'blur(20px) saturate(180%)',
         WebkitBackdropFilter: 'blur(20px) saturate(180%)',
         boxShadow: isAtTop 
-          ? '0 4px 24px rgba(0, 0, 0, 0.12)' 
+          ? '0 2px 16px rgba(0, 0, 0, 0.04)' 
           : '0 2px 16px rgba(0, 0, 0, 0.04)'
       }}>
       <div className="container">
@@ -72,7 +72,7 @@ export function Navigation() {
               height={50}
               className="h-10 w-auto object-contain transition-opacity duration-300"
               style={{ 
-                filter: isAtTop ? 'brightness(0) invert(1)' : 'none' 
+                filter: isAtTop ? 'none' : 'none' 
               }}
               priority
             />
@@ -149,11 +149,7 @@ export function Navigation() {
               <Button 
                 asChild 
                 size="default" 
-                className={`text-[11px] uppercase tracking-wider px-6 transition-all duration-300 ${
-                  isAtTop 
-                    ? 'bg-[#C5A394] hover:bg-[#C5A394]/90 text-white border-[#C5A394]' 
-                    : ''
-                }`}>
+                className="text-[11px] uppercase tracking-wider px-6 transition-all duration-300">
                 <Link href="/subscription">Subscribe Now</Link>
               </Button>
             </div>
