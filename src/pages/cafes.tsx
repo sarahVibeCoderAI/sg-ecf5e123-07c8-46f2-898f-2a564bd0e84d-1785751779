@@ -147,7 +147,7 @@ export default function Cafes() {
 
         {/* Full-Bleed Manifesto Section */}
         <section 
-          className="relative bg-[#305853] text-[#FAF8F5] overflow-hidden"
+          className="relative bg-[#305853] text-[#FAF8F5]"
           style={{
             width: '100vw',
             marginLeft: 'calc(-50vw + 50%)',
