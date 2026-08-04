@@ -8,6 +8,27 @@
   .text-balance {
     text-wrap: balance;
   }
+  
+  /* Mobile & Tablet Button Centering (< 1024px) */
+  @media (max-width: 1023px) {
+    button,
+    .button-wrapper,
+    a[class*="button"] {
+      @apply mx-auto text-center;
+    }
+    
+    /* Center button parent containers */
+    div:has(> button),
+    div:has(> a[class*="button"]) {
+      @apply flex justify-center items-center;
+    }
+    
+    /* Full-width buttons with centered text */
+    button[class*="w-full"],
+    a[class*="w-full"][class*="button"] {
+      @apply text-center;
+    }
+  }
 }
 
 @layer base {
